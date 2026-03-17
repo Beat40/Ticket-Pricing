@@ -1,0 +1,78 @@
+{
+  "Premium Seeker": {
+    "n": 56,
+    "utilities": {
+      "opponent_competitive": 0.8,
+      "opponent_elite": 2.2,
+      "zone_upper_standard": 1.0,
+      "zone_lower_bowl": 2.2,
+      "zone_courtside_vip": 3.8,
+      "stakes_playoff": 1.2,
+      "stakes_final": 2.8,
+      "price_coef": -0.035,
+      "bundle_sbb": 0.4,
+      "bundle_sbb_food": 0.6,
+      "star_uncertain": 0.5,
+      "star_confirmed": 1.4,
+      "kickoff_sat_afternoon": 0.5,
+      "kickoff_sat_evening": 0.9
+    }
+  },
+  "Value Loyalist": {
+    "n": 152,
+    "utilities": {
+      "opponent_competitive": 0.7,
+      "opponent_elite": 1.4,
+      "zone_upper_standard": 0.8,
+      "zone_lower_bowl": 1.8,
+      "zone_courtside_vip": 2.4,
+      "stakes_playoff": 0.9,
+      "stakes_final": 1.8,
+      "price_coef": -0.055,
+      "bundle_sbb": 1.2,
+      "bundle_sbb_food": 1.9,
+      "star_uncertain": 0.3,
+      "star_confirmed": 0.9,
+      "kickoff_sat_afternoon": 0.6,
+      "kickoff_sat_evening": 1.0
+    }
+  },
+  "Atmosphere Seeker": {
+    "n": 80,
+    "utilities": {
+      "opponent_competitive": 1.1,
+      "opponent_elite": 1.6,
+      "zone_upper_standard": 0.5,
+      "zone_lower_bowl": 1.0,
+      "zone_courtside_vip": 1.2,
+      "stakes_playoff": 1.4,
+      "stakes_final": 2.2,
+      "price_coef": -0.065,
+      "bundle_sbb": 0.5,
+      "bundle_sbb_food": 0.7,
+      "star_uncertain": 0.6,
+      "star_confirmed": 1.6,
+      "kickoff_sat_afternoon": 0.4,
+      "kickoff_sat_evening": 0.8
+    }
+  },
+  "Occasional Neutral": {
+    "n": 112,
+    "utilities": {
+      "opponent_competitive": 0.4,
+      "opponent_elite": 0.8,
+      "zone_upper_standard": 0.6,
+      "zone_lower_bowl": 1.1,
+      "zone_courtside_vip": 1.4,
+      "stakes_playoff": 0.5,
+      "stakes_final": 1.1,
+      "price_coef": -0.085,
+      "bundle_sbb": 0.3,
+      "bundle_sbb_food": 0.5,
+      "star_uncertain": 0.2,
+      "star_confirmed": 0.5,
+      "kickoff_sat_afternoon": 0.3,
+      "kickoff_sat_evening": 0.5
+    }
+  }
+}
