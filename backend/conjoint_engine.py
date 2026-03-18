@@ -51,6 +51,16 @@ class ConjointEngine:
         with open(os.path.join(self.data_dir, "hb_diagnostics.json"), "w") as f:
             json.dump(hb_diagnostics, f, indent=2)
             
+        # Save estimated individual utilities
+        est_utils = []
+        for i, res_id in enumerate(encoded["respondent_ids"]):
+            est_utils.append({
+                "respondent_id": res_id,
+                "utilities": dict(zip(self.feature_names, individual_betas[i].tolist()))
+            })
+        with open(os.path.join(self.data_dir, "estimated_individual_utilities.json"), "w") as f:
+            json.dump(est_utils, f, indent=2)
+            
         method_str = "Simulated HB (fallback)" if used_fallback else "HB-MNL (PyMC NUTS)"
         
         return {

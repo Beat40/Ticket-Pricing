@@ -114,6 +114,22 @@ async def get_diagnostics():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/conjoint/individual-utilities")
+async def get_estimated_utilities():
+    """
+    Returns estimated_individual_utilities.json.
+    """
+    path = os.path.join(DATA_DIR, "estimated_individual_utilities.json")
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="estimated_individual_utilities.json missing")
+    
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
