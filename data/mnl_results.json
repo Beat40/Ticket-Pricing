@@ -1,0 +1,21 @@
+{
+  "coefficients": {
+    "opponent_competitive": 0.44659073278526723,
+    "opponent_elite": 0.8644126368531532,
+    "zone_upper_standard": 0.27344859548917116,
+    "zone_lower_bowl": 0.6878446759716568,
+    "zone_courtside_vip": 1.0022622790843736,
+    "stakes_playoff": 0.5831344941112555,
+    "stakes_final": 1.1343786758234198,
+    "price": -0.03490761516359178,
+    "bundle_sbb": 0.44553455349333637,
+    "bundle_sbb_food": 0.7209879830343238,
+    "star_uncertain": 0.21735620247596935,
+    "star_confirmed": 0.6158308070964772,
+    "kickoff_sat_afternoon": 0.29670768611612464,
+    "kickoff_sat_evening": 0.4155440346072385
+  },
+  "log_likelihood": -1689.2104359379193,
+  "n_observations": 4158,
+  "n_respondents": 303
+}

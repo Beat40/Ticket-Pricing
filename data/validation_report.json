@@ -1,0 +1,58 @@
+{
+  "mnl_vs_ground_truth": {
+    "opponent_elite": {
+      "mnl_recovered": 0.8644,
+      "ground_truth_weighted_avg": 1.384,
+      "deviation_pct": 37.5,
+      "status": "WARN"
+    },
+    "zone_courtside_vip": {
+      "mnl_recovered": 1.0023,
+      "ground_truth_weighted_avg": 2.076,
+      "deviation_pct": 51.7,
+      "status": "WARN"
+    },
+    "stakes_final": {
+      "mnl_recovered": 1.1344,
+      "ground_truth_weighted_avg": 1.824,
+      "deviation_pct": 37.8,
+      "status": "WARN"
+    },
+    "bundle_sbb_food": {
+      "mnl_recovered": 0.721,
+      "ground_truth_weighted_avg": 1.086,
+      "deviation_pct": 33.6,
+      "status": "WARN"
+    },
+    "star_confirmed": {
+      "mnl_recovered": 0.6158,
+      "ground_truth_weighted_avg": 0.998,
+      "deviation_pct": 38.3,
+      "status": "WARN"
+    },
+    "price": {
+      "mnl_recovered": -0.0349,
+      "ground_truth_weighted_avg": -0.0626,
+      "deviation_pct": 44.2,
+      "status": "WARN"
+    }
+  },
+  "segmentation_size_comparison": {
+    "Premium Seeker": {
+      "true_n": 56,
+      "recovered_n": 12
+    },
+    "Value Loyalist": {
+      "true_n": 152,
+      "recovered_n": 35
+    },
+    "Atmosphere Seeker": {
+      "true_n": 80,
+      "recovered_n": 63
+    },
+    "Occasional Neutral": {
+      "true_n": 112,
+      "recovered_n": 193
+    }
+  }
+}
