@@ -1,9 +1,26 @@
-fastapi
-uvicorn
-numpy
-python-multipart
-pymc==5.10.0
-arviz==0.17.0
-scikit-learn
-scipy
+# Core
 pandas
+numpy
+scipy
+requests
+joblib
+
+# Bayesian Conjoint
+pymc
+arviz
+scikit-learn
+
+# Demand Forecasting
+lightgbm
+neuralprophet
+dtaidistance
+statsmodels
+
+# LP Optimization
+pulp
+
+# Frontend Dashboard
+streamlit
+plotly
+uvicorn
+watchfiles
