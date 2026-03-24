@@ -1,66 +1,66 @@
 {
   "match_id": "BSV-LIVE",
   "solver_status": "Optimal",
-  "total_expected_revenue_chf": 113751.0,
-  "total_expected_tickets": 2291,
-  "total_expected_fill_rate": 0.603,
-  "total_revenue_vs_baseline_chf": 19423.78,
-  "total_revenue_uplift_pct": 0.20591911136763869,
+  "total_expected_revenue_chf": 125249.89,
+  "total_expected_tickets": 2343,
+  "total_expected_fill_rate": 0.617,
+  "total_revenue_vs_baseline_chf": 22137.89,
+  "total_revenue_uplift_pct": 0.21469750260773615,
   "zone_recommendations": {
     "Standing": {
       "recommended_price_chf": 14.22,
       "current_price_chf": 18,
       "price_delta_pct": -0.2098765432098766,
-      "expected_tickets_sold": 1026,
-      "expected_fill_rate": 0.9001381402743243,
-      "expected_revenue_chf": 14592.0,
+      "expected_tickets_sold": 1111,
+      "expected_fill_rate": 0.9749673124615936,
+      "expected_revenue_chf": 15800.89,
       "approval_required": "MANAGER_REQUIRED",
-      "explanation": "Standing: Recommended CHF 14 (current CHF 18, delta -21.0%). Expected 1026 tickets sold (90.0% fill), revenue CHF 14,592. Price elasticity for this zone: -1.3. Approval required: MANAGER_REQUIRED.",
+      "explanation": "Standing: Recommended CHF 14 (current CHF 18, delta -21.0%). Expected 1111 tickets sold (97.5% fill), revenue CHF 15,801. Price elasticity for this zone: -1.3. Approval required: MANAGER_REQUIRED.",
       "sensitivity": {
-        "one_step_up_revenue_delta_chf": -614.2222222222244,
-        "one_step_down_revenue_delta_chf": -912.0
+        "one_step_up_revenue_delta_chf": -672.0000000000018,
+        "one_step_down_revenue_delta_chf": -2120.8888888888887
       }
     },
     "Upper Standard": {
-      "recommended_price_chf": 47.67,
+      "recommended_price_chf": 61.0,
       "current_price_chf": 32,
-      "price_delta_pct": 0.4895833333333335,
-      "expected_tickets_sold": 705,
-      "expected_fill_rate": 0.4640360572213002,
-      "expected_revenue_chf": 33605.0,
+      "price_delta_pct": 0.90625,
+      "expected_tickets_sold": 620,
+      "expected_fill_rate": 0.4076516657073241,
+      "expected_revenue_chf": 37820.0,
       "approval_required": "VP_REQUIRED",
-      "explanation": "Upper Standard: Recommended CHF 48 (current CHF 32, delta +49.0%). Expected 705 tickets sold (46.4% fill), revenue CHF 33,605. Price elasticity for this zone: -0.9. Approval required: VP_REQUIRED.",
+      "explanation": "Upper Standard: Recommended CHF 61 (current CHF 32, delta +90.6%). Expected 620 tickets sold (40.8% fill), revenue CHF 37,820. Price elasticity for this zone: -0.9. Approval required: VP_REQUIRED.",
       "sensitivity": {
-        "one_step_up_revenue_delta_chf": 319.33333333333576,
-        "one_step_down_revenue_delta_chf": -323.8888888888905
+        "one_step_up_revenue_delta_chf": null,
+        "one_step_down_revenue_delta_chf": -323.66666666666424
       }
     },
     "Lower Bowl / Club Seats": {
       "recommended_price_chf": 109.0,
       "current_price_chf": 58,
       "price_delta_pct": 0.8793103448275862,
-      "expected_tickets_sold": 438,
-      "expected_fill_rate": 0.46127556906261363,
-      "expected_revenue_chf": 47742.0,
+      "expected_tickets_sold": 479,
+      "expected_fill_rate": 0.5042788264278167,
+      "expected_revenue_chf": 52211.0,
       "approval_required": "VP_REQUIRED",
-      "explanation": "Lower Bowl / Club Seats: Recommended CHF 109 (current CHF 58, delta +87.9%). Expected 438 tickets sold (46.1% fill), revenue CHF 47,742. Price elasticity for this zone: -0.6. Approval required: VP_REQUIRED.",
+      "explanation": "Lower Bowl / Club Seats: Recommended CHF 109 (current CHF 58, delta +87.9%). Expected 479 tickets sold (50.4% fill), revenue CHF 52,211. Price elasticity for this zone: -0.6. Approval required: VP_REQUIRED.",
       "sensitivity": {
         "one_step_up_revenue_delta_chf": null,
-        "one_step_down_revenue_delta_chf": -1699.2222222222263
+        "one_step_down_revenue_delta_chf": -1892.1111111111095
       }
     },
     "Courtside VIP": {
       "recommended_price_chf": 146.0,
       "current_price_chf": 85,
       "price_delta_pct": 0.7176470588235294,
-      "expected_tickets_sold": 122,
-      "expected_fill_rate": 0.6428356032506217,
-      "expected_revenue_chf": 17812.0,
+      "expected_tickets_sold": 133,
+      "expected_fill_rate": 0.7016394401656414,
+      "expected_revenue_chf": 19418.0,
       "approval_required": "VP_REQUIRED",
-      "explanation": "Courtside VIP: Recommended CHF 146 (current CHF 85, delta +71.8%). Expected 122 tickets sold (64.3% fill), revenue CHF 17,812. Price elasticity for this zone: -0.2. Approval required: VP_REQUIRED.",
+      "explanation": "Courtside VIP: Recommended CHF 146 (current CHF 85, delta +71.8%). Expected 133 tickets sold (70.2% fill), revenue CHF 19,418. Price elasticity for this zone: -0.2. Approval required: VP_REQUIRED.",
       "sensitivity": {
         "one_step_up_revenue_delta_chf": null,
-        "one_step_down_revenue_delta_chf": -1242.5555555555584
+        "one_step_down_revenue_delta_chf": -1390.4444444444453
       }
     }
   },
@@ -74,119 +74,119 @@
       },
       {
         "price": 14.222222222222221,
-        "fill_rate": 0.9001381402743243,
-        "tickets_sold": 1026,
-        "revenue": 14592.0
+        "fill_rate": 0.9749673124615936,
+        "tickets_sold": 1111,
+        "revenue": 15800.888888888889
       },
       {
         "price": 16.444444444444443,
-        "fill_rate": 0.7453184881815395,
-        "tickets_sold": 850,
-        "revenue": 13977.777777777776
+        "fill_rate": 0.8072773842566405,
+        "tickets_sold": 920,
+        "revenue": 15128.888888888887
       },
       {
         "price": 18.666666666666668,
-        "fill_rate": 0.6320916570510737,
-        "tickets_sold": 721,
-        "revenue": 13458.666666666668
+        "fill_rate": 0.6846379200382152,
+        "tickets_sold": 780,
+        "revenue": 14560.000000000002
       },
       {
         "price": 20.88888888888889,
-        "fill_rate": 0.5461059650818971,
-        "tickets_sold": 623,
-        "revenue": 13013.777777777777
+        "fill_rate": 0.591504171718441,
+        "tickets_sold": 674,
+        "revenue": 14079.111111111111
       },
       {
         "price": 23.11111111111111,
-        "fill_rate": 0.4788503276560517,
-        "tickets_sold": 546,
-        "revenue": 12618.666666666666
+        "fill_rate": 0.5186575217042729,
+        "tickets_sold": 591,
+        "revenue": 13658.666666666666
       },
       {
         "price": 25.333333333333336,
-        "fill_rate": 0.42497836689037044,
-        "tickets_sold": 484,
-        "revenue": 12261.333333333334
+        "fill_rate": 0.46030714362925246,
+        "tickets_sold": 525,
+        "revenue": 13300.000000000002
       },
       {
         "price": 27.555555555555557,
-        "fill_rate": 0.38097365045363474,
-        "tickets_sold": 434,
-        "revenue": 11959.111111111111
+        "fill_rate": 0.41264428145247184,
+        "tickets_sold": 470,
+        "revenue": 12951.111111111111
       },
       {
         "price": 29.77777777777778,
-        "fill_rate": 0.34443469543860755,
-        "tickets_sold": 393,
-        "revenue": 11702.666666666668
+        "fill_rate": 0.37306781515553283,
+        "tickets_sold": 425,
+        "revenue": 12655.555555555557
       },
       {
         "price": 32.0,
-        "fill_rate": 0.3136692101188162,
-        "tickets_sold": 358,
-        "revenue": 11456.0
+        "fill_rate": 0.33974477150617444,
+        "tickets_sold": 387,
+        "revenue": 12384.0
       }
     ],
     "Upper Standard": [
       {
         "price": 21.0,
-        "fill_rate": 0.9703930273006516,
-        "tickets_sold": 1475,
-        "revenue": 30975.0
+        "fill_rate": 1.0,
+        "tickets_sold": 1520,
+        "revenue": 31920.0
       },
       {
         "price": 25.444444444444443,
-        "fill_rate": 0.8164157171872477,
-        "tickets_sold": 1241,
-        "revenue": 31576.555555555555
+        "fill_rate": 0.8954727968074572,
+        "tickets_sold": 1361,
+        "revenue": 34629.88888888888
       },
       {
         "price": 29.88888888888889,
-        "fill_rate": 0.7062951743731475,
-        "tickets_sold": 1074,
-        "revenue": 32100.666666666668
+        "fill_rate": 0.7746888035749002,
+        "tickets_sold": 1178,
+        "revenue": 35209.11111111111
       },
       {
         "price": 34.333333333333336,
-        "fill_rate": 0.62344860791273,
-        "tickets_sold": 948,
-        "revenue": 32548.000000000004
+        "fill_rate": 0.683819844278285,
+        "tickets_sold": 1039,
+        "revenue": 35672.333333333336
       },
       {
         "price": 38.77777777777778,
-        "fill_rate": 0.5587536932720079,
-        "tickets_sold": 849,
-        "revenue": 32922.333333333336
+        "fill_rate": 0.6128602400803905,
+        "tickets_sold": 932,
+        "revenue": 36140.88888888889
       },
       {
         "price": 43.22222222222222,
-        "fill_rate": 0.5067673773545205,
-        "tickets_sold": 770,
-        "revenue": 33281.11111111111
+        "fill_rate": 0.5558398634140366,
+        "tickets_sold": 845,
+        "revenue": 36522.777777777774
       },
       {
         "price": 47.66666666666667,
-        "fill_rate": 0.4640360572213002,
-        "tickets_sold": 705,
-        "revenue": 33605.0
+        "fill_rate": 0.5089706839685441,
+        "tickets_sold": 774,
+        "revenue": 36894.00000000001
       },
       {
         "price": 52.111111111111114,
-        "fill_rate": 0.4282602168671432,
-        "tickets_sold": 651,
-        "revenue": 33924.333333333336
+        "fill_rate": 0.46973051361703866,
+        "tickets_sold": 714,
+        "revenue": 37207.333333333336
       },
       {
         "price": 56.55555555555556,
-        "fill_rate": 0.3978480987000382,
-        "tickets_sold": 605,
-        "revenue": 34216.11111111111
+        "fill_rate": 0.43637345796680993,
+        "tickets_sold": 663,
+        "revenue": 37496.333333333336
       },
       {
         "price": 61.0,
-        "fill_rate": 0.37166201832994605,
-        "tickets_sold": 565,
-        "revenue": 34465.0
+        "fill_rate": 0.4076516657073241,
+        "tickets_sold": 620,
+        "revenue": 37820.0
       }
     ],
     "Lower Bowl / Club Seats": [
@@ -198,119 +198,119 @@
       },
       {
         "price": 32.55555555555556,
-        "fill_rate": 0.9524480248537871,
-        "tickets_sold": 905,
-        "revenue": 29462.77777777778
+        "fill_rate": 1.0,
+        "tickets_sold": 950,
+        "revenue": 30927.77777777778
       },
       {
         "price": 42.111111111111114,
-        "fill_rate": 0.8161656858927518,
-        "tickets_sold": 775,
-        "revenue": 32636.111111111113
+        "fill_rate": 0.8922542225443199,
+        "tickets_sold": 848,
+        "revenue": 35710.222222222226
       },
       {
         "price": 51.666666666666664,
-        "fill_rate": 0.7219216828390802,
-        "tickets_sold": 686,
-        "revenue": 35443.33333333333
+        "fill_rate": 0.7892241501857422,
+        "tickets_sold": 750,
+        "revenue": 38750.0
       },
       {
         "price": 61.22222222222222,
-        "fill_rate": 0.6520349849252095,
-        "tickets_sold": 619,
-        "revenue": 37896.555555555555
+        "fill_rate": 0.7128221372229914,
+        "tickets_sold": 677,
+        "revenue": 41447.444444444445
       },
       {
         "price": 70.77777777777777,
-        "fill_rate": 0.5976930396244646,
-        "tickets_sold": 568,
-        "revenue": 40201.777777777774
+        "fill_rate": 0.6534140648255035,
+        "tickets_sold": 621,
+        "revenue": 43952.99999999999
       },
       {
         "price": 80.33333333333333,
-        "fill_rate": 0.5539606030244797,
-        "tickets_sold": 526,
-        "revenue": 42255.33333333333
+        "fill_rate": 0.6056045919538201,
+        "tickets_sold": 575,
+        "revenue": 46191.666666666664
       },
       {
         "price": 89.88888888888889,
-        "fill_rate": 0.5178366026530921,
-        "tickets_sold": 492,
-        "revenue": 44225.33333333333
+        "fill_rate": 0.5661128656736263,
+        "tickets_sold": 538,
+        "revenue": 48360.22222222222
       },
       {
         "price": 99.44444444444444,
-        "fill_rate": 0.4873803736177509,
-        "tickets_sold": 463,
-        "revenue": 46042.777777777774
+        "fill_rate": 0.5328172990634773,
+        "tickets_sold": 506,
+        "revenue": 50318.88888888889
       },
       {
         "price": 109.0,
-        "fill_rate": 0.46127556906261363,
-        "tickets_sold": 438,
-        "revenue": 47742.0
+        "fill_rate": 0.5042788264278167,
+        "tickets_sold": 479,
+        "revenue": 52211.0
       }
     ],
     "Courtside VIP": [
       {
         "price": 25.0,
-        "fill_rate": 0.9149186730888607,
-        "tickets_sold": 174,
-        "revenue": 4350.0
+        "fill_rate": 0.9986114993274352,
+        "tickets_sold": 190,
+        "revenue": 4750.0
       },
       {
         "price": 38.44444444444444,
-        "fill_rate": 0.839467283951549,
-        "tickets_sold": 159,
-        "revenue": 6112.666666666666
+        "fill_rate": 0.9162581415384085,
+        "tickets_sold": 174,
+        "revenue": 6689.333333333333
       },
       {
         "price": 51.888888888888886,
-        "fill_rate": 0.7905978317822483,
-        "tickets_sold": 150,
-        "revenue": 7783.333333333333
+        "fill_rate": 0.862918322013973,
+        "tickets_sold": 164,
+        "revenue": 8509.777777777777
       },
       {
         "price": 65.33333333333334,
-        "fill_rate": 0.7549940514292683,
-        "tickets_sold": 143,
-        "revenue": 9342.666666666668
+        "fill_rate": 0.8240576609237596,
+        "tickets_sold": 157,
+        "revenue": 10257.333333333334
       },
       {
         "price": 78.77777777777777,
-        "fill_rate": 0.7272600777289558,
-        "tickets_sold": 138,
-        "revenue": 10871.333333333332
+        "fill_rate": 0.7937867025601337,
+        "tickets_sold": 151,
+        "revenue": 11895.444444444443
       },
       {
         "price": 92.22222222222223,
-        "fill_rate": 0.7046985479001817,
-        "tickets_sold": 134,
-        "revenue": 12357.77777777778
+        "fill_rate": 0.7691613409928936,
+        "tickets_sold": 146,
+        "revenue": 13464.444444444445
       },
       {
         "price": 105.66666666666667,
-        "fill_rate": 0.6857769625531879,
-        "tickets_sold": 130,
-        "revenue": 13736.666666666668
+        "fill_rate": 0.7485088903775606,
+        "tickets_sold": 142,
+        "revenue": 15004.666666666668
       },
       {
         "price": 119.11111111111111,
-        "fill_rate": 0.6695454113407393,
-        "tickets_sold": 127,
-        "revenue": 15127.111111111111
+        "fill_rate": 0.7307925466527683,
+        "tickets_sold": 139,
+        "revenue": 16556.444444444445
       },
       {
         "price": 132.55555555555554,
-        "fill_rate": 0.6553765627984713,
-        "tickets_sold": 125,
-        "revenue": 16569.44444444444
+        "fill_rate": 0.7153275927691968,
+        "tickets_sold": 136,
+        "revenue": 18027.555555555555
       },
       {
         "price": 146.0,
-        "fill_rate": 0.6428356032506217,
-        "tickets_sold": 122,
-        "revenue": 17812.0
+        "fill_rate": 0.7016394401656414,
+        "tickets_sold": 133,
+        "revenue": 19418.0
       }
     ]
   }
