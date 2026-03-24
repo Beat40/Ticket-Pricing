@@ -275,8 +275,8 @@ async def get_booking_archetypes():
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         return {
-            "sizes": data.get("cluster_sizes"),
-            "medoids": data.get("medoid_curves")
+            "cluster_sizes": data.get("cluster_sizes"),
+            "medoid_curves": data.get("medoid_curves")
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
