@@ -4,7 +4,7 @@ This document provides a comprehensive technical and strategic breakdown of the 
 
 ---
 
-## 1. Executive Summary (For Clients & Managers)
+## 1. Executive Summary
 The SHV Pricing System is an **AI-driven revenue engine** that replaces static, historical pricing with dynamic, fan-centric optimization.
 
 ### **Key Resilience Features**
