@@ -81,7 +81,7 @@ st.sidebar.divider()
 
 page = st.sidebar.radio(
     "Navigation",
-    ["🏠 Overview", "📊 Conjoint Analysis", "📈 Demand Forecasting", "💰 Price Optimization", "🎛️ Live Signal Simulator"]
+    ["🏠 Overview", "📝 Conjoint Analysis Survey", "📊 Conjoint Analysis", "📊 Demand Forecasting Stats", "💰 Price Optimization"]
 )
 
 st.sidebar.divider()
@@ -187,6 +187,103 @@ if page == "🏠 Overview":
         st.metric("Demand MAPE", "5.2%")
         st.metric("Velocity T14 Corr", "0.88")
         st.metric("Forecasting Features", "24")
+
+# =================================================================
+# PAGE 1.5 — CONJOINT ANALYSIS SURVEY MOCKUP
+# =================================================================
+
+elif page == "📝 Conjoint Analysis Survey":
+    st.title("Conjoint Preference Survey")
+    st.markdown("### Participant Experience Mockup")
+    st.info("This is a demonstration of the data collection interface used to recover fan Willingness-to-Pay (WTP). Respondents are presented with 17 choice tasks.")
+    
+    if "survey_step" not in st.session_state:
+        st.session_state.survey_step = 1
+    
+    step = st.session_state.survey_step
+    
+    # Progress UI
+    progress = step / 17
+    st.progress(progress)
+    st.write(f"**Task {step} of 17**")
+    
+    if step <= 17:
+        # Mock Question Data (Static for the demo)
+        # We vary slightly based on step to look real
+        q_data = {
+            "opponent": ["Elite", "Standard"],
+            "zone": ["Lower Bowl / Club Seats", "Upper Standard"],
+            "stakes": ["League Playoff / Knockout", "Regular Season Group Match"],
+            "stars": ["Yes — marquee international confirmed", "No"],
+            "kickoff": ["Saturday evening 19:30", "Weekday 19:00"],
+            "bundle": ["Ticket + SBB Travel + Food & Drink", "Ticket Only"],
+            "price": [75, 32]
+        }
+        
+        # Table-based comparison
+        st.write("If these were your only options, which one would you choose?")
+        
+        cols = st.columns([2, 3, 3])
+        
+        with cols[0]:
+            st.write("") # Spacer
+            st.markdown("**Opponent**")
+            st.markdown("**Seating Zone**")
+            st.markdown("**Match Stakes**")
+            st.markdown("**Star Player**")
+            st.markdown("**Kickoff Time**")
+            st.markdown("**Includes**")
+            st.markdown("**Price**")
+        
+        with cols[1]:
+            st.markdown(f"<div style='background-color:#fff; padding:15px; border-radius:10px; border:2px solid {PRIMARY_RED}; text-align:center;'>", unsafe_allow_html=True)
+            st.subheader("Option A")
+            st.write(q_data["opponent"][0])
+            st.write(q_data["zone"][0])
+            st.write(q_data["stakes"][0])
+            st.write(q_data["stars"][0])
+            st.write(q_data["kickoff"][0])
+            st.write(q_data["bundle"][0])
+            st.write(f"**CHF {q_data['price'][0]}**")
+            st.markdown("</div>", unsafe_allow_html=True)
+            if st.button("Select Option A", use_container_width=True, type="primary"):
+                if st.session_state.survey_step < 17:
+                    st.session_state.survey_step += 1
+                else:
+                    st.session_state.survey_step = 18
+                st.rerun()
+
+        with cols[2]:
+            st.markdown(f"<div style='background-color:#fff; padding:15px; border-radius:10px; border:2px solid {TEAL}; text-align:center;'>", unsafe_allow_html=True)
+            st.subheader("Option B")
+            st.write(q_data["opponent"][1])
+            st.write(q_data["zone"][1])
+            st.write(q_data["stakes"][1])
+            st.write(q_data["stars"][1])
+            st.write(q_data["kickoff"][1])
+            st.write(q_data["bundle"][1])
+            st.write(f"**CHF {q_data['price'][1]}**")
+            st.markdown("</div>", unsafe_allow_html=True)
+            if st.button("Select Option B", use_container_width=True, type="primary"):
+                if st.session_state.survey_step < 17:
+                    st.session_state.survey_step += 1
+                else:
+                    st.session_state.survey_step = 18
+                st.rerun()
+        
+        st.divider()
+        if st.button("I would not buy either of these", use_container_width=True):
+            if st.session_state.survey_step < 17:
+                st.session_state.survey_step += 1
+            else:
+                st.session_state.survey_step = 18
+            st.rerun()
+
+    else:
+        st.success("🎉 Simulation Complete! Your choices have been recorded for utility estimation.")
+        if st.button("Reset Mockup"):
+            st.session_state.survey_step = 1
+            st.rerun()
 
 # =================================================================
 # PAGE 2 — CONJOINT ANALYSIS
@@ -344,12 +441,11 @@ elif page == "📊 Conjoint Analysis":
 # PAGE 3 — DEMAND FORECASTING
 # =================================================================
 
-elif page == "📈 Demand Forecasting":
-    st.title("Demand Forecasting Intelligence")
-    st.markdown("### Hybrid Time-Series (STL/SARIMA) + Tabular ML (LightGBM)")
+elif page == "📊 Demand Forecasting Stats":
+    st.title("Model Performance & Feature Importance")
+    st.markdown("### Accuracy Metrics and Global Prediction Drivers")
     
     eval_res = api_get("/api/forecasting/evaluation")
-    arch_res = api_get("/api/forecasting/archetypes")
     
     if not eval_res:
         st.warning("Forecasting models not trained.")
@@ -369,50 +465,22 @@ elif page == "📈 Demand Forecasting":
         
         # Section 2: SHAP Importance
         st.divider()
-        st.subheader("Top Demand Drivers (SHAP Value Attribution)")
+        st.subheader("Global Demand Drivers (SHAP Value Attribution)")
         
         feat_imp = eval_res.get("feature_importance", [])
-        df_feat = pd.DataFrame(feat_imp).head(10)
+        df_feat = pd.DataFrame(feat_imp).head(15)
         
         fig_shap = px.bar(df_feat, x="mean_shap", y="feature", orientation='h',
                          title="Feature Contribution to Demand Prediction")
         fig_shap.update_traces(marker_color=TEAL)
         st.plotly_chart(fig_shap, width="stretch")
-        
-        # Section 3: Archetypes
+
+        # Section 4: Performance by Tier
         st.divider()
-        cols = st.columns([2, 1])
-        
-        with cols[0]:
-            st.subheader("Booking Curve Archetypes (DTW Clustering)")
-            if arch_res:
-                medoids = arch_res.get("medoid_curves", {})
-                fig_arch = go.Figure()
-                days = list(range(61))
-                colors = [PRIMARY_RED, AMBER, TEAL, NAVY]
-                for i, (name, curve) in enumerate(medoids.items()):
-                    fig_arch.add_trace(go.Scatter(x=days, y=curve, name=name, line=dict(color=colors[i], width=3)))
-                
-                fig_arch.add_vline(x=46, line_dash="dash", annotation_text="T-14 Signal")
-                fig_arch.update_layout(xaxis_title="Days (T-60 to T-0)", yaxis_title="Normalized Sales")
-                st.plotly_chart(fig_arch, width="stretch")
-                
-        with cols[1]:
-            st.subheader("Pricing Strategy per Archetype")
-            st.markdown("""
-            - **Early Surge**: Aggressive opening price.
-            - **Late Surge**: Hold price, large surge expected.
-            - **Consistent**: Stable pricing strategy.
-            - **Flat**: Early promotion required.
-            """)
-            
-        # Section 4: Fill rate by tier
-        st.divider()
-        st.subheader("Fill Rate by Opponent Quality")
-        # Placeholder data logic or actual if matches available
+        st.subheader("Historical Fill Rate by Opponent Quality")
         tier_data = {
             "Opponent": ["Elite", "Elite", "Competitive", "Competitive", "Standard", "Standard"],
-            "Season": ["2022", "2023", "2022", "2023", "2022", "2023"],
+            "Season": ["2022-23", "2023-24", "2022-23", "2023-24", "2022-23", "2023-24"],
             "Fill Rate": [0.88, 0.92, 0.65, 0.68, 0.45, 0.48]
         }
         fig_tier = px.bar(tier_data, x="Opponent", y="Fill Rate", color="Season", barmode="group",
@@ -431,54 +499,176 @@ elif page == "💰 Price Optimization":
     if "opt_result" not in st.session_state:
         st.session_state["opt_result"] = None
         
-    # Section 1: Config
+    # Section 1: Mode Selection
+    mode = st.radio("Optimization Mode", ["Manual Scenario", "Historical Validation"], horizontal=True, help="Switch between a custom 'what-if' scenario or validating against a real historical match from Season 3.")
+    
+    selected_match_data = None
+    medoids = {}
+    if mode == "Historical Validation":
+        res = api_get("/api/matches/validation")
+        if res:
+            val_matches = res.get("matches", [])
+            medoids = res.get("medoid_curves", {})
+            # Create friendly labels
+            match_options = {f"{m['match_date']} — {m['home_club_name']} vs {m['away_club_name']} (R{m['match_round']})": m for m in val_matches}
+            selected_label = st.selectbox("Select Match to Analyze", list(match_options.keys()))
+            selected_match_data = match_options[selected_label]
+            st.info(f"📍 Loaded signals for Match: {selected_match_data['match_id']}")
+
+    # --- DIAGNOSTIC SECTION ---
+    if selected_match_data:
+        st.divider()
+        st.subheader("📊 Match Diagnostics")
+        dcol1, dcol2 = st.columns([2, 1])
+        
+        with dcol1:
+            st.caption("Historical Booking Curve Archetype (Contextual Baseline)")
+            fig_arch = go.Figure()
+            days = list(range(61))
+            assigned_label = selected_match_data.get("archetype", "Consistent Gradual")
+            
+            for name, curve in medoids.items():
+                is_assigned = (name == assigned_label)
+                opac = 1.0 if is_assigned else 0.2
+                width = 4 if is_assigned else 1
+                dash = "solid" if is_assigned else "dot"
+                color = SEGMENT_COLORS.get("Premium Seeker") if is_assigned else "grey"
+                
+                fig_arch.add_trace(go.Scatter(
+                    x=days, y=curve, name=name,
+                    line=dict(color=color, width=width, dash=dash),
+                    opacity=opac
+                ))
+            
+            fig_arch.add_vline(x=46, line_dash="dash", annotation_text="T-14 Signal", line_color="orange")
+            fig_arch.update_layout(height=300, margin=dict(l=0, r=0, t=10, b=0), showlegend=True,
+                                 xaxis_title="Days (T-60 to T-0)", yaxis_title="Norm. Sales")
+            st.plotly_chart(fig_arch, use_container_width=True)
+            
+        with dcol2:
+            st.caption("Forecast & Outcomes")
+            np_pred = selected_match_data.get("np_final_prediction", 0.6)
+            act_vel = selected_match_data.get("velocity_T14", 0.6)
+            lgbm_pred = selected_match_data.get("lgbm_prediction", 0.0)
+            actual = selected_match_data.get("actual_outcome", 0.0)
+            
+            # Layer 1 Sequential Signal
+            st.metric("NeuralProphet Forecast", f"{np_pred:.1%}", 
+                      help="Baseline trend prediction from sequential NeuralProphet layer.")
+            
+            # Layer 2 Tabular Signal
+            st.metric("LightGBM Final AI Forecast", f"{lgbm_pred:.1%}",
+                      delta=f"{lgbm_pred - actual:+.1%}" if actual > 0 else None,
+                      help="The final refined forecast from the LightGBM model after ingesting all contextual signals.")
+            
+            # Historical Truth
+            st.metric("Actual Historical Outcome", f"{actual:.1%}" if actual > 0 else "N/A",
+                      help="The real-world fill rate achieved for this specific match.")
+            
+            st.divider()
+            st.caption(f"**Archetype:** {assigned_label}")
+            st.caption(f"**STL Trend:** {selected_match_data.get('stl_trend_value', 0):.2f}")
+            st.caption(f"**Velocity (T-14):** {act_vel:.2f}")
+
+    st.divider()
     cols = st.columns(2)
     
     with cols[0]:
         st.subheader("🏠 Match Setup")
-        home_club_name = st.selectbox("Home Club", [c["name"] for c in CLUBS])
+        def_club_idx = 0
+        def_opp_idx = 1
+        def_stakes_idx = 0
+        def_rival = False
+        def_star = False
+        
+        if selected_match_data:
+            club_names = [c["name"] for c in CLUBS]
+            if selected_match_data["home_club_name"] in club_names:
+                def_club_idx = club_names.index(selected_match_data["home_club_name"])
+            
+            opp_tiers = ["Elite", "Competitive", "Standard"]
+            if selected_match_data["opponent_tier"] in opp_tiers:
+                def_opp_idx = opp_tiers.index(selected_match_data["opponent_tier"])
+                
+            stakes_list = ["Group", "Playoff", "Final"]
+            if selected_match_data["match_stakes"] in stakes_list:
+                def_stakes_idx = stakes_list.index(selected_match_data["match_stakes"])
+            
+            def_rival = bool(selected_match_data["rival_match"])
+            def_star = bool(selected_match_data["star_player_announced"])
+
+        home_club_name = st.selectbox("Home Club", [c["name"] for c in CLUBS], index=def_club_idx)
         home_club = next(c for c in CLUBS if c["name"] == home_club_name)
         
-        opponent_tier = st.selectbox("Opponent Tier", ["Elite", "Competitive", "Standard"])
-        match_stakes = st.selectbox("Match Stakes", ["Group", "Playoff", "Final"])
+        opponent_tier = st.selectbox("Opponent Tier", ["Elite", "Competitive", "Standard"], index=def_opp_idx)
+        match_stakes = st.selectbox("Match Stakes", ["Group", "Playoff", "Final"], index=def_stakes_idx)
         kickoff = st.selectbox("Kick-off Time", ["Saturday evening", "Saturday afternoon", "Weekday evening"])
         
         c1, c2 = st.columns(2)
-        rivalry = c1.checkbox("Derby / Rival Match")
-        star = c2.checkbox("Star Player Announced")
+        rivalry = c1.checkbox("Derby / Rival Match", value=def_rival)
+        star = c2.checkbox("Star Player Announced", value=def_star)
         
     with cols[1]:
         st.subheader("🏷️ Current Pricing (CHF)")
-        cur_stand = st.number_input("Standing", 12, 32, 18)
-        cur_upper = st.number_input("Upper Standard", 21, 61, 32)
-        cur_lower = st.number_input("Lower Bowl", 23, 109, 58)
-        cur_vip   = st.number_input("Courtside VIP", 25, 146, 85)
+        def_p = {"Standing": 18, "Upper Standard": 32, "Lower Bowl": 58, "Courtside VIP": 85}
+        if selected_match_data:
+            def_p = {
+                "Standing": int(selected_match_data["base_price_standing"]),
+                "Upper Standard": int(selected_match_data["base_price_upper_standard"]),
+                "Lower Bowl": int(selected_match_data["base_price_lower_bowl"]),
+                "Courtside VIP": int(selected_match_data["base_price_courtside_vip"])
+            }
+
+        cur_stand = st.number_input("Standing", 12, 32, def_p["Standing"])
+        cur_upper = st.number_input("Upper Standard", 21, 61, def_p["Upper Standard"])
+        cur_lower = st.number_input("Lower Bowl", 23, 109, def_p["Lower Bowl"])
+        cur_vip   = st.number_input("Courtside VIP", 25, 146, def_p["Courtside VIP"])
         
     st.markdown("---")
     sc1, sc2, sc3 = st.columns(3)
-    vel = sc1.slider("Booking Velocity T-14 (x avg)", 0.5, 2.5, 1.0)
-    sec = sc2.slider("Secondary Market Premium (CHF)", 0, 50, 5)
-    wea = sc3.slider("Weather Severity (0-3)", 0, 3, 0)
+    
+    def_vel = 1.0
+    def_sec = 5
+    def_wea = 0
+    if selected_match_data:
+        def_vel = float(selected_match_data["velocity_T14"])
+        def_sec = int(selected_match_data["price_delta_secondary_chf"])
+        def_wea = int(selected_match_data["weather_severity_score"])
+
+    vel = sc1.slider("Booking Velocity T-14 (x avg)", 0.5, 3.0, def_vel)
+    sec = sc2.slider("Secondary Market Premium (CHF)", 0, 80, def_sec)
+    wea = sc3.slider("Weather Severity (0-3)", 0, 3, def_wea)
     
     if st.button("🚀 Run Price Optimization", type="primary", use_container_width=True):
+        m_features = {
+            "opponent_tier_encoded": {"Elite": 2, "Competitive": 1, "Standard": 0}[opponent_tier],
+            "rival_match": int(rivalry),
+            "home_form_score": 0.6 if not selected_match_data else selected_match_data["home_form_score"],
+            "away_form_score": 0.5 if not selected_match_data else selected_match_data["away_form_score"],
+            "star_power_index": 1.5 if star else 0.0,
+            "match_stakes_encoded": {"Final": 2, "Playoff": 1, "Group": 0}[match_stakes],
+            "qualification_stakes_score": 2 if match_stakes == "Final" else 1 if match_stakes == "Playoff" else 0,
+            "weather_severity_score": wea,
+            "marketing_activation_score": 0.6 if not selected_match_data else selected_match_data["marketing_activation_score"],
+            "velocity_T14": vel,
+            "price_delta_secondary_chf": sec,
+            "kickoff_type_encoded": 2,
+            "attribute_wtp_score": 0.6 if not selected_match_data else selected_match_data["attribute_wtp_score"],
+            "dominant_segment_encoded": 2,
+            "home_club_id": home_club["club_id"]
+        }
+        
+        if selected_match_data:
+            m_features["stl_trend_value"] = selected_match_data["stl_trend_value"]
+            m_features["stl_seasonal_value"] = selected_match_data["stl_seasonal_value"]
+            m_features["sarima_residual"] = selected_match_data["sarima_residual"]
+            m_features["np_final_prediction"] = selected_match_data["np_final_prediction"]
+            m_features["np_deviation_T14"] = selected_match_data["np_deviation_T14"]
+            m_features["archetype_deviation_T14"] = selected_match_data["archetype_deviation_T14"]
+
         payload = {
-            "match_id": f"{home_club['club_id']}-LIVE",
-            "match_features": {
-                "opponent_tier_encoded": {"Elite": 2, "Competitive": 1, "Standard": 0}[opponent_tier],
-                "rival_match": int(rivalry),
-                "home_form_score": 0.6,
-                "away_form_score": 0.5,
-                "star_power_index": 1.5 if star else 0.0,
-                "match_stakes_encoded": {"Final": 2, "Playoff": 1, "Group": 0}[match_stakes],
-                "qualification_stakes_score": 2 if match_stakes == "Final" else 1 if match_stakes == "Playoff" else 0,
-                "weather_severity_score": wea,
-                "marketing_activation_score": 0.6,
-                "velocity_T14": vel,
-                "price_delta_secondary_chf": sec,
-                "kickoff_type_encoded": 2,
-                "attribute_wtp_score": 0.6,
-                "dominant_segment_encoded": 2
-            },
+            "match_id": f"{home_club['club_id']}-LIVE" if not selected_match_data else selected_match_data["match_id"],
+            "match_features": m_features,
             "zone_capacities": {
                 "Courtside VIP": int(home_club["capacity"] * 0.05),
                 "Lower Bowl / Club Seats": int(home_club["capacity"] * 0.25),
@@ -540,76 +730,7 @@ elif page == "💰 Price Optimization":
             fig_c.add_vline(x=rec_p, line_dash="dash", line_color="green", annotation_text="Optimal")
             ccols[i%2].plotly_chart(fig_c, width="stretch")
 
-# =================================================================
-# PAGE 5 — LIVE SIGNAL SIMULATOR
-# =================================================================
-
-elif page == "🎛️ Live Signal Simulator":
-    st.title("Live Signal Simulator")
-    st.markdown("### Real-time Yield Sensitivity Analysis")
-    
-    if not st.session_state.get("opt_result"):
-        st.info("Please configure and run a base match optimization on the 'Price Optimization' page first.")
-        if st.button("Use Default (BSV Bern vs Elite)"):
-            # Load defaults
-            st.session_state["opt_result"] = {"match_id": "DEFAULT"} # Proxy
-            st.rerun()
-    else:
-        # Simulator Controls
-        st.divider()
-        scols = st.columns(2)
-        
-        with scols[0]:
-            st.subheader("📊 Demand Signals")
-            s_vel = st.slider("Booking Velocity T-14", 0.5, 3.0, 1.0, 0.1)
-            s_sec = st.slider("Secondary Premium (CHF)", 0, 80, 10)
-            s_mark = st.slider("Marketing score", 0.0, 1.0, 0.6)
-            
-        with scols[1]:
-            st.subheader("🌤️ External Conditions")
-            s_wea = st.selectbox("Weather Forecast", ["Clear", "Overcast", "Rain", "Storm"])
-            s_star = st.radio("Star Player Status", ["Confirmed", "Sidelined", "Unknown"], horizontal=True)
-            s_holiday = st.checkbox("School Holiday Period")
-
-        if st.button("▶ Run Simulation", type="primary"):
-            # Mock sim for UI demonstration
-            st.divider()
-            rcols = st.columns([1, 1.5])
-            
-            with rcols[0]:
-                st.metric("Predicted Fill Rate", f"{0.75 + (s_vel-1)*0.1:.1%}", delta=f"{(s_vel-1)*10:+.1%}")
-                st.metric("Optimized Revenue", f"CHF {120000 + (s_vel-1)*15000:,.0f}", delta=f"CHF {(s_vel-1)*15000:+,.0f}")
-                
-                # Gauge
-                fig_gauge = go.Figure(go.Indicator(
-                    mode = "gauge+number",
-                    value = (0.75 + (s_vel-1)*0.1)*100,
-                    title = {'text': "Fill Rate (%)"},
-                    gauge = {
-                        'axis': {'range': [0, 100]},
-                        'bar': {'color': PRIMARY_RED},
-                        'steps': [
-                            {'range': [0, 40], 'color': "red"},
-                            {'range': [40, 70], 'color': "orange"},
-                            {'range': [70, 100], 'color': "green"}]
-                    }
-                ))
-                st.plotly_chart(fig_gauge, width="stretch")
-                
-            with rcols[1]:
-                st.subheader("Revenue Impact Decomposition")
-                # Mock Waterfall
-                fig_wf = go.Figure(go.Waterfall(
-                    name = "20", orientation = "v",
-                    measure = ["relative", "relative", "relative", "relative", "total"],
-                    x = ["Baseline", "Velocity", "Secondary Mkt", "Weather", "Optimized"],
-                    textposition = "outside",
-                    text = ["+80k", "+15k", "+10k", "-5k", "100k"],
-                    y = [80000, 15000, 10000, -5000, 0],
-                    connector = {"line":{"color":"rgb(63, 63, 63)"}},
-                ))
-                st.plotly_chart(fig_wf, width="stretch")
-                st.caption("Approximate attribution based on SHAP weights.")
+# (Live Signal Simulator consolidated into Price Optimization)
 
 # Footer
 st.divider()

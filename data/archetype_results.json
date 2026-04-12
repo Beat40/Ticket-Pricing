@@ -1,1616 +1,1609 @@
 {
   "n_clusters": 4,
-  "cluster_sizes": {
-    "Early Surge": 125,
-    "Late Surge": 12,
-    "Late Surge_2": 47,
-    "Consistent Gradual": 86
-  },
   "medoid_curves": {
-    "Early Surge": [
-      0.06997558991049634,
-      0.07567127746135069,
-      0.10170870626525631,
-      0.10170870626525631,
-      0.10170870626525631,
-      0.10984540276647681,
-      0.12611879576891782,
-      0.1277461350691619,
-      0.14320585842148087,
-      0.14320585842148087,
-      0.14320585842148087,
-      0.14320585842148087,
-      0.14727420667209112,
-      0.14727420667209112,
-      0.16192026037428803,
-      0.1871440195280716,
-      0.19934906427990237,
-      0.19934906427990237,
-      0.19934906427990237,
-      0.22782750203417412,
-      0.23189585028478438,
-      0.2595606183889341,
-      0.2595606183889341,
-      0.26851098454027666,
-      0.27339300244100895,
-      0.28966639544344996,
-      0.3189585028478438,
-      0.33441822620016276,
-      0.33441822620016276,
-      0.3572009764035802,
-      0.3856794141578519,
-      0.41090317331163545,
-      0.41090317331163545,
-      0.4247355573637103,
-      0.4499593165174939,
-      0.4792514239218877,
-      0.4947111472742067,
-      0.5093572009764036,
-      0.5117982099267697,
-      0.532953620829943,
-      0.5711960943856794,
-      0.5947925142392189,
-      0.6045565500406835,
-      0.6419853539462979,
-      0.6419853539462979,
-      0.6712774613506917,
-      0.7030105777054516,
-      0.7388120423108218,
-      0.7388120423108218,
-      0.772986167615948,
-      0.790073230268511,
-      0.7933279088689992,
-      0.8169243287225386,
-      0.8519121236777868,
-      0.8917819365337672,
-      0.9056143205858421,
-      0.9056143205858421,
-      0.9308380797396257,
-      0.9625711960943857,
-      0.9886086248982913,
+    "Consistent Gradual": [
+      0.047325102880658436,
+      0.051440329218107,
+      0.05452674897119342,
+      0.05864197530864197,
+      0.059670781893004114,
+      0.06172839506172839,
+      0.0668724279835391,
+      0.06790123456790123,
+      0.07304526748971193,
+      0.07613168724279835,
+      0.0823045267489712,
+      0.08641975308641975,
+      0.09567901234567901,
+      0.09979423868312758,
+      0.102880658436214,
+      0.11316872427983539,
+      0.11934156378600823,
+      0.12757201646090535,
+      0.1368312757201646,
+      0.1440329218106996,
+      0.14917695473251028,
+      0.15946502057613168,
+      0.1728395061728395,
+      0.1800411522633745,
+      0.19444444444444445,
+      0.20679012345679013,
+      0.21604938271604937,
+      0.22530864197530864,
+      0.23765432098765432,
+      0.25617283950617287,
+      0.2674897119341564,
+      0.2767489711934156,
+      0.294238683127572,
+      0.31275720164609055,
+      0.3230452674897119,
+      0.3446502057613169,
+      0.3559670781893004,
+      0.37448559670781895,
+      0.3940329218106996,
+      0.4125514403292181,
+      0.43004115226337447,
+      0.44753086419753085,
+      0.4711934156378601,
+      0.49074074074074076,
+      0.5133744855967078,
+      0.5329218106995884,
+      0.5606995884773662,
+      0.5874485596707819,
+      0.6131687242798354,
+      0.6460905349794238,
+      0.6759259259259259,
+      0.7109053497942387,
+      0.7407407407407407,
+      0.7746913580246914,
+      0.8127572016460906,
+      0.8477366255144033,
+      0.8775720164609053,
+      0.9094650205761317,
+      0.9444444444444444,
+      0.977366255144033,
       1.0
     ],
     "Late Surge": [
-      0.0,
-      0.0,
-      0.015289406625409537,
-      0.015289406625409537,
-      0.015289406625409537,
-      0.015289406625409537,
-      0.015289406625409537,
-      0.016017473607571896,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017473607571896616,
-      0.017837641062977794,
-      0.017837641062977794,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.02002184200946487,
-      0.023298143429195485,
-      0.045140152894066254,
-      0.045140152894066254,
-      0.045140152894066254,
-      0.045140152894066254,
-      0.045140152894066254,
-      0.056061157626501636,
-      0.08773207135056425,
-      0.08809610484164543,
-      0.11030214779759738,
-      0.12267928649435748,
-      0.1365125591554423,
-      0.17218784128139789,
-      0.20713505642519112,
-      0.2464506734619585,
-      0.2861303239898071,
-      0.31488896978522024,
-      0.3403713141609028,
-      0.39643247178740443,
-      0.4379322897706589,
-      0.5114670549690572,
-      0.5587914088096105,
-      0.6279577721150346,
-      0.6927557335274845,
-      0.7236985802693848,
-      0.7753913360029122,
-      0.819439388423735,
-      0.8685839097196942,
-      0.9199126319621406,
-      0.9555879140880961,
+      0.005122575923893158,
+      0.009879253567508232,
+      0.010245151847786316,
+      0.010245151847786316,
+      0.010245151847786316,
+      0.010245151847786316,
+      0.011708744968898645,
+      0.013904134650567142,
+      0.01609952433223564,
+      0.01646542261251372,
+      0.020124405415294547,
+      0.020490303695572632,
+      0.026344676180021953,
+      0.02707647274057812,
+      0.030735455543358946,
+      0.03219904866447128,
+      0.03658982802780827,
+      0.047932674716428834,
+      0.04903036955726308,
+      0.05598243688254665,
+      0.06659348701061105,
+      0.07757043541895353,
+      0.09184046834979875,
+      0.09696304427369191,
+      0.11269667032564946,
+      0.1309915843395536,
+      0.14343212586900841,
+      0.16136114160263446,
+      0.1836809366995975,
+      0.20234174899377974,
+      0.22502744237102085,
+      0.24807903402854006,
+      0.2747896084888401,
+      0.2982070984266374,
+      0.32235638492499086,
+      0.34906695938529086,
+      0.37980241492864986,
+      0.40541529454811565,
+      0.43468715697036225,
+      0.4654226125137212,
+      0.49066959385290887,
+      0.5206732528357116,
+      0.5415294548115623,
+      0.5755579948774241,
+      0.5964141968532748,
+      0.6304427369191364,
+      0.6509330406147091,
+      0.6791072081961215,
+      0.7043541895353091,
+      0.7343578485181119,
+      0.7570435418953531,
+      0.7841200146359312,
+      0.8174167581412367,
+      0.8401024515184778,
+      0.8686425173801683,
+      0.8887669227954629,
+      0.9220636663007684,
+      0.9451152579582875,
+      0.9659714599341384,
+      0.9828027808269301,
       1.0
     ],
     "Late Surge_2": [
-      0.0054988216810683424,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.025923016496465043,
-      0.03534956794972506,
-      0.03534956794972506,
-      0.03534956794972506,
-      0.04006284367635507,
-      0.05106048703849175,
-      0.05734485467399843,
-      0.05734485467399843,
-      0.05734485467399843,
-      0.05734485467399843,
-      0.08248232521602514,
-      0.08248232521602514,
-      0.0974076983503535,
-      0.0974076983503535,
-      0.11626080125687353,
-      0.11626080125687353,
-      0.13904163393558522,
-      0.13904163393558522,
-      0.15710919088766692,
-      0.1610369206598586,
-      0.1657501963864886,
-      0.19167321288295366,
-      0.194815396700707,
-      0.22230950510604872,
-      0.24587588373919875,
-      0.26865671641791045,
-      0.2827965435978005,
-      0.30007855459544386,
-      0.32285938727415553,
-      0.3676355066771406,
-      0.394344069128044,
-      0.40926944226237233,
-      0.41555380989787905,
-      0.47682639434406915,
-      0.5035349567949725,
-      0.5223880597014925,
-      0.5459544383346425,
-      0.5813040062843676,
-      0.612725844461901,
-      0.6465043205027494,
-      0.6724273369992144,
-      0.7172034564021995,
-      0.7486252945797329,
-      0.779261586802828,
-      0.7973291437549097,
-      0.7973291437549097,
-      0.8311076197957581,
-      0.8546739984289081,
-      0.9049489395129615,
-      0.9104477611940298,
-      0.9465828750981933,
-      0.97643362136685,
-      0.9992144540455616,
+      0.0048575129533678756,
+      0.005505181347150259,
+      0.006476683937823834,
+      0.008419689119170985,
+      0.008419689119170985,
+      0.00939119170984456,
+      0.009715025906735751,
+      0.010362694300518135,
+      0.010362694300518135,
+      0.010362694300518135,
+      0.010686528497409326,
+      0.011658031088082901,
+      0.011981865284974092,
+      0.012953367875647668,
+      0.012953367875647668,
+      0.014248704663212436,
+      0.016191709844559584,
+      0.017487046632124352,
+      0.018134715025906734,
+      0.020401554404145077,
+      0.022344559585492228,
+      0.02493523316062176,
+      0.027849740932642485,
+      0.029468911917098446,
+      0.03238341968911917,
+      0.03594559585492228,
+      0.0391839378238342,
+      0.04404145077720207,
+      0.05019430051813471,
+      0.05408031088082901,
+      0.05893782383419689,
+      0.06930051813471502,
+      0.07253886010362694,
+      0.08063471502590673,
+      0.08516839378238342,
+      0.09326424870466321,
+      0.10362694300518134,
+      0.11917098445595854,
+      0.12888601036269431,
+      0.14604922279792745,
+      0.15803108808290156,
+      0.17713730569948186,
+      0.195919689119171,
+      0.21696891191709844,
+      0.24935233160621761,
+      0.2768782383419689,
+      0.3128238341968912,
+      0.3549222797927461,
+      0.3944300518134715,
+      0.4371761658031088,
+      0.4838082901554404,
+      0.5372409326424871,
+      0.596178756476684,
+      0.6473445595854922,
+      0.707901554404145,
+      0.7587435233160622,
+      0.8099093264248705,
+      0.8652849740932642,
+      0.9102979274611399,
+      0.9588730569948186,
       1.0
     ],
-    "Consistent Gradual": [
-      0.01038781163434903,
-      0.01038781163434903,
-      0.02008310249307479,
-      0.02008310249307479,
-      0.02008310249307479,
-      0.02008310249307479,
-      0.027008310249307478,
-      0.027008310249307478,
-      0.035318559556786706,
-      0.035318559556786706,
-      0.035318559556786706,
-      0.035318559556786706,
-      0.035318559556786706,
-      0.035318559556786706,
-      0.046398891966759004,
-      0.05055401662049862,
-      0.05055401662049862,
-      0.061634349030470915,
-      0.09279778393351801,
-      0.09487534626038781,
-      0.09487534626038781,
-      0.09487534626038781,
-      0.13227146814404434,
-      0.1523545706371191,
-      0.1523545706371191,
-      0.16966759002770082,
-      0.19736842105263158,
-      0.24445983379501385,
-      0.278393351800554,
-      0.31509695290858725,
-      0.32617728531855955,
-      0.3628808864265928,
-      0.3801939058171745,
-      0.43698060941828254,
-      0.4605263157894737,
-      0.5041551246537396,
-      0.53601108033241,
-      0.5706371191135734,
-      0.6232686980609419,
-      0.6689750692520776,
-      0.7022160664819944,
-      0.7306094182825484,
-      0.7416897506925207,
-      0.7811634349030471,
-      0.8116343490304709,
-      0.8552631578947368,
-      0.8739612188365651,
-      0.8975069252077562,
-      0.8975069252077562,
-      0.9231301939058172,
-      0.9259002770083102,
-      0.9487534626038782,
-      0.9542936288088643,
-      0.961218836565097,
-      0.961218836565097,
-      0.9757617728531855,
-      0.9757617728531855,
-      0.989612188365651,
-      1.010387811634349,
-      1.010387811634349,
+    "Late Surge_3": [
+      0.007611798287345386,
+      0.010466222645099905,
+      0.012369172216936251,
+      0.012369172216936251,
+      0.017126546146527116,
+      0.019029495718363463,
+      0.02093244529019981,
+      0.02093244529019981,
+      0.02093244529019981,
+      0.024738344433872503,
+      0.028544243577545196,
+      0.029495718363463368,
+      0.030447193149381543,
+      0.03425309229305423,
+      0.03615604186489058,
+      0.037107516650808754,
+      0.047573739295908656,
+      0.05233111322549953,
+      0.056137012369172214,
+      0.06374881065651761,
+      0.0675547098001903,
+      0.07231208372978117,
+      0.08468125594671741,
+      0.09514747859181731,
+      0.09990485252140818,
+      0.10846812559467174,
+      0.12178877259752617,
+      0.13606089438629876,
+      0.1455756422454805,
+      0.1560418648905804,
+      0.1731684110371075,
+      0.1912464319695528,
+      0.20361560418648905,
+      0.22074215033301617,
+      0.23977164605137963,
+      0.25784966698382494,
+      0.27402473834443386,
+      0.2940057088487155,
+      0.3149381541389153,
+      0.33777354900095147,
+      0.3644148430066603,
+      0.3815413891531874,
+      0.41198858230256896,
+      0.4357754519505233,
+      0.46241674595623217,
+      0.4871550903901047,
+      0.5214081826831589,
+      0.5575642245480494,
+      0.5899143672692674,
+      0.6194100856327307,
+      0.659372026641294,
+      0.6955280685061845,
+      0.7278782112274025,
+      0.7716460513796385,
+      0.8068506184586108,
+      0.840152235965747,
+      0.8772597526165556,
+      0.9105613701236918,
+      0.9391056137012369,
+      0.9705042816365367,
       1.0
     ]
   },
   "match_archetype_assignments": {
-    "WIN2_2021_R01_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.014199388894262754,
-      "archetype_deviation_T7": 0.02151444974878658
-    },
-    "THU_2021_R01_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0032643254696465007,
-      "archetype_deviation_T7": -0.0032003646927207807
-    },
     "LUZ_2021_R01_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.006866999535237284,
-      "archetype_deviation_T7": -0.003947125968597587
-    },
-    "HSC_2021_R01_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.22198129691799284,
-      "archetype_deviation_T7": -0.10845810036877801
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.006288266103388285,
+      "archetype_deviation_T7": -0.005222693715404958
     },
     "THG_2021_R01_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.004650712617129016,
-      "archetype_deviation_T7": -0.01017825271004491
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0010549184266047673,
+      "archetype_deviation_T7": -0.0018487184307827143
+    },
+    "WIN2_2021_R01_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.00875635843998368,
+      "archetype_deviation_T7": 0.00122097859630943
+    },
+    "THU_2021_R01_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.004501539384192288,
+      "archetype_deviation_T7": 0.0007507068080192525
+    },
+    "HSC_2021_R01_WIN": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0068613775681261036,
+      "archetype_deviation_T7": -0.009224577935892042
+    },
+    "RTV_2021_R02_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.013220348106066204,
+      "archetype_deviation_T7": 0.0077105444723359895
     },
     "BSV_2021_R02_WIN2": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.22734200175471453,
-      "archetype_deviation_T7": -0.10748218176082658
+      "archetype_deviation_T14": 0.0005417452961563596,
+      "archetype_deviation_T7": -0.0014988852614031822
     },
     "THG_2021_R02_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.016599427879667616,
-      "archetype_deviation_T7": -0.006964388486149109
-    },
-    "KAD_2021_R02_WIN": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.026510395873899473,
-      "archetype_deviation_T7": -0.016216829339083305
-    },
-    "RTV_2021_R02_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.016874505818416985,
-      "archetype_deviation_T7": -0.002425602496785473
+      "archetype_deviation_T14": -0.0006995884773661754,
+      "archetype_deviation_T7": -0.003580246913580276
     },
     "GC_2021_R02_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.013370956404918366,
-      "archetype_deviation_T7": 0.015223713845220255
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0022664430056494878,
+      "archetype_deviation_T7": 0.008241533441754378
+    },
+    "KAD_2021_R02_WIN": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0024831084536138803,
+      "archetype_deviation_T7": 0.0042039667009838855
     },
     "THU_2021_R03_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.020178375959573835,
-      "archetype_deviation_T7": -0.0022515999144502308
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0004359349933737988,
+      "archetype_deviation_T7": 0.0021448001673990413
     },
     "LUZ_2021_R03_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.0023205472867181554,
-      "archetype_deviation_T7": 0.0046695063039486895
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0018003395459039728,
+      "archetype_deviation_T7": -0.004979384712971768
     },
     "HSC_2021_R03_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.019228486284036506,
-      "archetype_deviation_T7": 0.020974538814386046
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0017770295548072967,
+      "archetype_deviation_T7": 0.0008417508417508657
     },
     "WIN_2021_R03_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.00275110993055816,
-      "archetype_deviation_T7": 0.013170681004885165
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0048046643033236025,
+      "archetype_deviation_T7": 0.006138362500742067
     },
     "KAD_2021_R03_GC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.224194701590695,
-      "archetype_deviation_T7": 0.1460745605736733
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0036148921944298973,
+      "archetype_deviation_T7": -0.006891577161387441
     },
     "BSV_2021_R04_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.005840353971567014,
-      "archetype_deviation_T7": 0.007559926011654228
-    },
-    "THU_2021_R04_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.015075571777322438,
-      "archetype_deviation_T7": 0.030651805697958223
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0022022718405146913,
+      "archetype_deviation_T7": 0.007419554318779165
     },
     "WIN2_2021_R04_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.0027543205027493745,
-      "archetype_deviation_T7": 0.029829880204241932
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0013790493983810714,
+      "archetype_deviation_T7": 0.0003859952336171535
     },
     "THG_2021_R04_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0072122583777205485,
-      "archetype_deviation_T7": -0.018298678299635496
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006075655822308068,
+      "archetype_deviation_T7": 0.0070675996300317845
     },
     "RTV_2021_R04_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.00168137602267604,
-      "archetype_deviation_T7": 0.0074470141080976715
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0027301848786185356,
+      "archetype_deviation_T7": 0.001108774478567942
+    },
+    "THU_2021_R04_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.004046362771386591,
+      "archetype_deviation_T7": -0.001646051379638469
     },
     "HSC_2021_R05_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0007904871292480076,
-      "archetype_deviation_T7": -0.013251356890300214
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.00852641884475036,
+      "archetype_deviation_T7": -0.0006014120174383519
     },
     "WIN_2021_R05_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.009407884102758057,
-      "archetype_deviation_T7": 0.015091243325580206
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0016220100002740656,
+      "archetype_deviation_T7": 0.004566491642292503
     },
     "KAD_2021_R05_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.021229868719466416,
-      "archetype_deviation_T7": 0.02112992083993781
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0002760212787313865,
+      "archetype_deviation_T7": 0.005118940078289724
     },
     "GC_2021_R05_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.0038255569713316895,
-      "archetype_deviation_T7": 0.01809124919575933
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.007180497175738654,
+      "archetype_deviation_T7": 0.004323631268670525
     },
     "RTV_2021_R05_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0018877243368915497,
-      "archetype_deviation_T7": 0.00046568345563458013
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0002026671617315623,
+      "archetype_deviation_T7": 0.0027522509978650245
     },
     "BSV_2021_R06_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.0002115753386807695,
-      "archetype_deviation_T7": 0.005658800725034774
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0015412580185872882,
+      "archetype_deviation_T7": 0.0062675933378474324
     },
     "HSC_2021_R06_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.01632888190625814,
-      "archetype_deviation_T7": 0.015208169677926153
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.00048641191299514386,
+      "archetype_deviation_T7": -0.0051208846119004114
+    },
+    "LUZ_2021_R06_GC": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004558627485075073,
+      "archetype_deviation_T7": 0.008407233524604374
     },
     "THU_2021_R06_RTV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.03382799652182733,
-      "archetype_deviation_T7": 0.01380197942158079
+      "archetype_deviation_T14": 0.002722240431188294,
+      "archetype_deviation_T7": 0.004069703922211287
     },
     "WIN2_2021_R06_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.01127513658026269,
-      "archetype_deviation_T7": 0.014272324785142732
-    },
-    "LUZ_2021_R06_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.023673345736640705,
-      "archetype_deviation_T7": -0.0020095895647264106
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00016183474360753625,
+      "archetype_deviation_T7": -0.0003467887363018951
     },
     "KAD_2021_R07_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.030183242113198894,
-      "archetype_deviation_T7": -0.008667359394103236
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.005740263650336308,
+      "archetype_deviation_T7": -0.0031087960767989253
     },
     "GC_2021_R07_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.012518610703631472,
-      "archetype_deviation_T7": 0.0018933772132150306
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0004757373929591413,
+      "archetype_deviation_T7": -0.004281636536631828
     },
     "RTV_2021_R07_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.005290582590111836,
-      "archetype_deviation_T7": 0.03151325382878345
-    },
-    "THG_2021_R07_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.00775098402599339,
-      "archetype_deviation_T7": -0.009925667695845464
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.005290096493813845,
+      "archetype_deviation_T7": -0.0030678362456039165
     },
     "WIN2_2021_R07_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.014667019423243,
-      "archetype_deviation_T7": -0.008967338401713154
-    },
-    "BSV_2021_R08_GC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.025436628672630635,
-      "archetype_deviation_T7": -0.008431951319195385
+      "archetype_deviation_T14": 0.0,
+      "archetype_deviation_T7": 0.0
     },
-    "KAD_2021_R08_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.024386499081373025,
-      "archetype_deviation_T7": 0.009512937747274686
-    },
-    "HSC_2021_R08_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.015418178180652053,
-      "archetype_deviation_T7": 0.0009772740868886354
-    },
-    "LUZ_2021_R08_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0142383305914916,
-      "archetype_deviation_T7": 0.006166478942300491
+    "THG_2021_R07_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.002283746893207761,
+      "archetype_deviation_T7": 0.0035264637574868862
     },
     "WIN_2021_R08_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0020041715570852103,
-      "archetype_deviation_T7": -0.01710386409076614
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.003270715980000616,
+      "archetype_deviation_T7": -0.00019188489508126239
+    },
+    "BSV_2021_R08_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0017320810538887788,
+      "archetype_deviation_T7": 0.0014386840551027236
+    },
+    "HSC_2021_R08_WIN2": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0014544522031126883,
+      "archetype_deviation_T7": -0.0029936511482908656
+    },
+    "LUZ_2021_R08_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0036474086627672486,
+      "archetype_deviation_T7": -0.004433970036130774
+    },
+    "KAD_2021_R08_RTV": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006840216350574191,
+      "archetype_deviation_T7": 0.005996880290665585
     },
     "RTV_2021_R09_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.015134800962761985,
-      "archetype_deviation_T7": -0.011550287584002006
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.001509162213140125,
+      "archetype_deviation_T7": -0.006074503492000782
     },
     "THG_2021_R09_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0072611369895679845,
-      "archetype_deviation_T7": -0.012985949181142487
-    },
-    "WIN2_2021_R09_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.02390610009351135,
-      "archetype_deviation_T7": 0.009495125789164116
-    },
-    "LUZ_2021_R09_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.017341404211120293,
-      "archetype_deviation_T7": -0.0048249915329318105
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.003365212700837006,
+      "archetype_deviation_T7": -0.0029682357861051667
     },
     "THU_2021_R09_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.015095571065345315,
-      "archetype_deviation_T7": -0.016586758471943464
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.00548022387827396,
+      "archetype_deviation_T7": 0.0014054649707700984
+    },
+    "WIN2_2021_R09_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.008840857728042217,
+      "archetype_deviation_T7": -0.005039229117519972
+    },
+    "LUZ_2021_R09_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0011066856261019442,
+      "archetype_deviation_T7": 0.0032052655277531317
     },
     "BSV_2021_R10_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.02169189638677027,
-      "archetype_deviation_T7": 0.011993201766000161
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005565471763597674,
+      "archetype_deviation_T7": 0.001915067678119886
     },
     "RTV_2021_R10_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.011218667169476837,
-      "archetype_deviation_T7": 0.008631321466025854
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.002837324268350039,
+      "archetype_deviation_T7": 0.001497387074074652
     },
     "GC_2021_R10_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.016172453650988627,
-      "archetype_deviation_T7": -0.011770923476072226
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0002829218106995546,
+      "archetype_deviation_T7": 0.002912808641975295
     },
     "KAD_2021_R10_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.022411700600024287,
-      "archetype_deviation_T7": 0.01458818823737229
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0021457153900370507,
+      "archetype_deviation_T7": 0.003623559102380436
     },
     "WIN_2021_R10_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.014469688468117359,
-      "archetype_deviation_T7": 0.010450821762683415
-    },
-    "WIN2_2021_R11_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.008658418237013077,
-      "archetype_deviation_T7": 0.013536381305601863
-    },
-    "THU_2021_R11_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.02095929565416954,
-      "archetype_deviation_T7": 0.00791693615127309
-    },
-    "HSC_2021_R11_GC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.008008109764189975,
-      "archetype_deviation_T7": -0.00046450425113164773
+      "archetype_deviation_T14": -5.946858869121385e-06,
+      "archetype_deviation_T7": -0.0010882751730535434
     },
     "LUZ_2021_R11_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0006591470651905462,
-      "archetype_deviation_T7": -0.004205701659438121
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.009411112629644891,
+      "archetype_deviation_T7": 0.00021639105279946946
+    },
+    "WIN2_2021_R11_BSV": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.01051592233546006,
+      "archetype_deviation_T7": 0.01054354130416768
+    },
+    "THU_2021_R11_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0018946799992551888,
+      "archetype_deviation_T7": 0.005097480587676673
     },
     "WIN_2021_R11_KAD": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.03239979518558922,
-      "archetype_deviation_T7": 0.0031898890376584887
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.003539436744237512,
+      "archetype_deviation_T7": -0.0023153171366235847
+    },
+    "HSC_2021_R11_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0011257188420694675,
+      "archetype_deviation_T7": 0.0014197064776685364
     },
     "BSV_2021_R12_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.01434922010211448,
-      "archetype_deviation_T7": 0.021049575222478634
-    },
-    "THG_2021_R12_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.01127513658026269,
-      "archetype_deviation_T7": 0.013552508777136874
-    },
-    "RTV_2021_R12_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.01588063068145662,
-      "archetype_deviation_T7": 0.010038639799932136
-    },
-    "GC_2021_R12_KAD": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.028248983458021848,
-      "archetype_deviation_T7": -0.012169679765671071
+      "archetype_deviation_T14": -0.004375097896820335,
+      "archetype_deviation_T7": 0.005393224828057597
     },
     "WIN2_2021_R12_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.014202570426106731,
-      "archetype_deviation_T7": 0.005230733465070303
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0006473691562174366,
+      "archetype_deviation_T7": 0.0033765270928021174
+    },
+    "THG_2021_R12_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.004436903309790741,
+      "archetype_deviation_T7": -0.006632996549351233
+    },
+    "RTV_2021_R12_WIN": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0041890869414145104,
+      "archetype_deviation_T7": -0.00236277492912651
+    },
+    "GC_2021_R12_KAD": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0,
+      "archetype_deviation_T7": 0.0
     },
     "LUZ_2021_R13_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0045163040149784894,
-      "archetype_deviation_T7": -0.013202446258431921
-    },
-    "WIN_2021_R13_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.01813182267855451,
-      "archetype_deviation_T7": 0.03051117915985546
-    },
-    "KAD_2021_R13_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.00035132077839805653,
-      "archetype_deviation_T7": -0.014074285839948963
-    },
-    "GC_2021_R13_RTV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.028627024454905392,
-      "archetype_deviation_T7": -0.00028890437265272073
+      "archetype_deviation_T14": 0.003694350916573219,
+      "archetype_deviation_T7": -0.0019640852974186496
     },
     "HSC_2021_R13_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.003978669606376384,
-      "archetype_deviation_T7": -0.009842231204668539
-    },
-    "BSV_2021_R14_HSC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.002716633512428235,
-      "archetype_deviation_T7": 0.0010294855825540017
+      "archetype_deviation_T14": 0.002876570463031136,
+      "archetype_deviation_T7": -0.0005191725942277348
+    },
+    "WIN_2021_R13_WIN2": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.001009270625135339,
+      "archetype_deviation_T7": -0.007366812939021972
+    },
+    "KAD_2021_R13_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.004023030613864775,
+      "archetype_deviation_T7": 0.0009762977616587509
+    },
+    "GC_2021_R13_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0054438411229683625,
+      "archetype_deviation_T7": -0.0027453994219085454
     },
     "LUZ_2021_R14_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.008345424470491358,
-      "archetype_deviation_T7": -0.015362747968365675
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004148896371118593,
+      "archetype_deviation_T7": 0.0071268237934905
     },
     "THU_2021_R14_KAD": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.25001925994901975,
-      "archetype_deviation_T7": -0.10873999738734608
-    },
-    "THG_2021_R14_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.008864819043563954,
-      "archetype_deviation_T7": -0.0036445012166159696
+      "archetype_deviation_T14": -1.3572646231696517e-05,
+      "archetype_deviation_T7": -0.0029235479983061863
     },
     "WIN2_2021_R14_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0017979101607460413,
+      "archetype_deviation_T7": 0.0014349726217783854
+    },
+    "BSV_2021_R14_HSC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.009164074495259467,
+      "archetype_deviation_T7": 0.004513372531793514
+    },
+    "THG_2021_R14_RTV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 4.106166514528109e-05,
-      "archetype_deviation_T7": -0.003978243634652268
+      "archetype_deviation_T14": -0.003954406464518279,
+      "archetype_deviation_T7": -0.0016720860760832679
     },
     "WIN_2021_R15_BSV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.008496586381641413,
-      "archetype_deviation_T7": 0.0031824579332848657
-    },
-    "KAD_2021_R15_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.006701688923802074,
-      "archetype_deviation_T7": 0.020866064414768237
+      "archetype_deviation_T14": 0.001244285581497584,
+      "archetype_deviation_T7": 0.002858265520825465
     },
     "GC_2021_R15_LUZ": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": 0.0018047093071622555,
-      "archetype_deviation_T7": -0.023711973397824937
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0021583216827405494,
+      "archetype_deviation_T7": 0.005538968270894062
     },
     "RTV_2021_R15_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.01191070908441838,
-      "archetype_deviation_T7": 0.017013269888263904
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": 0.006063617290819001,
+      "archetype_deviation_T7": 0.00692452191515458
+    },
+    "KAD_2021_R15_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0025714091535757877,
+      "archetype_deviation_T7": 0.0028437445387288207
     },
     "THG_2021_R15_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.005896285757906905,
-      "archetype_deviation_T7": 0.0038543780326892874
-    },
-    "BSV_2021_R16_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0095323168358864,
-      "archetype_deviation_T7": 0.00678352849612629
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0028453084316618638,
+      "archetype_deviation_T7": -0.003981380720955885
     },
     "WIN_2021_R16_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.02975166001303564,
-      "archetype_deviation_T7": -0.004417365976861709
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.005022638055650952,
+      "archetype_deviation_T7": 0.0025568282599155445
     },
     "HSC_2021_R16_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.020672854586986644,
-      "archetype_deviation_T7": -0.005485278386344827
-    },
-    "LUZ_2021_R16_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.007966105024384218,
-      "archetype_deviation_T7": 0.0032340008457202307
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0006721912521160389,
+      "archetype_deviation_T7": -0.0022110523904556034
     },
     "THU_2021_R16_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.0006172146784872989,
-      "archetype_deviation_T7": 0.01963864886095834
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0034733339045187606,
+      "archetype_deviation_T7": -0.002688705408074532
+    },
+    "BSV_2021_R16_KAD": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005514589501517619,
+      "archetype_deviation_T7": 0.0005725937098486344
+    },
+    "LUZ_2021_R16_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.003322539297038407,
+      "archetype_deviation_T7": 0.002826206378118923
     },
     "GC_2021_R17_BSV": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.2055912804671155,
-      "archetype_deviation_T7": 0.146377659040404
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.005144755171352489,
+      "archetype_deviation_T7": 0.0004161870552660263
     },
     "RTV_2021_R17_KAD": {
       "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.004968047387528873,
-      "archetype_deviation_T7": 0.009957325746799417
+      "archetype_deviation_T14": 0.005515266149129561,
+      "archetype_deviation_T7": -3.857836947640525e-05
     },
     "THG_2021_R17_WIN": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.025664005214274033,
-      "archetype_deviation_T7": -0.004562489815870929
+      "archetype_deviation_T14": -0.0027596743142761504,
+      "archetype_deviation_T7": -0.0021591691834896842
     },
     "THU_2021_R17_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.00801603826413011,
-      "archetype_deviation_T7": -0.010340514045340643
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00021411710639007708,
+      "archetype_deviation_T7": 0.0032274237011969964
     },
     "WIN2_2021_R17_HSC": {
       "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.015931072095106136,
-      "archetype_deviation_T7": 0.009656711414433028
-    },
-    "BSV_2021_R18_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.00030820159518574197,
-      "archetype_deviation_T7": -0.017253319323717653
-    },
-    "GC_2021_R18_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.00776721487359322,
-      "archetype_deviation_T7": -0.007885575005220469
+      "archetype_deviation_T14": -0.00016233548888083815,
+      "archetype_deviation_T7": 0.0017510476496499505
     },
     "KAD_2021_R18_WIN2": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.009638664534914965,
-      "archetype_deviation_T7": -0.020391061162812196
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0046439215252579436,
+      "archetype_deviation_T7": -0.0006039672113018479
     },
     "WIN_2021_R18_THU": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.01120260348914065,
-      "archetype_deviation_T7": -0.02394356266733244
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005679044672672995,
+      "archetype_deviation_T7": 0.0053557747325749805
     },
     "HSC_2021_R18_LUZ": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.011892253319323753,
-      "archetype_deviation_T7": -0.006872066288263534
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.002433830504124601,
+      "archetype_deviation_T7": -0.004794394646439937
+    },
+    "BSV_2021_R18_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0014102410388873166,
+      "archetype_deviation_T7": 0.002686519849496749
+    },
+    "GC_2021_R18_THG": {
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": -0.0026911051583674017,
+      "archetype_deviation_T7": 0.00011416492082050311
     },
     "THG_2022_R01_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.024026743987206833,
-      "archetype_deviation_T7": -0.00202759711889533
-    },
-    "THU_2022_R01_GC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.00491359978894601,
-      "archetype_deviation_T7": 0.005447830101569684
-    },
-    "LUZ_2022_R01_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.01868052471529269,
-      "archetype_deviation_T7": -0.012396605131231198
-    },
-    "HSC_2022_R01_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.006071730714605206,
-      "archetype_deviation_T7": 0.018948803474531095
+      "archetype_deviation_T14": -0.002608302170312271,
+      "archetype_deviation_T7": -0.0008324368628656043
     },
     "WIN2_2022_R01_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.003788233560489962,
+      "archetype_deviation_T7": -0.0027873206879887036
+    },
+    "THU_2022_R01_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.00991673176768848,
+      "archetype_deviation_T7": 0.0028414028062565544
+    },
+    "LUZ_2022_R01_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0015883628633390767,
+      "archetype_deviation_T7": -0.004078483812070877
+    },
+    "HSC_2022_R01_WIN": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.009218717421737743,
-      "archetype_deviation_T7": -0.001965865427575819
+      "archetype_deviation_T14": -0.001283677097708602,
+      "archetype_deviation_T7": 0.0022472119652381384
     },
     "BSV_2022_R02_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.009734242050438269,
-      "archetype_deviation_T7": 0.010421115039215723
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0005043607116395066,
+      "archetype_deviation_T7": 0.00188131008810688
     },
     "THG_2022_R02_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.012675696804352321,
-      "archetype_deviation_T7": -0.0017720676553778514
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00489807916111773,
+      "archetype_deviation_T7": -0.0006388798905805348
     },
     "KAD_2022_R02_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.03251579110795155,
-      "archetype_deviation_T7": 0.00891390679773485
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.007919020824256107,
+      "archetype_deviation_T7": 0.00589593166664748
     },
     "RTV_2022_R02_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0073716634023104355,
-      "archetype_deviation_T7": -0.016901449691815507
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.008097811305948999,
+      "archetype_deviation_T7": 0.004290223773791846
     },
     "GC_2022_R02_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.014045077590778221,
-      "archetype_deviation_T7": 0.017746763216288652
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006310720800984271,
+      "archetype_deviation_T7": 0.006236477026855036
     },
     "THU_2022_R03_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.017041750501928687,
-      "archetype_deviation_T7": -0.0010937388324934183
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.009129761926184532,
+      "archetype_deviation_T7": 6.148290775165322e-05
     },
     "LUZ_2022_R03_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.016187228468720005,
-      "archetype_deviation_T7": 0.013439944009346338
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.004087166516877128,
+      "archetype_deviation_T7": 0.0012561811068896311
     },
     "HSC_2022_R03_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0025863995506265613,
-      "archetype_deviation_T7": -0.00355581402773375
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0070256221512792205,
+      "archetype_deviation_T7": 0.0004220573998063859
     },
     "WIN_2022_R03_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.01767054638537202,
-      "archetype_deviation_T7": 0.0154622914175494
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.003075398203856272,
+      "archetype_deviation_T7": 0.003251978861269045
     },
     "KAD_2022_R03_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.010358827207267662,
-      "archetype_deviation_T7": -0.0030723492706276057
-    },
-    "BSV_2022_R04_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.005423081952818265,
-      "archetype_deviation_T7": 0.01624961604358599
-    },
-    "WIN2_2022_R04_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.004983545511065612,
-      "archetype_deviation_T7": 0.012341680473680894
-    },
-    "THG_2022_R04_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.013569845133838965,
-      "archetype_deviation_T7": 0.011908449425502732
-    },
-    "RTV_2022_R04_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.034368294193967586,
-      "archetype_deviation_T7": -0.0038648263882130607
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.006240303184541496,
+      "archetype_deviation_T7": 0.0019832095615965883
     },
     "THU_2022_R04_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0,
+      "archetype_deviation_T7": 0.0
+    },
+    "BSV_2022_R04_LUZ": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.01877829200729675,
-      "archetype_deviation_T7": -0.0031395682724140173
+      "archetype_deviation_T14": -0.0008309709796057163,
+      "archetype_deviation_T7": 0.007631723492179332
     },
-    "WIN_2022_R05_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.019622419810714775,
-      "archetype_deviation_T7": 0.002528665795897389
+    "WIN2_2022_R04_WIN": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.00033817524213552996,
+      "archetype_deviation_T7": 0.003354029383212831
     },
-    "KAD_2022_R05_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.011703658722601262,
-      "archetype_deviation_T7": -0.012763690797834126
+    "THG_2022_R04_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.003745191549969884,
+      "archetype_deviation_T7": -0.004774885735466694
     },
-    "RTV_2022_R05_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.015592491204796333,
-      "archetype_deviation_T7": -0.013773198382898144
+    "RTV_2022_R04_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0030165803195045804,
+      "archetype_deviation_T7": 0.008515792550976786
     },
     "HSC_2022_R05_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.006993061888270646,
+      "archetype_deviation_T7": 0.004951183761617517
+    },
+    "WIN_2022_R05_LUZ": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0163282857319339,
-      "archetype_deviation_T7": -0.005386932619985463
+      "archetype_deviation_T14": 0.005988765458873169,
+      "archetype_deviation_T7": 0.0027972561587829015
+    },
+    "KAD_2022_R05_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0014510335640713912,
+      "archetype_deviation_T7": -0.0001248840362521042
     },
     "GC_2022_R05_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.018185674981716193,
-      "archetype_deviation_T7": 0.013068421069294955
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004065253465579066,
+      "archetype_deviation_T7": -0.0009827998134346316
+    },
+    "RTV_2022_R05_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0028046196328097572,
+      "archetype_deviation_T7": 0.0030439135896926928
     },
     "BSV_2022_R06_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0130277227134592,
-      "archetype_deviation_T7": -0.01588579213978558
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0007888172855242681,
+      "archetype_deviation_T7": 0.0044673417841040175
     },
     "HSC_2022_R06_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.015269020659904764,
-      "archetype_deviation_T7": 0.004476643269420988
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.00010798542393108956,
+      "archetype_deviation_T7": 0.00011780228065216836
     },
     "LUZ_2022_R06_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0025815275577062424,
-      "archetype_deviation_T7": 0.003351034216950044
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0048046643033236025,
+      "archetype_deviation_T7": 0.0016651892513012134
     },
     "THU_2022_R06_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.009397803254353798,
-      "archetype_deviation_T7": -0.00859875042429381
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -8.049991330771888e-05,
+      "archetype_deviation_T7": 0.008627644554844327
     },
     "WIN2_2022_R06_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.014071272828356185,
-      "archetype_deviation_T7": 0.018194637888049536
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004604499259423411,
+      "archetype_deviation_T7": 0.006963676870622715
     },
     "KAD_2022_R07_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0023353620316638457,
-      "archetype_deviation_T7": 0.002284813069939551
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.011285792782164683,
+      "archetype_deviation_T7": -0.000986934934413819
     },
     "GC_2022_R07_WIN": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.24747565007595385,
-      "archetype_deviation_T7": -0.10722902332231266
-    },
-    "RTV_2022_R07_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0013669095031896283,
-      "archetype_deviation_T7": -0.013083243632306396
+      "archetype_deviation_T14": 0.0019621490457391033,
+      "archetype_deviation_T7": 0.004975924784920482
     },
     "THG_2022_R07_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.007515738084022061,
-      "archetype_deviation_T7": -0.003958907303517778
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.003939194792595746,
+      "archetype_deviation_T7": 0.0009740412148523392
     },
     "WIN2_2022_R07_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.009150928582644546,
-      "archetype_deviation_T7": 0.02177208684852905
-    },
-    "BSV_2022_R08_GC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.03365703632705941,
-      "archetype_deviation_T7": -0.013636001149561983
+      "archetype_deviation_T14": 0.00776122360950815,
+      "archetype_deviation_T7": -0.00037596614556012486
     },
-    "KAD_2022_R08_RTV": {
+    "RTV_2022_R07_HSC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.022560488020487157,
-      "archetype_deviation_T7": -0.014406006682839534
+      "archetype_deviation_T14": 0.0015969489597453812,
+      "archetype_deviation_T7": 0.006900829012893683
     },
     "WIN_2022_R08_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0,
-      "archetype_deviation_T7": 0.0
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.004672423791457936,
+      "archetype_deviation_T7": 0.006293361839485256
     },
     "HSC_2022_R08_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.0004647165423533606,
-      "archetype_deviation_T7": 0.024709211887410265
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 3.884574061374657e-05,
+      "archetype_deviation_T7": -0.008855353705219837
     },
     "LUZ_2022_R08_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.006117210786895755,
-      "archetype_deviation_T7": 0.001152527875529774
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0023131765877696386,
+      "archetype_deviation_T7": -0.0018675788314853614
+    },
+    "BSV_2022_R08_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0016529536818105095,
+      "archetype_deviation_T7": 0.0007016777942089325
+    },
+    "KAD_2022_R08_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0021358216607400005,
+      "archetype_deviation_T7": 0.003460422733019164
     },
     "RTV_2022_R09_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.02194763319852533,
-      "archetype_deviation_T7": 0.014763696185994712
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.007184569853759815,
+      "archetype_deviation_T7": 0.0015907219584000432
     },
     "THG_2022_R09_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.00033926527804162276,
-      "archetype_deviation_T7": 0.008715054022561675
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.00028093957156227756,
+      "archetype_deviation_T7": 0.00837239078596519
     },
     "WIN2_2022_R09_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.00641318452743167,
-      "archetype_deviation_T7": 0.021005056260579913
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0053465080743115845,
+      "archetype_deviation_T7": -0.0037516802886030653
     },
     "THU_2022_R09_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.011998077596960588,
-      "archetype_deviation_T7": 0.013387272372232806
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0006142318324973139,
+      "archetype_deviation_T7": -0.004160229073400301
     },
     "LUZ_2022_R09_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.004965585648792126,
-      "archetype_deviation_T7": -0.012164979214296379
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.00046681731684106165,
+      "archetype_deviation_T7": -0.002114801379638487
     },
     "BSV_2022_R10_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.013994102481755921,
-      "archetype_deviation_T7": 0.011738422344054089
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.007510674351169477,
+      "archetype_deviation_T7": 0.006597753364545156
     },
     "RTV_2022_R10_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.012620307416958965,
-      "archetype_deviation_T7": 0.018144373497354427
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0019116874870254152,
+      "archetype_deviation_T7": 0.006317544052459989
     },
     "GC_2022_R10_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.005542785613048218,
-      "archetype_deviation_T7": 0.010815552910396264
-    },
-    "KAD_2022_R10_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.011922551461602482,
-      "archetype_deviation_T7": -0.006641483983965024
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.00016690082603454393,
+      "archetype_deviation_T7": 0.007794517681523283
     },
     "WIN_2022_R10_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.009351542724971629,
-      "archetype_deviation_T7": 0.00656599131535307
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0005306172196062331,
+      "archetype_deviation_T7": -0.0037762707710043975
     },
-    "WIN2_2022_R11_BSV": {
+    "KAD_2022_R10_LUZ": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.02062788550323169,
-      "archetype_deviation_T7": 0.002781163434902978
+      "archetype_deviation_T14": -0.00123560187770122,
+      "archetype_deviation_T7": 0.003644767045102082
     },
     "THU_2022_R11_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0013299054365440988,
-      "archetype_deviation_T7": -0.012976549448094898
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0014809907389881083,
+      "archetype_deviation_T7": -0.0029707447367867124
+    },
+    "WIN2_2022_R11_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.002661360808766111,
+      "archetype_deviation_T7": 0.0022262325324621246
+    },
+    "HSC_2022_R11_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0025685880497859914,
+      "archetype_deviation_T7": 0.0027314247030205685
+    },
+    "WIN_2022_R11_KAD": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.005596815018179879,
+      "archetype_deviation_T7": 0.001003839153973396
     },
     "LUZ_2022_R11_RTV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.018688992785565794,
-      "archetype_deviation_T7": 0.01328150802484096
-    },
-    "HSC_2022_R11_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0023974768156088677,
-      "archetype_deviation_T7": -0.009678981492633243
-    },
-    "WIN_2022_R11_KAD": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0011688540042257278,
-      "archetype_deviation_T7": 0.0013201852871402853
+      "archetype_deviation_T14": 0.0014666968010471626,
+      "archetype_deviation_T7": 0.00028957256264650066
     },
     "BSV_2022_R12_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0008746165542613538,
-      "archetype_deviation_T7": 0.003180630959945141
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.003978695704939361,
+      "archetype_deviation_T7": 0.008820706318472205
     },
     "WIN2_2022_R12_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.001414201055610298,
-      "archetype_deviation_T7": 0.00561000021601854
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0036304913806639583,
+      "archetype_deviation_T7": -0.0009557768356940333
     },
     "THG_2022_R12_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.004687649384327086,
-      "archetype_deviation_T7": 0.0032713011578178186
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0008431262173645981,
+      "archetype_deviation_T7": -0.0007036430026751139
     },
     "RTV_2022_R12_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.003547756105225397,
-      "archetype_deviation_T7": 0.0041806102775425735
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.00838477351731648,
+      "archetype_deviation_T7": -0.004748590120159379
     },
     "GC_2022_R12_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.22679741725396463,
-      "archetype_deviation_T7": 0.11549585571767007
-    },
-    "HSC_2022_R13_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.011601294440667154,
-      "archetype_deviation_T7": 0.010340539944739824
-    },
-    "WIN_2022_R13_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.019259849691473763,
-      "archetype_deviation_T7": -0.004503853438998173
-    },
-    "KAD_2022_R13_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.007210707858299692,
-      "archetype_deviation_T7": -0.009973240643013304
-    },
-    "GC_2022_R13_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.00063992985520267,
-      "archetype_deviation_T7": 0.012616517614864708
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.004803498750570068,
+      "archetype_deviation_T7": -0.0012398922767716813
     },
     "LUZ_2022_R13_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.013512860810474425,
-      "archetype_deviation_T7": 0.015667784998012246
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0032258086660913454,
+      "archetype_deviation_T7": 0.004800612896781686
+    },
+    "WIN_2022_R13_WIN2": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.0011681785386206123,
+      "archetype_deviation_T7": -0.004049769839133854
+    },
+    "KAD_2022_R13_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005899806073592417,
+      "archetype_deviation_T7": 0.000787955799728457
+    },
+    "GC_2022_R13_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0004607434288665946,
+      "archetype_deviation_T7": 0.0035374075010671246
+    },
+    "HSC_2022_R13_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0027584127488753385,
+      "archetype_deviation_T7": 0.00397203866445639
     },
     "THG_2022_R14_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0010497933917261726,
-      "archetype_deviation_T7": -0.0038729079915122977
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0016704738926961449,
+      "archetype_deviation_T7": -0.001302584635917925
     },
     "BSV_2022_R14_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.015170010045356341,
-      "archetype_deviation_T7": 0.0074624821162216914
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.00573561692386626,
+      "archetype_deviation_T7": -0.00028167302505865965
     },
     "LUZ_2022_R14_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.0019371013498948875,
-      "archetype_deviation_T7": -0.0005367174016512877
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0008199473890412312,
+      "archetype_deviation_T7": -0.003018600399246285
     },
     "THU_2022_R14_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.024664077833386422,
-      "archetype_deviation_T7": 0.015201783642057931
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.004423044678912635,
+      "archetype_deviation_T7": -0.007314841188555632
     },
     "WIN2_2022_R14_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0036794538179579783,
-      "archetype_deviation_T7": -0.006939198074932151
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0020654217123026175,
+      "archetype_deviation_T7": -0.001045557617914028
     },
     "WIN_2022_R15_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0008629724433224517,
-      "archetype_deviation_T7": -0.004819399153001336
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0034009974402591236,
+      "archetype_deviation_T7": 0.0029208042954756985
     },
     "KAD_2022_R15_HSC": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": 0.0,
-      "archetype_deviation_T7": 0.0
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": -9.388570535329155e-05,
+      "archetype_deviation_T7": 0.007548744314434197
     },
     "GC_2022_R15_LUZ": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.015719110270533132,
-      "archetype_deviation_T7": -0.03470975651599029
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": 0.0007818267873481166,
+      "archetype_deviation_T7": 0.0010954532803810757
     },
     "RTV_2022_R15_THU": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.012083689257167463,
-      "archetype_deviation_T7": -0.035715029457077496
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.010110141612603818,
+      "archetype_deviation_T7": 0.00771450668707141
     },
     "THG_2022_R15_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.019572753173831114,
-      "archetype_deviation_T7": -0.006604308537479953
-    },
-    "THU_2022_R16_WIN2": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.22776957264491893,
-      "archetype_deviation_T7": -0.12338099872725916
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.002094877962128927,
+      "archetype_deviation_T7": -0.003405708031999022
     },
     "BSV_2022_R16_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.007829294424743116,
-      "archetype_deviation_T7": 0.008302930085654081
-    },
-    "WIN_2022_R16_GC": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.02986009524105948,
-      "archetype_deviation_T7": 0.0022643095023187065
-    },
-    "LUZ_2022_R16_THG": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.005563723386433295,
-      "archetype_deviation_T7": -0.011178781290941742
+      "archetype_deviation_T14": 0.00796805427519598,
+      "archetype_deviation_T7": -0.0010456772047792162
     },
     "HSC_2022_R16_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.002117874737931902,
+      "archetype_deviation_T7": -0.004083494172506308
+    },
+    "LUZ_2022_R16_THG": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.016533899043653877,
-      "archetype_deviation_T7": 0.015682796250514275
+      "archetype_deviation_T14": 0.0033499982994932287,
+      "archetype_deviation_T7": 0.0032012039587797636
+    },
+    "THU_2022_R16_WIN2": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0015925144803939917,
+      "archetype_deviation_T7": -0.011277387785168402
+    },
+    "WIN_2022_R16_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.005022259945564156,
+      "archetype_deviation_T7": -0.0055299608121581745
+    },
+    "THU_2022_R17_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0013529174892208395,
+      "archetype_deviation_T7": -0.0026149857096555706
     },
     "GC_2022_R17_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0003785396795966678,
+      "archetype_deviation_T7": -0.0010109607955092192
+    },
+    "RTV_2022_R17_KAD": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.016268911144257436,
-      "archetype_deviation_T7": -0.009936785283045757
+      "archetype_deviation_T14": 0.0005042557310303009,
+      "archetype_deviation_T7": 0.0002201240188088871
     },
     "THG_2022_R17_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.002488093322221996,
-      "archetype_deviation_T7": -0.0014930153332834983
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.00018946668751151918,
+      "archetype_deviation_T7": -0.003419718409018224
     },
     "WIN2_2022_R17_HSC": {
       "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.0,
-      "archetype_deviation_T7": 0.0
-    },
-    "THU_2022_R17_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.009804067603472855,
-      "archetype_deviation_T7": -0.000653542442088817
-    },
-    "RTV_2022_R17_KAD": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": 0.014637154151596277,
-      "archetype_deviation_T7": -0.024468977755917054
+      "archetype_deviation_T14": -0.0012814440028156016,
+      "archetype_deviation_T7": 0.003830108443108382
     },
     "BSV_2022_R18_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.004812573887208349,
-      "archetype_deviation_T7": -0.01569460990208027
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0034919358218578056,
+      "archetype_deviation_T7": -0.004738248973121806
     },
     "GC_2022_R18_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.008336021492433843,
-      "archetype_deviation_T7": -0.00260245898350675
-    },
-    "KAD_2022_R18_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.003227497445147942,
-      "archetype_deviation_T7": 0.004920848122647037
-    },
-    "WIN_2022_R18_THU": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.0013051547563184829,
-      "archetype_deviation_T7": -0.00922972196679095
-    },
-    "HSC_2022_R18_LUZ": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.006064907769765426,
-      "archetype_deviation_T7": -0.00508723138065037
-    },
-    "THG_2023_R01_BSV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.003193059457276437,
-      "archetype_deviation_T7": -0.0061092039697575595
-    },
-    "LUZ_2023_R01_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0050686905872313615,
-      "archetype_deviation_T7": -0.005875538311933104
-    },
-    "HSC_2023_R01_WIN": {
       "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.006501143978124846,
-      "archetype_deviation_T7": 0.017526259985662707
-    },
-    "WIN2_2023_R01_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0035782845494394255,
-      "archetype_deviation_T7": 0.004356784202397379
-    },
-    "THU_2023_R01_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.029133632629668504,
-      "archetype_deviation_T7": -0.008016866121747235
-    },
-    "BSV_2023_R02_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.01731925937747736,
-      "archetype_deviation_T7": -0.0011618557249465367
-    },
-    "THG_2023_R02_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.008644380522353057,
-      "archetype_deviation_T7": -0.013883954663702291
-    },
-    "RTV_2023_R02_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.013889946363850658,
-      "archetype_deviation_T7": 0.016464426491322515
-    },
-    "KAD_2023_R02_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.005520716249721058,
-      "archetype_deviation_T7": 0.008108583981835782
-    },
-    "GC_2023_R02_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0018368190629505232,
-      "archetype_deviation_T7": 0.0148742317979762
-    },
-    "THU_2023_R03_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.024635287036406495,
-      "archetype_deviation_T7": 0.008646349794934727
-    },
-    "LUZ_2023_R03_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.010140684139113065,
-      "archetype_deviation_T7": 0.014809175273579389
-    },
-    "HSC_2023_R03_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.020840035069792706,
-      "archetype_deviation_T7": -0.018094294220422413
-    },
-    "WIN_2023_R03_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.019537350523807895,
-      "archetype_deviation_T7": 0.009974579072763112
-    },
-    "KAD_2023_R03_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0019187367025235158,
-      "archetype_deviation_T7": -0.01197837713567873
-    },
-    "BSV_2023_R04_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0011314341288679586,
-      "archetype_deviation_T7": 0.0004278440467962996
-    },
-    "WIN2_2023_R04_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.006677268219281163,
-      "archetype_deviation_T7": 0.005447830101569684
-    },
-    "THG_2023_R04_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.0022333304302911694,
-      "archetype_deviation_T7": 0.009726628283275973
-    },
-    "RTV_2023_R04_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.014844515160275962,
-      "archetype_deviation_T7": 0.0034986566498055316
-    },
-    "THU_2023_R04_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.009328980964890543,
-      "archetype_deviation_T7": 0.016871930258064216
-    },
-    "HSC_2023_R05_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.002307321366401327,
-      "archetype_deviation_T7": -0.010399164433949504
-    },
-    "WIN_2023_R05_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.012849050539519125,
-      "archetype_deviation_T7": 0.00785292771722057
-    },
-    "KAD_2023_R05_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.022124151112653867,
-      "archetype_deviation_T7": -0.007036777417398943
-    },
-    "GC_2023_R05_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.006215179184498432,
-      "archetype_deviation_T7": -0.0026927317303750975
-    },
-    "RTV_2023_R05_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.004661023909622419,
-      "archetype_deviation_T7": -0.0015756499227397303
-    },
-    "BSV_2023_R06_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.01206092944526349,
-      "archetype_deviation_T7": 0.008373904925073505
-    },
-    "HSC_2023_R06_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.012158228761500411,
-      "archetype_deviation_T7": -0.012634900663045956
-    },
-    "LUZ_2023_R06_GC": {
-      "archetype": "Consistent Gradual",
       "archetype_deviation_T14": 0.0,
       "archetype_deviation_T7": 0.0
     },
+    "KAD_2022_R18_WIN2": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004517802826981554,
+      "archetype_deviation_T7": 0.002935453569511526
+    },
+    "WIN_2022_R18_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0009650752030299081,
+      "archetype_deviation_T7": 0.0011198514148366145
+    },
+    "HSC_2022_R18_LUZ": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0037310941426896838,
+      "archetype_deviation_T7": -0.0031194831486481833
+    },
+    "THG_2023_R01_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0013176213446907115,
+      "archetype_deviation_T7": 0.001909905056985517
+    },
+    "THU_2023_R01_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0007588245868345167,
+      "archetype_deviation_T7": 0.001012531059919386
+    },
+    "LUZ_2023_R01_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.005521799363519708,
+      "archetype_deviation_T7": -0.0032438969810747453
+    },
+    "HSC_2023_R01_WIN": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.001574821252040337,
+      "archetype_deviation_T7": 0.003241602869163418
+    },
+    "WIN2_2023_R01_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.004622514940846423,
+      "archetype_deviation_T7": 0.00010918869316234314
+    },
+    "BSV_2023_R02_WIN2": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.008032743127594055,
+      "archetype_deviation_T7": 0.006600520828163092
+    },
+    "THG_2023_R02_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0023239539595997227,
+      "archetype_deviation_T7": 0.001958388168202041
+    },
+    "GC_2023_R02_HSC": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0010697049955293858,
+      "archetype_deviation_T7": 0.0028960305976527545
+    },
+    "KAD_2023_R02_WIN": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0014141657072331837,
+      "archetype_deviation_T7": -0.0007242131765089477
+    },
+    "RTV_2023_R02_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00641829082325418,
+      "archetype_deviation_T7": 0.003650435545528574
+    },
+    "THU_2023_R03_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.005853230836148859,
+      "archetype_deviation_T7": -8.847774328080149e-06
+    },
+    "LUZ_2023_R03_WIN2": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.006615283274874928,
+      "archetype_deviation_T7": -0.0049512077617179795
+    },
+    "HSC_2023_R03_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006220977355060331,
+      "archetype_deviation_T7": 0.0055045070460376655
+    },
+    "WIN_2023_R03_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.004039065836568101,
+      "archetype_deviation_T7": 0.0024944658098734473
+    },
+    "KAD_2023_R03_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.0020399323582638296,
+      "archetype_deviation_T7": 0.002059710643684265
+    },
+    "BSV_2023_R04_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005796959105942134,
+      "archetype_deviation_T7": -0.0037517002642590835
+    },
+    "THU_2023_R04_HSC": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0011617038099195343,
+      "archetype_deviation_T7": -0.006681262647244113
+    },
+    "THG_2023_R04_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0010461917329326331,
+      "archetype_deviation_T7": -0.006940169026697363
+    },
+    "RTV_2023_R04_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.006336989058881359,
+      "archetype_deviation_T7": 0.006336717620988086
+    },
+    "WIN2_2023_R04_WIN": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.003672222543185555,
+      "archetype_deviation_T7": -0.0007384164307585594
+    },
+    "HSC_2023_R05_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.00047961358346038097,
+      "archetype_deviation_T7": 0.0003273137023737105
+    },
+    "WIN_2023_R05_LUZ": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.004710005144032858,
+      "archetype_deviation_T7": 0.0006992669753086433
+    },
+    "KAD_2023_R05_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.010266412601964592,
+      "archetype_deviation_T7": 0.003506159514434337
+    },
+    "RTV_2023_R05_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004264320462111892,
+      "archetype_deviation_T7": 0.009317525928667858
+    },
+    "GC_2023_R05_WIN2": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.009708979551193875,
+      "archetype_deviation_T7": 0.005554576128422473
+    },
+    "BSV_2023_R06_WIN": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.004208550997735538,
+      "archetype_deviation_T7": 0.005862688689051154
+    },
+    "HSC_2023_R06_KAD": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.003774508052897252,
+      "archetype_deviation_T7": -0.007140931925713523
+    },
+    "LUZ_2023_R06_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0020566361203271377,
+      "archetype_deviation_T7": -0.005832788597129546
+    },
     "THU_2023_R06_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.017504652454767955,
-      "archetype_deviation_T7": -0.00414548739702103
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006028016641463796,
+      "archetype_deviation_T7": -0.0013824000722233443
     },
     "WIN2_2023_R06_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.021232799927673796,
-      "archetype_deviation_T7": 0.013865654099990965
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.009211915947412552,
+      "archetype_deviation_T7": 0.0014148366655741818
     },
     "KAD_2023_R07_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0005243109168985294,
-      "archetype_deviation_T7": -0.020332137057707866
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0019579308050459154,
+      "archetype_deviation_T7": -0.005549010815696032
     },
     "GC_2023_R07_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.00797427077939683,
-      "archetype_deviation_T7": -0.008730305495968649
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.008766060377595641,
+      "archetype_deviation_T7": 0.007751390066911723
     },
     "RTV_2023_R07_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.013981573922349444,
-      "archetype_deviation_T7": 0.021227851101532247
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00466837689059918,
+      "archetype_deviation_T7": -0.001531184864518198
     },
     "THG_2023_R07_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.012965753655495127,
-      "archetype_deviation_T7": -0.010196147346425821
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00031231628453853855,
+      "archetype_deviation_T7": 0.0035824514991181777
     },
     "WIN2_2023_R07_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.008617329271292551,
-      "archetype_deviation_T7": 0.01785531818267827
-    },
-    "KAD_2023_R08_RTV": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.020868435331410473,
-      "archetype_deviation_T7": -0.0035605155047140347
-    },
-    "WIN_2023_R08_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0011421780303907392,
-      "archetype_deviation_T7": 0.018924594437566555
-    },
-    "HSC_2023_R08_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.008329176297190988,
-      "archetype_deviation_T7": 0.01944298324566829
-    },
-    "LUZ_2023_R08_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.00589519309006703,
-      "archetype_deviation_T7": 0.0038571070914439343
+      "archetype_deviation_T14": 0.00377917600139821,
+      "archetype_deviation_T7": 0.005231421898088562
     },
     "BSV_2023_R08_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.007277543127789499,
+      "archetype_deviation_T7": 0.0033236259501527865
+    },
+    "KAD_2023_R08_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0037227401855245423,
+      "archetype_deviation_T7": -0.0006174729777053134
+    },
+    "WIN_2023_R08_THG": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.023091071580875644,
-      "archetype_deviation_T7": -0.011018033352245604
+      "archetype_deviation_T14": -0.0014890621615767374,
+      "archetype_deviation_T7": 0.005383829945233454
+    },
+    "HSC_2023_R08_WIN2": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.003631525650141132,
+      "archetype_deviation_T7": 0.0027955529700730564
+    },
+    "LUZ_2023_R08_THU": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0015954934898468887,
+      "archetype_deviation_T7": -0.0009208662214126306
     },
     "RTV_2023_R09_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0012537160688635973,
-      "archetype_deviation_T7": 0.015445373702650533
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.00028647158041283927,
+      "archetype_deviation_T7": 0.001604865554692858
     },
     "THG_2023_R09_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.013856892174066493,
-      "archetype_deviation_T7": 0.003509563069201138
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0009447365876829039,
+      "archetype_deviation_T7": 0.0016109913113658836
     },
     "WIN2_2023_R09_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0022874355395815504,
-      "archetype_deviation_T7": -0.013501527651296752
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0006708554942188583,
+      "archetype_deviation_T7": -0.009741289474876624
     },
     "THU_2023_R09_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.007399262136990714,
-      "archetype_deviation_T7": 0.007413780982452045
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.005379227150583921,
+      "archetype_deviation_T7": -0.007426816632999378
     },
     "LUZ_2023_R09_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.021141411408779676,
-      "archetype_deviation_T7": 0.002329994246457301
-    },
-    "BSV_2023_R10_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.018163970949951147,
-      "archetype_deviation_T7": 0.005850504149916946
-    },
-    "RTV_2023_R10_WIN2": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.010278748131516746,
-      "archetype_deviation_T7": -0.017826910645205363
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.007117180951021984,
+      "archetype_deviation_T7": 0.004062984227460098
     },
     "GC_2023_R10_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.005667489526783864,
-      "archetype_deviation_T7": 0.015627344939848964
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.0004924240405945746,
+      "archetype_deviation_T7": 0.0021752798691369035
     },
     "KAD_2023_R10_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.005302015624563339,
-      "archetype_deviation_T7": 0.003737453226145493
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006072230660383537,
+      "archetype_deviation_T7": 0.008694551544183526
     },
     "WIN_2023_R10_HSC": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": 0.011253176237798201,
-      "archetype_deviation_T7": 0.019609459734880708
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0014197781486995353,
+      "archetype_deviation_T7": -0.0024623689869325283
     },
-    "HSC_2023_R11_GC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0007664616682321324,
-      "archetype_deviation_T7": -0.014473700032466619
+    "BSV_2023_R10_THG": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00016997674002505736,
+      "archetype_deviation_T7": 0.0059106486642718226
+    },
+    "RTV_2023_R10_WIN2": {
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0009153557829530978,
+      "archetype_deviation_T7": 0.005061579607125499
     },
     "WIN2_2023_R11_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0027638078333288574,
-      "archetype_deviation_T7": 0.01094944822454702
-    },
-    "LUZ_2023_R11_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.008496586381641413,
-      "archetype_deviation_T7": -0.01739081992154634
-    },
-    "WIN_2023_R11_KAD": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.024029573028001905,
-      "archetype_deviation_T7": 0.024952986264847987
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.007213233851424139,
+      "archetype_deviation_T7": -0.0025420650450479476
     },
     "THU_2023_R11_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0036933329090734768,
-      "archetype_deviation_T7": 0.014009664031710445
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0008478910068072665,
+      "archetype_deviation_T7": -0.0068132806507171795
+    },
+    "LUZ_2023_R11_RTV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0002583779460434421,
+      "archetype_deviation_T7": 0.0009770087513871761
+    },
+    "WIN_2023_R11_KAD": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.004066810493100204,
+      "archetype_deviation_T7": 0.0008704203243659059
+    },
+    "HSC_2023_R11_GC": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0007547874952795741,
+      "archetype_deviation_T7": 0.0008066393906130953
     },
     "BSV_2023_R12_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.013355405291658462,
-      "archetype_deviation_T7": 0.0037335828806986937
-    },
-    "WIN2_2023_R12_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.017978438127857488,
-      "archetype_deviation_T7": -0.002509001547391976
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0003762426769109428,
+      "archetype_deviation_T7": 0.0019242564691450692
     },
     "THG_2023_R12_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.21400861220149403,
-      "archetype_deviation_T7": -0.10576859959827234
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.004907606790525265,
+      "archetype_deviation_T7": -0.0008127180463051165
     },
     "GC_2023_R12_KAD": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.004173666702364076,
+      "archetype_deviation_T7": 0.004028646042497752
+    },
+    "WIN2_2023_R12_LUZ": {
       "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.006448198003231709,
-      "archetype_deviation_T7": 0.00785668426823638
+      "archetype_deviation_T14": 0.0023747640706704987,
+      "archetype_deviation_T7": 0.008098951081407235
     },
     "RTV_2023_R12_WIN": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0034829287880548954,
-      "archetype_deviation_T7": -0.00334069510635826
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0042253985893694335,
+      "archetype_deviation_T7": 0.003632490914781017
     },
     "WIN_2023_R13_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.002585401583830471,
-      "archetype_deviation_T7": 0.018216704528566274
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.003206897886585014,
+      "archetype_deviation_T7": -0.0007681070541566415
     },
     "LUZ_2023_R13_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.028179752723148765,
-      "archetype_deviation_T7": 0.00420301682356139
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.005908340544137469,
+      "archetype_deviation_T7": -0.0017114846871439937
     },
     "HSC_2023_R13_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.0007565455822196032,
-      "archetype_deviation_T7": 0.020233995043674402
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.005004595376493559,
+      "archetype_deviation_T7": 0.009044646689510216
     },
     "KAD_2023_R13_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.015516085296197635,
-      "archetype_deviation_T7": 0.021095023106160404
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.00622954538090148,
+      "archetype_deviation_T7": 0.004836201030426701
     },
     "GC_2023_R13_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.010877405656782635,
-      "archetype_deviation_T7": 0.009030683588453825
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0020484625351746555,
+      "archetype_deviation_T7": 0.007618208035353402
     },
     "BSV_2023_R14_HSC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.020282964996629738,
-      "archetype_deviation_T7": -0.015382134867441333
-    },
-    "LUZ_2023_R14_WIN": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.0035858655671271444,
-      "archetype_deviation_T7": 0.012669204238576648
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.006975951801325486,
+      "archetype_deviation_T7": 0.0038845473980985146
     },
     "THU_2023_R14_KAD": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.22684674390752058,
-      "archetype_deviation_T7": -0.11732101253482263
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.005462207200929603,
+      "archetype_deviation_T7": -0.00873772682747831
     },
     "WIN2_2023_R14_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.029436425448135295,
-      "archetype_deviation_T7": 0.006239841120853407
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 2.5012207662711283e-05,
+      "archetype_deviation_T7": -0.005819696469280489
     },
     "THG_2023_R14_RTV": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.020733259064496634,
-      "archetype_deviation_T7": 0.019529565945720972
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0023542292452001234,
+      "archetype_deviation_T7": -0.005477128521061858
+    },
+    "LUZ_2023_R14_WIN": {
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.005745375369275552,
+      "archetype_deviation_T7": -0.0038557892073538547
     },
     "WIN_2023_R15_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.020279951362194182,
-      "archetype_deviation_T7": -0.004089293228657143
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.00046666849885246275,
+      "archetype_deviation_T7": 0.0003491930568780832
     },
     "KAD_2023_R15_HSC": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.01705569765888898,
-      "archetype_deviation_T7": -0.03429080513967697
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.004956977179199407,
+      "archetype_deviation_T7": 0.004463830221405951
     },
     "GC_2023_R15_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.014130298743808889,
-      "archetype_deviation_T7": 0.01093173529160496
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": 0.0028823089316711847,
+      "archetype_deviation_T7": -0.0026327166469234387
     },
     "RTV_2023_R15_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.013151038456164499,
-      "archetype_deviation_T7": 0.00027642851076536967
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": -0.0007408097343263309,
+      "archetype_deviation_T7": 0.0032608271207099637
     },
     "THG_2023_R15_WIN2": {
-      "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.007176257261642727,
-      "archetype_deviation_T7": 0.02067103633072409
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0031128771269707256,
+      "archetype_deviation_T7": 0.0004970035223941238
     },
     "BSV_2023_R16_KAD": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": 0.006241582031738024,
-      "archetype_deviation_T7": -0.0028499461788977776
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.0015730115786091181,
+      "archetype_deviation_T7": -0.0002721024971235053
     },
     "WIN_2023_R16_GC": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.0021421801937752116,
-      "archetype_deviation_T7": -0.0026891475924296637
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.005529663504014959,
+      "archetype_deviation_T7": 0.0018300062676385176
     },
     "HSC_2023_R16_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.022534911388070622,
-      "archetype_deviation_T7": 0.015405569140132802
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.00045910696542006413,
+      "archetype_deviation_T7": 0.00507922304708297
     },
     "LUZ_2023_R16_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.01088647269351839,
-      "archetype_deviation_T7": 0.014436325009564044
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": -0.002560053593645306,
+      "archetype_deviation_T7": 0.008254378409417118
     },
     "THU_2023_R16_WIN2": {
       "archetype": "Late Surge_2",
-      "archetype_deviation_T14": -0.002316210476130065,
-      "archetype_deviation_T7": 0.024260614454463703
-    },
-    "GC_2023_R17_BSV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.01144917257893574,
-      "archetype_deviation_T7": -0.004906597567345572
+      "archetype_deviation_T14": -0.002321551091868379,
+      "archetype_deviation_T7": 0.0030142140609527024
     },
     "RTV_2023_R17_KAD": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.018991207245403152,
-      "archetype_deviation_T7": -0.010023503823065272
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": -0.0039004588331666423,
+      "archetype_deviation_T7": -0.005007023213038253
     },
     "THG_2023_R17_WIN": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.032939802032611154,
-      "archetype_deviation_T7": -0.0056998909308301204
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": 0.006239427438678002,
+      "archetype_deviation_T7": -0.005010624950397613
     },
     "THU_2023_R17_LUZ": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.012485790333289337,
-      "archetype_deviation_T7": -0.014139726583355827
+      "archetype": "Consistent Gradual",
+      "archetype_deviation_T14": 0.006973245018252028,
+      "archetype_deviation_T7": 0.003302799716301874
+    },
+    "GC_2023_R17_BSV": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.0014122738415461855,
+      "archetype_deviation_T7": -0.00240277100729569
     },
     "WIN2_2023_R17_HSC": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.018304695352510447,
-      "archetype_deviation_T7": 0.018087876322213203
-    },
-    "GC_2023_R18_THG": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": -0.0032228919305047343,
-      "archetype_deviation_T7": 0.01093288693792449
-    },
-    "KAD_2023_R18_WIN2": {
-      "archetype": "Late Surge",
-      "archetype_deviation_T14": -0.002684962499245769,
-      "archetype_deviation_T7": -0.038839522234224044
-    },
-    "WIN_2023_R18_THU": {
-      "archetype": "Early Surge",
-      "archetype_deviation_T14": 0.004154531328816269,
-      "archetype_deviation_T7": 0.01724675482688609
-    },
-    "HSC_2023_R18_LUZ": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": -0.022800545190684307,
-      "archetype_deviation_T7": 0.006464367804497884
+      "archetype": "Late Surge_3",
+      "archetype_deviation_T14": -0.0017728390646455372,
+      "archetype_deviation_T7": -0.010776486162247134
     },
     "BSV_2023_R18_RTV": {
-      "archetype": "Consistent Gradual",
-      "archetype_deviation_T14": 0.0005327082889410306,
-      "archetype_deviation_T7": -0.008722210384260243
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": 0.006663942143911528,
+      "archetype_deviation_T7": -0.0012015894495123192
+    },
+    "GC_2023_R18_THG": {
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": 0.000713841409749949,
+      "archetype_deviation_T7": 0.0014421581667427574
+    },
+    "KAD_2023_R18_WIN2": {
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": 0.005898305476214283,
+      "archetype_deviation_T7": -0.005814098961420822
+    },
+    "WIN_2023_R18_THU": {
+      "archetype": "Late Surge_2",
+      "archetype_deviation_T14": -0.00419344020064355,
+      "archetype_deviation_T7": 0.0022802058929317637
+    },
+    "HSC_2023_R18_LUZ": {
+      "archetype": "Late Surge",
+      "archetype_deviation_T14": -0.003552630591930117,
+      "archetype_deviation_T7": -0.005933886598204485
     }
-  },
-  "recovery_accuracy": 0.07
+  }
 }

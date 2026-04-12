@@ -70,7 +70,7 @@ class ForecastingEngine:
         self._train_lightgbm(X, y, df_features)
         
         # 2b: Quantile Regression Forest
-        self._train_quantile_models(X, y)
+        self._train_quantile_models(X, y, df_features)
         
         # Evaluation & SHAP
         self._evaluate(X, y, df_features)
@@ -79,41 +79,59 @@ class ForecastingEngine:
         return self.evaluation_results
 
     def _run_stl(self, df):
-        """Layer 1a: STL Decomposition for trend and seasonality extraction."""
-        series = df["overall_fill_rate"].values
-        # STL with period=18 (full league cycle)
-        # robust=True to handle COVID outliers in 2021-22
-        res = STL(series, period=18, seasonal=7, robust=True).fit()
+        """Layer 1a: STL Decomposition per club for venue-specific dynamics."""
+        df["stl_trend_value"] = 0.0
+        df["stl_seasonal_value"] = 0.0
         
-        # Anomaly detection: residual > 2 * std
-        resid_std = np.std(res.resid)
-        anomalies = np.abs(res.resid) > 2 * resid_std
-        
-        direction = "stable"
-        if res.trend[-1] > res.trend[0] * 1.05: direction = "increasing"
-        elif res.trend[-1] < res.trend[0] * 0.95: direction = "decreasing"
+        clubs = df["home_club_id"].unique()
+        stl_summary = {}
 
-        self.stl_results = {
-            "trend": res.trend.tolist(),
-            "seasonal": res.seasonal.tolist(),
-            "residual": res.resid.tolist(),
-            "anomaly_flags": anomalies.tolist(),
-            "n_anomalies": int(np.sum(anomalies)),
-            "trend_direction": direction,
-            "seasonal_amplitude": float(np.max(res.seasonal) - np.min(res.seasonal))
-        }
-        
-        # Add components back to dataframe for following steps
-        df["stl_trend_value"] = res.trend
-        df["stl_seasonal_value"] = res.seasonal
-        
-        # FIX 1: Persist STL features for _prepare_layer2_data
-        stl_features = {}
-        for i, row in df.iterrows():
-            stl_features[row["match_id"]] = {
-                "stl_trend_value": float(res.trend[i]),
-                "stl_seasonal_value": float(res.seasonal[i])
+        for club in clubs:
+            club_df = df[df["home_club_id"] == club].sort_values("match_date")
+            if len(club_df) < 18: # Need at least 2 seasons for decent decomposition
+                continue
+            
+            series = club_df["overall_fill_rate"].values
+            # period=9 (one full season of home matches)
+            res = STL(series, period=9, seasonal=7, robust=True).fit()
+            
+            # Map back to main DF
+            df.loc[club_df.index, "stl_trend_value"] = res.trend
+            df.loc[club_df.index, "stl_seasonal_value"] = res.seasonal
+            
+            # Summary for debugging/logging
+            resid_std = np.std(res.resid)
+            anomalies = np.abs(res.resid) > 2 * resid_std
+            
+            stl_summary[club] = {
+                "n_anomalies": int(np.sum(anomalies)),
+                "seasonal_amplitude": float(np.max(res.seasonal) - np.min(res.seasonal))
             }
+
+        self.stl_results = stl_summary
+        
+        # Save latest temporal features per club for inference lookup
+        latest_temporal = {}
+        for club in clubs:
+            club_rows = df[df["home_club_id"] == club].sort_values("match_date")
+            if len(club_rows) > 0:
+                latest_temporal[club] = {
+                    "latest_stl_trend": float(df.loc[club_rows.index[-1], "stl_trend_value"]),
+                    "latest_stl_seasonal": float(df.loc[club_rows.index[-1], "stl_seasonal_value"]),
+                    "sarima_residual_default": 0.0 # Neutral assumption for future
+                }
+        
+        with open(os.path.join(self.data_dir, "latest_temporal_features.json"), "w") as f:
+            json.dump(latest_temporal, f, indent=2)
+        
+        # Persist features for Layer 2
+        stl_features = {}
+        for _, row in df.iterrows():
+            stl_features[row["match_id"]] = {
+                "stl_trend_value": float(row["stl_trend_value"]),
+                "stl_seasonal_value": float(row["stl_seasonal_value"])
+            }
+        
         with open(os.path.join(self.data_dir, "stl_features.json"), "w") as f:
             json.dump(stl_features, f, indent=2)
 
@@ -121,72 +139,77 @@ class ForecastingEngine:
             json.dump(self.stl_results, f, indent=2)
 
     def _run_sarima(self, df):
-        """Layer 1b: SARIMAX for sequential baseline residuals."""
-        series = df["overall_fill_rate"].values
+        """Layer 1b: SARIMAX per club for sequential baseline residuals."""
+        df["sarima_residual"] = 0.0
         
-        # Exogenous regressors
+        clubs = df["home_club_id"].unique()
         opp_map = {"Elite": 2, "Competitive": 1, "Standard": 0}
         stakes_map = {"Final": 2, "Playoff": 1, "Group": 0}
-        
-        exog = pd.DataFrame({
-            "opp": df["opponent_tier"].map(opp_map),
-            "stakes": df["match_stakes"].map(stakes_map),
-            "weather": df["weather_severity_score"],
-            "marketing": df["marketing_activation_score"]
-        })
-        
-        # Fit SARIMAX (1, 0, 1) x (1, 0, 1, 18)
-        model = SARIMAX(series, exog=exog, order=(1,0,1), seasonal_order=(1,0,1,18))
-        res = model.fit(disp=False)
-        
-        self.sarima_model = res
-        
-        # Extract in-sample residuals for LightGBM
-        # We use simple subtraction if residuals attribute is tricky, but SARIMAX gives them
-        sarima_resid = res.resid
-        df["sarima_residual"] = sarima_resid
+        sarima_summary = {}
 
-        # FIX 1: Persist SARIMA features for _prepare_layer2_data
+        for club in clubs:
+            club_df = df[df["home_club_id"] == club].sort_values("match_date")
+            if len(club_df) < 18:
+                continue
+            
+            series = club_df["overall_fill_rate"].values
+            exog = pd.DataFrame({
+                "opp": club_df["opponent_tier"].map(opp_map),
+                "stakes": club_df["match_stakes"].map(stakes_map),
+                "weather": club_df["weather_severity_score"],
+                "marketing": club_df["marketing_activation_score"]
+            })
+            
+            # Fit SARIMAX (1, 0, 1) x (1, 0, 1, 9)
+            try:
+                # Simplify to AR(1) with exog, remove seasonal components (handled by STL)
+                # This increases degrees of freedom for the small (n=27) dataset
+                model = SARIMAX(series, exog=exog, order=(1,0,0), seasonal_order=(0,0,0,0))
+                res = model.fit(disp=False)
+                # Fill initial NaNs (first max(p,q) obs) with 0.0
+                filled_resid = pd.Series(res.resid).fillna(0).values
+                df.loc[club_df.index, "sarima_residual"] = filled_resid
+                
+                sarima_summary[club] = {
+                    "aic": float(res.aic),
+                    "in_sample_mape": float(mean_absolute_percentage_error(series, res.fittedvalues))
+                }
+            except Exception as e:
+                print(f"SARIMA failed for club {club}: {e}")
+        
+        # Persist features for Layer 2
         sarima_features = {}
-        for i, row in df.iterrows():
-            sarima_features[row["match_id"]] = float(sarima_resid[i])
+        for _, row in df.iterrows():
+            sarima_features[row["match_id"]] = float(row["sarima_residual"])
+            
         with open(os.path.join(self.data_dir, "sarima_features.json"), "w") as f:
             json.dump(sarima_features, f, indent=2)
 
-        results = {
-            "aic": float(res.aic),
-            "bic": float(res.bic),
-            "log_likelihood": float(res.llf),
-            "coefficients": res.params.to_dict(),
-            "in_sample_mape": float(mean_absolute_percentage_error(series, res.fittedvalues)),
-            "residuals": sarima_resid.tolist()
-        }
-        
         with open(os.path.join(self.data_dir, "sarima_results.json"), "w") as f:
-            json.dump(results, f, indent=2)
+            json.dump(sarima_summary, f, indent=2)
 
     def _cluster_archetypes(self, matches):
-        """Layer 1c: DTW Clustering of normalized booking curves."""
-        curves = []
-        match_ids = []
-        for m in matches:
-            curve = np.array(m["booking_curve"])
-            if curve[-1] > 0:
-                curves.append(curve / curve[-1])
-                match_ids.append(m["match_id"])
+        """Layer 1c: DTW Clustering of normalized booking curves with train/val split."""
+        # Split into Train (S1, S2) and Transform (S3) to avoid leakage
+        train_matches = [m for m in matches if m["season"] != "2023-24"]
+        val_matches = [m for m in matches if m["season"] == "2023-24"]
         
-        curves_np = np.array(curves)
-        
-        # Clustering with scipy on DTW distance matrix
-        print("Computing DTW distance matrix (Layer 1c)...")
+        def get_norm_curves(ms):
+            c_list, ids = [], []
+            for m in ms:
+                curve = np.array(m["booking_curve"])
+                if curve[-1] > 0:
+                    c_list.append(curve / curve[-1])
+                    ids.append(m["match_id"])
+            return np.array(c_list), ids
+
         from scipy.cluster.hierarchy import linkage, fcluster
         from scipy.spatial.distance import squareform
+
+        train_curves_np, train_ids = get_norm_curves(train_matches)
         
-        # dtaidistance returns a condensed or full matrix?
-        # dtw.distance_matrix_fast returns a full matrix.
-        ds = dtw.distance_matrix_fast(curves_np)
-        
-        # Ensure symmetric and zero diagonal for squareform
+        print(f"Fitting DTW clustering on {len(train_matches)} train matches...")
+        ds = dtw.distance_matrix_fast(train_curves_np)
         ds = (ds + ds.T) / 2
         np.fill_diagonal(ds, 0)
         
@@ -194,74 +217,67 @@ class ForecastingEngine:
         linkage_matrix = linkage(condensed_ds, method="ward")
         cluster_assignments = fcluster(linkage_matrix, 4, criterion="maxclust")
         
-        # cluster_assignments is 1-indexed (1 to 4)
-        flat_assignments = {match_ids[i]: (int(cluster_assignments[i]) - 1) for i in range(len(match_ids))}
-        
-        # Group indices for medoid calculation
+        # Cluster labels and medoids
         assignments = [[] for _ in range(4)]
         for i, c_id in enumerate(cluster_assignments):
             assignments[int(c_id) - 1].append(i)
         
-        # Label clusters by medoid shape
         medoids = {}
         labels = {}
         for c_id, idxs in enumerate(assignments):
-            # Medoid is the one with minimum sum of distances to others in cluster
             sub_matrix = ds[np.ix_(idxs, idxs)]
             medoid_local_idx = np.argmin(np.sum(sub_matrix, axis=0))
             medoid_global_idx = idxs[medoid_local_idx]
-            medoid_curve = curves_np[medoid_global_idx]
+            medoid_curve = train_curves_np[medoid_global_idx]
             
-            # Label heuristic
-            val_30 = medoid_curve[30]
-            val_53 = medoid_curve[53]
-            
+            val_30, val_53 = medoid_curve[30], medoid_curve[53]
             if val_30 >= 0.35: label = "Early Surge"
             elif val_30 <= 0.25 and val_53 >= 0.60: label = "Late Surge"
             elif val_53 < 0.55: label = "Flat"
             else: label = "Consistent Gradual"
             
-            # Ensure unique labels if heuristics overlap
-            if label in labels.values():
-                label = f"{label}_{c_id}"
-            
+            if label in labels.values(): label = f"{label}_{c_id}"
             labels[c_id] = label
             medoids[label] = medoid_curve.tolist()
 
         match_results = {}
-        # Calculate deviations
-        for m_id, c_id in flat_assignments.items():
-            label = labels[c_id]
-            # Find the match and its normalized curve
-            m_idx = match_ids.index(m_id)
-            actual_curve = curves_np[m_idx]
-            medoid_curve = np.array(medoids[label])
-            
+        # Apply labels to train
+        for i, m_id in enumerate(train_ids):
+            lbl = labels[cluster_assignments[i] - 1]
             match_results[m_id] = {
-                "archetype": label,
-                "archetype_deviation_T14": float(actual_curve[46] - medoid_curve[46]),
-                "archetype_deviation_T7": float(actual_curve[53] - medoid_curve[53])
+                "archetype": lbl,
+                "archetype_deviation_T14": float(train_curves_np[i][46] - medoids[lbl][46]),
+                "archetype_deviation_T7": float(train_curves_np[i][53] - medoids[lbl][53])
             }
 
-        # Calculate accuracy vs ground truth
-        correct = 0
-        total = 0
-        for m in matches:
-            if m["match_id"] in match_results:
-                total += 1
-                if match_results[m["match_id"]]["archetype"].split("_")[0] == m["booking_curve_archetype"]:
-                    correct += 1
-        
+        # FIX 6: Transform validation matches (predict archetype)
+        print(f"Assigning archetypes to {len(val_matches)} validation matches...")
+        val_curves_np, val_ids = get_norm_curves(val_matches)
+        for i, m_id in enumerate(val_ids):
+            v_curve = val_curves_np[i]
+            # Find nearest medoid by DTW
+            best_lbl, min_dist = None, float('inf')
+            for lbl, m_curve in medoids.items():
+                d = dtw.distance(v_curve, np.array(m_curve))
+                if d < min_dist:
+                    min_dist = d
+                    best_lbl = lbl
+            
+            match_results[m_id] = {
+                "archetype": best_lbl,
+                "archetype_deviation_T14": float(v_curve[46] - medoids[best_lbl][46]),
+                "archetype_deviation_T7": float(v_curve[53] - medoids[best_lbl][53])
+            }
+
         self.archetype_results = {
             "n_clusters": 4,
-            "cluster_sizes": {label: len(idxs) for label, idxs in zip(labels.values(), assignments)},
             "medoid_curves": medoids,
-            "match_archetype_assignments": match_results,
-            "recovery_accuracy": round(correct/total, 3) if total > 0 else 0
+            "match_archetype_assignments": match_results
         }
         
         with open(os.path.join(self.data_dir, "archetype_results.json"), "w") as f:
             json.dump(self.archetype_results, f, indent=2)
+
 
     async def _train_neural_prophet(self, matches):
         """Layer 1d: Neural Prophet velocity forecaster."""
@@ -270,36 +286,33 @@ class ForecastingEngine:
         opp_map = {"Elite": 2, "Competitive": 1, "Standard": 0}
         stakes_map = {"Final": 2, "Playoff": 1, "Group": 0}
 
-        for m in matches:
+        for idx, m in enumerate(matches):
             curve = np.array(m["booking_curve"])
-            f_rate = m["overall_fill_rate"]
             norm_curve = curve / curve[-1] if curve[-1] > 0 else curve
             
-            # To create a chronological time series for NP, 
-            # we assign a dummy date sequence starting from the match_date backwards.
-            match_dt = datetime.strptime(m["match_date"], "%Y-%m-%d")
+            # FIX 3: NeuralProphet Panel Leakage fix
+            # Each match gets its own non-overlapping time sequence (anchored 100 days apart)
+            # This turns ds into a pure selling-window indicator.
+            anchor = datetime(2000, 1, 1) + timedelta(days=idx * 100)
             for t in range(61):
-                ds = match_dt - timedelta(days=(60 - t))
+                ds = anchor + timedelta(days=t)
                 rows.append({
                     "ds": ds,
                     "y": norm_curve[t],
-                    "ID": m["match_id"],
-                    "opponent_tier_encoded": opp_map.get(m["opponent_tier"], 0),
-                    "match_stakes_encoded": stakes_map.get(m["match_stakes"], 0),
-                    "star_power_index": m["star_power_index"],
-                    "weather_severity_score": m["weather_severity_score"]
+                    "ID": m["match_id"]
                 })
         
         np_df = pd.DataFrame(rows)
         np_df["ds"] = pd.to_datetime(np_df["ds"])
         np_df["y"] = np_df["y"].astype(float)
         
-        # Training (Global Model with IDs)
+        # Training (Pure selling-window sequence model)
         m_np = NeuralProphet(
             n_forecasts=1,
             n_lags=7,
             yearly_seasonality=False,
-            weekly_seasonality=True,
+            weekly_seasonality=False, 
+            daily_seasonality=False,
             learning_rate=0.01
         )
         
@@ -377,6 +390,15 @@ class ForecastingEngine:
                 "dominant_segment_encoded": segment_map.get(row["dominant_segment"], 0),
                 "velocity_T14": row["velocity_T14"],
                 "velocity_T7": row["velocity_T7"],
+                # FIX 7: Zone velocities
+                "velocity_T14_VIP": row.get("velocity_T14_Courtside VIP", 0),
+                "velocity_T7_VIP": row.get("velocity_T7_Courtside VIP", 0),
+                "velocity_T14_LB": row.get("velocity_T14_Lower Bowl / Club Seats", 0),
+                "velocity_T7_LB": row.get("velocity_T7_Lower Bowl / Club Seats", 0),
+                "velocity_T14_US": row.get("velocity_T14_Upper Standard", 0),
+                "velocity_T7_US": row.get("velocity_T7_Upper Standard", 0),
+                "velocity_T14_ST": row.get("velocity_T14_Standing", 0),
+                "velocity_T7_ST": row.get("velocity_T7_Standing", 0),
                 "price_delta_secondary_chf": row["price_delta_secondary_chf"],
                 "stl_trend_value": stl_features.get(m_id, {}).get("stl_trend_value", 0),
                 "stl_seasonal_value": stl_features.get(m_id, {}).get("stl_seasonal_value", 0),
@@ -434,12 +456,20 @@ class ForecastingEngine:
                                 callbacks=[lgb.early_stopping(stopping_rounds=50)])
             self.lgb_models[zone] = z_model
 
-    def _train_quantile_models(self, X, y):
-        """Layer 2b: Quantile Regression Forest for uncertainty."""
-        # Quantile models using Sklearn GBR
+    def _train_quantile_models(self, X, y, df_all):
+        """Layer 2b: Quantile Regression Forest for uncertainty (train only)."""
+        train_idx = df_all[df_all["season"] != "2023-24"].index
+        X_train = X.iloc[train_idx]
+        y_train = y.iloc[train_idx]
         for alpha in [0.1, 0.5, 0.9]:
-            model = GradientBoostingRegressor(loss="quantile", alpha=alpha, n_estimators=200, max_depth=4)
-            model.fit(X, y)
+            model = GradientBoostingRegressor(
+                loss="quantile",
+                alpha=alpha,
+                n_estimators=200,
+                max_depth=4,
+                learning_rate=0.05
+            )
+            model.fit(X_train, y_train)
             self.quantile_models[alpha] = model
 
     def _evaluate(self, X, y, df_all):
@@ -492,7 +522,8 @@ class ForecastingEngine:
         
         reconciled = {}
         for z in capacities:
-            rec_tickets = zone_tickets[z] * scale
+            # FIX 2: Clipping to ensure coherence and physical possibility
+            rec_tickets = min(float(capacities[z]), zone_tickets[z] * scale)
             reconciled[z] = {
                 "fill_rate": float(rec_tickets / capacities[z]) if capacities[z] > 0 else 0,
                 "tickets_sold": int(round(rec_tickets))
@@ -508,11 +539,22 @@ class ForecastingEngine:
             "Upper Standard": 1500,
             "Standing": 1200
         })
+        # FIX 8: STL/SARIMA/Archetype Lookup for inference
+        # Load latest temporal components for the club
+        latest_path = os.path.join(self.data_dir, "latest_temporal_features.json")
+        if os.path.exists(latest_path):
+            with open(latest_path, "r") as f:
+                lt = json.load(f)
+            club_id = match_features.get("home_club_id")
+            if club_id in lt:
+                match_features["stl_trend_value"] = lt[club_id]["latest_stl_trend"]
+                match_features["stl_seasonal_value"] = lt[club_id]["latest_stl_seasonal"]
+                match_features["sarima_residual"] = lt[club_id]["sarima_residual_default"]
 
         # Convert dict to DataFrame row and align with training features
         X_row = pd.DataFrame([match_features])
         if self.feature_cols:
-            # Add missing columns with 0, drop extra columns, and maintain order
+            # Drop extra columns and maintain order. fill_value=0 is now a safe fallback.
             X_row = X_row.reindex(columns=self.feature_cols, fill_value=0)
         
         # 1. Total Prediction (P50)

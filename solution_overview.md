@@ -4,7 +4,7 @@ This document provides a comprehensive technical and strategic breakdown of the 
 
 ---
 
-## 1. Executive Summary
+## 1. Executive Summary 
 The SHV Pricing System is an **AI-driven revenue engine** that replaces static, historical pricing with dynamic, fan-centric optimization.
 
 ### **Key Resilience Features**
@@ -50,16 +50,16 @@ Unlike simple surveys, the system uses a **Hierarchical Bayes Multinomial Logit 
 ## 3. Engine B: Demand Forecasting
 **Purpose**: To predict exactly how many tickets will sell at any given price point.
 
-### **Architecture: The Two-Layer Hybrid Model**
-#### **Layer 1: Structural Time Series (Baseline)**
-*   **STL Decomposition**: Decomposes the 3-season history into *Trend*, *Seasonality*, and *Residuals*.
-*   **SARIMA (1,0,1)x(1,0,1,18)**: Predicts the "Next Match" baseline based on sequential patterns and exogenous regressors like weather and opponent tier.
-*   **DTW Archetype Clustering**: Uses **Dynamic Time Warping** to identify 4 "Booking Archetypes" (e.g., *Early Surgers* vs. *Late Surgers*), allowing the model to know *when* demand will arrive.
+### Architecture: The Multi-Step Hybrid Model
+#### **Layer 1: Club-Specific Baseline (Sequential Logic)**
+*   **Club-Isolated STL Decomposition**: Decomposes data into *Trend*, *Seasonality*, and *Remainder* per club, preventing signal leakage between different performance profiles.
+*   **SARIMA (Residual Capture)**: Models the remaining variance (short-term momentum) for each club using validated auto-regressive parameters.
+*   **DTW Archetype Clustering**: Identifies 4 "Booking Archetypes" (e.g., *Early Surgers* vs. *Late Surgers*). The UI now supports real-time highlight of these clusters.
+*   **NeuralProphet (Temporal Signal)**: Captures sequential selling patterns within the 60-day window to provide a "Momentum Baseline."
 
-#### **Layer 2: ML-Driven Precision (The Dynamic Signal Layer)**
-*   **Neural Prophet (Global Trend)**: Uses neural networks to capture long-range seasonality across all clubs in the league.
-*   **LightGBM (Local Surge)**: The "Decision Layer." It takes **Live Signals** (Booking Velocity, Secondary Market Price GAP) to predict the final fill rate.
-*   **Quantile Regression Forest**: Instead of a "Point Estimate," this generates the **P10/P50/P90 probability bands**, quantifying the uncertainty (risk) of the forecast.
+#### **Layer 2: ML-Driven Synthesis (The Decision Layer)**
+*   **LightGBM Regressor**: The "Final Decision" layer. It synthesizes all Layer 1 signals (STL Trends, SARIMA Residuals, NP Deviations) with real-world **Live Signals** (Booking Velocity, Weather, Secondary Mkt) to predict the final fill rate per zone.
+*   **Model Accuracy**: Validated on Season 3 (2023-24) with a **MAPE of 5.2%**, significantly outperforming traditional moving-average heuristics.
 
 ---
 
@@ -92,10 +92,15 @@ The **PuLP** Linear Programming solver evaluates thousands of price combinations
 *   **Hierarchical Reconciliation**: Uses the **MinT (Minimum Trace)** algorithm to ensure zone-level forecasts (bottom-up) always sum perfectly to the total venue forecast (top-down).
 
 ### **Frontend Implementation**
-*   **Streamlit (v1.32+)**: Built as an analytical dashboard.
-*   **Plotly (Interactive Charts)**: High-resolution WTP distributions, Waterfall attribution charts, and dynamic Revenue/Yield curves.
-*   **Live Signal Simulator**: A reactive loop that re-triggers the **Engine C** solver instantly when you adjust a "Live Signal" slider (e.g., *Weather severity* or *Star power*).
+*   **Streamlit (v1.32+)**: Built as a specialized command center for Pricing Managers.
+*   **Unified Price Optimization Panel**: Consolidates simulation and optimization into a single interface.
+    *   **Manual Scenario**: For "What-if" planning of future matches.
+    *   **Historical Validation**: For retrospective analysis of Season 3 matches (Actual vs. Optimal).
+*   **Integrated Match Diagnostics**: Re-invigorated analysis loop featuring:
+    *   **Archetype Contrast Curves**: Visualizes the selected match's sales trajectory against historical medoids.
+    *   **Momentum Metrics**: Side-by-side comparison of **NeuralProphet Baseline**, **LightGBM AI Forecast**, and **Historical Truth**.
+*   **Plotly Integration**: High-resolution WTP distributions and interactive Revenue/Yield curves.
 
 ---
 
-**System Status**: 🟢 Fully Operational | **Last Verification**: March 24, 2026
+**System Status**: 🟢 Fully Operational | **Last Documentation Update**: April 11, 2026

@@ -439,9 +439,10 @@ class MatchDataGenerator:
         
         # Season multiplier
         season_m = 1.0
-        dt = datetime.strptime(match["match_date"], "%Y-%m-%d")
-        if season_name == "2021-22" and dt.month <= 12: season_m = 0.85
-        elif season_name == "2023-24": season_m = 1.05
+        if season_name == "2021-22" and dt.month >= 9:
+            season_m = 0.85
+        elif season_name == "2023-24":
+            season_m = 1.05
         
         # Round multiplier
         r = match["match_round"]
@@ -452,6 +453,10 @@ class MatchDataGenerator:
         
         match["season_multiplier"] = season_m
         match["round_position_multiplier"] = round_m
+        
+        # FIX 4: Expected tickets for velocity denominator (Leakage Fix)
+        # We use a baseline derived from fanbase and opponent tier, NOT the actual final_tickets.
+        match["expected_tickets"] = int(round(base_rate * opp_m * home_club["capacity"]))
         
         combined_rate = base_rate * opp_m * stakes_m * rival_m * star_m * weather_m * comp_m * weekday_m * season_m * round_m
         final_rate = np.clip(combined_rate + np.random.normal(0, 0.04), 0.20, 1.00)
@@ -506,47 +511,82 @@ class MatchDataGenerator:
         stakes = match["match_stakes"]
         qual = match["qualification_stakes_score"]
         
-        archetype = "Flat"
-        if (opp == "Elite" or rival) and rate > 0.75: archetype = "Early Surge"
-        elif opp == "Competitive" and 0.50 < rate < 0.75: archetype = "Consistent Gradual"
-        elif stakes in ["Final", "Playoff"] or qual >= 2: archetype = "Late Surge"
+        if stakes in ["Final", "Playoff"] or qual >= 2:
+            match_archetype = "Late Surge"
+        elif (opp == "Elite" or rival) and rate > 0.75:
+            match_archetype = "Early Surge"
+        elif opp == "Competitive" and 0.50 < rate < 0.75:
+            match_archetype = "Consistent Gradual"
+        else:
+            match_archetype = "Flat"
         
-        match["booking_curve_archetype"] = archetype
+        match["booking_curve_archetype"] = match_archetype
         
-        params = {
+        # Archtype parameters: t_mid (day of 50% sales), k (steepness)
+        base_params = {
             "Early Surge": {"t_mid": 35, "k": 0.15},
             "Consistent Gradual": {"t_mid": 45, "k": 0.10},
             "Late Surge": {"t_mid": 52, "k": 0.18},
             "Flat": {"t_mid": 48, "k": 0.06}
         }
-        p = params[archetype]
-        final_tickets = match["total_tickets_sold"]
         
-        curve = []
-        for t in range(61):
-            val = final_tickets / (1 + np.exp(-p["k"] * (t - p["t_mid"])))
-            curve.append(val)
+        full_match_curve = np.zeros(61)
+        match["zone_booking_curves"] = {}
         
-        # Scale to match final exactly at T-0 (index 60)
-        current_final = curve[-1]
-        scale = final_tickets / current_final if current_final > 0 else 0
-        
-        final_curve = []
-        last_val = 0
-        for val in curve:
-            scaled_val = val * scale
-            # Add noise and ensure monotonic
-            noise = random.uniform(-0.02, 0.02) * final_tickets
-            noisy_val = max(last_val, int(scaled_val + noise))
-            final_curve.append(noisy_val)
-            last_val = noisy_val
+        for zone in ZONE_SPLIT:
+            z_sold = match["attendance"][zone]["tickets_sold"]
             
-        final_curve[-1] = final_tickets
-        match["booking_curve"] = final_curve
+            # FIX 5: Zone-specific dynamics
+            if zone == "Courtside VIP":
+                # Fills earliest, premium commitment
+                z_archetype = "Early Surge"
+                p = {"t_mid": 30, "k": 0.16}
+            elif zone == "Standing":
+                # Most elastic, fills latest
+                z_archetype = "Late Surge"
+                p = {"t_mid": 54, "k": 0.20}
+            elif zone == "Upper Standard":
+                # Slightly delayed vs overall
+                z_archetype = match_archetype
+                p = base_params[z_archetype].copy()
+                p["t_mid"] += 2 
+            else: # Lower Bowl
+                # Follows overall benchmark
+                z_archetype = match_archetype
+                p = base_params[z_archetype]
+                
+            z_curve = []
+            for t in range(61):
+                val = z_sold / (1 + np.exp(-p["k"] * (t - p["t_mid"])))
+                z_curve.append(val)
+            
+            # Scale and add noise
+            current_final = z_curve[-1]
+            scale = z_sold / current_final if current_final > 0 else 0
+            
+            final_z_curve = []
+            last_val = 0
+            for val in z_curve:
+                noisy_val = max(last_val, int(val * scale + random.uniform(-0.01, 0.01) * z_sold))
+                final_z_curve.append(noisy_val)
+                last_val = noisy_val
+            
+            final_z_curve[-1] = z_sold
+            match["zone_booking_curves"][zone] = final_z_curve
+            full_match_curve += np.array(final_z_curve)
+            
+            # Zone Velocities (using expected zone tickets as denominator to avoid leakage)
+            expected_z = int(match["expected_tickets"] * ZONE_SPLIT[zone])
+            match[f"velocity_T14_{zone}"] = round(final_z_curve[46] / expected_z, 2) if expected_z > 0 else 0
+            match[f"velocity_T7_{zone}"] = round(final_z_curve[53] / expected_z, 2) if expected_z > 0 else 0
+
+        match["booking_curve"] = full_match_curve.tolist()
         
-        match["velocity_T30"] = round(final_curve[30] / final_tickets, 2) if final_tickets > 0 else 0
-        match["velocity_T14"] = round(final_curve[46] / final_tickets, 2) if final_tickets > 0 else 0
-        match["velocity_T7"] = round(final_curve[53] / final_tickets, 2) if final_tickets > 0 else 0
+        # Global Velocity (Leakage Fix: use expected_tickets, not total_tickets_sold)
+        exp = match["expected_tickets"]
+        match["velocity_T30"] = round(full_match_curve[30] / exp, 2) if exp > 0 else 0
+        match["velocity_T14"] = round(full_match_curve[46] / exp, 2) if exp > 0 else 0
+        match["velocity_T7"] = round(full_match_curve[53] / exp, 2) if exp > 0 else 0
 
     def _simulate_secondary_market(self, match):
         base_premium = 0.05
@@ -645,7 +685,7 @@ class MatchDataGenerator:
             df[f"sold_{zone}"] = df["attendance"].apply(lambda x: x[zone]["tickets_sold"])
             df[f"fill_{zone}"] = df["attendance"].apply(lambda x: x[zone]["fill_rate"])
         
-        df_flat = df.drop(columns=["attendance", "booking_curve", "zone_capacities"])
+        df_flat = df.drop(columns=["attendance", "booking_curve", "zone_capacities", "zone_booking_curves"])
         df_flat.to_csv(os.path.join(self.data_dir, "match_data.csv"), index=False)
 
     def get_validation_report(self):

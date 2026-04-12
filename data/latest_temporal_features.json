@@ -1,0 +1,52 @@
+{
+  "LUZ": {
+    "latest_stl_trend": 0.7161922483893253,
+    "latest_stl_seasonal": -0.1391922483893244,
+    "sarima_residual_default": 0.0
+  },
+  "THG": {
+    "latest_stl_trend": 0.7403779237543525,
+    "latest_stl_seasonal": -0.013504387140010163,
+    "sarima_residual_default": 0.0
+  },
+  "WIN2": {
+    "latest_stl_trend": 0.7892312604946085,
+    "latest_stl_seasonal": -0.06023126049460771,
+    "sarima_residual_default": 0.0
+  },
+  "THU": {
+    "latest_stl_trend": 0.7625695406278418,
+    "latest_stl_seasonal": -0.09756954062784254,
+    "sarima_residual_default": 0.0
+  },
+  "HSC": {
+    "latest_stl_trend": 0.8360721273962528,
+    "latest_stl_seasonal": 0.022927872603747262,
+    "sarima_residual_default": 0.0
+  },
+  "RTV": {
+    "latest_stl_trend": 0.9506791872985849,
+    "latest_stl_seasonal": 0.04932075435218046,
+    "sarima_residual_default": 0.0
+  },
+  "GC": {
+    "latest_stl_trend": 0.931004295612182,
+    "latest_stl_seasonal": 0.06899638785643632,
+    "sarima_residual_default": 0.0
+  },
+  "BSV": {
+    "latest_stl_trend": 0.9630550585632469,
+    "latest_stl_seasonal": 0.03694494143706305,
+    "sarima_residual_default": 0.0
+  },
+  "KAD": {
+    "latest_stl_trend": 0.8958435758491596,
+    "latest_stl_seasonal": 0.10417835461027142,
+    "sarima_residual_default": 0.0
+  },
+  "WIN": {
+    "latest_stl_trend": 0.8825818851995682,
+    "latest_stl_seasonal": 0.11741811588055963,
+    "sarima_residual_default": 0.0
+  }
+}

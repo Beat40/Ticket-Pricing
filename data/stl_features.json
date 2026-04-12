@@ -1,1082 +1,1082 @@
 {
-  "WIN2_2021_R01_RTV": {
-    "stl_trend_value": 0.6982197822957407,
-    "stl_seasonal_value": 0.004829709933060839
-  },
-  "THU_2021_R01_GC": {
-    "stl_trend_value": 0.6972213453131894,
-    "stl_seasonal_value": 0.14989670153370252
-  },
   "LUZ_2021_R01_KAD": {
-    "stl_trend_value": 0.6962063424387867,
-    "stl_seasonal_value": -0.020554876833335168
-  },
-  "HSC_2021_R01_WIN": {
-    "stl_trend_value": 0.6951841062766103,
-    "stl_seasonal_value": -0.08549984837753138
+    "stl_trend_value": 0.5363954627091722,
+    "stl_seasonal_value": -0.0013418334320766869
   },
   "THG_2021_R01_BSV": {
-    "stl_trend_value": 0.6941720927731304,
-    "stl_seasonal_value": -0.12640568670497754
+    "stl_trend_value": 0.43445502634555133,
+    "stl_seasonal_value": 0.11054497365443999
   },
-  "BSV_2021_R02_WIN2": {
-    "stl_trend_value": 0.6931815783947028,
-    "stl_seasonal_value": 0.015429962531450106
+  "WIN2_2021_R01_RTV": {
+    "stl_trend_value": 0.6208991100968762,
+    "stl_seasonal_value": 0.13810088990312402
   },
-  "THG_2021_R02_THU": {
-    "stl_trend_value": 0.6922130206925088,
-    "stl_seasonal_value": -0.18514191225464816
+  "THU_2021_R01_GC": {
+    "stl_trend_value": 0.5260258925206986,
+    "stl_seasonal_value": 0.24397410747930134
   },
-  "KAD_2021_R02_WIN": {
-    "stl_trend_value": 0.6912623197262046,
-    "stl_seasonal_value": 0.17083065396422667
-  },
-  "GC_2021_R02_HSC": {
-    "stl_trend_value": 0.6903304028722628,
-    "stl_seasonal_value": -0.07390815926773442
+  "HSC_2021_R01_WIN": {
+    "stl_trend_value": 0.7804001810343595,
+    "stl_seasonal_value": -0.08640018103435876
   },
   "RTV_2021_R02_LUZ": {
-    "stl_trend_value": 0.6894150326036338,
-    "stl_seasonal_value": 0.09559270782557162
+    "stl_trend_value": 0.7672346793994796,
+    "stl_seasonal_value": -0.15123472218026757
+  },
+  "THG_2021_R02_THU": {
+    "stl_trend_value": 0.44424583539278306,
+    "stl_seasonal_value": -0.1312458353927874
+  },
+  "GC_2021_R02_HSC": {
+    "stl_trend_value": 0.7953855448106864,
+    "stl_seasonal_value": -0.037384573554435724
+  },
+  "BSV_2021_R02_WIN2": {
+    "stl_trend_value": 0.787639580491356,
+    "stl_seasonal_value": 0.019374917681720845
+  },
+  "KAD_2021_R02_WIN": {
+    "stl_trend_value": 0.6780126279662558,
+    "stl_seasonal_value": 0.19600831369817107
   },
   "THU_2021_R03_BSV": {
-    "stl_trend_value": 0.6885056682499615,
-    "stl_seasonal_value": -0.06236878119018245
+    "stl_trend_value": 0.5359902503330957,
+    "stl_seasonal_value": 0.12900974966690437
   },
   "LUZ_2021_R03_WIN2": {
-    "stl_trend_value": 0.6875875987670723,
-    "stl_seasonal_value": -0.07923581058023166
+    "stl_trend_value": 0.5451098751462056,
+    "stl_seasonal_value": 0.04191905698905447
   },
   "HSC_2021_R03_THG": {
-    "stl_trend_value": 0.6866377262158295,
-    "stl_seasonal_value": 0.020279795046716245
+    "stl_trend_value": 0.783040697355361,
+    "stl_seasonal_value": -0.07704069735536084
   },
   "WIN_2021_R03_RTV": {
-    "stl_trend_value": 0.68562632449142,
-    "stl_seasonal_value": 0.0751870264509725
+    "stl_trend_value": 0.562072855430695,
+    "stl_seasonal_value": 0.25392714566425467
   },
   "KAD_2021_R03_GC": {
-    "stl_trend_value": 0.6845191936597436,
-    "stl_seasonal_value": 0.293627856369628
-  },
-  "THG_2021_R04_KAD": {
-    "stl_trend_value": 0.6832602627651352,
-    "stl_seasonal_value": -0.2286302825095507
-  },
-  "WIN2_2021_R04_WIN": {
-    "stl_trend_value": 0.6817509639155045,
-    "stl_seasonal_value": -0.07350035431814557
-  },
-  "BSV_2021_R04_LUZ": {
-    "stl_trend_value": 0.6798884604766938,
-    "stl_seasonal_value": 0.08667333134638495
-  },
-  "THU_2021_R04_HSC": {
-    "stl_trend_value": 0.6784168557811556,
-    "stl_seasonal_value": 0.05851519193363222
+    "stl_trend_value": 0.6866393794471222,
+    "stl_seasonal_value": 0.3133736510280595
   },
   "RTV_2021_R04_GC": {
-    "stl_trend_value": 0.6771885847209448,
-    "stl_seasonal_value": 0.1375419614906093
+    "stl_trend_value": 0.7742902149752063,
+    "stl_seasonal_value": 0.22570978300955702
+  },
+  "THG_2021_R04_KAD": {
+    "stl_trend_value": 0.4540366444400152,
+    "stl_seasonal_value": -0.034036644440015695
+  },
+  "BSV_2021_R04_LUZ": {
+    "stl_trend_value": 0.7949344767727401,
+    "stl_seasonal_value": -0.05792665520403893
+  },
+  "WIN2_2021_R04_WIN": {
+    "stl_trend_value": 0.631463337206605,
+    "stl_seasonal_value": 0.06753666279339514
+  },
+  "THU_2021_R04_HSC": {
+    "stl_trend_value": 0.5459546081454926,
+    "stl_seasonal_value": 0.16604539185450737
   },
   "HSC_2021_R05_BSV": {
-    "stl_trend_value": 0.676276988174674,
-    "stl_seasonal_value": -0.0143239156754799
+    "stl_trend_value": 0.7856812136763619,
+    "stl_seasonal_value": 0.16431878632363797
   },
   "WIN_2021_R05_LUZ": {
-    "stl_trend_value": 0.6755052127359009,
-    "stl_seasonal_value": -0.058634923334504575
+    "stl_trend_value": 0.5743873079914878,
+    "stl_seasonal_value": -0.09038730755686882
   },
   "KAD_2021_R05_THU": {
-    "stl_trend_value": 0.6744983476993253,
-    "stl_seasonal_value": -0.10615307353409972
+    "stl_trend_value": 0.6952656542855375,
+    "stl_seasonal_value": -0.15626056137175326
   },
   "GC_2021_R05_WIN2": {
-    "stl_trend_value": 0.6729509969057886,
-    "stl_seasonal_value": 0.015046046446586931
+    "stl_trend_value": 0.8006023045893009,
+    "stl_seasonal_value": -0.04960168899719048
   },
   "RTV_2021_R05_THG": {
-    "stl_trend_value": 0.6707286224429588,
-    "stl_seasonal_value": -0.15702259726063666
-  },
-  "BSV_2021_R06_WIN": {
-    "stl_trend_value": 0.6677842584141057,
-    "stl_seasonal_value": 0.0780348443478738
-  },
-  "HSC_2021_R06_KAD": {
-    "stl_trend_value": 0.6640669079302464,
-    "stl_seasonal_value": -0.0709613409868585
-  },
-  "THU_2021_R06_RTV": {
-    "stl_trend_value": 0.6596788112740675,
-    "stl_seasonal_value": 0.05173196192508587
+    "stl_trend_value": 0.7813457511875888,
+    "stl_seasonal_value": -0.12934576982618004
   },
   "WIN2_2021_R06_THG": {
-    "stl_trend_value": 0.6547987351614539,
-    "stl_seasonal_value": -0.04236429640172075
+    "stl_trend_value": 0.6420275643163347,
+    "stl_seasonal_value": -0.09802756431633437
+  },
+  "BSV_2021_R06_WIN": {
+    "stl_trend_value": 0.8022286173061486,
+    "stl_seasonal_value": -0.03422742670488632
+  },
+  "HSC_2021_R06_KAD": {
+    "stl_trend_value": 0.788321729997363,
+    "stl_seasonal_value": -0.13832172999736347
   },
   "LUZ_2021_R06_GC": {
-    "stl_trend_value": 0.6495998478147458,
-    "stl_seasonal_value": -0.08709152942394086
+    "stl_trend_value": 0.553821492048441,
+    "stl_seasonal_value": 0.05218291181546053
   },
-  "RTV_2021_R07_HSC": {
-    "stl_trend_value": 0.6442959544132405,
-    "stl_seasonal_value": -0.009001749224094946
-  },
-  "THG_2021_R07_LUZ": {
-    "stl_trend_value": 0.6391002639406438,
-    "stl_seasonal_value": 0.11045457411868531
-  },
-  "KAD_2021_R07_BSV": {
-    "stl_trend_value": 0.6342298212399669,
-    "stl_seasonal_value": 0.15579217000500292
-  },
-  "GC_2021_R07_WIN": {
-    "stl_trend_value": 0.6298991857881584,
-    "stl_seasonal_value": -0.13597450477465894
+  "THU_2021_R06_RTV": {
+    "stl_trend_value": 0.5559189659578888,
+    "stl_seasonal_value": 0.08908103404211117
   },
   "WIN2_2021_R07_THU": {
-    "stl_trend_value": 0.6261188990273623,
-    "stl_seasonal_value": -0.009578538182111268
+    "stl_trend_value": 0.6525917914260635,
+    "stl_seasonal_value": -0.14959179142606346
   },
-  "BSV_2021_R08_GC": {
-    "stl_trend_value": 0.6227932942990122,
-    "stl_seasonal_value": 0.05588540172830557
+  "RTV_2021_R07_HSC": {
+    "stl_trend_value": 0.7884012880617512,
+    "stl_seasonal_value": -0.07940129519956166
   },
-  "KAD_2021_R08_RTV": {
-    "stl_trend_value": 0.619673192111285,
-    "stl_seasonal_value": 0.10861889271051985
+  "KAD_2021_R07_BSV": {
+    "stl_trend_value": 0.7038914320168295,
+    "stl_seasonal_value": 0.047105695502088686
   },
-  "HSC_2021_R08_WIN2": {
-    "stl_trend_value": 0.6164863995544139,
-    "stl_seasonal_value": 0.12256802664196471
+  "GC_2021_R07_WIN": {
+    "stl_trend_value": 0.8058190318632246,
+    "stl_seasonal_value": -0.12881875453466723
   },
-  "LUZ_2021_R08_THU": {
-    "stl_trend_value": 0.6130869948168611,
-    "stl_seasonal_value": -0.011384092216881785
+  "THG_2021_R07_LUZ": {
+    "stl_trend_value": 0.46382745348724713,
+    "stl_seasonal_value": -0.11382745348724436
   },
   "WIN_2021_R08_THG": {
-    "stl_trend_value": 0.6096718771441701,
-    "stl_seasonal_value": -0.030157934389647627
+    "stl_trend_value": 0.5867017605378012,
+    "stl_seasonal_value": -0.14070176064740486
+  },
+  "BSV_2021_R08_GC": {
+    "stl_trend_value": 0.8095217277578057,
+    "stl_seasonal_value": 0.11347289408740256
+  },
+  "HSC_2021_R08_WIN2": {
+    "stl_trend_value": 0.7909622463183641,
+    "stl_seasonal_value": -0.12596224631836483
+  },
+  "LUZ_2021_R08_THU": {
+    "stl_trend_value": 0.5625292986483822,
+    "stl_seasonal_value": 0.03345080711379115
+  },
+  "KAD_2021_R08_RTV": {
+    "stl_trend_value": 0.7125166889128374,
+    "stl_seasonal_value": 0.005472443818112515
   },
   "RTV_2021_R09_BSV": {
-    "stl_trend_value": 0.6066208933034933,
-    "stl_seasonal_value": -0.07931422875647284
+    "stl_trend_value": 0.7954568256088442,
+    "stl_seasonal_value": 0.20454322596874816
   },
   "THG_2021_R09_GC": {
-    "stl_trend_value": 0.6042355422258598,
-    "stl_seasonal_value": 0.022504197209903605
-  },
-  "WIN2_2021_R09_KAD": {
-    "stl_trend_value": 0.6026968461775133,
-    "stl_seasonal_value": -0.12798542083574918
-  },
-  "LUZ_2021_R09_HSC": {
-    "stl_trend_value": 0.6021756731246557,
-    "stl_seasonal_value": -0.015015467375996346
+    "stl_trend_value": 0.4736182625344793,
+    "stl_seasonal_value": -0.007618262534473532
   },
   "THU_2021_R09_WIN": {
-    "stl_trend_value": 0.602672253893107,
-    "stl_seasonal_value": -0.059398004820932056
+    "stl_trend_value": 0.5658833237702854,
+    "stl_seasonal_value": -0.13788332377028548
+  },
+  "WIN2_2021_R09_KAD": {
+    "stl_trend_value": 0.6631560185357928,
+    "stl_seasonal_value": -0.0871560185357928
+  },
+  "LUZ_2021_R09_HSC": {
+    "stl_trend_value": 0.5712315872665586,
+    "stl_seasonal_value": 0.09272455371952955
   },
   "KAD_2021_R10_LUZ": {
-    "stl_trend_value": 0.6040473401067823,
-    "stl_seasonal_value": 0.005782727161988633
-  },
-  "GC_2021_R10_THU": {
-    "stl_trend_value": 0.6061423925114371,
-    "stl_seasonal_value": -0.020066484629138542
+    "stl_trend_value": 0.7211413586278348,
+    "stl_seasonal_value": -0.19216025376469403
   },
   "WIN_2021_R10_HSC": {
-    "stl_trend_value": 0.6087232768619032,
-    "stl_seasonal_value": -0.09548472799779062
-  },
-  "BSV_2021_R10_THG": {
-    "stl_trend_value": 0.6116435281214853,
-    "stl_seasonal_value": -0.03680888762126829
+    "stl_trend_value": 0.5990162130712177,
+    "stl_seasonal_value": -0.11301621362174787
   },
   "RTV_2021_R10_WIN2": {
-    "stl_trend_value": 0.6147986382041962,
-    "stl_seasonal_value": 0.14352173805331597
+    "stl_trend_value": 0.802512363860008,
+    "stl_seasonal_value": -0.09451234918965577
   },
-  "WIN2_2021_R11_BSV": {
-    "stl_trend_value": 0.6179597377660226,
-    "stl_seasonal_value": 0.03118159539712025
+  "BSV_2021_R10_THG": {
+    "stl_trend_value": 0.8168133464713778,
+    "stl_seasonal_value": -0.2888252032830138
   },
-  "THU_2021_R11_THG": {
-    "stl_trend_value": 0.620907050322955,
-    "stl_seasonal_value": -0.043648817815861704
-  },
-  "HSC_2021_R11_GC": {
-    "stl_trend_value": 0.6236877127559397,
-    "stl_seasonal_value": 0.0434030631992375
+  "GC_2021_R10_THU": {
+    "stl_trend_value": 0.8110357220267991,
+    "stl_seasonal_value": -0.2040357630814139
   },
   "LUZ_2021_R11_RTV": {
-    "stl_trend_value": 0.626275141838995,
-    "stl_seasonal_value": 0.02767332226481259
+    "stl_trend_value": 0.5799251788202362,
+    "stl_seasonal_value": 0.04300752275478392
+  },
+  "WIN2_2021_R11_BSV": {
+    "stl_trend_value": 0.6737202456455222,
+    "stl_seasonal_value": 0.012279754354477923
+  },
+  "THU_2021_R11_THG": {
+    "stl_trend_value": 0.5758476815826821,
+    "stl_seasonal_value": -0.14584768158268202
   },
   "WIN_2021_R11_KAD": {
-    "stl_trend_value": 0.6289266935831961,
-    "stl_seasonal_value": 0.15720411557913905
+    "stl_trend_value": 0.6113306655923901,
+    "stl_seasonal_value": 0.09366933351425868
   },
-  "GC_2021_R12_KAD": {
-    "stl_trend_value": 0.6320877227376867,
-    "stl_seasonal_value": 0.09135486056353476
-  },
-  "RTV_2021_R12_WIN": {
-    "stl_trend_value": 0.6360315792723874,
-    "stl_seasonal_value": -0.023022551191323015
+  "HSC_2021_R11_GC": {
+    "stl_trend_value": 0.793602762639365,
+    "stl_seasonal_value": 0.008397237360634358
   },
   "BSV_2021_R12_THU": {
-    "stl_trend_value": 0.6408617817764173,
-    "stl_seasonal_value": 0.003538321950957447
-  },
-  "THG_2021_R12_HSC": {
-    "stl_trend_value": 0.6463833554146378,
-    "stl_seasonal_value": -0.05621409157511893
+    "stl_trend_value": 0.8241026140099585,
+    "stl_seasonal_value": -0.12312080746991283
   },
   "WIN2_2021_R12_LUZ": {
-    "stl_trend_value": 0.6523299031219673,
-    "stl_seasonal_value": 0.04064404739778777
+    "stl_trend_value": 0.6842844727552516,
+    "stl_seasonal_value": -0.2982844727552514
   },
-  "LUZ_2021_R13_BSV": {
-    "stl_trend_value": 0.6585652614569838,
-    "stl_seasonal_value": -0.10932903625793249
+  "THG_2021_R12_HSC": {
+    "stl_trend_value": 0.48340907158171154,
+    "stl_seasonal_value": 0.049590928418296744
   },
-  "WIN_2021_R13_WIN2": {
-    "stl_trend_value": 0.6651193635086656,
-    "stl_seasonal_value": -0.10000169583399433
+  "RTV_2021_R12_WIN": {
+    "stl_trend_value": 0.809567902974735,
+    "stl_seasonal_value": -0.10556787803252012
+  },
+  "GC_2021_R12_KAD": {
+    "stl_trend_value": 0.816252369777218,
+    "stl_seasonal_value": 0.0607472935414918
   },
   "KAD_2021_R13_THG": {
-    "stl_trend_value": 0.6720249177388683,
-    "stl_seasonal_value": -0.03596589811489551
+    "stl_trend_value": 0.7297652341959957,
+    "stl_seasonal_value": -0.1197922012536794
+  },
+  "WIN_2021_R13_WIN2": {
+    "stl_trend_value": 0.6236451180980666,
+    "stl_seasonal_value": -0.1136451192097431
   },
   "GC_2021_R13_RTV": {
-    "stl_trend_value": 0.6790684536888693,
-    "stl_seasonal_value": -0.043201752721898606
+    "stl_trend_value": 0.8214689681256545,
+    "stl_seasonal_value": 0.17852951557173516
+  },
+  "LUZ_2021_R13_BSV": {
+    "stl_trend_value": 0.5886033480436593,
+    "stl_seasonal_value": 0.012306845739735327
   },
   "HSC_2021_R13_THU": {
-    "stl_trend_value": 0.6859824638235363,
-    "stl_seasonal_value": 0.00935423771046573
-  },
-  "THG_2021_R14_RTV": {
-    "stl_trend_value": 0.692610199609226,
-    "stl_seasonal_value": -0.10464667473724976
-  },
-  "THU_2021_R14_KAD": {
-    "stl_trend_value": 0.6988485521486304,
-    "stl_seasonal_value": -0.06981231789699965
-  },
-  "BSV_2021_R14_HSC": {
-    "stl_trend_value": 0.7048961950421154,
-    "stl_seasonal_value": 0.1722171549157985
-  },
-  "LUZ_2021_R14_WIN": {
-    "stl_trend_value": 0.7109735028024671,
-    "stl_seasonal_value": -0.0766917274311796
+    "stl_trend_value": 0.796243278960366,
+    "stl_seasonal_value": -0.20124327896036662
   },
   "WIN2_2021_R14_GC": {
-    "stl_trend_value": 0.7172514231108293,
-    "stl_seasonal_value": 0.029220612114261323
+    "stl_trend_value": 0.694848699864981,
+    "stl_seasonal_value": 0.0661513001350191
+  },
+  "LUZ_2021_R14_WIN": {
+    "stl_trend_value": 0.5972488348953234,
+    "stl_seasonal_value": -0.12635917465326157
+  },
+  "THU_2021_R14_KAD": {
+    "stl_trend_value": 0.5858120393950786,
+    "stl_seasonal_value": -0.1008120393950787
+  },
+  "BSV_2021_R14_HSC": {
+    "stl_trend_value": 0.8313877122587339,
+    "stl_seasonal_value": 0.10158800944154117
+  },
+  "THG_2021_R14_RTV": {
+    "stl_trend_value": 0.4931998806289441,
+    "stl_seasonal_value": 0.1288001193710658
   },
   "WIN_2021_R15_BSV": {
-    "stl_trend_value": 0.723790645789481,
-    "stl_seasonal_value": 0.10201053199070916
-  },
-  "KAD_2021_R15_HSC": {
-    "stl_trend_value": 0.7305104282378538,
-    "stl_seasonal_value": -0.01660215921712791
+    "stl_trend_value": 0.6359595705735198,
+    "stl_seasonal_value": 0.04404042833983585
   },
   "GC_2021_R15_LUZ": {
-    "stl_trend_value": 0.7372367966962277,
-    "stl_seasonal_value": 0.16557622012669818
+    "stl_trend_value": 0.8266855065459416,
+    "stl_seasonal_value": -0.16468635082043412
   },
   "RTV_2021_R15_THU": {
-    "stl_trend_value": 0.7436271167719013,
-    "stl_seasonal_value": 0.051085032920499006
+    "stl_trend_value": 0.8166234433934474,
+    "stl_seasonal_value": -0.05962340891506137
+  },
+  "KAD_2021_R15_HSC": {
+    "stl_trend_value": 0.7383876499796143,
+    "stl_seasonal_value": -0.01942276836652903
   },
   "THG_2021_R15_WIN2": {
-    "stl_trend_value": 0.7493913992233567,
-    "stl_seasonal_value": -0.08815112849774552
-  },
-  "BSV_2021_R16_KAD": {
-    "stl_trend_value": 0.7543034862664723,
-    "stl_seasonal_value": 0.021522102679276192
+    "stl_trend_value": 0.5029906896761771,
+    "stl_seasonal_value": 0.06500931032383264
   },
   "WIN_2021_R16_GC": {
-    "stl_trend_value": 0.7583245562904675,
-    "stl_seasonal_value": 0.019664419832706368
+    "stl_trend_value": 0.648274022968402,
+    "stl_seasonal_value": 0.1907259766184672
   },
   "HSC_2021_R16_RTV": {
-    "stl_trend_value": 0.7614817697161765,
-    "stl_seasonal_value": 0.08027479827455283
-  },
-  "LUZ_2021_R16_THG": {
-    "stl_trend_value": 0.7638394812154241,
-    "stl_seasonal_value": -0.04838972873661953
+    "stl_trend_value": 0.7988837952813671,
+    "stl_seasonal_value": 0.2011162047186328
   },
   "THU_2021_R16_WIN2": {
-    "stl_trend_value": 0.7655710637245001,
-    "stl_seasonal_value": -0.1219640367952223
+    "stl_trend_value": 0.5957763972074755,
+    "stl_seasonal_value": -0.0667763972074756
   },
-  "THG_2021_R17_WIN": {
-    "stl_trend_value": 0.7669341839604011,
-    "stl_seasonal_value": 0.0010435484278475118
+  "BSV_2021_R16_KAD": {
+    "stl_trend_value": 0.8386639751265113,
+    "stl_seasonal_value": 0.05730619532550647
+  },
+  "LUZ_2021_R16_THG": {
+    "stl_trend_value": 0.6058039488876672,
+    "stl_seasonal_value": -0.12376357122769473
   },
   "THU_2021_R17_LUZ": {
-    "stl_trend_value": 0.768074009956389,
-    "stl_seasonal_value": -0.06755950644649732
+    "stl_trend_value": 0.6057407550198718,
+    "stl_seasonal_value": -0.1047407550198717
+  },
+  "THG_2021_R17_WIN": {
+    "stl_trend_value": 0.5127814987234112,
+    "stl_seasonal_value": -0.0447814987234069
   },
   "GC_2021_R17_BSV": {
-    "stl_trend_value": 0.7690928838579282,
-    "stl_seasonal_value": 0.009747309046429172
+    "stl_trend_value": 0.8319019665295048,
+    "stl_seasonal_value": 0.1680962567043562
   },
   "RTV_2021_R17_KAD": {
-    "stl_trend_value": 0.770212946876886,
-    "stl_seasonal_value": -0.1206045164395967
+    "stl_trend_value": 0.8236789862830572,
+    "stl_seasonal_value": 0.176321056299378
   },
   "WIN2_2021_R17_HSC": {
-    "stl_trend_value": 0.7716569085905925,
-    "stl_seasonal_value": -0.07968367950607143
-  },
-  "BSV_2021_R18_RTV": {
-    "stl_trend_value": 0.7735039235412852,
-    "stl_seasonal_value": 0.15445817383172528
-  },
-  "GC_2021_R18_THG": {
-    "stl_trend_value": 0.7758205857246334,
-    "stl_seasonal_value": -0.05185490141785227
+    "stl_trend_value": 0.7054129269747105,
+    "stl_seasonal_value": 0.2945870730252895
   },
   "KAD_2021_R18_WIN2": {
-    "stl_trend_value": 0.778398821224324,
-    "stl_seasonal_value": 0.037116388257272
+    "stl_trend_value": 0.747006313562628,
+    "stl_seasonal_value": -0.024049786899181323
   },
   "WIN_2021_R18_THU": {
-    "stl_trend_value": 0.7810685090349276,
-    "stl_seasonal_value": 0.08855008867932294
+    "stl_trend_value": 0.6605884751111948,
+    "stl_seasonal_value": -0.06458847282575698
   },
   "HSC_2021_R18_LUZ": {
-    "stl_trend_value": 0.7839207825072579,
-    "stl_seasonal_value": -0.07675828509658805
+    "stl_trend_value": 0.8015243116023683,
+    "stl_seasonal_value": 0.1984756883976342
   },
-  "HSC_2022_R01_WIN": {
-    "stl_trend_value": 0.7870399936611864,
-    "stl_seasonal_value": 0.1796230412067614
+  "BSV_2021_R18_RTV": {
+    "stl_trend_value": 0.8459158065584752,
+    "stl_seasonal_value": 0.14302733382089483
   },
-  "LUZ_2022_R01_KAD": {
-    "stl_trend_value": 0.7904721861576557,
-    "stl_seasonal_value": 0.03398336335865966
+  "GC_2021_R18_THG": {
+    "stl_trend_value": 0.8371183175012968,
+    "stl_seasonal_value": 0.14288050158221333
   },
   "THG_2022_R01_BSV": {
-    "stl_trend_value": 0.7940235883185238,
-    "stl_seasonal_value": -0.14958575280638692
-  },
-  "THU_2022_R01_GC": {
-    "stl_trend_value": 0.7974069020066483,
-    "stl_seasonal_value": -0.009506912189999555
+    "stl_trend_value": 0.5225723077706493,
+    "stl_seasonal_value": 0.1274276922293348
   },
   "WIN2_2022_R01_RTV": {
-    "stl_trend_value": 0.8003804066560811,
-    "stl_seasonal_value": 0.04288639097723389
+    "stl_trend_value": 0.7159771540844403,
+    "stl_seasonal_value": 0.16501005666307303
   },
-  "KAD_2022_R02_WIN": {
-    "stl_trend_value": 0.8028384439291951,
-    "stl_seasonal_value": 0.10743678154692847
+  "THU_2022_R01_GC": {
+    "stl_trend_value": 0.6157051128322674,
+    "stl_seasonal_value": 0.23483294472773145
   },
-  "BSV_2022_R02_WIN2": {
-    "stl_trend_value": 0.8047917639792332,
-    "stl_seasonal_value": 0.018188424371240165
+  "LUZ_2022_R01_KAD": {
+    "stl_trend_value": 0.6140819178305619,
+    "stl_seasonal_value": -0.022005112652561675
+  },
+  "HSC_2022_R01_WIN": {
+    "stl_trend_value": 0.8041648279233686,
+    "stl_seasonal_value": -0.03801516202630492
   },
   "THG_2022_R02_THU": {
-    "stl_trend_value": 0.8061804299865586,
-    "stl_seasonal_value": -0.043640653267656315
+    "stl_trend_value": 0.5323631168178895,
+    "stl_seasonal_value": -0.11657005557836833
+  },
+  "KAD_2022_R02_WIN": {
+    "stl_trend_value": 0.7556151892190847,
+    "stl_seasonal_value": 0.18287706210483753
+  },
+  "BSV_2022_R02_WIN2": {
+    "stl_trend_value": 0.8530927146250287,
+    "stl_seasonal_value": 0.051733794533146304
   },
   "GC_2022_R02_HSC": {
-    "stl_trend_value": 0.8069164122958155,
-    "stl_seasonal_value": 0.0046366932905659115
+    "stl_trend_value": 0.8423345437013502,
+    "stl_seasonal_value": 0.008668282050017639
   },
   "RTV_2022_R02_LUZ": {
-    "stl_trend_value": 0.8071539584570498,
-    "stl_seasonal_value": -0.07895798943188109
+    "stl_trend_value": 0.8307345338713064,
+    "stl_seasonal_value": -0.09523458650146403
   },
   "THU_2022_R03_BSV": {
-    "stl_trend_value": 0.8069619043158786,
-    "stl_seasonal_value": 0.008343342454229054
+    "stl_trend_value": 0.6228205024580911,
+    "stl_seasonal_value": 0.1279594331587834
   },
   "LUZ_2022_R03_WIN2": {
-    "stl_trend_value": 0.8063371042830508,
-    "stl_seasonal_value": -0.11830446513133665
+    "stl_trend_value": 0.6212145900424912,
+    "stl_seasonal_value": 0.010030091525736397
   },
   "HSC_2022_R03_THG": {
-    "stl_trend_value": 0.8051728309875085,
-    "stl_seasonal_value": -0.028247106102558338
+    "stl_trend_value": 0.8063067644157802,
+    "stl_seasonal_value": -0.09111304421043119
   },
   "WIN_2022_R03_RTV": {
-    "stl_trend_value": 0.8032621863928893,
-    "stl_seasonal_value": 0.08517807354662693
+    "stl_trend_value": 0.6729029265693014,
+    "stl_seasonal_value": 0.23053496239293897
   },
   "KAD_2022_R03_GC": {
-    "stl_trend_value": 0.8005323176004208,
-    "stl_seasonal_value": 0.01064243393330327
-  },
-  "BSV_2022_R04_LUZ": {
-    "stl_trend_value": 0.7970345667381777,
-    "stl_seasonal_value": -0.046725705021032016
-  },
-  "WIN2_2022_R04_WIN": {
-    "stl_trend_value": 0.7929104876530075,
-    "stl_seasonal_value": 0.029475258593246293
-  },
-  "THG_2022_R04_KAD": {
-    "stl_trend_value": 0.7882895180051654,
-    "stl_seasonal_value": -0.07472229883387714
-  },
-  "RTV_2022_R04_GC": {
-    "stl_trend_value": 0.7833051753426447,
-    "stl_seasonal_value": 0.18463095593503676
+    "stl_trend_value": 0.7641032723283632,
+    "stl_seasonal_value": 0.23583836027823496
   },
   "THU_2022_R04_HSC": {
-    "stl_trend_value": 0.7780356985147908,
-    "stl_seasonal_value": 0.04946581383778675
+    "stl_trend_value": 0.6263125047461352,
+    "stl_seasonal_value": 0.09408592158983384
   },
-  "WIN_2022_R05_LUZ": {
-    "stl_trend_value": 0.7725624236081049,
-    "stl_seasonal_value": -0.18266319616305132
+  "BSV_2022_R04_LUZ": {
+    "stl_trend_value": 0.8599502363110644,
+    "stl_seasonal_value": -0.04886372503161352
   },
-  "KAD_2022_R05_THU": {
-    "stl_trend_value": 0.7670315405583847,
-    "stl_seasonal_value": -0.06519048629521244
+  "WIN2_2022_R04_WIN": {
+    "stl_trend_value": 0.7252045685861042,
+    "stl_seasonal_value": 0.11109353786335584
   },
-  "RTV_2022_R05_THG": {
-    "stl_trend_value": 0.7616318508468218,
-    "stl_seasonal_value": 0.012631617828021822
+  "THG_2022_R04_KAD": {
+    "stl_trend_value": 0.5440293157575932,
+    "stl_seasonal_value": -0.04023492541502548
+  },
+  "RTV_2022_R04_GC": {
+    "stl_trend_value": 0.8377900858151265,
+    "stl_seasonal_value": 0.16220990264045573
   },
   "GC_2022_R05_WIN2": {
-    "stl_trend_value": 0.7565495760522718,
-    "stl_seasonal_value": 0.11137087468959532
+    "stl_trend_value": 0.8475505625307631,
+    "stl_seasonal_value": -0.0625481146686197
+  },
+  "KAD_2022_R05_THU": {
+    "stl_trend_value": 0.772263500309524,
+    "stl_seasonal_value": -0.16046806378751863
+  },
+  "RTV_2022_R05_THG": {
+    "stl_trend_value": 0.8448456352671402,
+    "stl_seasonal_value": -0.08884569570877919
   },
   "HSC_2022_R05_BSV": {
-    "stl_trend_value": 0.7519739076835774,
-    "stl_seasonal_value": 0.06705041345064787
+    "stl_trend_value": 0.8079142622240852,
+    "stl_seasonal_value": 0.16878907360544226
+  },
+  "WIN_2022_R05_LUZ": {
+    "stl_trend_value": 0.6852294042255114,
+    "stl_seasonal_value": -0.09179255708215527
   },
   "BSV_2022_R06_WIN": {
-    "stl_trend_value": 0.7479715165523373,
-    "stl_seasonal_value": 0.044154313822786215
+    "stl_trend_value": 0.8669187653739988,
+    "stl_seasonal_value": 0.01903915609620309
   },
   "HSC_2022_R06_KAD": {
-    "stl_trend_value": 0.7443966754818372,
-    "stl_seasonal_value": -0.03772602627837088
+    "stl_trend_value": 0.8099936444260605,
+    "stl_seasonal_value": -0.13730880857868324
   },
   "LUZ_2022_R06_GC": {
-    "stl_trend_value": 0.7412055105511617,
-    "stl_seasonal_value": 0.006695951717159734
+    "stl_trend_value": 0.6288013525412474,
+    "stl_seasonal_value": 0.08606677790667162
   },
   "THU_2022_R06_RTV": {
-    "stl_trend_value": 0.7385125674464877,
-    "stl_seasonal_value": -0.006327942566195928
+    "stl_trend_value": 0.6332727983015624,
+    "stl_seasonal_value": 0.03971241002088541
   },
   "WIN2_2022_R06_THG": {
-    "stl_trend_value": 0.7363559370968005,
-    "stl_seasonal_value": -0.09539115449660189
-  },
-  "KAD_2022_R07_BSV": {
-    "stl_trend_value": 0.7348339006390485,
-    "stl_seasonal_value": 0.023265289195764427
-  },
-  "GC_2022_R07_WIN": {
-    "stl_trend_value": 0.7340236537133135,
-    "stl_seasonal_value": -0.026936234506805604
-  },
-  "RTV_2022_R07_HSC": {
-    "stl_trend_value": 0.7338149860272006,
-    "stl_seasonal_value": 0.06027336842258407
-  },
-  "THG_2022_R07_LUZ": {
-    "stl_trend_value": 0.7338825612912668,
-    "stl_seasonal_value": -0.12181490050620875
+    "stl_trend_value": 0.7283174665049743,
+    "stl_seasonal_value": -0.15132298093635996
   },
   "WIN2_2022_R07_THU": {
-    "stl_trend_value": 0.7338918696616658,
-    "stl_seasonal_value": 0.030966375515125447
+    "stl_trend_value": 0.7322143019883973,
+    "stl_seasonal_value": -0.13073949973607638
   },
-  "HSC_2022_R08_WIN2": {
-    "stl_trend_value": 0.7337188584190254,
-    "stl_seasonal_value": -0.03554283730288269
+  "THG_2022_R07_LUZ": {
+    "stl_trend_value": 0.5595620902444683,
+    "stl_seasonal_value": -0.16294065732389884
   },
-  "BSV_2022_R08_GC": {
-    "stl_trend_value": 0.7332121987641198,
-    "stl_seasonal_value": 0.19596155172908042
+  "GC_2022_R07_WIN": {
+    "stl_trend_value": 0.852766633244986,
+    "stl_seasonal_value": -0.10076445972222361
   },
-  "KAD_2022_R08_RTV": {
-    "stl_trend_value": 0.7324277110413537,
-    "stl_seasonal_value": 0.07135096921190356
+  "KAD_2022_R07_BSV": {
+    "stl_trend_value": 0.7804404672166917,
+    "stl_seasonal_value": 0.09161650290678428
+  },
+  "RTV_2022_R07_HSC": {
+    "stl_trend_value": 0.8519011809261653,
+    "stl_seasonal_value": -0.07890125621762774
   },
   "WIN_2022_R08_THG": {
-    "stl_trend_value": 0.7316144616701407,
-    "stl_seasonal_value": -0.18483729086401185
+    "stl_trend_value": 0.697573644429719,
+    "stl_seasonal_value": -0.22912007537041243
+  },
+  "HSC_2022_R08_WIN2": {
+    "stl_trend_value": 0.8121732867287519,
+    "stl_seasonal_value": -0.10040669076280885
   },
   "LUZ_2022_R08_THU": {
-    "stl_trend_value": 0.7309824720037035,
-    "stl_seasonal_value": -0.13562623752529024
+    "stl_trend_value": 0.636427192150028,
+    "stl_seasonal_value": 0.013605484523569467
+  },
+  "BSV_2022_R08_GC": {
+    "stl_trend_value": 0.8738924803673684,
+    "stl_seasonal_value": 0.08994258337062891
+  },
+  "KAD_2022_R08_RTV": {
+    "stl_trend_value": 0.7887061230733806,
+    "stl_seasonal_value": 0.0022031629665637967
   },
   "THU_2022_R09_WIN": {
-    "stl_trend_value": 0.7305961167854397,
-    "stl_seasonal_value": -0.018134202632194025
+    "stl_trend_value": 0.6413288154422218,
+    "stl_seasonal_value": -0.12416110154806347
   },
   "WIN2_2022_R09_KAD": {
-    "stl_trend_value": 0.7304107773745765,
-    "stl_seasonal_value": 0.1265908449495371
+    "stl_trend_value": 0.7381029712966471,
+    "stl_seasonal_value": -0.10415601853579286
   },
   "LUZ_2022_R09_HSC": {
-    "stl_trend_value": 0.7303054853359462,
-    "stl_seasonal_value": 0.018210695098963118
+    "stl_trend_value": 0.6442475434159863,
+    "stl_seasonal_value": 0.08114711679417108
   },
   "RTV_2022_R09_BSV": {
-    "stl_trend_value": 0.7303398108966094,
-    "stl_seasonal_value": 0.1216399656451535
+    "stl_trend_value": 0.8589567297943151,
+    "stl_seasonal_value": 0.14104323970349658
   },
   "THG_2022_R09_GC": {
-    "stl_trend_value": 0.7307085444081078,
-    "stl_seasonal_value": -0.06307641261373116
+    "stl_trend_value": 0.572797898003742,
+    "stl_seasonal_value": -0.010165671431803844
   },
   "BSV_2022_R10_THG": {
-    "stl_trend_value": 0.7314265487412511,
-    "stl_seasonal_value": 0.06203398170694288
+    "stl_trend_value": 0.8809276323369276,
+    "stl_seasonal_value": -0.20565319843628035
   },
   "RTV_2022_R10_WIN2": {
-    "stl_trend_value": 0.7324059641604928,
-    "stl_seasonal_value": -0.04258746015693837
+    "stl_trend_value": 0.8660122839013548,
+    "stl_seasonal_value": -0.10551238491956101
   },
   "GC_2022_R10_THU": {
-    "stl_trend_value": 0.7334665664636704,
-    "stl_seasonal_value": -0.1034661031436637
-  },
-  "KAD_2022_R10_LUZ": {
-    "stl_trend_value": 0.7344136765691887,
-    "stl_seasonal_value": 0.08688731137645611
+    "stl_trend_value": 0.8579826975285264,
+    "stl_seasonal_value": -0.1884807630865716
   },
   "WIN_2022_R10_HSC": {
-    "stl_trend_value": 0.7351617670010074,
-    "stl_seasonal_value": -0.07803111208148711
+    "stl_trend_value": 0.7099047680065176,
+    "stl_seasonal_value": -0.08794759324159758
   },
-  "WIN2_2022_R11_BSV": {
-    "stl_trend_value": 0.7358288750051802,
-    "stl_seasonal_value": 0.02223168081545771
+  "KAD_2022_R10_LUZ": {
+    "stl_trend_value": 0.7970228000238603,
+    "stl_seasonal_value": -0.1882087138511115
   },
   "THU_2022_R11_THG": {
-    "stl_trend_value": 0.7367709709027087,
-    "stl_seasonal_value": -0.10447661784457472
-  },
-  "LUZ_2022_R11_RTV": {
-    "stl_trend_value": 0.7381848141256515,
-    "stl_seasonal_value": 0.06284163794307344
+    "stl_trend_value": 0.6493818985034695,
+    "stl_seasonal_value": -0.1660346131170124
   },
   "HSC_2022_R11_GC": {
-    "stl_trend_value": 0.7400462742250472,
-    "stl_seasonal_value": 0.025608496640082423
+    "stl_trend_value": 0.814390454977489,
+    "stl_seasonal_value": 0.03299542705306546
   },
   "WIN_2022_R11_KAD": {
-    "stl_trend_value": 0.7423316446998909,
-    "stl_seasonal_value": 0.17387630638790838
+    "stl_trend_value": 0.7222321321901434,
+    "stl_seasonal_value": 0.13022488907707577
+  },
+  "WIN2_2022_R11_BSV": {
+    "stl_trend_value": 0.744476033625862,
+    "stl_seasonal_value": 0.03142746266449075
+  },
+  "LUZ_2022_R11_RTV": {
+    "stl_trend_value": 0.6537560257019525,
+    "stl_seasonal_value": 0.05169336027953118
   },
   "BSV_2022_R12_THU": {
-    "stl_trend_value": 0.7450774699396792,
-    "stl_seasonal_value": 0.06444870766102134
+    "stl_trend_value": 0.888497231495607,
+    "stl_seasonal_value": -0.1757477336514192
   },
   "WIN2_2022_R12_LUZ": {
-    "stl_trend_value": 0.7484277436522816,
-    "stl_seasonal_value": -0.17546467746129063
+    "stl_trend_value": 0.7520910842319533,
+    "stl_seasonal_value": -0.23198905613522536
   },
   "THG_2022_R12_HSC": {
-    "stl_trend_value": 0.7525551614643526,
-    "stl_seasonal_value": -0.16917902710712643
+    "stl_trend_value": 0.5850308999693175,
+    "stl_seasonal_value": -0.014401559282340963
   },
   "RTV_2022_R12_WIN": {
-    "stl_trend_value": 0.7576459140837326,
-    "stl_seasonal_value": -0.02611625866796239
+    "stl_trend_value": 0.8730678404858716,
+    "stl_seasonal_value": -0.05406795267930485
   },
   "GC_2022_R12_KAD": {
-    "stl_trend_value": 0.7636198420961848,
-    "stl_seasonal_value": 0.13874001082630757
-  },
-  "HSC_2022_R13_THU": {
-    "stl_trend_value": 0.770033998786616,
-    "stl_seasonal_value": -0.057493708861051276
-  },
-  "WIN_2022_R13_WIN2": {
-    "stl_trend_value": 0.7763838993356521,
-    "stl_seasonal_value": 0.1341646512789486
-  },
-  "KAD_2022_R13_THG": {
-    "stl_trend_value": 0.7824273971341731,
-    "stl_seasonal_value": -0.013854622425698798
+    "stl_trend_value": 0.8631986984929158,
+    "stl_seasonal_value": -0.0071970258365311734
   },
   "GC_2022_R13_RTV": {
-    "stl_trend_value": 0.7881175068001016,
-    "stl_seasonal_value": 0.05608996759587388
+    "stl_trend_value": 0.86841462108126,
+    "stl_seasonal_value": 0.13158579386364383
+  },
+  "KAD_2022_R13_THG": {
+    "stl_trend_value": 0.8053522534119697,
+    "stl_seasonal_value": -0.10611937117449785
   },
   "LUZ_2022_R13_BSV": {
-    "stl_trend_value": 0.7934730437801164,
-    "stl_seasonal_value": -0.06249167200052598
+    "stl_trend_value": 0.6670846568988501,
+    "stl_seasonal_value": 0.050747780739739144
+  },
+  "WIN_2022_R13_WIN2": {
+    "stl_trend_value": 0.7345588947695858,
+    "stl_seasonal_value": -0.14960262846532588
+  },
+  "HSC_2022_R13_THU": {
+    "stl_trend_value": 0.8169087593289566,
+    "stl_seasonal_value": -0.18560245513106016
   },
   "THG_2022_R14_RTV": {
-    "stl_trend_value": 0.7985579075315138,
-    "stl_seasonal_value": -0.11675340715086316
+    "stl_trend_value": 0.5971428644696146,
+    "stl_seasonal_value": 0.09935565385955362
   },
   "BSV_2022_R14_HSC": {
-    "stl_trend_value": 0.8033860069349239,
-    "stl_seasonal_value": 0.09649037597040953
+    "stl_trend_value": 0.8972755249010211,
+    "stl_seasonal_value": 0.07515994168262768
   },
   "LUZ_2022_R14_WIN": {
-    "stl_trend_value": 0.8078452085938834,
-    "stl_seasonal_value": -0.0556201965967392
+    "stl_trend_value": 0.674287427743977,
+    "stl_seasonal_value": -0.11568047048902584
   },
   "THU_2022_R14_KAD": {
-    "stl_trend_value": 0.8117685165115196,
-    "stl_seasonal_value": -0.008937884944735686
+    "stl_trend_value": 0.6561960046241474,
+    "stl_seasonal_value": -0.11890812468596074
   },
   "WIN2_2022_R14_GC": {
-    "stl_trend_value": 0.8152723067532169,
-    "stl_seasonal_value": -0.04136555524001252
-  },
-  "WIN_2022_R15_BSV": {
-    "stl_trend_value": 0.8185337525987719,
-    "stl_seasonal_value": 0.09516956826555867
-  },
-  "KAD_2022_R15_HSC": {
-    "stl_trend_value": 0.8215592422323011,
-    "stl_seasonal_value": 0.04123394439543298
-  },
-  "GC_2022_R15_LUZ": {
-    "stl_trend_value": 0.8243552175470257,
-    "stl_seasonal_value": 0.10823905920963205
-  },
-  "RTV_2022_R15_THU": {
-    "stl_trend_value": 0.8269508399793984,
-    "stl_seasonal_value": 0.019705542462085834
+    "stl_trend_value": 0.7670856625960544,
+    "stl_seasonal_value": 0.13909442506505768
   },
   "THG_2022_R15_WIN2": {
-    "stl_trend_value": 0.8292333581565542,
-    "stl_seasonal_value": -0.14465074265065161
+    "stl_trend_value": 0.6089575439339139,
+    "stl_seasonal_value": 0.1691081030639649
   },
-  "THU_2022_R16_WIN2": {
-    "stl_trend_value": 0.8309303287806854,
-    "stl_seasonal_value": -0.16434657958105328
+  "WIN_2022_R15_BSV": {
+    "stl_trend_value": 0.7468813820861637,
+    "stl_seasonal_value": 0.07106985418342102
   },
-  "LUZ_2022_R16_THG": {
-    "stl_trend_value": 0.8317356544596584,
-    "stl_seasonal_value": -0.00975268312202591
+  "KAD_2022_R15_HSC": {
+    "stl_trend_value": 0.8136697416804279,
+    "stl_seasonal_value": -0.04752869090824278
   },
-  "WIN_2022_R16_GC": {
-    "stl_trend_value": 0.8316166918495381,
-    "stl_seasonal_value": 0.17472836473897996
+  "GC_2022_R15_LUZ": {
+    "stl_trend_value": 0.8736304915247548,
+    "stl_seasonal_value": -0.042629412243209326
   },
-  "BSV_2022_R16_KAD": {
-    "stl_trend_value": 0.830918210658662,
-    "stl_seasonal_value": -0.14046722428246677
+  "RTV_2022_R15_THU": {
+    "stl_trend_value": 0.8801233963703559,
+    "stl_seasonal_value": -0.006623522900134319
   },
   "HSC_2022_R16_RTV": {
-    "stl_trend_value": 0.8300517660321023,
-    "stl_seasonal_value": 0.0998441433790637
+    "stl_trend_value": 0.8200609205844658,
+    "stl_seasonal_value": 0.1832996626848147
   },
-  "GC_2022_R17_BSV": {
-    "stl_trend_value": 0.8291809985612397,
-    "stl_seasonal_value": 0.04917483040181361
+  "THU_2022_R16_WIN2": {
+    "stl_trend_value": 0.6586638938968203,
+    "stl_seasonal_value": 0.08571836374509044
   },
-  "THG_2022_R17_WIN": {
-    "stl_trend_value": 0.8281205114314497,
-    "stl_seasonal_value": 0.044930920672695676
+  "LUZ_2022_R16_THG": {
+    "stl_trend_value": 0.6784779098085122,
+    "stl_seasonal_value": -0.1314779098085096
   },
-  "WIN2_2022_R17_HSC": {
-    "stl_trend_value": 0.8267681891668461,
-    "stl_seasonal_value": -0.07966962979815571
+  "BSV_2022_R16_KAD": {
+    "stl_trend_value": 0.9041203961278259,
+    "stl_seasonal_value": 0.035072301502942264
+  },
+  "WIN_2022_R16_GC": {
+    "stl_trend_value": 0.7591892343717364,
+    "stl_seasonal_value": 0.1602423372539489
   },
   "THU_2022_R17_LUZ": {
-    "stl_trend_value": 0.825253092327614,
-    "stl_seasonal_value": -0.13215684884060758
+    "stl_trend_value": 0.6655255526983331,
+    "stl_seasonal_value": -0.10115514782385716
+  },
+  "GC_2022_R17_BSV": {
+    "stl_trend_value": 0.8788464095074943,
+    "stl_seasonal_value": 0.12115376380352237
   },
   "RTV_2022_R17_KAD": {
-    "stl_trend_value": 0.823856677087246,
-    "stl_seasonal_value": 0.08872589425531702
+    "stl_trend_value": 0.8871789501371978,
+    "stl_seasonal_value": 0.11282090362031466
   },
-  "BSV_2022_R18_RTV": {
-    "stl_trend_value": 0.8230377189850233,
-    "stl_seasonal_value": -0.012393998962499393
+  "THG_2022_R17_WIN": {
+    "stl_trend_value": 0.6192532013828934,
+    "stl_seasonal_value": -0.029142942931708507
   },
-  "GC_2022_R18_THG": {
-    "stl_trend_value": 0.8230912491673597,
-    "stl_seasonal_value": 0.013059857570274171
-  },
-  "KAD_2022_R18_WIN2": {
-    "stl_trend_value": 0.8237874641518591,
-    "stl_seasonal_value": 0.053627123937274306
-  },
-  "WIN_2022_R18_THU": {
-    "stl_trend_value": 0.8248251641317639,
-    "stl_seasonal_value": 0.06885467756277842
+  "WIN2_2022_R17_HSC": {
+    "stl_trend_value": 0.7778119660872758,
+    "stl_seasonal_value": 0.11717790626534096
   },
   "HSC_2022_R18_LUZ": {
-    "stl_trend_value": 0.8260097655367014,
-    "stl_seasonal_value": 0.003628631325515814
+    "stl_trend_value": 0.8220748949709998,
+    "stl_seasonal_value": 0.11070178050069068
   },
-  "THG_2023_R01_BSV": {
-    "stl_trend_value": 0.8272730447541693,
-    "stl_seasonal_value": 0.042643795818664586
+  "WIN_2022_R18_THU": {
+    "stl_trend_value": 0.7715166393779979,
+    "stl_seasonal_value": 0.02641482152740132
+  },
+  "BSV_2022_R18_RTV": {
+    "stl_trend_value": 0.9100138623715949,
+    "stl_seasonal_value": 0.08998613762897893
+  },
+  "GC_2022_R18_THG": {
+    "stl_trend_value": 0.8840623532263395,
+    "stl_seasonal_value": 0.10593847286117902
+  },
+  "KAD_2022_R18_WIN2": {
+    "stl_trend_value": 0.8219634908027197,
+    "stl_seasonal_value": 0.04006428385554504
   },
   "LUZ_2023_R01_KAD": {
-    "stl_trend_value": 0.8285952973124903,
-    "stl_seasonal_value": -0.014581687887111575
+    "stl_trend_value": 0.6826683918730462,
+    "stl_seasonal_value": -0.04266839187304662
   },
-  "HSC_2023_R01_WIN": {
-    "stl_trend_value": 0.8300390554309296,
-    "stl_seasonal_value": -0.10087193954003286
+  "THG_2023_R01_BSV": {
+    "stl_trend_value": 0.6318770662318147,
+    "stl_seasonal_value": 0.14431041080422954
   },
   "THU_2023_R01_GC": {
-    "stl_trend_value": 0.8318434325348776,
-    "stl_seasonal_value": -0.1135605866279852
+    "stl_trend_value": 0.6763082180238386,
+    "stl_seasonal_value": 0.2256917819761616
+  },
+  "HSC_2023_R01_WIN": {
+    "stl_trend_value": 0.8236301430182531,
+    "stl_seasonal_value": 0.010369856981748962
   },
   "WIN2_2023_R01_RTV": {
-    "stl_trend_value": 0.834123210002049,
-    "stl_seasonal_value": -0.006678920999879203
+    "stl_trend_value": 0.7790807765769775,
+    "stl_seasonal_value": 0.19191922342302198
   },
   "BSV_2023_R02_WIN2": {
-    "stl_trend_value": 0.8367917916689257,
-    "stl_seasonal_value": 0.15339028786086076
+    "stl_trend_value": 0.9159073286152821,
+    "stl_seasonal_value": 0.08409267138457173
   },
   "THG_2023_R02_THU": {
-    "stl_trend_value": 0.8394877224807334,
-    "stl_seasonal_value": -0.15036843369538544
-  },
-  "RTV_2023_R02_LUZ": {
-    "stl_trend_value": 0.8418099890451359,
-    "stl_seasonal_value": 0.08017653687309745
-  },
-  "KAD_2023_R02_WIN": {
-    "stl_trend_value": 0.8436303023579333,
-    "stl_seasonal_value": 0.08743344806659145
+    "stl_trend_value": 0.6451544681368038,
+    "stl_seasonal_value": -0.10189427576394933
   },
   "GC_2023_R02_HSC": {
-    "stl_trend_value": 0.8451171238040913,
-    "stl_seasonal_value": 0.0007262955669068516
+    "stl_trend_value": 0.8892782398027641,
+    "stl_seasonal_value": 0.05472108064845724
   },
-  "HSC_2023_R03_THG": {
-    "stl_trend_value": 0.846518997892108,
-    "stl_seasonal_value": -0.08121608078449083
+  "KAD_2023_R02_WIN": {
+    "stl_trend_value": 0.8302078687130805,
+    "stl_seasonal_value": 0.169745810511504
   },
-  "THU_2023_R03_BSV": {
-    "stl_trend_value": 0.8479097156642668,
-    "stl_seasonal_value": -0.14737514693418505
-  },
-  "LUZ_2023_R03_WIN2": {
-    "stl_trend_value": 0.8491458042300962,
-    "stl_seasonal_value": 0.09295855570842679
-  },
-  "WIN_2023_R03_RTV": {
-    "stl_trend_value": 0.8499308015478133,
-    "stl_seasonal_value": 0.06009113810318255
+  "RTV_2023_R02_LUZ": {
+    "stl_trend_value": 0.8942345146142339,
+    "stl_seasonal_value": -0.03923444742772169
   },
   "KAD_2023_R03_GC": {
-    "stl_trend_value": 0.8500963960893769,
-    "stl_seasonal_value": 0.06317467666259649
+    "stl_trend_value": 0.8384314224550685,
+    "stl_seasonal_value": 0.15830306952841028
+  },
+  "HSC_2023_R03_THG": {
+    "stl_trend_value": 0.8251853910655021,
+    "stl_seasonal_value": -0.10518539106550155
+  },
+  "WIN_2023_R03_RTV": {
+    "stl_trend_value": 0.7838572231248594,
+    "stl_seasonal_value": 0.20714277912162313
+  },
+  "THU_2023_R03_BSV": {
+    "stl_trend_value": 0.6870908833493375,
+    "stl_seasonal_value": 0.12690911665066237
+  },
+  "LUZ_2023_R03_WIN2": {
+    "stl_trend_value": 0.6868588739375805,
+    "stl_seasonal_value": -0.021858873937581652
   },
   "BSV_2023_R04_LUZ": {
-    "stl_trend_value": 0.8496431662684154,
-    "stl_seasonal_value": 0.04637884571633964
-  },
-  "WIN2_2023_R04_WIN": {
-    "stl_trend_value": 0.8485682157210329,
-    "stl_seasonal_value": 0.0021254588178662385
-  },
-  "THG_2023_R04_KAD": {
-    "stl_trend_value": 0.8470014903974817,
-    "stl_seasonal_value": -0.013125082917089134
-  },
-  "RTV_2023_R04_GC": {
-    "stl_trend_value": 0.8450235891472165,
-    "stl_seasonal_value": -0.06086917802671836
+    "stl_trend_value": 0.9218007948588408,
+    "stl_seasonal_value": -0.03980079485918812
   },
   "THU_2023_R04_HSC": {
-    "stl_trend_value": 0.8426063318330871,
-    "stl_seasonal_value": -0.04792465135386107
+    "stl_trend_value": 0.6978735486748393,
+    "stl_seasonal_value": 0.02212645132516031
+  },
+  "THG_2023_R04_KAD": {
+    "stl_trend_value": 0.6586449788039377,
+    "stl_seasonal_value": -0.046433206390035266
+  },
+  "RTV_2023_R04_GC": {
+    "stl_trend_value": 0.9012900866933587,
+    "stl_seasonal_value": 0.09871001204808687
+  },
+  "WIN2_2023_R04_WIN": {
+    "stl_trend_value": 0.7803495870666829,
+    "stl_seasonal_value": 0.15465041293331652
   },
   "RTV_2023_R05_THG": {
-    "stl_trend_value": 0.8397366149308025,
-    "stl_seasonal_value": -0.03644466354643184
-  },
-  "GC_2023_R05_WIN2": {
-    "stl_trend_value": 0.8362669394232338,
-    "stl_seasonal_value": -0.01519211024683275
-  },
-  "WIN_2023_R05_LUZ": {
-    "stl_trend_value": 0.8320770970383404,
-    "stl_seasonal_value": 0.02785439757157811
-  },
-  "HSC_2023_R05_BSV": {
-    "stl_trend_value": 0.8272061093322176,
-    "stl_seasonal_value": 0.11737752070440387
+    "stl_trend_value": 0.9083456643864305,
+    "stl_seasonal_value": -0.0483456179319586
   },
   "KAD_2023_R05_THU": {
-    "stl_trend_value": 0.8220689843709231,
-    "stl_seasonal_value": -0.1409683096133883
+    "stl_trend_value": 0.8466427916896362,
+    "stl_seasonal_value": -0.164675566203284
+  },
+  "WIN_2023_R05_LUZ": {
+    "stl_trend_value": 0.7961978061969446,
+    "stl_seasonal_value": -0.09319780660744167
+  },
+  "HSC_2023_R05_BSV": {
+    "stl_trend_value": 0.8267406391127538,
+    "stl_seasonal_value": 0.1732593608872465
+  },
+  "GC_2023_R05_WIN2": {
+    "stl_trend_value": 0.8944940583406664,
+    "stl_seasonal_value": -0.0754945990125475
   },
   "BSV_2023_R06_WIN": {
-    "stl_trend_value": 0.8170722488239262,
-    "stl_seasonal_value": 0.04206775026841779
+    "stl_trend_value": 0.9276942611023533,
+    "stl_seasonal_value": 0.07230573889729247
   },
   "HSC_2023_R06_KAD": {
-    "stl_trend_value": 0.8123124677032283,
-    "stl_seasonal_value": 0.06548624567594778
+    "stl_trend_value": 0.8282958871600029,
+    "stl_seasonal_value": -0.13629588716000302
   },
   "LUZ_2023_R06_GC": {
-    "stl_trend_value": 0.8078851151243907,
-    "stl_seasonal_value": -0.021447416441502432
+    "stl_trend_value": 0.6910493560021159,
+    "stl_seasonal_value": 0.11995064399788279
   },
   "THU_2023_R06_RTV": {
-    "stl_trend_value": 0.8037365291352182,
-    "stl_seasonal_value": -0.02390134984513804
+    "stl_trend_value": 0.7086562140003401,
+    "stl_seasonal_value": -0.009656214000340384
   },
   "WIN2_2023_R06_THG": {
-    "stl_trend_value": 0.7997974822548916,
-    "stl_seasonal_value": -0.11701917329083596
+    "stl_trend_value": 0.7816183975563852,
+    "stl_seasonal_value": -0.20461839755638553
   },
   "KAD_2023_R07_BSV": {
-    "stl_trend_value": 0.7961108093034867,
-    "stl_seasonal_value": 0.053821839664197374
+    "stl_trend_value": 0.8548483146830959,
+    "stl_seasonal_value": 0.1361273103114799
   },
   "GC_2023_R07_WIN": {
-    "stl_trend_value": 0.7927554381244186,
-    "stl_seasonal_value": 0.06715354990271429
+    "stl_trend_value": 0.8997098417079045,
+    "stl_seasonal_value": -0.07271022499391475
   },
   "RTV_2023_R07_HSC": {
-    "stl_trend_value": 0.7898287434962609,
-    "stl_seasonal_value": 0.09077721055701385
+    "stl_trend_value": 0.9154012458120071,
+    "stl_seasonal_value": -0.07840121352306711
   },
   "THG_2023_R07_LUZ": {
-    "stl_trend_value": 0.7874550504235058,
-    "stl_seasonal_value": 0.021966000207804072
+    "stl_trend_value": 0.6722125579526942,
+    "stl_seasonal_value": -0.21205386116055336
   },
   "WIN2_2023_R07_THU": {
-    "stl_trend_value": 0.7857807288508066,
-    "stl_seasonal_value": -0.04197949179189863
-  },
-  "KAD_2023_R08_RTV": {
-    "stl_trend_value": 0.7847470211670311,
-    "stl_seasonal_value": -0.03934807482054538
-  },
-  "WIN_2023_R08_THG": {
-    "stl_trend_value": 0.7841451977110729,
-    "stl_seasonal_value": -0.09928518519668715
+    "stl_trend_value": 0.782887208046089,
+    "stl_seasonal_value": -0.11188720804608929
   },
   "HSC_2023_R08_WIN2": {
-    "stl_trend_value": 0.7837868367362735,
-    "stl_seasonal_value": -0.02484929156324007
+    "stl_trend_value": 0.8298511352072526,
+    "stl_seasonal_value": -0.0748511352072528
+  },
+  "WIN_2023_R08_THG": {
+    "stl_trend_value": 0.8085383890205209,
+    "stl_seasonal_value": -0.31753839009342005
   },
   "LUZ_2023_R08_THU": {
-    "stl_trend_value": 0.7834837843281366,
-    "stl_seasonal_value": 0.05160472136027498
+    "stl_trend_value": 0.6952398380666511,
+    "stl_seasonal_value": -0.006239838066652184
   },
   "BSV_2023_R08_GC": {
-    "stl_trend_value": 0.7831325041422852,
-    "stl_seasonal_value": 0.030224273327914983
+    "stl_trend_value": 0.9335877273458487,
+    "stl_seasonal_value": 0.06641227265385523
+  },
+  "KAD_2023_R08_RTV": {
+    "stl_trend_value": 0.8630505754821898,
+    "stl_seasonal_value": -0.0010661178849849142
   },
   "RTV_2023_R09_BSV": {
-    "stl_trend_value": 0.7827877116694187,
-    "stl_seasonal_value": 0.060663266161970736
+    "stl_trend_value": 0.9224568300096068,
+    "stl_seasonal_value": 0.07754323736761075
   },
   "THG_2023_R09_GC": {
-    "stl_trend_value": 0.7824647469107886,
-    "stl_seasonal_value": 0.1289752494723757
+    "stl_trend_value": 0.6858165045798508,
+    "stl_seasonal_value": -0.012713080329134171
   },
   "WIN2_2023_R09_KAD": {
-    "stl_trend_value": 0.7820200787446352,
-    "stl_seasonal_value": -0.15234407332307068
+    "stl_trend_value": 0.784156018535793,
+    "stl_seasonal_value": -0.12115601853579291
   },
   "THU_2023_R09_WIN": {
-    "stl_trend_value": 0.7812393954348449,
-    "stl_seasonal_value": 0.004302152740451855
+    "stl_trend_value": 0.719438879325841,
+    "stl_seasonal_value": -0.11043887932584147
   },
   "LUZ_2023_R09_HSC": {
-    "stl_trend_value": 0.7800811784218276,
-    "stl_seasonal_value": 0.048903632217429986
+    "stl_trend_value": 0.6994303201311863,
+    "stl_seasonal_value": 0.06956967986881261
   },
   "WIN_2023_R10_HSC": {
-    "stl_trend_value": 0.778687452089656,
-    "stl_seasonal_value": -0.007351258629047524
-  },
-  "GC_2023_R10_THU": {
-    "stl_trend_value": 0.777355271629579,
-    "stl_seasonal_value": 0.021352940708211237
+    "stl_trend_value": 0.8208789717646849,
+    "stl_seasonal_value": -0.0628789728614472
   },
   "KAD_2023_R10_LUZ": {
-    "stl_trend_value": 0.776187494299044,
-    "stl_seasonal_value": -0.18089688395603762
+    "stl_trend_value": 0.8712507397689538,
+    "stl_seasonal_value": -0.184257173937529
+  },
+  "GC_2023_R10_THU": {
+    "stl_trend_value": 0.9049256074155276,
+    "stl_seasonal_value": -0.1729258242553035
   },
   "BSV_2023_R10_THG": {
-    "stl_trend_value": 0.775052719959029,
-    "stl_seasonal_value": 0.018999560730123377
+    "stl_trend_value": 0.9394811935893375,
+    "stl_seasonal_value": -0.12248119358954686
   },
   "RTV_2023_R10_WIN2": {
-    "stl_trend_value": 0.7739651157826635,
-    "stl_seasonal_value": 0.005175000749658629
-  },
-  "HSC_2023_R11_GC": {
-    "stl_trend_value": 0.7728775977039304,
-    "stl_seasonal_value": 0.05546763878353168
+    "stl_trend_value": 0.9295124164856873,
+    "stl_seasonal_value": -0.11651241696241121
   },
   "WIN2_2023_R11_BSV": {
-    "stl_trend_value": 0.7717268903290028,
-    "stl_seasonal_value": -0.007124017194285321
-  },
-  "LUZ_2023_R11_RTV": {
-    "stl_trend_value": 0.770505978351342,
-    "stl_seasonal_value": -0.02549344669564473
-  },
-  "WIN_2023_R11_KAD": {
-    "stl_trend_value": 0.7692786396990645,
-    "stl_seasonal_value": -0.02191414820284309
+    "stl_trend_value": 0.7854248290254966,
+    "stl_seasonal_value": 0.050575170974503605
   },
   "THU_2023_R11_THG": {
-    "stl_trend_value": 0.7681898570459095,
-    "stl_seasonal_value": -0.12141404472958232
+    "stl_trend_value": 0.7302215446513423,
+    "stl_seasonal_value": -0.18622154465134272
   },
-  "THG_2023_R12_HSC": {
-    "stl_trend_value": 0.7672273045706617,
-    "stl_seasonal_value": 0.017824683106058403
+  "LUZ_2023_R11_RTV": {
+    "stl_trend_value": 0.7036208021957211,
+    "stl_seasonal_value": 0.060379197804278445
+  },
+  "WIN_2023_R11_KAD": {
+    "stl_trend_value": 0.8332195544790649,
+    "stl_seasonal_value": 0.1667804446398929
+  },
+  "HSC_2023_R11_GC": {
+    "stl_trend_value": 0.8314063832545034,
+    "stl_seasonal_value": 0.057593616745496574
   },
   "GC_2023_R12_KAD": {
-    "stl_trend_value": 0.7663020045718044,
-    "stl_seasonal_value": 0.1285381035841135
+    "stl_trend_value": 0.9101413619032813,
+    "stl_seasonal_value": -0.07514140743701243
   },
-  "WIN2_2023_R12_LUZ": {
-    "stl_trend_value": 0.7654360062600839,
-    "stl_seasonal_value": 0.09191518450700312
+  "THG_2023_R12_HSC": {
+    "stl_trend_value": 0.6994409597996766,
+    "stl_seasonal_value": -0.0783940469829787
   },
   "BSV_2023_R12_THU": {
-    "stl_trend_value": 0.7647905180778016,
-    "stl_seasonal_value": 0.10489462877807064
+    "stl_trend_value": 0.9453746598328212,
+    "stl_seasonal_value": -0.22837465983292562
+  },
+  "WIN2_2023_R12_LUZ": {
+    "stl_trend_value": 0.7866936395151995,
+    "stl_seasonal_value": -0.16569363951519922
   },
   "RTV_2023_R12_WIN": {
-    "stl_trend_value": 0.7645937475693916,
-    "stl_seasonal_value": 0.13400035719474468
+    "stl_trend_value": 0.9365680049797449,
+    "stl_seasonal_value": -0.002568023701129113
   },
   "WIN_2023_R13_WIN2": {
-    "stl_trend_value": 0.765008522331019,
-    "stl_seasonal_value": -0.1807450498156753
+    "stl_trend_value": 0.8455601371781731,
+    "stl_seasonal_value": -0.18556013772090874
   },
   "LUZ_2023_R13_BSV": {
-    "stl_trend_value": 0.766277106317955,
-    "stl_seasonal_value": -0.04436905095481198
+    "stl_trend_value": 0.7078112842602571,
+    "stl_seasonal_value": 0.08918871573974299
   },
   "HSC_2023_R13_THU": {
-    "stl_trend_value": 0.7685236676697738,
-    "stl_seasonal_value": 0.046397793791781244
+    "stl_trend_value": 0.8329616313017537,
+    "stl_seasonal_value": -0.1699616313017536
   },
   "KAD_2023_R13_THG": {
-    "stl_trend_value": 0.7716634409366483,
-    "stl_seasonal_value": 0.01586323099184527
+    "stl_trend_value": 0.8794494136168729,
+    "stl_seasonal_value": -0.09244654109531636
   },
   "GC_2023_R13_RTV": {
-    "stl_trend_value": 0.7755516145469411,
-    "stl_seasonal_value": 0.052002656927208624
+    "stl_trend_value": 0.9153571075512817,
+    "stl_seasonal_value": 0.08464233194147357
   },
   "BSV_2023_R14_HSC": {
-    "stl_trend_value": 0.7800944066705144,
-    "stl_seasonal_value": -0.23811110525427093
-  },
-  "LUZ_2023_R14_WIN": {
-    "stl_trend_value": 0.7851524257516269,
-    "stl_seasonal_value": -0.010912426295743283
+    "stl_trend_value": 0.9512681260763022,
+    "stl_seasonal_value": 0.048731873923714156
   },
   "THU_2023_R14_KAD": {
-    "stl_trend_value": 0.7904376453833227,
-    "stl_seasonal_value": -0.0532449078580682
+    "stl_trend_value": 0.741004209976842,
+    "stl_seasonal_value": -0.13700420997684282
   },
   "WIN2_2023_R14_GC": {
-    "stl_trend_value": 0.7957755682179183,
-    "stl_seasonal_value": -0.0005411789744350806
+    "stl_trend_value": 0.7879624500049043,
+    "stl_seasonal_value": 0.21203754999509627
   },
   "THG_2023_R14_RTV": {
-    "stl_trend_value": 0.8009580471286262,
-    "stl_seasonal_value": -0.0341793879329815
+    "stl_trend_value": 0.7130784270005761,
+    "stl_seasonal_value": 0.06991118834804144
   },
-  "RTV_2023_R15_THU": {
-    "stl_trend_value": 0.8057602168686039,
-    "stl_seasonal_value": 0.005014339528147305
+  "LUZ_2023_R14_WIN": {
+    "stl_trend_value": 0.7120017663247906,
+    "stl_seasonal_value": -0.10500176632479016
   },
   "THG_2023_R15_WIN2": {
-    "stl_trend_value": 0.8101341875458944,
-    "stl_seasonal_value": 0.002367093305907509
+    "stl_trend_value": 0.7267248792948772,
+    "stl_seasonal_value": 0.2732068958040972
   },
-  "GC_2023_R15_LUZ": {
-    "stl_trend_value": 0.814323973467551,
-    "stl_seasonal_value": -0.14262367829255146
+  "RTV_2023_R15_THU": {
+    "stl_trend_value": 0.9436235953083094,
+    "stl_seasonal_value": 0.04637636664506496
   },
   "KAD_2023_R15_HSC": {
-    "stl_trend_value": 0.8189682304471929,
-    "stl_seasonal_value": 0.061402391781253285
+    "stl_trend_value": 0.8876469493651162,
+    "stl_seasonal_value": -0.07563461344995652
   },
   "WIN_2023_R15_BSV": {
-    "stl_trend_value": 0.824177129604232,
-    "stl_seasonal_value": 0.2072381921443248
+    "stl_trend_value": 0.8579007198652102,
+    "stl_seasonal_value": 0.0980992800270062
+  },
+  "GC_2023_R15_LUZ": {
+    "stl_trend_value": 0.9205728451260202,
+    "stl_seasonal_value": 0.07942746521982372
   },
   "BSV_2023_R16_KAD": {
-    "stl_trend_value": 0.8297696406601125,
-    "stl_seasonal_value": 0.1460203585515619
+    "stl_trend_value": 0.9571615923197759,
+    "stl_seasonal_value": 0.01283840768037803
   },
   "WIN_2023_R16_GC": {
-    "stl_trend_value": 0.8355832221406956,
-    "stl_seasonal_value": 0.14819570960862233
+    "stl_trend_value": 0.8702413025395288,
+    "stl_seasonal_value": 0.12975869788943065
   },
   "HSC_2023_R16_RTV": {
-    "stl_trend_value": 0.8415217473751653,
-    "stl_seasonal_value": 0.1436473378987504
+    "stl_trend_value": 0.8345168793490034,
+    "stl_seasonal_value": 0.1654831206509965
   },
   "LUZ_2023_R16_THG": {
-    "stl_trend_value": 0.8475252310905607,
-    "stl_seasonal_value": -0.21699086374627913
+    "stl_trend_value": 0.7161922483893253,
+    "stl_seasonal_value": -0.1391922483893244
   },
   "THU_2023_R16_WIN2": {
-    "stl_trend_value": 0.8535568206579159,
-    "stl_seasonal_value": -0.09289406167243483
-  },
-  "GC_2023_R17_BSV": {
-    "stl_trend_value": 0.8596026241565567,
-    "stl_seasonal_value": 0.04733771562636731
-  },
-  "RTV_2023_R17_KAD": {
-    "stl_trend_value": 0.8656574551998143,
-    "stl_seasonal_value": 0.039653839854680455
+    "stl_trend_value": 0.7517868753023428,
+    "stl_seasonal_value": 0.23821312469765646
   },
   "THG_2023_R17_WIN": {
-    "stl_trend_value": 0.871711981332553,
-    "stl_seasonal_value": 0.08260328626475386
+    "stl_trend_value": 0.7403779237543525,
+    "stl_seasonal_value": -0.013504387140010163
+  },
+  "RTV_2023_R17_KAD": {
+    "stl_trend_value": 0.9506791872985849,
+    "stl_seasonal_value": 0.04932075435218046
   },
   "THU_2023_R17_LUZ": {
-    "stl_trend_value": 0.8777554548408985,
-    "stl_seasonal_value": -0.29889996568832744
+    "stl_trend_value": 0.7625695406278418,
+    "stl_seasonal_value": -0.09756954062784254
   },
   "WIN2_2023_R17_HSC": {
-    "stl_trend_value": 0.8837882678819575,
-    "stl_seasonal_value": -0.04825670682298782
+    "stl_trend_value": 0.7892312604946085,
+    "stl_seasonal_value": -0.06023126049460771
   },
-  "GC_2023_R18_THG": {
-    "stl_trend_value": 0.8898173933317017,
-    "stl_seasonal_value": -0.11855256688617688
-  },
-  "WIN_2023_R18_THU": {
-    "stl_trend_value": 0.8958493124127167,
-    "stl_seasonal_value": -0.05808862379356742
-  },
-  "HSC_2023_R18_LUZ": {
-    "stl_trend_value": 0.9018934908413943,
-    "stl_seasonal_value": -0.05973034769319101
+  "GC_2023_R17_BSV": {
+    "stl_trend_value": 0.9257885744906532,
+    "stl_seasonal_value": 0.07421145161095884
   },
   "KAD_2023_R18_WIN2": {
-    "stl_trend_value": 0.9079662191740465,
-    "stl_seasonal_value": 0.04157550694518343
+    "stl_trend_value": 0.8958435758491596,
+    "stl_seasonal_value": 0.10417835461027142
+  },
+  "WIN_2023_R18_THU": {
+    "stl_trend_value": 0.8825818851995682,
+    "stl_seasonal_value": 0.11741811588055963
   },
   "BSV_2023_R18_RTV": {
-    "stl_trend_value": 0.9140825362116523,
-    "stl_seasonal_value": 0.021853172356746803
+    "stl_trend_value": 0.9630550585632469,
+    "stl_seasonal_value": 0.03694494143706305
+  },
+  "GC_2023_R18_THG": {
+    "stl_trend_value": 0.931004295612182,
+    "stl_seasonal_value": 0.06899638785643632
+  },
+  "HSC_2023_R18_LUZ": {
+    "stl_trend_value": 0.8360721273962528,
+    "stl_seasonal_value": 0.022927872603747262
   }
 }

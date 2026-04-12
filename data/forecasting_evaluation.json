@@ -1,52 +1,52 @@
 {
-  "overall_mape": 0.0525605026125897,
-  "wape": 0.053106008634692885,
+  "overall_mape": 0.05053759315383743,
+  "wape": 0.04646879505962004,
   "feature_importance": [
     {
       "feature": "price_delta_secondary_chf",
-      "mean_shap": 0.06991527633046597
-    },
-    {
-      "feature": "sarima_residual",
-      "mean_shap": 0.05819003402733536
+      "mean_shap": 0.06598543775614468
     },
     {
       "feature": "stl_trend_value",
-      "mean_shap": 0.03598229698977006
+      "mean_shap": 0.045390527624491396
     },
     {
-      "feature": "marketing_activation_score",
-      "mean_shap": 0.012618291438828432
+      "feature": "velocity_T7_LB",
+      "mean_shap": 0.03547966614053381
     },
     {
       "feature": "star_power_index",
-      "mean_shap": 0.011960254606475826
-    },
-    {
-      "feature": "velocity_T14",
-      "mean_shap": 0.010774236534856142
+      "mean_shap": 0.014313854291069291
     },
     {
       "feature": "attribute_wtp_score",
-      "mean_shap": 0.01038763762693636
+      "mean_shap": 0.012072415830317594
     },
     {
       "feature": "stl_seasonal_value",
-      "mean_shap": 0.008819866799009334
+      "mean_shap": 0.008162367562535626
+    },
+    {
+      "feature": "velocity_T7_ST",
+      "mean_shap": 0.007121068494884983
+    },
+    {
+      "feature": "dominant_segment_encoded",
+      "mean_shap": 0.006220961601582487
+    },
+    {
+      "feature": "velocity_T14_VIP",
+      "mean_shap": 0.005350292551292645
     },
     {
       "feature": "weather_severity_score",
-      "mean_shap": 0.006382087519491455
-    },
-    {
-      "feature": "opponent_tier_encoded",
-      "mean_shap": 0.005075831174855766
+      "mean_shap": 0.004603416679407761
     }
   ],
   "zone_mape": {
-    "Courtside VIP": 0.04900680886587821,
-    "Lower Bowl / Club Seats": 0.053753138328361004,
-    "Upper Standard": 0.04943855969073444,
-    "Standing": 0.05338451917201826
+    "Courtside VIP": 0.050375153750946706,
+    "Lower Bowl / Club Seats": 0.0512343318754863,
+    "Upper Standard": 0.05585453843051572,
+    "Standing": 0.05799957873673738
   }
 }

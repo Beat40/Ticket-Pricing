@@ -163,6 +163,107 @@ async def get_matches_data():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/matches/validation")
+async def get_validation_matches():
+    """
+    Returns matches from Season 3 with merged features for optimization analysis.
+    """
+    path = os.path.join(DATA_DIR, "match_data.json")
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="Match data not found.")
+    
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            matches = json.load(f)
+            
+        # Load all supplemental features
+        def load_json(filename):
+            p = os.path.join(DATA_DIR, filename)
+            if os.path.exists(p):
+                with open(p, "r") as f: return json.load(f)
+            return {}
+
+        stl = load_json("stl_features.json")
+        sarima = load_json("sarima_features.json")
+        np_feat = load_json("neural_prophet_features.json")
+        arch_full = load_json("archetype_results.json")
+        arch = arch_full.get("match_archetype_assignments", {})
+        medoids = arch_full.get("medoid_curves", {})
+
+        validation_matches = []
+        
+        # Initialize engine to get LightGBM predictions
+        engine = ForecastingEngine(data_dir=DATA_DIR)
+        engine.load_models()
+
+        opp_map = {"Elite": 2, "Competitive": 1, "Standard": 0}
+        stakes_map = {"Final": 2, "Playoff": 1, "Group": 0}
+
+        for m in matches:
+            if m["season"] == "2023-24":
+                m_id = m["match_id"]
+                # Merge base features
+                m["stl_trend_value"] = stl.get(m_id, {}).get("stl_trend_value", 0)
+                m["stl_seasonal_value"] = stl.get(m_id, {}).get("stl_seasonal_value", 0)
+                m["sarima_residual"] = sarima.get(m_id, 0)
+                
+                np_data = np_feat.get(m_id, {})
+                m["np_final_prediction"] = np_data.get("np_final_prediction", 0)
+                m["np_deviation_T14"] = np_data.get("np_deviation_T14", 0)
+                
+                arch_data = arch.get(m_id, {})
+                m["archetype"] = arch_data.get("archetype", "Consistent Gradual")
+                m["archetype_deviation_T14"] = arch_data.get("archetype_deviation_T14", 0)
+                
+                # --- CALCULATE LIGHTGBM PREDICTION ---
+                # Construct features for engine.predict()
+                m_feat = {
+                    "opponent_tier_encoded": opp_map.get(m["opponent_tier"], 1),
+                    "rival_match": int(m["rival_match"]),
+                    "home_form_score": float(m["home_form_score"]),
+                    "away_form_score": float(m["away_form_score"]),
+                    "star_power_index": float(m["star_power_index"]),
+                    "match_stakes_encoded": stakes_map.get(m["match_stakes"], 0),
+                    "qualification_stakes_score": int(m["qualification_stakes_score"]),
+                    "weather_severity_score": int(m["weather_severity_score"]),
+                    "marketing_activation_score": float(m["marketing_activation_score"]),
+                    "velocity_T14": float(m["velocity_T14"]),
+                    "price_delta_secondary_chf": float(m["price_delta_secondary_chf"]),
+                    "kickoff_type_encoded": 1, 
+                    "attribute_wtp_score": float(m["attribute_wtp_score"]),
+                    "dominant_segment_encoded": 2,
+                    "home_club_id": m["home_club_id"],
+                    # Injected L1 signals
+                    "stl_trend_value": m["stl_trend_value"],
+                    "stl_seasonal_value": m["stl_seasonal_value"],
+                    "sarima_residual": m["sarima_residual"],
+                    "np_final_prediction": m["np_final_prediction"],
+                    "np_deviation_T14": m["np_deviation_T14"],
+                    "archetype_deviation_T14": m["archetype_deviation_T14"]
+                }
+                
+                # Run prediction
+                pred_res = engine.predict(m_feat)
+                # Weighted average fill rate
+                total_tickets_pred = 0
+                total_capacity = 0
+                for z, z_res in pred_res["zones"].items():
+                    z_cap = m["zone_capacities"].get(z, 500)
+                    total_tickets_pred += (z_res["p50_fill_rate"] * z_cap)
+                    total_capacity += z_cap
+                
+                m["lgbm_prediction"] = total_tickets_pred / total_capacity if total_capacity > 0 else 0
+                m["actual_outcome"] = m.get("overall_fill_rate", 0)
+                
+                validation_matches.append(m)
+        
+        return {
+            "matches": validation_matches,
+            "medoid_curves": medoids
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.get("/api/matches/summary")
 async def get_matches_summary():
     """
