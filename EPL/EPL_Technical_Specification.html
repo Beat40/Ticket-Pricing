@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Pricing Intelligence — Technical Specification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #3D195B;
+            --epl-green: #00FF85;
+            --text-dark: #1C1C1C;
+            --text-muted: #555;
+            --bg-light: #F3F0EC;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--epl-green);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: -40px auto 60px;
+            background: var(--white);
+            padding: 50px 70px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-purple);
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: var(--primary-purple);
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+        }
+
+        b, strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .highlight {
+            background-color: #f0fff4;
+            border-left: 4px solid var(--epl-green);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 40px 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                margin: 20px;
+                padding: 30px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⚽ EPL Pricing Intelligence</h1>
+    <p>Technical Specification & Validation Document</p>
+</header>
+
+<main>
+    <h2>1. Executive Summary</h2>
+    <p>The EPL Pricing Intelligence System leverages Hierarchical Bayesian modeling, Machine Learning forecasting, and Linear Programming to solve the "Yield Management" problem in professional football. The system's unique value proposition is its <b>Table-Driven Demand Modeling</b>, where match ticket value is dynamically adjusted based on real-time league standing thresholds (Champions League qualification vs. Relegation stakes).</p>
+
+    <h2>2. Domain Modeling: The 20-Club Registry</h2>
+    <p>The system recognizes that club demand is not uniform. We implemented a <b>Club Registry</b> that classifies the 20 clubs into three distinct tiers:</p>
+    <ul>
+        <li><b>Big Six (ARS, MCI, LIV, CHE, TOT, MUN)</b>: Global fanbases, high baseline demand (90%+), and revenue-maximization priorities.</li>
+        <li><b>Established Mid (AVL, NEW, WHU, BHA, WOL, FUL, CPL)</b>: Strong regional support, demand sensitivity to opponent quality, and balanced pricing priorities.</li>
+        <li><b>Smaller Clubs (EVE, BRE, NFO, LEI, BOU, IPS, SOU)</b>: High attendance sensitivity, smaller dynamic inventory slices, and "relegation-threat" demand spikes.</li>
+    </ul>
+
+    <h2>3. Dynamic Stakes Engine</h2>
+    <p>The most critical architectural shift is the <code>StakesEngine</code>. In a league format, a match's "stake" is not just about the opponent, but its impact on the final standings.</p>
+    
+    <h3>Logic & Calculation</h3>
+    <p>The engine computes a <code>match_stakes_score</code> (0.0 to 1.0) using:</p>
+    <ul>
+        <li><b>Points-to-Threshold (PTT)</b>: For every matchweek (MW) > 25, the engine calculates the points gap between each club and the nearest critical boundary (Top 4 for Champions League, 17th/18th for Relegation).</li>
+        <li><b>Decider Identification</b>: If the PTT is less than the potential points gain (3), the match is flagged as a "Decider" (e.g., <i>Title Decider</i>, <i>Relegation Six-Pointer</i>).</li>
+        <li><b>Urgency Weighting</b>: Stakes scores are exponential; a match in MW37 between 17th and 18th place receives a 1.0 score, while an MW10 mid-table clash sits at 0.2.</li>
+    </ul>
+
+    <h2>4. Sequential Match Simulator</h2>
+    <p>The <code>EPLMatchDataGenerator</code> simulates full seasons using a double round-robin schedule, incorporating real-world demand signals:</p>
+    <ul>
+        <li><b>Dynamic Attributes</b>: Incorporates TV Slots (e.g., Saturday 12:30 premium), European Midweek Fatigue, and Manager Change Bonuses.</li>
+        <li><b>Booking Curves</b>: Implements five archetypes (e.g., "Immediate Sellout" for Big Six derbies vs. "Late Surge" for relegation battles).</li>
+        <li><b>Velocity Signals</b>: Captures T-14 and T-7 sales velocity to feed the forecasting engine.</li>
+    </ul>
+
+    <h2>5. Tiered Conjoint Engine (HB-MNL)</h2>
+    <p>Willingness-to-Pay (WTP) is recovered through a Hierarchical Bayesian Multinomial Logit (HB-MNL) model.</p>
+    <div class="highlight">
+        The engine uses <b>PyMC (NUTS sampler)</b> to estimate individual fan utilities across features like Match Stakes, Seating Zone, and Price. It explicitly models the <b>£30 Mandatory Away Cap</b>, ensuring the optimizer treats the away section as a fixed-price constraint.
+    </div>
+
+    <h2>6. Hybrid Forecasting Engine</h2>
+    <p>The forecast pipeline achieves high accuracy by combining time-series and tabular signals:</p>
+    <ul>
+        <li><b>STL Decomposition</b>: Extracts seasonal trends for each club (e.g., Liverpool's holiday surge).</li>
+        <li><b>SARIMA</b>: Captures league-wide residuals and cyclical demand.</li>
+        <li><b>LightGBM (Layer 2)</b>: An ensemble model that ingests 24 features (including the Stakes Score and T-14 Velocity) to predict the final match fill rate.</li>
+    </ul>
+
+    <h2>7. Tier-Aware LP Optimizer</h2>
+    <p>The Linear Programming (LP) optimizer solves for the optimal price per zone while adhering to league rules:</p>
+    <ul>
+        <li><b>Away Cap</b>: Prices for the "Away End" are hard-coded to £30.00.</li>
+        <li><b>Monotonicity</b>: Prices must follow the hierarchy: <i>Hospitality > Dynamic Lower > Dynamic Upper > General</i>.</li>
+        <li><b>Tier Routing</b>: <b>Big Six</b> prioritizes revenue, while <b>Smaller Clubs</b> enforce a 65% dynamic attendance floor to ensure atmospheric integrity.</li>
+    </ul>
+
+    <h2>8. Dashboard Integration</h2>
+    <p>The system is exposed via a dedicated Streamlit interface featuring a Live Table monitor, High-Stakes fixture alerts, and tiered pricing recommendations.</p>
+
+    <hr>
+    <div class="footer">
+        © 2026 EPL Pricing Intelligence System · Technical Specification v1.0
+    </div>
+</main>
+
+</body>
+</html>

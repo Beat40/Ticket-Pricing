@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Pricing Intelligence — Technical Specification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #3D195B;
+            --epl-green: #00FF85;
+            --bg-light: #F3F0EC;
+            --text-dark: #1C1C1C;
+            --white: #FFFFFF;
+            --sidebar-width: 280px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: var(--primary-purple);
+            color: var(--white);
+            position: fixed;
+            overflow-y: auto;
+            padding: 30px 20px;
+        }
+
+        nav h1 {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--epl-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--epl-green);
+        }
+
+        /* Main Content */
+        main {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 60px 80px;
+            max-width: 1000px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-left: 6px solid var(--primary-purple);
+        }
+
+        h2 {
+            color: var(--primary-purple);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            color: var(--primary-purple);
+            font-size: 1.4rem;
+            margin-top: 40px;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            text-align: left;
+            padding: 12px 15px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Code and Callouts */
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+        }
+
+        .callout {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .callout-pass {
+            background-color: #e6ffed;
+            border-left: 5px solid var(--epl-green);
+            color: #1a4a2e;
+        }
+
+        .callout-warning {
+            background-color: #fff9e6;
+            border-left: 5px solid #ffcc00;
+            color: #5c4d00;
+        }
+
+        .formula {
+            display: block;
+            text-align: center;
+            font-style: italic;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: var(--primary-purple);
+        }
+
+        @media (max-width: 1024px) {
+            nav { width: 220px; }
+            main { margin-left: 220px; padding: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>EPL Pricing Spec</h1>
+    <ul>
+        <li><a href="#section0">0. Domain Context</a></li>
+        <li><a href="#section1">1. System Architecture</a></li>
+        <li><a href="#section2">2. The 20-Club Registry</a></li>
+        <li><a href="#section3">3. Dynamic Stakes Engine</a></li>
+        <li><a href="#section4">4. Conjoint Analysis</a></li>
+        <li><a href="#section5">5. Match Data Generation</a></li>
+        <li><a href="#section6">6. Inventory Segmentation</a></li>
+        <li><a href="#section7">7. Demand Forecasting</a></li>
+        <li><a href="#section8">8. LP Optimizer</a></li>
+        <li><a href="#section9">9. API Reference</a></li>
+        <li><a href="#section10">10. Limitations</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="section0">
+        <h2>SECTION 0 — DOMAIN CONTEXT</h2>
+        <p>This section provides necessary background for readers unfamiliar with professional football (soccer) or the English Premier League structure.</p>
+
+        <h3>0.1 What the English Premier League is</h3>
+        <p>The English Premier League (EPL) is the highest level of the English football league system. It consists of 20 professional clubs. The league operates on a double round-robin format: every club plays every other club twice during a season — once at their own stadium (a "home" match) and once at the opponent's stadium (an "away" match). A full season comprises 38 matches per club (380 matches in total across the league), typically running from August to May.</p>
+
+        <h3>0.2 How points work</h3>
+        <p>Success in the league is measured by points. A club receives 3 points for a win, 1 point for a draw (both teams scoring the same number of goals), and 0 points for a loss. These points accumulate in a "League Table" or ranking that is updated after every match. At the end of the 38-match season, the final table determines the champion and various critical qualifications or demotions.</p>
+
+        <h3>0.3 Why table position matters commercially</h3>
+        <p>Table position is not just about prestige; it has massive financial implications. There are three primary "boundaries" in the table:</p>
+        <ul>
+            <li><b>Position 1 (League Champion)</b>: Receives the highest share of prize money and global prestige.</li>
+            <li><b>Positions 1-4 (Champions League Qualification)</b>: The top four clubs qualify for the UEFA Champions League, a pan-European competition. This qualification is worth an estimated £100M+ in additional broadcast and commercial revenue.</li>
+            <li><b>Positions 5-7 (Europa/Conference League)</b>: These clubs qualify for secondary European competitions, which offer significant but lower revenue compared to the Champions League.</li>
+            <li><b>Positions 18-20 (Relegation)</b>: The bottom three clubs are "relegated" or demoted to the second division (the Championship). This is an existential threat for smaller clubs, resulting in a loss of over £100M in annual broadcast revenue, player departures, and reduced sponsorship.</li>
+        </ul>
+
+        <h3>0.4 Why match stakes are dynamic and not fixed</h3>
+        <p>In a standard knockout tournament, a "Final" is always the most important match. However, in the EPL, the importance (or "stakes") of a match depends entirely on the current league table and the number of matches remaining. A match between Arsenal and Manchester City in August might have relatively low stakes, but the same fixture in April could be a "Title Decider" if both clubs are close in points at the top of the table. This system dynamically calculates these stakes to adjust pricing accordingly.</p>
+
+        <h3>0.5 Home ground and pricing constraints</h3>
+        <p>When a club plays at home, they control the ticketing for their stadium. However, they must provide a fixed allocation of approximately 3,000 seats (the "Away End") for fans of the visiting club. Crucially, the price for these away tickets is capped by league rules at £30. The home club is free to dynamically price all other areas of the stadium (the "Home End").</p>
+
+        <h3>0.6 Season tickets and inventory constraints</h3>
+        <p>Most EPL clubs sell "Season Tickets" before the season begins, granting fans access to all 19 home matches for a fixed upfront price. For "Big Six" clubs like Arsenal, over 85% of the stadium is often pre-sold to season ticket holders and members. This means dynamic pricing can only be applied to the remaining 3-15% of the seats, making the optimization problem one of managing a very limited and valuable "dynamic inventory."</p>
+    </section>
+
+    <section id="section1">
+        <h2>SECTION 1 — SYSTEM ARCHITECTURE OVERVIEW</h2>
+        
+        <h3>1.1 The business problem being solved</h3>
+        <p>EPL clubs face a complex yield management problem. They often set ticket prices months in advance without knowing the eventual importance of a match. Static pricing models frequently leave revenue on the table during high-stakes matches (where demand far exceeds supply) and risk empty seats during low-stakes matches. This system provides an automated, data-driven pipeline to set optimal prices that reflect real-time demand signals.</p>
+
+        <h3>1.2 The four-component pipeline</h3>
+        <p>The system is built as a sequential data pipeline:</p>
+        <ul>
+            <li><b>Conjoint Analysis Engine</b>: Ingests synthetic fan survey data and uses Hierarchical Bayesian Multinomial Logit (HB-MNL) modeling to recover Willingness-to-Pay (WTP) in GBP. It outputs fan segments and price bounds for each club tier.</li>
+            <li><b>Dynamic Stakes Engine</b>: Runs continuously, consuming live standings data. It produces a <code>match_stakes_score</code> (0.0 to 1.0) for every fixture, quantifying its competitive importance.</li>
+            <li><b>Demand Forecasting Engine</b>: Combines time-series (STL, SARIMA) and tabular (LightGBM) models to predict P10/P50/P90 fill rates per seating zone. It takes match features as input and outputs a probabilistic demand forecast.</li>
+            <li><b>LP Optimizer</b>: A Linear Programming solver that ingests the demand forecast and price bounds to recommend optimal zone prices. It enforces constraints like the £30 away cap and attendance floors for smaller clubs.</li>
+        </ul>
+
+        <h3>1.3 Distinction from previous systems</h3>
+        <p>While sharing a lineage with the SHV handball pricing system, this EPL implementation adds five critical architectural components: a dynamic stakes engine based on league standings, an inventory segmentation layer for season-ticket-heavy venues, club-tier routing in the optimizer, three specialized conjoint models for different fan demographics, and five refined booking curve archetypes.</p>
+
+        <h3>1.4 File structure</h3>
+        <pre>
+EPL/
+├── stakes_engine.py           # Logic for dynamic standings-based stakes calculation
+├── synthetic_data_epl.py      # Generator for tiered fan survey responses
+├── conjoint_engine_epl.py     # HB-MNL model for WTP recovery
+├── match_data_generator_epl.py # Sequential season and match simulator
+├── inventory_manager.py       # Capacity segmentation (Dynamic vs. ST vs. Away)
+├── forecasting_engine_epl.py  # Hybrid STL-SARIMA-LGBM forecasting pipeline
+├── lp_optimizer_epl.py        # Tier-aware Linear Programming solver
+├── main_epl.py                # FastAPI endpoints for system integration
+└── data/                      # JSON/CSV storage for models and match records
+        </pre>
+    </section>
+
+    <section id="section2">
+        <h2>SECTION 2 — THE 20-CLUB REGISTRY</h2>
+        
+        <h3>2.1 Tiered Segmentation</h3>
+        <p>EPL clubs differ so vastly in capacity and global demand that a "one-size-fits-all" model is statistically invalid. We segment the 20 clubs into three tiers: <b>Big Six</b> (global brands with massive demand), <b>Established Mid</b> (stable top-flight presence), and <b>Smaller Clubs</b> (high attendance sensitivity and relegation risk).</p>
+
+        <h3>2.2 Full Club Registry Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Venue</th>
+                    <th>Capacity</th>
+                    <th>Tier</th>
+                    <th>ST %</th>
+                    <th>Dynamic %</th>
+                    <th>Base Demand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>ARS</td><td>Arsenal</td><td>Emirates Stadium</td><td>60704</td><td>big_six</td><td>88%</td><td>3%</td><td>0.97</td></tr>
+                <tr><td>MCI</td><td>Manchester City</td><td>Etihad Stadium</td><td>53400</td><td>big_six</td><td>82%</td><td>6%</td><td>0.95</td></tr>
+                <tr><td>LIV</td><td>Liverpool</td><td>Anfield</td><td>61276</td><td>big_six</td><td>90%</td><td>2%</td><td>0.98</td></tr>
+                <tr><td>CHE</td><td>Chelsea</td><td>Stamford Bridge</td><td>40834</td><td>big_six</td><td>80%</td><td>6%</td><td>0.92</td></tr>
+                <tr><td>TOT</td><td>Tottenham Hotspur</td><td>Tottenham Stadium</td><td>62850</td><td>big_six</td><td>83%</td><td>5%</td><td>0.94</td></tr>
+                <tr><td>MUN</td><td>Manchester United</td><td>Old Trafford</td><td>74310</td><td>big_six</td><td>85%</td><td>4%</td><td>0.96</td></tr>
+                <tr><td>AVL</td><td>Aston Villa</td><td>Villa Park</td><td>42682</td><td>established_mid</td><td>62%</td><td>26%</td><td>0.78</td></tr>
+                <tr><td>NEW</td><td>Newcastle United</td><td>St. James Park</td><td>52305</td><td>established_mid</td><td>70%</td><td>18%</td><td>0.88</td></tr>
+                <tr><td>WHU</td><td>West Ham United</td><td>London Stadium</td><td>62500</td><td>established_mid</td><td>58%</td><td>30%</td><td>0.72</td></tr>
+                <tr><td>BHA</td><td>Brighton</td><td>Amex Stadium</td><td>31800</td><td>established_mid</td><td>65%</td><td>21%</td><td>0.80</td></tr>
+                <tr><td>WOL</td><td>Wolves</td><td>Molineux</td><td>32050</td><td>established_mid</td><td>60%</td><td>28%</td><td>0.74</td></tr>
+                <tr><td>FUL</td><td>Fulham</td><td>Craven Cottage</td><td>29600</td><td>established_mid</td><td>55%</td><td>32%</td><td>0.70</td></tr>
+                <tr><td>CPL</td><td>Crystal Palace</td><td>Selhurst Park</td><td>25486</td><td>established_mid</td><td>60%</td><td>28%</td><td>0.72</td></tr>
+                <tr><td>EVE</td><td>Everton</td><td>Goodison Park</td><td>39414</td><td>smaller_club</td><td>65%</td><td>24%</td><td>0.75</td></tr>
+                <tr><td>BRE</td><td>Brentford</td><td>Gtech Community</td><td>17250</td><td>smaller_club</td><td>55%</td><td>31%</td><td>0.68</td></tr>
+                <tr><td>NFO</td><td>Nottingham Forest</td><td>City Ground</td><td>30445</td><td>smaller_club</td><td>58%</td><td>30%</td><td>0.70</td></tr>
+                <tr><td>LEI</td><td>Leicester City</td><td>King Power</td><td>32261</td><td>smaller_club</td><td>60%</td><td>28%</td><td>0.72</td></tr>
+                <tr><td>BOU</td><td>Bournemouth</td><td>Vitality Stadium</td><td>11307</td><td>smaller_club</td><td>50%</td><td>35%</td><td>0.65</td></tr>
+                <tr><td>IPS</td><td>Ipswich Town</td><td>Portman Road</td><td>30000</td><td>smaller_club</td><td>55%</td><td>34%</td><td>0.62</td></tr>
+                <tr><td>SOU</td><td>Southampton</td><td>St. Mary's</td><td>32384</td><td>smaller_club</td><td>55%</td><td>34%</td><td>0.60</td></tr>
+            </tbody>
+        </table>
+
+        <h3>2.3 Dynamic Inventory Calculation</h3>
+        <p>Dynamic inventory is the slice of seats actually available for pricing by the LP Optimizer. It is calculated as:</p>
+        <div class="formula">dynamic_inventory = capacity × dynamic_inventory_pct</div>
+        <p><b>Worked Example 1 (Arsenal)</b>: 60,704 × 0.03 = <b>1,821 seats</b>. Despite the massive stadium, only 3% of seats are available to the general public outside the membership/season-ticket schemes.</p>
+        <p><b>Worked Example 2 (Bournemouth)</b>: 11,307 × 0.35 = <b>3,957 seats</b>. Paradoxically, the smaller club has more dynamic inventory to manage because they have a lower proportion of pre-sold season tickets.</p>
+    </section>
+
+    <section id="section3">
+        <h2>SECTION 3 — THE DYNAMIC STAKES ENGINE</h2>
+        
+        <h3>3.1 Necessity for Dynamism</h3>
+        <p>In a league format, no match is "High Stakes" at the start of the season. Match importance emerges as the table develops. A match in Matchweek 35 between 17th and 18th place is a "Relegation Six-Pointer" with massive stakes, but that same fixture in Matchweek 2 is just a "Standard" match. The <code>StakesEngine</code> uses live points, goal difference, and standings to quantify this urgency.</p>
+
+        <h3>3.2 The Urgency Multiplier</h3>
+        <p>Stakes matter significantly more as the end of the season approaches. We apply a linear urgency multiplier:</p>
+        <div class="formula">urgency = 0.1 + (matchweek - 1) * (0.9 / 37)</div>
+        <ul>
+            <li>Matchweek 1: <b>0.10</b> (Early season, low urgency)</li>
+            <li>Matchweek 20: <b>0.56</b> (Mid-season, mounting pressure)</li>
+            <li>Matchweek 38: <b>1.00</b> (Maximum urgency)</li>
+        </ul>
+
+        <h3>3.3 Stake Dimensions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dimension</th>
+                    <th>Trigger Threshold</th>
+                    <th>Max Contribution</th>
+                    <th>Logic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Title Race</td><td>Gap to 1st &lt;= Max Points × 0.5</td><td>1.0</td><td>Direct clash between title contenders.</td></tr>
+                <tr><td>Top Four</td><td>Position &lt;= 6 and Gap to 4th &lt;= Max × 0.6</td><td>0.8</td><td>Battle for Champions League broadcast revenue.</td></tr>
+                <tr><td>Relegation</td><td>Position &gt;= 14 and Gap to 18th &lt;= Max × 0.5</td><td>0.85</td><td>"Six-pointer" battle to avoid demotion.</td></tr>
+                <tr><td>European Spot</td><td>Position 6-10 and Gap to 7th &lt;= Max × 0.5</td><td>0.55</td><td>Chasing Europa/Conference League qualification.</td></tr>
+            </tbody>
+        </table>
+
+        <h3>3.4 Output Schema</h3>
+        <p>The engine returns a dictionary containing:</p>
+        <ul>
+            <li><code>match_stakes_score</code> (float, 0.0-1.0): The final consolidated urgency score.</li>
+            <li><code>match_stakes_label</code> (string): Descriptive category (Standard, High Stakes, etc.).</li>
+            <li><code>games_remaining</code> (int): Matches left in the 38-game season.</li>
+        </ul>
+    </section>
+
+    <section id="section4">
+        <h2>SECTION 4 — CONJOINT ANALYSIS: THE THREE-TIER WTP MODEL</h2>
+        
+        <h3>4.1 Methodology</h3>
+        <p>Conjoint analysis is a survey-based statistical technique that breaks down a fan's purchase decision into component parts. We use a <b>Hierarchical Bayesian Multinomial Logit (HB-MNL)</b> model to recover individual utilities. Willingness-to-Pay (WTP) is derived by dividing the utility of an attribute by the negative of the price coefficient:</p>
+        <div class="formula">WTP = β_attribute / |β_price|</div>
+
+        <h3>4.2 Tier-Specific Fan Segments</h3>
+        <p><b>Big Six Tier Segments (N=300)</b>: Includes "Tourist/Global Fan" (highest WTP, low sensitivity) and "Local Season Ticket" (high sensitivity). Base Price Coef: <code>-0.025</code> to <code>-0.055</code>.</p>
+        <p><b>Mid-Table Tier Segments (N=300)</b>: Dominated by "Local Loyal" and "Family" segments. Base Price Coef: <code>-0.065</code> to <code>-0.095</code>.</p>
+        <p><b>Smaller Club Tier Segments (N=300)</b>: Characterized by high "Die-Hard Local" presence with very high price sensitivity. Base Price Coef: <code>-0.075</code> to <code>-0.110</code>.</p>
+
+        <h3>4.3 Recovered WTP Results (Technical Validation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Big Six WTP (£)</th>
+                    <th>Mid-Table WTP (£)</th>
+                    <th>Small Club WTP (£)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Opponent: Big Six</td><td>+94.72</td><td>+36.31</td><td>+34.22</td></tr>
+                <tr><td>Stakes: High/Title</td><td>+99.92</td><td>+31.60</td><td>+37.44</td></tr>
+                <tr><td>Derby Match</td><td>+57.69</td><td>+28.56</td><td>+31.50</td></tr>
+                <tr><td>Hospitality Inclusion</td><td>+102.96</td><td>N/A</td><td>N/A</td></tr>
+                <tr><td>TV Prime Slot</td><td>+24.17</td><td>+1.36</td><td>+1.26</td></tr>
+            </tbody>
+        </table>
+        <div class="callout callout-pass">
+            <b>Finding</b>: Big Six fans exhibit 2.7x higher WTP for high-stakes matches compared to smaller club fans, justifying the tier-based price ceilings in the optimizer.
+        </div>
+
+        <h3>4.4 Zone Price Bounds</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Zone</th>
+                    <th>Big Six (Floor-Ceiling)</th>
+                    <th>Mid-Table (Floor-Ceiling)</th>
+                    <th>Small Club (Floor-Ceiling)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Lower Tier</td><td>£30 - £40</td><td>£37 - £47</td><td>£38 - £43</td></tr>
+                <tr><td>Upper Tier</td><td>£30 - £40</td><td>£30 - £40</td><td>£30 - £40</td></tr>
+                <tr><td>Hospitality</td><td>£35 - £265</td><td>£30 - £40</td><td>£30 - £40</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="section5">
+        <h2>SECTION 5 — MATCH DATA GENERATION</h2>
+        <p>The system simulates 760 matches (two seasons: 2022-23 and 2023-24) using a sequential round-robin schedule.</p>
+
+        <h3>5.1 Sequential Standing Simulation</h3>
+        <p>Matches are not pre-categorized. The generator processes Matchweek 1, calculates results, updates the league table, and then processes Matchweek 2. This ensures that the <code>match_stakes_score</code> is always based on the actual standing of the clubs at that specific moment in time.</p>
+
+        <h3>5.2 EPL-Specific Features</h3>
+        <ul>
+            <li><b>TV Slot Encoding</b>: Captures broadcast selection impact (Saturday 12:30 premium vs Saturday 15:00 blackout).</li>
+            <li><b>European Midweek Fatigue</b>: Models the 7-12% demand penalty experienced by clubs playing UEFA matches midweek.</li>
+            <li><b>Manager New Bonus</b>: An 8% demand surge applied for 3 months after a new head coach appointment.</li>
+            <li><b>Away Distance</b>: Models the travel friction for the 3,000 away supporters.</li>
+        </ul>
+
+        <h3>5.3 Booking Curve Archetypes</h3>
+        <p>Each match is assigned one of five logistic demand curves based on club quality and stakes:</p>
+        <ul>
+            <li><b>Immediate Sellout</b>: (t_mid=5, k=0.40) - Matches like ARS vs MCI. 50% sold in 5 days.</li>
+            <li><b>Early Surge</b>: (t_mid=35, k=0.15) - High stakes but non-Big Six.</li>
+            <li><b>Consistent Gradual</b>: (t_mid=45, k=0.10) - Standard mid-table fixtures.</li>
+            <li><b>Late Surge</b>: (t_mid=52, k=0.18) - Relegation battles where fans buy once survival is at stake.</li>
+            <li><b>Flat/Slow</b>: (t_mid=48, k=0.06) - Low-stakes matches between smaller clubs.</li>
+        </ul>
+    </section>
+
+    <section id="section6">
+        <h2>SECTION 6 — INVENTORY SEGMENTATION</h2>
+        <p>The <code>InventoryManager</code> splits stadium capacity into functional zones before optimization.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Zone</th>
+                    <th>% of Capacity</th>
+                    <th>Dynamic?</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Hospitality</td><td>8%</td><td>Yes (Optional)</td><td>Premium revenue generator</td></tr>
+                <tr><td>Lower Tier</td><td>35%</td><td>Partial</td><td>Atmosphere and core dynamic sales</td></tr>
+                <tr><td>Upper Tier</td><td>28%</td><td>Partial</td><td>Secondary dynamic inventory</td></tr>
+                <tr><td>Away End</td><td>5%</td><td>No</td><td><b>Fixed at £30</b> per league mandate</td></tr>
+                <tr><td>General Sale</td><td>19%</td><td>Yes</td><td>Primary yield management zone</td></tr>
+            </tbody>
+        </table>
+        <p>The LP Optimizer only manages the "Dynamic Slice" within each zone. Season ticket holders (85% for Arsenal) are ignored by the pricing logic as their revenue is already recognized.</p>
+    </section>
+
+    <section id="section7">
+        <h2>SECTION 7 — DEMAND FORECASTING ENGINE</h2>
+        
+        <h3>7.1 Two-Layer Hybrid Model</h3>
+        <p>The forecasting engine uses a hybrid architecture:</p>
+        <ul>
+            <li><b>Layer 1 (Time-Series)</b>: STL Decomposition (Period=19) extracts seasonal trends per club. SARIMA (Period=38) models league-wide residuals.</li>
+            <li><b>Layer 2 (Tabular)</b>: A LightGBM Regressor ingests 21 features, including the dynamic stakes score and selling velocity.</li>
+        </ul>
+
+        <h3>7.2 Forecasting Performance (Validation Metrics)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Overall MAPE</td><td>21.12%</td></tr>
+                <tr><td>Big Six MAPE</td><td>31.05%</td></tr>
+                <tr><td>Mid-Table MAPE</td><td>18.94%</td></tr>
+                <tr><td>Smaller Club MAPE</td><td>14.79%</td></tr>
+            </tbody>
+        </table>
+        <div class="callout callout-warning">
+            <b>Technical Caveat</b>: Big Six MAPE is higher due to "Excess Demand" saturation — the model struggles to predict the magnitude of the overflow when stadiums are 99% full regardless of pricing.
+        </div>
+
+        <h3>7.3 Top 5 Feature Importance (LGBM Gain)</h3>
+        <ul>
+            <li>1. <code>stl_seasonal</code>: 27.08 (Historical demand cycles)</li>
+            <li>2. <code>stl_trend</code>: 12.19 (Club momentum)</li>
+            <li>3. <code>star_power_index</code>: 0.70 (Presence of marquee players)</li>
+            <li>4. <code>match_stakes_score</code>: 0.10 (Dynamic urgency)</li>
+            <li>5. <code>home_position</code>: 0.05 (Current league standing)</li>
+        </ul>
+    </section>
+
+    <section id="section8">
+        <h2>SECTION 8 — LP OPTIMIZER</h2>
+        
+        <h3>8.1 Objective Function</h3>
+        <p>The LP optimizes for maximum revenue across 30 binary decision variables (10 price points per zone × 3 zones). It linearizes the revenue calculation:</p>
+        <div class="formula">Revenue = Σ (Price_i × Quantity_i × X_i)</div>
+
+        <h3>8.2 Zone Elasticities</h3>
+        <p>We use industry-standard price elasticity of demand (ε) values:</p>
+        <ul>
+            <li>Hospitality: <b>-0.10</b> (Highly inelastic)</li>
+            <li>Lower Tier: <b>-0.55</b> (Balanced)</li>
+            <li>General Sale: <b>-1.10</b> (Highly elastic/price sensitive)</li>
+        </ul>
+
+        <h3>8.3 Operational Constraints</h3>
+        <ul>
+            <li><b>Monotonicity</b>: Hospitality price must be ≥ Lower Tier ≥ Upper Tier ≥ General.</li>
+            <li><b>Away Cap</b>: The away zone is excluded from the objective and fixed at £30.</li>
+            <li><b>Attendance Floor</b>: Rest-of-League clubs (non-Big Six) must maintain a <b>65% dynamic attendance floor</b> to protect brand atmosphere.</li>
+        </ul>
+
+        <h3>8.4 Tier Routing Logic</h3>
+        <p><b>Big Six Route</b>: Revenue-focused. Assumes high base demand; no attendance floor applied.</p>
+        <p><b>Rest of League Route</b>: Attendance-protected. Uses promotional pricing if necessary to hit the 65% floor.</p>
+    </section>
+
+    <section id="section9">
+        <h2>SECTION 9 — API REFERENCE</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>GET</td><td><code>/api/epl/health</code></td><td>Heartbeat and system status.</td></tr>
+                <tr><td>GET</td><td><code>/api/epl/matches</code></td><td>Returns the 760-match master schedule.</td></tr>
+                <tr><td>GET</td><td><code>/api/epl/clubs</code></td><td>Returns the 20-club registry metadata.</td></tr>
+                <tr><td>POST</td><td><code>/api/epl/optimize/{match_id}</code></td><td>Triggers the LP solver for a specific match.</td></tr>
+                <tr><td>GET</td><td><code>/api/epl/wtp/{tier}</code></td><td>Returns the conjoint price bounds for a tier.</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="section10">
+        <h2>SECTION 10 — KNOWN LIMITATIONS</h2>
+        <ul>
+            <li><b>Synthetic Signal Consistency</b>: Since both survey data and match attendance are generated from the same synthetic distributions, the model accuracy may be optimistic compared to noisy real-world ticketing data.</li>
+            <li><b>Broadcast Selection</b>: Real TV slots are chosen by broadcasters based on complex commercial factors (e.g., Sky Sports vs. TNT Sports) not fully modeled in the 12:30/17:30 logic.</li>
+            <li><b>VRAM/Compute</b>: The NUTS sampler used for Conjoint recovery is computationally expensive and requires approximately 2-5 minutes per tier for convergence.</li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

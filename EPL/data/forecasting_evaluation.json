@@ -1,0 +1,50 @@
+{
+  "overall_mape": 0.21122253627193543,
+  "tier_mape": {
+    "big_six": 0.3105766957974506,
+    "established_mid": 0.18937841381043952,
+    "smaller_club": 0.14790595056870406
+  },
+  "feature_importance": [
+    {
+      "feature": "stl_seasonal",
+      "importance": 27.086394086363725
+    },
+    {
+      "feature": "stl_trend",
+      "importance": 12.192283548054547
+    },
+    {
+      "feature": "star_power_index",
+      "importance": 0.6989669257127389
+    },
+    {
+      "feature": "match_stakes_score",
+      "importance": 0.10450328841398004
+    },
+    {
+      "feature": "home_position",
+      "importance": 0.05496575953293359
+    },
+    {
+      "feature": "away_distance_km",
+      "importance": 0.05333573607094877
+    },
+    {
+      "feature": "opponent_tier_encoded",
+      "importance": 0.05112288835516665
+    },
+    {
+      "feature": "home_form_score",
+      "importance": 0.03974000116068055
+    },
+    {
+      "feature": "games_remaining",
+      "importance": 0.03734966500996961
+    },
+    {
+      "feature": "weather_severity_score",
+      "importance": 0.031287483012420125
+    }
+  ]
+}

@@ -1,0 +1,3906 @@
+[
+  {
+    "respondent_id": "637207e1-be3b-415c-acbb-4075551f2c3f",
+    "utilities": {
+      "opponent_mid": 2.4844311361584763,
+      "opponent_big_six": 5.351685622725574,
+      "zone_lower": 1.8516006367292817,
+      "zone_upper": -0.018377417192303645,
+      "zone_hospitality": -1.7578579631983324,
+      "stakes_top4": 4.134015846905833,
+      "stakes_relegation": 4.65784186288103,
+      "stakes_euro": 2.5289240445468435,
+      "price": -0.12553745602159255,
+      "derby": 4.415183637349129,
+      "tv_prime": 0.19330837124718978
+    }
+  },
+  {
+    "respondent_id": "510b3ae7-c5f6-46bd-ace6-978d61a7d8bb",
+    "utilities": {
+      "opponent_mid": 2.305614056458703,
+      "opponent_big_six": 5.3744159255489174,
+      "zone_lower": 1.7275013048494405,
+      "zone_upper": 0.18349646462211927,
+      "zone_hospitality": -1.7656467932173432,
+      "stakes_top4": 4.153919109842558,
+      "stakes_relegation": 4.662514056161073,
+      "stakes_euro": 2.627998888049754,
+      "price": -0.14869041843422248,
+      "derby": 4.3276635576069555,
+      "tv_prime": 0.22043199153791213
+    }
+  },
+  {
+    "respondent_id": "29c87293-6764-4c78-ad13-a8ababac3d9a",
+    "utilities": {
+      "opponent_mid": 2.490982562916849,
+      "opponent_big_six": 5.1201746774361885,
+      "zone_lower": 2.4700840759286438,
+      "zone_upper": -0.40459662131237173,
+      "zone_hospitality": -1.9524015907416739,
+      "stakes_top4": 4.089996362063154,
+      "stakes_relegation": 4.769557774030569,
+      "stakes_euro": 2.5797046231679057,
+      "price": -0.14798737014223093,
+      "derby": 4.169822678433997,
+      "tv_prime": 0.2023886945624059
+    }
+  },
+  {
+    "respondent_id": "eff6361f-237c-42ad-9f5c-69595e661d58",
+    "utilities": {
+      "opponent_mid": 2.149609386687741,
+      "opponent_big_six": 4.406037442394448,
+      "zone_lower": 2.1792665563253726,
+      "zone_upper": -0.40782207208393756,
+      "zone_hospitality": -1.7621164240871114,
+      "stakes_top4": 4.328189567906461,
+      "stakes_relegation": 4.323740866883487,
+      "stakes_euro": 2.5067054868141847,
+      "price": -0.17301799792677305,
+      "derby": 4.181701616416969,
+      "tv_prime": 0.08668898522415491
+    }
+  },
+  {
+    "respondent_id": "a71c545f-aa9e-4228-83c1-a3b4e0000d5d",
+    "utilities": {
+      "opponent_mid": 2.256174380728689,
+      "opponent_big_six": 5.377396623686511,
+      "zone_lower": 1.623563743521926,
+      "zone_upper": 0.15955874953413382,
+      "zone_hospitality": -1.7746192392651514,
+      "stakes_top4": 4.177334712082056,
+      "stakes_relegation": 4.541635688742901,
+      "stakes_euro": 2.663106481274648,
+      "price": -0.14505433018994424,
+      "derby": 4.363870072212785,
+      "tv_prime": 0.15015488862274787
+    }
+  },
+  {
+    "respondent_id": "dc72513e-2422-4be9-9193-16fe9f0a9d5f",
+    "utilities": {
+      "opponent_mid": 2.7137771106058364,
+      "opponent_big_six": 5.235276460131727,
+      "zone_lower": 1.6753596428977393,
+      "zone_upper": 0.2878560987689037,
+      "zone_hospitality": -1.7749417037993345,
+      "stakes_top4": 4.158701088213513,
+      "stakes_relegation": 4.62748786378801,
+      "stakes_euro": 2.571738131549506,
+      "price": -0.13698840359666706,
+      "derby": 4.382250998047846,
+      "tv_prime": 0.26063841919188935
+    }
+  },
+  {
+    "respondent_id": "e715d0ed-2488-4c53-a60c-14a371da8b2e",
+    "utilities": {
+      "opponent_mid": 2.2900484736197595,
+      "opponent_big_six": 5.052381986295552,
+      "zone_lower": 2.512970954441449,
+      "zone_upper": -0.7125463636842622,
+      "zone_hospitality": -1.7744676006785722,
+      "stakes_top4": 4.201873018257367,
+      "stakes_relegation": 4.806519309198369,
+      "stakes_euro": 2.6612220951750487,
+      "price": -0.11405800651954648,
+      "derby": 4.03130231044297,
+      "tv_prime": 0.1930178819500576
+    }
+  },
+  {
+    "respondent_id": "b0cacd4f-7c99-4acb-8e6d-011d2cd66120",
+    "utilities": {
+      "opponent_mid": 2.387137707739092,
+      "opponent_big_six": 5.246619906605475,
+      "zone_lower": 1.953036391020216,
+      "zone_upper": -0.6251258996016161,
+      "zone_hospitality": -1.54520285025439,
+      "stakes_top4": 4.166826248730191,
+      "stakes_relegation": 4.777725324807461,
+      "stakes_euro": 2.642684167458051,
+      "price": -0.10290455961900231,
+      "derby": 4.441834824024672,
+      "tv_prime": 0.10331258269196959
+    }
+  },
+  {
+    "respondent_id": "b34c33b7-417b-43a3-a6e4-c8f577f17366",
+    "utilities": {
+      "opponent_mid": 1.791487291189823,
+      "opponent_big_six": 5.442787617218559,
+      "zone_lower": 1.7461859296230824,
+      "zone_upper": 0.1720851416281659,
+      "zone_hospitality": -1.7999174362257546,
+      "stakes_top4": 4.0680435549490825,
+      "stakes_relegation": 4.830844676880738,
+      "stakes_euro": 2.958137374499986,
+      "price": -0.15049688444952428,
+      "derby": 3.9497626462809983,
+      "tv_prime": 0.40036766505505483
+    }
+  },
+  {
+    "respondent_id": "c64df38d-1dde-47be-b5cf-f8cc202675cd",
+    "utilities": {
+      "opponent_mid": 1.8141280702554494,
+      "opponent_big_six": 5.602115177588615,
+      "zone_lower": 2.2126756942332397,
+      "zone_upper": -0.5884388441923684,
+      "zone_hospitality": -1.7003101635203435,
+      "stakes_top4": 4.075571880318448,
+      "stakes_relegation": 4.7828981243323465,
+      "stakes_euro": 2.576026778072198,
+      "price": -0.13840288032151463,
+      "derby": 4.25040680858036,
+      "tv_prime": 0.1462360971126724
+    }
+  },
+  {
+    "respondent_id": "1523d3b9-5f5b-4d2b-a203-6ac385885480",
+    "utilities": {
+      "opponent_mid": 2.2122387633848657,
+      "opponent_big_six": 5.272787892076405,
+      "zone_lower": 1.5936447178899384,
+      "zone_upper": 0.26699609242146466,
+      "zone_hospitality": -1.7671062816726635,
+      "stakes_top4": 4.213016855619694,
+      "stakes_relegation": 4.65781669584477,
+      "stakes_euro": 2.621166881761731,
+      "price": -0.1699353128255164,
+      "derby": 4.203447127090971,
+      "tv_prime": 0.11062081023849839
+    }
+  },
+  {
+    "respondent_id": "c365e735-5fe9-46b5-9a5e-72e673871f83",
+    "utilities": {
+      "opponent_mid": 1.4448203669811683,
+      "opponent_big_six": 5.554289963930128,
+      "zone_lower": 1.92872112197052,
+      "zone_upper": -0.11091039205995055,
+      "zone_hospitality": -1.7455758275048106,
+      "stakes_top4": 4.228814384007817,
+      "stakes_relegation": 4.704247868626048,
+      "stakes_euro": 2.7081125061238773,
+      "price": -0.0682315450390844,
+      "derby": 4.237584796507808,
+      "tv_prime": 0.2361081941434819
+    }
+  },
+  {
+    "respondent_id": "0ac1a3f6-ab35-4d65-8a95-a97c3379e720",
+    "utilities": {
+      "opponent_mid": 2.187213895505733,
+      "opponent_big_six": 5.576109401030422,
+      "zone_lower": 1.8765230392934904,
+      "zone_upper": -0.038405812622454134,
+      "zone_hospitality": -1.7624332424842757,
+      "stakes_top4": 4.184160050029214,
+      "stakes_relegation": 4.683765354476438,
+      "stakes_euro": 2.5139517036922396,
+      "price": -0.1164354046048827,
+      "derby": 4.296056178247951,
+      "tv_prime": 0.1456156076473801
+    }
+  },
+  {
+    "respondent_id": "a7179409-9543-4dba-a710-0af429ac5aaf",
+    "utilities": {
+      "opponent_mid": 2.698213372181905,
+      "opponent_big_six": 5.140076494323336,
+      "zone_lower": 2.0412692628655296,
+      "zone_upper": -0.26695461443842045,
+      "zone_hospitality": -1.7322588305379711,
+      "stakes_top4": 4.099790594069756,
+      "stakes_relegation": 4.985562051775451,
+      "stakes_euro": 2.3351217945298357,
+      "price": -0.09028692362792495,
+      "derby": 4.443167013825283,
+      "tv_prime": 0.11023486402586778
+    }
+  },
+  {
+    "respondent_id": "03550509-2a86-4fb3-9519-968ee7815943",
+    "utilities": {
+      "opponent_mid": 2.16420600285661,
+      "opponent_big_six": 5.460724980048318,
+      "zone_lower": 1.5067818725905535,
+      "zone_upper": 0.40665548624047876,
+      "zone_hospitality": -1.745986639395528,
+      "stakes_top4": 4.11885591413964,
+      "stakes_relegation": 4.642708659491313,
+      "stakes_euro": 2.75588373514385,
+      "price": -0.13912023451822436,
+      "derby": 4.24646785015121,
+      "tv_prime": 0.17478030657718663
+    }
+  },
+  {
+    "respondent_id": "07489eeb-cb4b-4061-a952-103dc993f011",
+    "utilities": {
+      "opponent_mid": 1.8577082541382053,
+      "opponent_big_six": 5.56843699904044,
+      "zone_lower": 1.9474210061793196,
+      "zone_upper": -0.4033394153082189,
+      "zone_hospitality": -1.7226458672354859,
+      "stakes_top4": 4.054727171692388,
+      "stakes_relegation": 5.008622596786106,
+      "stakes_euro": 2.600465328568715,
+      "price": -0.1140627274054036,
+      "derby": 4.299057925826514,
+      "tv_prime": 0.17769543457450335
+    }
+  },
+  {
+    "respondent_id": "edc71286-090e-48bd-b379-01cb03869cb0",
+    "utilities": {
+      "opponent_mid": 2.3401438922716125,
+      "opponent_big_six": 5.566453623573103,
+      "zone_lower": 1.6987500504224875,
+      "zone_upper": -0.5608031756304445,
+      "zone_hospitality": -1.3835891900431898,
+      "stakes_top4": 4.12834747134294,
+      "stakes_relegation": 4.900700752196678,
+      "stakes_euro": 2.6203962196344355,
+      "price": -0.09755490334551566,
+      "derby": 4.231237666180431,
+      "tv_prime": 0.15709307421628768
+    }
+  },
+  {
+    "respondent_id": "7e57b5a8-7c81-4cff-9ab4-94480042623d",
+    "utilities": {
+      "opponent_mid": 2.1735990953144677,
+      "opponent_big_six": 5.2652631730808945,
+      "zone_lower": 2.1223518337819813,
+      "zone_upper": -0.11337160524748893,
+      "zone_hospitality": -1.8663411277450828,
+      "stakes_top4": 4.1387488756749775,
+      "stakes_relegation": 4.649335210591174,
+      "stakes_euro": 2.7314354332774107,
+      "price": -0.2243227021057422,
+      "derby": 3.998674768927571,
+      "tv_prime": 0.18640695842885957
+    }
+  },
+  {
+    "respondent_id": "44042cf4-52df-4444-947a-676bb4057e6b",
+    "utilities": {
+      "opponent_mid": 2.314672764466873,
+      "opponent_big_six": 5.245968256708658,
+      "zone_lower": 2.155157746935563,
+      "zone_upper": -0.4222036017006459,
+      "zone_hospitality": -1.7213685861814847,
+      "stakes_top4": 4.136305287976186,
+      "stakes_relegation": 4.504015493180137,
+      "stakes_euro": 2.6594233132498175,
+      "price": -0.14780782244193894,
+      "derby": 4.474494599771381,
+      "tv_prime": 0.21096853441102256
+    }
+  },
+  {
+    "respondent_id": "7584f1ef-e7e1-4fa0-93ac-8f7a14f91b6b",
+    "utilities": {
+      "opponent_mid": 2.342060956892748,
+      "opponent_big_six": 5.2979413439651735,
+      "zone_lower": 1.6184277153599398,
+      "zone_upper": 0.18813855713178554,
+      "zone_hospitality": -1.7086413092400046,
+      "stakes_top4": 4.140276091536586,
+      "stakes_relegation": 4.663846266391609,
+      "stakes_euro": 2.63972761460619,
+      "price": -0.24430588976846218,
+      "derby": 3.782449156227112,
+      "tv_prime": 0.19547593788150835
+    }
+  },
+  {
+    "respondent_id": "f424b22d-8b68-4ea5-9eb7-c76d10596082",
+    "utilities": {
+      "opponent_mid": 2.7249588801412723,
+      "opponent_big_six": 5.0894877660971565,
+      "zone_lower": 1.6950878579950137,
+      "zone_upper": -0.20422021266005222,
+      "zone_hospitality": -1.5914116822437276,
+      "stakes_top4": 4.144670947006033,
+      "stakes_relegation": 4.763043423734736,
+      "stakes_euro": 2.6857542824926783,
+      "price": -0.08108604331806513,
+      "derby": 4.680923969059274,
+      "tv_prime": 0.27643303185330537
+    }
+  },
+  {
+    "respondent_id": "836734e6-b4c7-45c8-85d9-1cea0cb7bcbe",
+    "utilities": {
+      "opponent_mid": 2.138329658006213,
+      "opponent_big_six": 5.288243914594964,
+      "zone_lower": 1.7844776002356102,
+      "zone_upper": 0.2410750718832006,
+      "zone_hospitality": -1.8228154225569506,
+      "stakes_top4": 4.092715639394549,
+      "stakes_relegation": 4.784741061659254,
+      "stakes_euro": 2.6375517152107792,
+      "price": -0.15783654086659654,
+      "derby": 4.320587478587531,
+      "tv_prime": 0.22769006638453937
+    }
+  },
+  {
+    "respondent_id": "815820ff-fd24-41b1-a999-f7bf9109bb36",
+    "utilities": {
+      "opponent_mid": 2.191621154917959,
+      "opponent_big_six": 5.333291819527935,
+      "zone_lower": 1.8783834713362815,
+      "zone_upper": 0.26018012354669734,
+      "zone_hospitality": -1.8572384937798534,
+      "stakes_top4": 4.173151313957111,
+      "stakes_relegation": 4.66143645366658,
+      "stakes_euro": 2.6211552624476324,
+      "price": -0.17905601671087815,
+      "derby": 4.081298979739481,
+      "tv_prime": 0.21493319877771164
+    }
+  },
+  {
+    "respondent_id": "37db1606-545c-4497-b803-950ad27a8e4d",
+    "utilities": {
+      "opponent_mid": 2.1490573319177417,
+      "opponent_big_six": 5.272302419002082,
+      "zone_lower": 1.8224897577932058,
+      "zone_upper": -0.8529205308699276,
+      "zone_hospitality": -1.309647307311321,
+      "stakes_top4": 4.1581526375885085,
+      "stakes_relegation": 5.076985337826536,
+      "stakes_euro": 2.309586026550117,
+      "price": -0.0930443579856859,
+      "derby": 4.222322308971092,
+      "tv_prime": 0.37151257199715
+    }
+  },
+  {
+    "respondent_id": "fa525778-cd31-4389-95ee-5b85466bce09",
+    "utilities": {
+      "opponent_mid": 2.338965258146924,
+      "opponent_big_six": 5.2802247923784815,
+      "zone_lower": 1.9774839873103631,
+      "zone_upper": -0.0032393518638973526,
+      "zone_hospitality": -1.831753267628926,
+      "stakes_top4": 4.161193328913542,
+      "stakes_relegation": 4.556183468301611,
+      "stakes_euro": 2.8775249234151823,
+      "price": -0.1028396360126008,
+      "derby": 4.2216647002805745,
+      "tv_prime": 0.13317014839929056
+    }
+  },
+  {
+    "respondent_id": "e416d924-e431-498b-b85b-d9035b8a6933",
+    "utilities": {
+      "opponent_mid": 1.910816076926446,
+      "opponent_big_six": 5.667996947030528,
+      "zone_lower": 1.7972046699157842,
+      "zone_upper": 0.22405916049862934,
+      "zone_hospitality": -1.8082094791784016,
+      "stakes_top4": 4.169072373765967,
+      "stakes_relegation": 4.519388800688642,
+      "stakes_euro": 2.4592784254646567,
+      "price": -0.09446017897250393,
+      "derby": 4.662188427154587,
+      "tv_prime": 0.203254468111698
+    }
+  },
+  {
+    "respondent_id": "1586c49e-f4ee-488d-ac5a-bbf1e6d80ded",
+    "utilities": {
+      "opponent_mid": 2.201275588157412,
+      "opponent_big_six": 5.034574913456445,
+      "zone_lower": 1.082008313401288,
+      "zone_upper": 0.9280891269397283,
+      "zone_hospitality": -1.7769702243662888,
+      "stakes_top4": 4.142307661504493,
+      "stakes_relegation": 4.8716220699511785,
+      "stakes_euro": 2.520170183357731,
+      "price": -0.146534563861196,
+      "derby": 4.499793333453361,
+      "tv_prime": 0.17506065652154318
+    }
+  },
+  {
+    "respondent_id": "36fb322a-63ab-4e64-9243-8cfc8a3c31f7",
+    "utilities": {
+      "opponent_mid": 2.3197575945732924,
+      "opponent_big_six": 5.2543269933074,
+      "zone_lower": 2.3287305836667707,
+      "zone_upper": -0.5077974659890273,
+      "zone_hospitality": -1.8043660433755297,
+      "stakes_top4": 4.115435658368645,
+      "stakes_relegation": 4.698719962890732,
+      "stakes_euro": 2.859991871419875,
+      "price": -0.061261711795189834,
+      "derby": 4.337529471891713,
+      "tv_prime": 0.20429010400369557
+    }
+  },
+  {
+    "respondent_id": "ff3fe581-f278-4592-9d0e-773d066b8089",
+    "utilities": {
+      "opponent_mid": 2.359801018544535,
+      "opponent_big_six": 5.163196208403831,
+      "zone_lower": 1.6929943898384783,
+      "zone_upper": 0.21270878191301873,
+      "zone_hospitality": -1.8075175910976438,
+      "stakes_top4": 4.133135984883623,
+      "stakes_relegation": 4.753154743708035,
+      "stakes_euro": 2.6552595841368256,
+      "price": -0.13373068708375432,
+      "derby": 4.263364923145864,
+      "tv_prime": 0.15985527331292076
+    }
+  },
+  {
+    "respondent_id": "11a9e7a3-f3b9-40eb-a82c-da36edb3c415",
+    "utilities": {
+      "opponent_mid": 2.280819108968111,
+      "opponent_big_six": 5.358222061024631,
+      "zone_lower": 1.6978785860139596,
+      "zone_upper": 0.24786883153412886,
+      "zone_hospitality": -1.7934843755528418,
+      "stakes_top4": 4.136857726319786,
+      "stakes_relegation": 4.724731557666391,
+      "stakes_euro": 2.675605256522503,
+      "price": -0.1732928523211579,
+      "derby": 4.058746927115264,
+      "tv_prime": 0.22657565067332416
+    }
+  },
+  {
+    "respondent_id": "92778f89-4d78-4d85-909f-3ae8c0e83b35",
+    "utilities": {
+      "opponent_mid": 1.8172200077625655,
+      "opponent_big_six": 5.673133313791266,
+      "zone_lower": 1.528134928359115,
+      "zone_upper": 0.446712179900821,
+      "zone_hospitality": -1.744059794593998,
+      "stakes_top4": 4.151940070363706,
+      "stakes_relegation": 4.774162226479147,
+      "stakes_euro": 2.5766404629706066,
+      "price": -0.11222067065348243,
+      "derby": 4.219786134343798,
+      "tv_prime": 0.21767452836803475
+    }
+  },
+  {
+    "respondent_id": "d9747aa2-c2f0-45fc-878d-1208f0a0c0c9",
+    "utilities": {
+      "opponent_mid": 2.08494489798203,
+      "opponent_big_six": 4.841588218768108,
+      "zone_lower": 1.635442270195299,
+      "zone_upper": 0.4256398484646132,
+      "zone_hospitality": -1.8500000590623362,
+      "stakes_top4": 4.1839945550711,
+      "stakes_relegation": 4.709320316642572,
+      "stakes_euro": 2.784937240129089,
+      "price": -0.10101029113425741,
+      "derby": 4.6778065464702,
+      "tv_prime": 0.22335200688490506
+    }
+  },
+  {
+    "respondent_id": "df11353f-af44-410e-9cfa-282bc818529c",
+    "utilities": {
+      "opponent_mid": 2.187212005217537,
+      "opponent_big_six": 5.037079372995901,
+      "zone_lower": 2.4922941117208346,
+      "zone_upper": -0.7512427807190878,
+      "zone_hospitality": -1.759058559500449,
+      "stakes_top4": 4.222318581023206,
+      "stakes_relegation": 4.61522243855227,
+      "stakes_euro": 2.683676320059386,
+      "price": -0.12478055139248308,
+      "derby": 4.234132695805076,
+      "tv_prime": 0.20019463788161312
+    }
+  },
+  {
+    "respondent_id": "42f7d84f-60b7-463f-837c-f2b84485c733",
+    "utilities": {
+      "opponent_mid": 2.341327994647123,
+      "opponent_big_six": 5.441239352902651,
+      "zone_lower": 2.168174546720549,
+      "zone_upper": -0.3734049460501263,
+      "zone_hospitality": -1.800709134395888,
+      "stakes_top4": 4.114613698184732,
+      "stakes_relegation": 4.638512026266552,
+      "stakes_euro": 2.6565998872899117,
+      "price": -0.13964913041569052,
+      "derby": 4.346753275378983,
+      "tv_prime": 0.2504767273833962
+    }
+  },
+  {
+    "respondent_id": "4c553cd7-b2a0-40bd-a776-8dc86944d3e9",
+    "utilities": {
+      "opponent_mid": 2.0096419227742586,
+      "opponent_big_six": 5.513596721813017,
+      "zone_lower": 1.9474142004580655,
+      "zone_upper": 0.24846654516851255,
+      "zone_hospitality": -1.9125090742512536,
+      "stakes_top4": 4.196704681822124,
+      "stakes_relegation": 4.738331430122831,
+      "stakes_euro": 2.555978844464054,
+      "price": -0.14464044291713718,
+      "derby": 3.9056713203268894,
+      "tv_prime": 0.15344223679279057
+    }
+  },
+  {
+    "respondent_id": "86cca377-c930-4a48-8d02-051b708a9e54",
+    "utilities": {
+      "opponent_mid": 2.898780062229142,
+      "opponent_big_six": 4.811024367302491,
+      "zone_lower": 2.333275494210484,
+      "zone_upper": -0.43775349458560825,
+      "zone_hospitality": -1.8324107861996721,
+      "stakes_top4": 4.132167625006691,
+      "stakes_relegation": 4.8138819596252205,
+      "stakes_euro": 2.549843098019319,
+      "price": -0.09788884294654603,
+      "derby": 4.290445597013419,
+      "tv_prime": 0.38232195160413013
+    }
+  },
+  {
+    "respondent_id": "2a86c6ce-b44a-496a-b39e-a16288d0db95",
+    "utilities": {
+      "opponent_mid": 2.9665366927709322,
+      "opponent_big_six": 5.02412648272551,
+      "zone_lower": 2.2526363873238693,
+      "zone_upper": -0.46822563543089546,
+      "zone_hospitality": -1.7967764646627264,
+      "stakes_top4": 4.142593453952295,
+      "stakes_relegation": 4.309633063175691,
+      "stakes_euro": 2.8082042035932497,
+      "price": -0.21840547418216003,
+      "derby": 3.864092764877184,
+      "tv_prime": 0.21230455379922872
+    }
+  },
+  {
+    "respondent_id": "90b37f58-9760-404c-8874-bcb6a9475275",
+    "utilities": {
+      "opponent_mid": 2.140154410893605,
+      "opponent_big_six": 5.1817305095844715,
+      "zone_lower": 1.6945322147775355,
+      "zone_upper": -0.24731888671283517,
+      "zone_hospitality": -1.5602145725773382,
+      "stakes_top4": 4.184201033066335,
+      "stakes_relegation": 4.651609648804902,
+      "stakes_euro": 2.6354816310388496,
+      "price": -0.1113665491126281,
+      "derby": 4.664983138164723,
+      "tv_prime": 0.24014119504510412
+    }
+  },
+  {
+    "respondent_id": "98c59ce6-1a94-4769-85d6-fcf571c0d569",
+    "utilities": {
+      "opponent_mid": 2.3278577872261677,
+      "opponent_big_six": 5.431086866173696,
+      "zone_lower": 2.15168934168987,
+      "zone_upper": -0.4046828253284591,
+      "zone_hospitality": -1.720977871070064,
+      "stakes_top4": 4.0714160506865,
+      "stakes_relegation": 4.980154112900295,
+      "stakes_euro": 2.636058161242542,
+      "price": -0.12963073028531572,
+      "derby": 4.09917005615323,
+      "tv_prime": 0.3388107109397243
+    }
+  },
+  {
+    "respondent_id": "3beb7699-7ebc-445b-8f0b-87fef4b36c4f",
+    "utilities": {
+      "opponent_mid": 2.1139002207010544,
+      "opponent_big_six": 5.483986649666592,
+      "zone_lower": 1.9811630274071745,
+      "zone_upper": -0.1541190032690029,
+      "zone_hospitality": -1.760948266354687,
+      "stakes_top4": 4.156505180785522,
+      "stakes_relegation": 4.500862467379092,
+      "stakes_euro": 2.636318267516616,
+      "price": -0.1351455847361842,
+      "derby": 4.5395703785855614,
+      "tv_prime": 0.036129534755887226
+    }
+  },
+  {
+    "respondent_id": "b2b1228a-81c6-4996-a645-3c9520c4e406",
+    "utilities": {
+      "opponent_mid": 2.3585889749793605,
+      "opponent_big_six": 5.358618760909543,
+      "zone_lower": 2.090241096668211,
+      "zone_upper": -0.23686408391182173,
+      "zone_hospitality": -1.7792043141855922,
+      "stakes_top4": 4.10911618043964,
+      "stakes_relegation": 4.635064696806957,
+      "stakes_euro": 2.671340984166873,
+      "price": -0.14101158047386608,
+      "derby": 4.263941100053839,
+      "tv_prime": 0.27352323663651573
+    }
+  },
+  {
+    "respondent_id": "9147f0d4-af8d-437d-a8a2-bb61c93ba94b",
+    "utilities": {
+      "opponent_mid": 2.3279107668812626,
+      "opponent_big_six": 5.251058571446462,
+      "zone_lower": 1.5868727037798573,
+      "zone_upper": 0.2924631006159199,
+      "zone_hospitality": -1.727740657728157,
+      "stakes_top4": 4.140990763251554,
+      "stakes_relegation": 4.636237814025195,
+      "stakes_euro": 2.643135426446179,
+      "price": -0.17416842453192,
+      "derby": 4.221438694120865,
+      "tv_prime": 0.16905024740173447
+    }
+  },
+  {
+    "respondent_id": "f1841986-b80c-4a52-9a3d-cc88afa57822",
+    "utilities": {
+      "opponent_mid": 2.31231392819539,
+      "opponent_big_six": 5.376806166576558,
+      "zone_lower": 1.775193725898534,
+      "zone_upper": 0.15813835887001085,
+      "zone_hospitality": -1.8003065466708643,
+      "stakes_top4": 4.204221182237767,
+      "stakes_relegation": 4.655909293212143,
+      "stakes_euro": 2.5125742287314465,
+      "price": -0.15670308191173726,
+      "derby": 4.149975111521951,
+      "tv_prime": 0.05813565896941247
+    }
+  },
+  {
+    "respondent_id": "ddac39f3-c33a-4b1a-b243-6c53d07230bb",
+    "utilities": {
+      "opponent_mid": 1.9004781701617928,
+      "opponent_big_six": 5.664748549192702,
+      "zone_lower": 1.4734032326439401,
+      "zone_upper": -0.1341902186265208,
+      "zone_hospitality": -1.5078547949731829,
+      "stakes_top4": 4.12704827866894,
+      "stakes_relegation": 4.7868063181546185,
+      "stakes_euro": 2.558286380362832,
+      "price": -0.11594084651071046,
+      "derby": 4.155250857910678,
+      "tv_prime": 0.33788493934046293
+    }
+  },
+  {
+    "respondent_id": "6aab9d16-2591-4d96-b85f-71531ce5502a",
+    "utilities": {
+      "opponent_mid": 2.1840388580861796,
+      "opponent_big_six": 5.1646127997657265,
+      "zone_lower": 2.1354987151447595,
+      "zone_upper": -0.21897653175364443,
+      "zone_hospitality": -1.813336532187475,
+      "stakes_top4": 4.143079581998619,
+      "stakes_relegation": 4.765218714045211,
+      "stakes_euro": 2.593452916054574,
+      "price": -0.17947653574779318,
+      "derby": 4.1381478862699,
+      "tv_prime": 0.14194614147442158
+    }
+  },
+  {
+    "respondent_id": "849c8d24-f57f-4ecc-b6d9-dbe750288809",
+    "utilities": {
+      "opponent_mid": 2.263696216673069,
+      "opponent_big_six": 5.381491490426092,
+      "zone_lower": 1.7068727554204979,
+      "zone_upper": 0.16831959353617904,
+      "zone_hospitality": -1.7865411237834241,
+      "stakes_top4": 4.150063844344797,
+      "stakes_relegation": 4.6282331438895055,
+      "stakes_euro": 2.6667332864267763,
+      "price": -0.1487272572492878,
+      "derby": 4.253738148565911,
+      "tv_prime": 0.17468147679082627
+    }
+  },
+  {
+    "respondent_id": "7cdcb3a7-a135-4ce8-9b44-cd71e9bf485c",
+    "utilities": {
+      "opponent_mid": 2.2432647201451794,
+      "opponent_big_six": 5.34140891149159,
+      "zone_lower": 1.6350472749219918,
+      "zone_upper": 0.26099309829851725,
+      "zone_hospitality": -1.796030228362779,
+      "stakes_top4": 4.174552596299476,
+      "stakes_relegation": 4.550763681621938,
+      "stakes_euro": 2.6288544788646178,
+      "price": -0.1709206845258858,
+      "derby": 4.201972541455432,
+      "tv_prime": 0.19876665713864605
+    }
+  },
+  {
+    "respondent_id": "a382ede0-8846-4ef0-a9a0-5cb381334414",
+    "utilities": {
+      "opponent_mid": 2.211134230948644,
+      "opponent_big_six": 5.133657521311509,
+      "zone_lower": 1.609709997531125,
+      "zone_upper": 0.2532571249699626,
+      "zone_hospitality": -1.7532229076335941,
+      "stakes_top4": 4.133109948496488,
+      "stakes_relegation": 4.782833207211848,
+      "stakes_euro": 2.662099839570399,
+      "price": -0.21203478208939475,
+      "derby": 4.007317994785638,
+      "tv_prime": 0.20211748579157418
+    }
+  },
+  {
+    "respondent_id": "b235487b-01f0-471c-886b-50de8b811fae",
+    "utilities": {
+      "opponent_mid": 2.2704230140047645,
+      "opponent_big_six": 5.781765143223704,
+      "zone_lower": 1.9582282974086556,
+      "zone_upper": -0.14266874428128198,
+      "zone_hospitality": -1.748645113729843,
+      "stakes_top4": 4.105470359401679,
+      "stakes_relegation": 4.725556991557855,
+      "stakes_euro": 2.5928753805699003,
+      "price": -0.11200325875673893,
+      "derby": 4.1048929072064295,
+      "tv_prime": 0.29434315901522123
+    }
+  },
+  {
+    "respondent_id": "cdb03cc8-335f-49ab-a818-a2a5559731c9",
+    "utilities": {
+      "opponent_mid": 2.3842922551981185,
+      "opponent_big_six": 5.2325107736762515,
+      "zone_lower": 1.8159850649335414,
+      "zone_upper": 0.025096714830767725,
+      "zone_hospitality": -1.7388262806694261,
+      "stakes_top4": 4.150016982576198,
+      "stakes_relegation": 4.683425551564103,
+      "stakes_euro": 2.686208575848381,
+      "price": -0.16361126560444145,
+      "derby": 4.214559802375384,
+      "tv_prime": 0.18264608859109593
+    }
+  },
+  {
+    "respondent_id": "cf2fc6bc-c674-44c9-818b-77498a669baa",
+    "utilities": {
+      "opponent_mid": 2.4828408497599614,
+      "opponent_big_six": 5.024186830589377,
+      "zone_lower": 1.4419206838687344,
+      "zone_upper": 0.4888265885805111,
+      "zone_hospitality": -1.758491947678847,
+      "stakes_top4": 4.133022210497525,
+      "stakes_relegation": 4.631891144560971,
+      "stakes_euro": 2.7113829473694944,
+      "price": -0.14204836357980857,
+      "derby": 4.6300486273237285,
+      "tv_prime": 0.15539766090626222
+    }
+  },
+  {
+    "respondent_id": "c0b7be19-5cec-4345-b0e4-9850d0d1da1e",
+    "utilities": {
+      "opponent_mid": 2.524947319181036,
+      "opponent_big_six": 5.061505811076276,
+      "zone_lower": 1.437498551852764,
+      "zone_upper": 0.5194439705814414,
+      "zone_hospitality": -1.748801214467164,
+      "stakes_top4": 4.117422330156641,
+      "stakes_relegation": 4.555314439072802,
+      "stakes_euro": 2.633873764224478,
+      "price": -0.19754295300779773,
+      "derby": 4.558030965290742,
+      "tv_prime": 0.33491005238690696
+    }
+  },
+  {
+    "respondent_id": "b5f2db91-a81d-42f3-bebd-732a45f7fb5c",
+    "utilities": {
+      "opponent_mid": 1.986213720033846,
+      "opponent_big_six": 5.609434094929438,
+      "zone_lower": 1.9355501606976764,
+      "zone_upper": -0.11755537767552336,
+      "zone_hospitality": -1.7474807075482908,
+      "stakes_top4": 4.169542246683368,
+      "stakes_relegation": 4.838522097421307,
+      "stakes_euro": 2.658782128589976,
+      "price": -0.12456137474066677,
+      "derby": 3.599211287164885,
+      "tv_prime": 0.41543711693207563
+    }
+  },
+  {
+    "respondent_id": "5c82196f-8bfe-4a8c-8162-37b9141ee4de",
+    "utilities": {
+      "opponent_mid": 2.257552462534457,
+      "opponent_big_six": 5.36510119773984,
+      "zone_lower": 2.1572131809996233,
+      "zone_upper": -0.39764197912138294,
+      "zone_hospitality": -1.8109348433186792,
+      "stakes_top4": 4.091411843496358,
+      "stakes_relegation": 4.785027363054987,
+      "stakes_euro": 2.665720056538278,
+      "price": -0.14737770913564038,
+      "derby": 4.200831947603997,
+      "tv_prime": 0.2232125443559154
+    }
+  },
+  {
+    "respondent_id": "f7dced17-0ec4-45f1-b154-0c58d72a89af",
+    "utilities": {
+      "opponent_mid": 2.305119633215037,
+      "opponent_big_six": 5.477652252209488,
+      "zone_lower": 1.8639875586436288,
+      "zone_upper": 0.0005273542633556292,
+      "zone_hospitality": -1.7607148621936193,
+      "stakes_top4": 4.143252132943476,
+      "stakes_relegation": 4.850430108161306,
+      "stakes_euro": 2.5516316091678517,
+      "price": -0.10979999908061726,
+      "derby": 4.2236700828954925,
+      "tv_prime": 0.1045766451973909
+    }
+  },
+  {
+    "respondent_id": "41087d4a-e5a0-42a6-bc92-b3fd6210b7e4",
+    "utilities": {
+      "opponent_mid": 2.068400677651414,
+      "opponent_big_six": 5.677335605212169,
+      "zone_lower": 1.6241022360246469,
+      "zone_upper": -0.30798219559272527,
+      "zone_hospitality": -1.4964261502346596,
+      "stakes_top4": 4.058761889716205,
+      "stakes_relegation": 4.900764426826599,
+      "stakes_euro": 2.7610450289060395,
+      "price": -0.15034059427760962,
+      "derby": 3.927260511236019,
+      "tv_prime": 0.3773478803297677
+    }
+  },
+  {
+    "respondent_id": "7543798f-d915-4fff-9e83-fb29574067aa",
+    "utilities": {
+      "opponent_mid": 2.1548473160681927,
+      "opponent_big_six": 5.120533750435555,
+      "zone_lower": 1.8248523988728302,
+      "zone_upper": 0.02109276802104536,
+      "zone_hospitality": -1.7599545060325223,
+      "stakes_top4": 4.191410877641574,
+      "stakes_relegation": 4.651445938618102,
+      "stakes_euro": 2.618606736127013,
+      "price": -0.2163053453067633,
+      "derby": 4.204660412432053,
+      "tv_prime": 0.2517617569721946
+    }
+  },
+  {
+    "respondent_id": "04103d7c-9bb8-416a-bacd-107a08099c38",
+    "utilities": {
+      "opponent_mid": 2.4458307904958203,
+      "opponent_big_six": 5.137122747370625,
+      "zone_lower": 2.9558479256625523,
+      "zone_upper": -1.2780628879227793,
+      "zone_hospitality": -1.7703055758520971,
+      "stakes_top4": 4.130743738542013,
+      "stakes_relegation": 4.473619490815903,
+      "stakes_euro": 2.515225365220572,
+      "price": -0.0957207439347058,
+      "derby": 4.405346601459323,
+      "tv_prime": 0.21200647837113873
+    }
+  },
+  {
+    "respondent_id": "e271f454-9814-4192-afe8-591e47ca185c",
+    "utilities": {
+      "opponent_mid": 1.8957256663696034,
+      "opponent_big_six": 5.608957807217296,
+      "zone_lower": 2.2782466083410062,
+      "zone_upper": -0.5416266699150261,
+      "zone_hospitality": -1.7871211592536749,
+      "stakes_top4": 4.108229987085219,
+      "stakes_relegation": 4.273594295231171,
+      "stakes_euro": 2.705282563055398,
+      "price": -0.204828286667926,
+      "derby": 4.282718297902178,
+      "tv_prime": 0.19377797906777164
+    }
+  },
+  {
+    "respondent_id": "b6d8ea1c-ea5a-43a0-af5e-9553a9d28178",
+    "utilities": {
+      "opponent_mid": 1.9715565654341036,
+      "opponent_big_six": 5.2406563522957,
+      "zone_lower": 2.09244864796725,
+      "zone_upper": -0.34441559821507944,
+      "zone_hospitality": -1.7730361870767244,
+      "stakes_top4": 4.178697049347472,
+      "stakes_relegation": 4.593683422897932,
+      "stakes_euro": 2.695635184407353,
+      "price": -0.15653059876457712,
+      "derby": 4.2541066485676176,
+      "tv_prime": 0.2463769565742986
+    }
+  },
+  {
+    "respondent_id": "8df5312b-694a-46c8-8b74-6326a9f3d914",
+    "utilities": {
+      "opponent_mid": 1.730999664748543,
+      "opponent_big_six": 5.245750664348876,
+      "zone_lower": 2.076422001990306,
+      "zone_upper": -0.2789388784665868,
+      "zone_hospitality": -1.7742909874694572,
+      "stakes_top4": 4.098375820452902,
+      "stakes_relegation": 4.573674375285364,
+      "stakes_euro": 2.5081864226258475,
+      "price": -0.2613260025412691,
+      "derby": 4.433526066057968,
+      "tv_prime": 0.13919196812059836
+    }
+  },
+  {
+    "respondent_id": "6eeda512-1021-4eca-851e-e63e8856e2d1",
+    "utilities": {
+      "opponent_mid": 2.300037715920314,
+      "opponent_big_six": 5.305492373308539,
+      "zone_lower": 1.7222386669252283,
+      "zone_upper": 0.24508190176337738,
+      "zone_hospitality": -1.7936527711927588,
+      "stakes_top4": 4.126419882000528,
+      "stakes_relegation": 4.65961595938309,
+      "stakes_euro": 2.6320321612194446,
+      "price": -0.15660367282189805,
+      "derby": 4.279792537385321,
+      "tv_prime": 0.18489461985246652
+    }
+  },
+  {
+    "respondent_id": "07b8f8a0-170e-4be4-83b8-29e743ef7a04",
+    "utilities": {
+      "opponent_mid": 2.103669847354642,
+      "opponent_big_six": 5.418417100050956,
+      "zone_lower": 1.6066147161326503,
+      "zone_upper": 0.2507605370563279,
+      "zone_hospitality": -1.790080538476007,
+      "stakes_top4": 4.234205589341006,
+      "stakes_relegation": 4.361093774036713,
+      "stakes_euro": 2.688528515927327,
+      "price": -0.10034815046894538,
+      "derby": 4.266059601509338,
+      "tv_prime": 0.4065217767398131
+    }
+  },
+  {
+    "respondent_id": "1ccdc9e4-bc53-4fe0-b563-cf27d82fb783",
+    "utilities": {
+      "opponent_mid": 2.266697306825397,
+      "opponent_big_six": 5.254231383660292,
+      "zone_lower": 1.319525098240894,
+      "zone_upper": 0.31866956410542163,
+      "zone_hospitality": -1.6029965532735655,
+      "stakes_top4": 4.142921574202923,
+      "stakes_relegation": 4.77333354164212,
+      "stakes_euro": 2.5781415738179754,
+      "price": -0.14748898762034665,
+      "derby": 4.343369405853979,
+      "tv_prime": 0.1923442995540584
+    }
+  },
+  {
+    "respondent_id": "1fe64ca5-2141-40a5-90a2-3d99df0c0231",
+    "utilities": {
+      "opponent_mid": 1.9917144788219203,
+      "opponent_big_six": 5.271656251701846,
+      "zone_lower": 1.4196582068950039,
+      "zone_upper": 0.6238930042235719,
+      "zone_hospitality": -1.827604735159298,
+      "stakes_top4": 4.122460954222316,
+      "stakes_relegation": 4.72274709731619,
+      "stakes_euro": 2.5574538807073783,
+      "price": -0.19349333037494204,
+      "derby": 4.464913091289821,
+      "tv_prime": 0.2613793793523416
+    }
+  },
+  {
+    "respondent_id": "ba5e353e-fd63-48db-a96d-f24b7d23ad38",
+    "utilities": {
+      "opponent_mid": 2.2374001999052457,
+      "opponent_big_six": 4.9992621007905065,
+      "zone_lower": 1.7948923125199612,
+      "zone_upper": 0.02786392207723703,
+      "zone_hospitality": -1.809055747907675,
+      "stakes_top4": 4.145036601261158,
+      "stakes_relegation": 4.441509219343238,
+      "stakes_euro": 2.7875057913919536,
+      "price": -0.18870210323329087,
+      "derby": 4.542532050224283,
+      "tv_prime": -0.02877072312307216
+    }
+  },
+  {
+    "respondent_id": "c8f680cb-876c-4ca6-a287-17d75c20f41f",
+    "utilities": {
+      "opponent_mid": 3.0668641394024774,
+      "opponent_big_six": 4.890264327126512,
+      "zone_lower": 2.3245234087446085,
+      "zone_upper": -0.4858156111007289,
+      "zone_hospitality": -1.7660691374456843,
+      "stakes_top4": 4.118472838156412,
+      "stakes_relegation": 4.64085799862189,
+      "stakes_euro": 2.601887413304682,
+      "price": -0.143586586615169,
+      "derby": 3.9313145368474136,
+      "tv_prime": 0.21511987416011083
+    }
+  },
+  {
+    "respondent_id": "d505b0b2-6948-49a9-8806-7aa3cc4867da",
+    "utilities": {
+      "opponent_mid": 2.152173097250199,
+      "opponent_big_six": 5.411613140494299,
+      "zone_lower": 2.6205496353532376,
+      "zone_upper": -0.9088849439846328,
+      "zone_hospitality": -1.7521027947272958,
+      "stakes_top4": 4.057424632734647,
+      "stakes_relegation": 4.957352218009947,
+      "stakes_euro": 2.4625841964024904,
+      "price": -0.10966784480196748,
+      "derby": 4.225355315615592,
+      "tv_prime": 0.1664924939574067
+    }
+  },
+  {
+    "respondent_id": "20b31125-a5cf-4111-a493-ff2d12cd4db7",
+    "utilities": {
+      "opponent_mid": 2.3576282891619447,
+      "opponent_big_six": 5.3502232587864516,
+      "zone_lower": 1.9074400951396593,
+      "zone_upper": -0.06803198692025066,
+      "zone_hospitality": -1.7447166892595303,
+      "stakes_top4": 4.107155485659812,
+      "stakes_relegation": 4.66651844813936,
+      "stakes_euro": 2.635776528003439,
+      "price": -0.15085041453969306,
+      "derby": 4.46392432773495,
+      "tv_prime": 0.17592577108499372
+    }
+  },
+  {
+    "respondent_id": "075ce9e9-7e38-437c-a5c0-54e20e997965",
+    "utilities": {
+      "opponent_mid": 2.2685594418803428,
+      "opponent_big_six": 5.473708297600517,
+      "zone_lower": 2.183286590605547,
+      "zone_upper": -0.38016273058401884,
+      "zone_hospitality": -1.7717066013899545,
+      "stakes_top4": 4.202726330641066,
+      "stakes_relegation": 4.669054040730017,
+      "stakes_euro": 2.5301193201231205,
+      "price": -0.11709357728205778,
+      "derby": 4.009470920345342,
+      "tv_prime": 0.2439043830377204
+    }
+  },
+  {
+    "respondent_id": "7edf7fc7-f1b9-4e92-b232-aae91ef1b3f6",
+    "utilities": {
+      "opponent_mid": 2.224223057753927,
+      "opponent_big_six": 5.4121744832761705,
+      "zone_lower": 2.7080950410273466,
+      "zone_upper": -0.8578663964290745,
+      "zone_hospitality": -1.8886070862327453,
+      "stakes_top4": 4.035234832123056,
+      "stakes_relegation": 4.547893154414876,
+      "stakes_euro": 2.9144920149745994,
+      "price": -0.11160856398673542,
+      "derby": 4.132355154319591,
+      "tv_prime": 0.19710868860747893
+    }
+  },
+  {
+    "respondent_id": "3c057dab-b491-4d73-8f97-91eafcd4d33c",
+    "utilities": {
+      "opponent_mid": 2.2382183076131263,
+      "opponent_big_six": 5.348962403028492,
+      "zone_lower": 1.7817963139462913,
+      "zone_upper": 0.0638055916886747,
+      "zone_hospitality": -1.777100260964962,
+      "stakes_top4": 4.130493394959482,
+      "stakes_relegation": 4.562581534138911,
+      "stakes_euro": 2.613941384577426,
+      "price": -0.18443636597096966,
+      "derby": 4.34971256204885,
+      "tv_prime": 0.23775303511555199
+    }
+  },
+  {
+    "respondent_id": "4e98af1a-1186-44b6-af85-21211f1bf509",
+    "utilities": {
+      "opponent_mid": 2.0096121012522303,
+      "opponent_big_six": 5.447863626447013,
+      "zone_lower": 1.9944036300244423,
+      "zone_upper": -0.16134769294856308,
+      "zone_hospitality": -1.7467830743340826,
+      "stakes_top4": 4.1809927635171835,
+      "stakes_relegation": 4.546351135162168,
+      "stakes_euro": 2.673515242457871,
+      "price": -0.15627046787411875,
+      "derby": 4.223575850443891,
+      "tv_prime": 0.2887983925413407
+    }
+  },
+  {
+    "respondent_id": "5b0916d1-e0f8-4b3d-b1ac-3b89653d644c",
+    "utilities": {
+      "opponent_mid": 2.6558930996296426,
+      "opponent_big_six": 5.330051918680275,
+      "zone_lower": 1.5258691871559604,
+      "zone_upper": 0.4004153915332115,
+      "zone_hospitality": -1.7296347145852735,
+      "stakes_top4": 4.030336125038656,
+      "stakes_relegation": 4.641324605786683,
+      "stakes_euro": 2.7766952646448955,
+      "price": -0.1849225606832613,
+      "derby": 4.412055557479531,
+      "tv_prime": 0.1881046538065018
+    }
+  },
+  {
+    "respondent_id": "6a07fcdd-95bb-43fb-9911-c2604466a1fe",
+    "utilities": {
+      "opponent_mid": 2.4330034822460442,
+      "opponent_big_six": 6.19611240560516,
+      "zone_lower": 1.9902856212858102,
+      "zone_upper": -1.4434226023475574,
+      "zone_hospitality": -1.2147422130920777,
+      "stakes_top4": 3.98681886263483,
+      "stakes_relegation": 4.168063405469823,
+      "stakes_euro": 3.104750221004292,
+      "price": -0.037705334789102915,
+      "derby": 3.9043453250275095,
+      "tv_prime": 0.38898010892208845
+    }
+  },
+  {
+    "respondent_id": "8d4e1adf-5cc2-4eec-af3e-b48d3cf7caaf",
+    "utilities": {
+      "opponent_mid": 2.433397528199292,
+      "opponent_big_six": 5.280432110013769,
+      "zone_lower": 1.5900507119324028,
+      "zone_upper": 0.33612462017829703,
+      "zone_hospitality": -1.7734791576809323,
+      "stakes_top4": 4.1394629972198596,
+      "stakes_relegation": 4.7436461427504355,
+      "stakes_euro": 2.5972398347951824,
+      "price": -0.17393921824190667,
+      "derby": 4.088938313936589,
+      "tv_prime": 0.15263562177587123
+    }
+  },
+  {
+    "respondent_id": "3e425d8d-083f-47ec-a989-94faef7a79e8",
+    "utilities": {
+      "opponent_mid": 2.212733987982536,
+      "opponent_big_six": 5.259013736098999,
+      "zone_lower": 1.2193744989186994,
+      "zone_upper": 0.7693205142095898,
+      "zone_hospitality": -1.8071566618998918,
+      "stakes_top4": 4.169908065475698,
+      "stakes_relegation": 4.612573175752183,
+      "stakes_euro": 2.7204017526992756,
+      "price": -0.16267971895214298,
+      "derby": 4.282804041824685,
+      "tv_prime": 0.22944048927097288
+    }
+  },
+  {
+    "respondent_id": "ba717cb5-a2c5-4c48-8614-3918302588c2",
+    "utilities": {
+      "opponent_mid": 2.3755173053447765,
+      "opponent_big_six": 5.326369966471471,
+      "zone_lower": 1.4603977301405908,
+      "zone_upper": -0.11029186074486307,
+      "zone_hospitality": -1.5092663842749756,
+      "stakes_top4": 4.266350734847069,
+      "stakes_relegation": 4.61901936137752,
+      "stakes_euro": 2.5770634130479246,
+      "price": -0.10271085176751277,
+      "derby": 4.285855164307763,
+      "tv_prime": 0.22266999756757339
+    }
+  },
+  {
+    "respondent_id": "704f6a10-845d-4360-814e-0274c2d4e85f",
+    "utilities": {
+      "opponent_mid": 2.6334271591278053,
+      "opponent_big_six": 4.979639067169379,
+      "zone_lower": 2.062593846092261,
+      "zone_upper": -0.2542894147217295,
+      "zone_hospitality": -1.801521194291717,
+      "stakes_top4": 4.076956969361106,
+      "stakes_relegation": 4.9306809962015,
+      "stakes_euro": 2.60587027498831,
+      "price": -0.1298462388688225,
+      "derby": 4.418709525269255,
+      "tv_prime": 0.2296676400557544
+    }
+  },
+  {
+    "respondent_id": "d99ce2fa-bf80-47d5-97d7-6b9926f05bb6",
+    "utilities": {
+      "opponent_mid": 2.2824029070662615,
+      "opponent_big_six": 5.30428189257737,
+      "zone_lower": 1.471416659149617,
+      "zone_upper": 0.5138975502029901,
+      "zone_hospitality": -1.7811011441139237,
+      "stakes_top4": 4.202042754134109,
+      "stakes_relegation": 4.703106565555486,
+      "stakes_euro": 2.4763725807152817,
+      "price": -0.1513282442973624,
+      "derby": 4.187224350774963,
+      "tv_prime": 0.18424105437442856
+    }
+  },
+  {
+    "respondent_id": "865d48c8-a8d1-4300-98fb-47000ba882f3",
+    "utilities": {
+      "opponent_mid": 2.277253616231918,
+      "opponent_big_six": 5.227808160716801,
+      "zone_lower": 1.8148598063528487,
+      "zone_upper": 0.2587679051077794,
+      "zone_hospitality": -1.841616105758713,
+      "stakes_top4": 4.124555563101659,
+      "stakes_relegation": 4.759386887167725,
+      "stakes_euro": 2.594589851194414,
+      "price": -0.17381743005040207,
+      "derby": 4.128810193715146,
+      "tv_prime": 0.20981925210883265
+    }
+  },
+  {
+    "respondent_id": "7eb72d87-bfa6-4cb2-a39c-f7991a33348c",
+    "utilities": {
+      "opponent_mid": 2.245047852371987,
+      "opponent_big_six": 5.333875576486374,
+      "zone_lower": 1.7381392500745474,
+      "zone_upper": 0.23877794359970916,
+      "zone_hospitality": -1.7791578919203723,
+      "stakes_top4": 4.121834084851661,
+      "stakes_relegation": 4.800424421007892,
+      "stakes_euro": 2.6168235692620816,
+      "price": -0.15711216993005597,
+      "derby": 4.260505598936178,
+      "tv_prime": 0.24083180229832926
+    }
+  },
+  {
+    "respondent_id": "832b7e17-322e-4559-a797-02c97ecb649b",
+    "utilities": {
+      "opponent_mid": 2.6893315687618355,
+      "opponent_big_six": 5.406379832737186,
+      "zone_lower": 1.966956292261064,
+      "zone_upper": -0.05334706914764032,
+      "zone_hospitality": -1.7672259470683436,
+      "stakes_top4": 4.144173674712936,
+      "stakes_relegation": 4.776032153650626,
+      "stakes_euro": 2.572546864404158,
+      "price": -0.11146468967352635,
+      "derby": 4.169948199423295,
+      "tv_prime": 0.3379349927408548
+    }
+  },
+  {
+    "respondent_id": "fbe008f2-d2d4-402b-bb19-fb1f8c374035",
+    "utilities": {
+      "opponent_mid": 2.2349874847176907,
+      "opponent_big_six": 5.100354821866273,
+      "zone_lower": 1.8324004256799218,
+      "zone_upper": 0.0050990658311236515,
+      "zone_hospitality": -1.7621387842130642,
+      "stakes_top4": 4.140154280656313,
+      "stakes_relegation": 4.856967084832148,
+      "stakes_euro": 2.6878129415423597,
+      "price": -0.17378629177274035,
+      "derby": 4.1004317455149355,
+      "tv_prime": 0.31512734804347664
+    }
+  },
+  {
+    "respondent_id": "68796c2a-c789-4931-915f-7202df12a86e",
+    "utilities": {
+      "opponent_mid": 2.4206251216581562,
+      "opponent_big_six": 5.202396142884106,
+      "zone_lower": 1.3676321061828445,
+      "zone_upper": 0.3709668047367477,
+      "zone_hospitality": -1.690607653401718,
+      "stakes_top4": 4.136035308535067,
+      "stakes_relegation": 4.912942312470025,
+      "stakes_euro": 2.6028709121997875,
+      "price": -0.12528626465221254,
+      "derby": 4.340036374260996,
+      "tv_prime": 0.2739255770054711
+    }
+  },
+  {
+    "respondent_id": "08d7302f-eb73-4acc-8aa8-e69f8f251eaf",
+    "utilities": {
+      "opponent_mid": 2.276659525910277,
+      "opponent_big_six": 5.233151886962188,
+      "zone_lower": 1.3854543610553183,
+      "zone_upper": 0.5412423657440296,
+      "zone_hospitality": -1.7703830853237852,
+      "stakes_top4": 4.149769564401058,
+      "stakes_relegation": 4.646217452434492,
+      "stakes_euro": 2.6303905268897068,
+      "price": -0.18811377237397992,
+      "derby": 4.21700799790634,
+      "tv_prime": 0.23624625771316077
+    }
+  },
+  {
+    "respondent_id": "fe7a9bd0-17ae-4977-b520-cb099906af2b",
+    "utilities": {
+      "opponent_mid": 2.3058017174175656,
+      "opponent_big_six": 5.308953990558443,
+      "zone_lower": 1.6445909292986642,
+      "zone_upper": 0.24613943451569317,
+      "zone_hospitality": -1.7618075118198622,
+      "stakes_top4": 4.162972582899176,
+      "stakes_relegation": 4.540537462984174,
+      "stakes_euro": 2.652300419006682,
+      "price": -0.17158007506343745,
+      "derby": 4.185625468997415,
+      "tv_prime": 0.16347501890714033
+    }
+  },
+  {
+    "respondent_id": "c76ecb61-8d88-42f4-b1df-6e98f56277c4",
+    "utilities": {
+      "opponent_mid": 2.3622363025743773,
+      "opponent_big_six": 5.347388869066731,
+      "zone_lower": 1.5326231263596792,
+      "zone_upper": 0.3502277922838491,
+      "zone_hospitality": -1.7678747356325641,
+      "stakes_top4": 4.196541625913978,
+      "stakes_relegation": 4.537936536248844,
+      "stakes_euro": 2.6812048912077824,
+      "price": -0.16822589550825404,
+      "derby": 4.266559168840265,
+      "tv_prime": 0.11714448461983025
+    }
+  },
+  {
+    "respondent_id": "bd8f24e1-e117-41df-a68e-ec120ea267ed",
+    "utilities": {
+      "opponent_mid": 2.2607913564237214,
+      "opponent_big_six": 5.332906369070617,
+      "zone_lower": 1.3019025591667301,
+      "zone_upper": 0.7362554737022149,
+      "zone_hospitality": -1.7591401030632754,
+      "stakes_top4": 4.175006490275139,
+      "stakes_relegation": 4.454237810611898,
+      "stakes_euro": 2.6493309885218785,
+      "price": -0.1407741004295705,
+      "derby": 4.424283893682453,
+      "tv_prime": 0.25702306249266094
+    }
+  },
+  {
+    "respondent_id": "f41351f6-bb53-4ee5-9f1a-eb02100c7f82",
+    "utilities": {
+      "opponent_mid": 2.4462253047890417,
+      "opponent_big_six": 5.327504460538317,
+      "zone_lower": 1.5164538162558874,
+      "zone_upper": 0.4416271792894379,
+      "zone_hospitality": -1.786610952917651,
+      "stakes_top4": 4.157326763146247,
+      "stakes_relegation": 4.598008596467147,
+      "stakes_euro": 2.6653308864013736,
+      "price": -0.15169838532901184,
+      "derby": 4.162816234960777,
+      "tv_prime": 0.1619750780530824
+    }
+  },
+  {
+    "respondent_id": "855d4ba4-a10b-49c8-ac77-8ef84077ddc3",
+    "utilities": {
+      "opponent_mid": 2.331322321734989,
+      "opponent_big_six": 5.117959371265323,
+      "zone_lower": 1.6943567406037436,
+      "zone_upper": 0.2508355543133606,
+      "zone_hospitality": -1.8018165779158644,
+      "stakes_top4": 4.171575231838178,
+      "stakes_relegation": 4.65865255043558,
+      "stakes_euro": 2.6388749633210598,
+      "price": -0.1478699753329053,
+      "derby": 4.365104151707911,
+      "tv_prime": 0.1859562300439345
+    }
+  },
+  {
+    "respondent_id": "0ee7b743-28d6-4184-9066-8370c8548396",
+    "utilities": {
+      "opponent_mid": 2.8554432194442714,
+      "opponent_big_six": 5.083551317108888,
+      "zone_lower": 1.4879489164278359,
+      "zone_upper": -0.01504460806746914,
+      "zone_hospitality": -1.535289073432384,
+      "stakes_top4": 4.14729154399513,
+      "stakes_relegation": 4.485658625917006,
+      "stakes_euro": 2.7388427024514486,
+      "price": -0.10197069970429072,
+      "derby": 4.653032671635301,
+      "tv_prime": 0.13900494286893894
+    }
+  },
+  {
+    "respondent_id": "8fe04802-b435-41ed-8ffd-1a9b08595926",
+    "utilities": {
+      "opponent_mid": 2.257531926345955,
+      "opponent_big_six": 5.35830848563313,
+      "zone_lower": 1.5952319897176512,
+      "zone_upper": 0.3690912154836637,
+      "zone_hospitality": -1.8061651376887318,
+      "stakes_top4": 4.136226686331464,
+      "stakes_relegation": 4.595450482647892,
+      "stakes_euro": 2.687433243465254,
+      "price": -0.19522264655142418,
+      "derby": 4.119872908833487,
+      "tv_prime": 0.17156392226511616
+    }
+  },
+  {
+    "respondent_id": "c1bde9c6-0f20-4885-b67d-b58e41cbc5c2",
+    "utilities": {
+      "opponent_mid": 2.2174794988649076,
+      "opponent_big_six": 4.995126225280787,
+      "zone_lower": 2.1902889834355754,
+      "zone_upper": -0.3201838568529682,
+      "zone_hospitality": -1.844191242912106,
+      "stakes_top4": 4.147096735034176,
+      "stakes_relegation": 4.855786007916731,
+      "stakes_euro": 2.6489660673029873,
+      "price": -0.147259156476189,
+      "derby": 4.131388925081552,
+      "tv_prime": 0.3816626804180056
+    }
+  },
+  {
+    "respondent_id": "d7bf6bb9-edcc-48bd-a628-6b0c5a851a8a",
+    "utilities": {
+      "opponent_mid": 2.2619488130956333,
+      "opponent_big_six": 5.317566047552946,
+      "zone_lower": 1.7448852789733147,
+      "zone_upper": 0.2265084136131293,
+      "zone_hospitality": -1.8222432020096369,
+      "stakes_top4": 4.127952865330975,
+      "stakes_relegation": 4.6525099627963185,
+      "stakes_euro": 2.6438620187942963,
+      "price": -0.16946608862207282,
+      "derby": 4.203811085128587,
+      "tv_prime": 0.1792342150478003
+    }
+  },
+  {
+    "respondent_id": "9f8c6c38-fdcf-457d-aea4-2546123546f9",
+    "utilities": {
+      "opponent_mid": 2.429989616349321,
+      "opponent_big_six": 5.187410702196767,
+      "zone_lower": 2.085108916951718,
+      "zone_upper": -0.2814980146679174,
+      "zone_hospitality": -1.772108003992485,
+      "stakes_top4": 4.166756319091778,
+      "stakes_relegation": 4.609919458875057,
+      "stakes_euro": 2.5745716011169266,
+      "price": -0.19098955661421427,
+      "derby": 4.167601872178583,
+      "tv_prime": 0.33517118771635923
+    }
+  },
+  {
+    "respondent_id": "a95c9fe7-8e59-46a7-bf29-d74c72272435",
+    "utilities": {
+      "opponent_mid": 1.828303373260714,
+      "opponent_big_six": 5.708902200838689,
+      "zone_lower": 0.9983693907614473,
+      "zone_upper": 0.12361760376179023,
+      "zone_hospitality": -1.322581318295029,
+      "stakes_top4": 4.282182067875685,
+      "stakes_relegation": 4.772772978350952,
+      "stakes_euro": 2.3762087338724123,
+      "price": -0.07598929693231851,
+      "derby": 4.4721357510523205,
+      "tv_prime": 0.22855494562198467
+    }
+  },
+  {
+    "respondent_id": "d80bd46d-d35e-445d-9f7a-c7ee7dc5b639",
+    "utilities": {
+      "opponent_mid": 2.461316821759428,
+      "opponent_big_six": 5.146632816245833,
+      "zone_lower": 1.6719766504377869,
+      "zone_upper": 0.28024920944741355,
+      "zone_hospitality": -1.7953357609518985,
+      "stakes_top4": 4.24425656052888,
+      "stakes_relegation": 4.475316976501931,
+      "stakes_euro": 2.56350741048877,
+      "price": -0.13149609475169377,
+      "derby": 4.480369621881533,
+      "tv_prime": 0.2807094908213775
+    }
+  },
+  {
+    "respondent_id": "128b67da-05f2-45db-8253-ba5c0b50f959",
+    "utilities": {
+      "opponent_mid": 2.151301894859535,
+      "opponent_big_six": 5.397082568114466,
+      "zone_lower": 1.6419963617892186,
+      "zone_upper": 0.23002535446957312,
+      "zone_hospitality": -1.7380591957152272,
+      "stakes_top4": 4.1380068992860854,
+      "stakes_relegation": 4.659921443830414,
+      "stakes_euro": 2.665576038628075,
+      "price": -0.1494705271837297,
+      "derby": 4.202526765138193,
+      "tv_prime": 0.18254575050512534
+    }
+  },
+  {
+    "respondent_id": "f56a4509-e674-42a4-8762-1ea4edda2526",
+    "utilities": {
+      "opponent_mid": 2.5207917587007524,
+      "opponent_big_six": 5.178740544678699,
+      "zone_lower": 1.3533801473648972,
+      "zone_upper": 0.5561865945521443,
+      "zone_hospitality": -1.7802786115850335,
+      "stakes_top4": 4.144565222104124,
+      "stakes_relegation": 4.646159718183797,
+      "stakes_euro": 2.77438519394799,
+      "price": -0.12652680038643238,
+      "derby": 4.536859437252401,
+      "tv_prime": 0.07097202087127596
+    }
+  },
+  {
+    "respondent_id": "a08ae062-2f2e-4b9f-895a-383025ae830a",
+    "utilities": {
+      "opponent_mid": 2.655352467851627,
+      "opponent_big_six": 5.001069178025533,
+      "zone_lower": 2.07766882980996,
+      "zone_upper": -0.31483533259098867,
+      "zone_hospitality": -1.7853659910716528,
+      "stakes_top4": 4.166013840532564,
+      "stakes_relegation": 4.613604370221989,
+      "stakes_euro": 2.6548240962760534,
+      "price": -0.16621630916020133,
+      "derby": 4.267536729697368,
+      "tv_prime": 0.3152513981396471
+    }
+  },
+  {
+    "respondent_id": "a735a5ca-a4f4-4ab0-afe7-5e83dc8517b7",
+    "utilities": {
+      "opponent_mid": 2.2072886601449415,
+      "opponent_big_six": 5.312811168403943,
+      "zone_lower": 2.4271345894643463,
+      "zone_upper": -0.6218527206989584,
+      "zone_hospitality": -1.7901636098381073,
+      "stakes_top4": 4.047538701576849,
+      "stakes_relegation": 4.9594482606731765,
+      "stakes_euro": 2.603951161571226,
+      "price": -0.16185647743393103,
+      "derby": 3.7048509924511634,
+      "tv_prime": 0.21580688887480837
+    }
+  },
+  {
+    "respondent_id": "15ece4cb-59a4-4db8-8884-49f8a4b6367a",
+    "utilities": {
+      "opponent_mid": 2.183246816998216,
+      "opponent_big_six": 5.080959794267357,
+      "zone_lower": 1.1055128549955617,
+      "zone_upper": 0.13759405485143136,
+      "zone_hospitality": -1.390913034628483,
+      "stakes_top4": 3.9193275362154782,
+      "stakes_relegation": 5.101724890640139,
+      "stakes_euro": 2.829487990822805,
+      "price": -0.07569535181023543,
+      "derby": 5.054811725486549,
+      "tv_prime": 0.2734271876503786
+    }
+  },
+  {
+    "respondent_id": "c34c4159-7836-4962-8d8e-017c90dfe4c0",
+    "utilities": {
+      "opponent_mid": 2.5363890952079404,
+      "opponent_big_six": 5.344355954017949,
+      "zone_lower": 1.5384072726339788,
+      "zone_upper": 0.4405733317984797,
+      "zone_hospitality": -1.7419289544867242,
+      "stakes_top4": 4.136878534876569,
+      "stakes_relegation": 4.5569486332439135,
+      "stakes_euro": 2.685397657249052,
+      "price": -0.16076425168096173,
+      "derby": 4.171006746898563,
+      "tv_prime": 0.10115412914674253
+    }
+  },
+  {
+    "respondent_id": "17d1ad39-ada7-4baf-93aa-105458b674ae",
+    "utilities": {
+      "opponent_mid": 2.396557025144067,
+      "opponent_big_six": 5.186424619232791,
+      "zone_lower": 1.7144323632754184,
+      "zone_upper": 0.28801172567747785,
+      "zone_hospitality": -1.7981618672818431,
+      "stakes_top4": 4.1448704461510975,
+      "stakes_relegation": 4.628910498321414,
+      "stakes_euro": 2.7046368932684106,
+      "price": -0.15448568722600076,
+      "derby": 4.359497064529447,
+      "tv_prime": 0.1647662329805732
+    }
+  },
+  {
+    "respondent_id": "ddc74535-e2cc-4fff-8bcf-0b213f4ebf42",
+    "utilities": {
+      "opponent_mid": 2.3581297042851035,
+      "opponent_big_six": 5.337910067611147,
+      "zone_lower": 1.2084903858554148,
+      "zone_upper": 0.7726702241420615,
+      "zone_hospitality": -1.7761551836769072,
+      "stakes_top4": 4.165099255136336,
+      "stakes_relegation": 4.533967928081568,
+      "stakes_euro": 2.6096976406711874,
+      "price": -0.17188255146340597,
+      "derby": 4.29519038275794,
+      "tv_prime": 0.20983229631116138
+    }
+  },
+  {
+    "respondent_id": "3788218e-a139-4e1b-9b73-a7c292461ae0",
+    "utilities": {
+      "opponent_mid": 2.3647129122887574,
+      "opponent_big_six": 5.256506554132518,
+      "zone_lower": 1.4028213077425777,
+      "zone_upper": 0.5990086555970656,
+      "zone_hospitality": -1.8205500174656262,
+      "stakes_top4": 4.126132913344012,
+      "stakes_relegation": 4.822424856907834,
+      "stakes_euro": 2.5443290922905804,
+      "price": -0.13759008739040554,
+      "derby": 4.404354467971366,
+      "tv_prime": 0.0686618249085723
+    }
+  },
+  {
+    "respondent_id": "1192596a-ca88-4722-b8d1-471b58a14b7e",
+    "utilities": {
+      "opponent_mid": 2.2956794857034417,
+      "opponent_big_six": 5.243925249371881,
+      "zone_lower": 1.6621608571176714,
+      "zone_upper": 0.19730685722679916,
+      "zone_hospitality": -1.7513205674020529,
+      "stakes_top4": 4.216121571889184,
+      "stakes_relegation": 4.393191392584877,
+      "stakes_euro": 2.6608767623907497,
+      "price": -0.21918159637034423,
+      "derby": 3.9908478777543754,
+      "tv_prime": -0.02360881673395869
+    }
+  },
+  {
+    "respondent_id": "03527769-e73c-46ee-8fa8-f309d5a43631",
+    "utilities": {
+      "opponent_mid": 1.7263984793320222,
+      "opponent_big_six": 5.3103672013424355,
+      "zone_lower": 0.8451333337854958,
+      "zone_upper": 1.2490217970987372,
+      "zone_hospitality": -1.7852565969350438,
+      "stakes_top4": 4.229096868572305,
+      "stakes_relegation": 4.52493562429009,
+      "stakes_euro": 2.689843388608301,
+      "price": -0.25920133234997456,
+      "derby": 3.708677096170707,
+      "tv_prime": 0.07429454057034436
+    }
+  },
+  {
+    "respondent_id": "53538475-de1e-40be-8ca2-20b84930d055",
+    "utilities": {
+      "opponent_mid": 2.346004695182907,
+      "opponent_big_six": 5.587740354910517,
+      "zone_lower": 1.6473039021338503,
+      "zone_upper": 0.36724349159165215,
+      "zone_hospitality": -1.7644812005406052,
+      "stakes_top4": 4.1879998437827926,
+      "stakes_relegation": 4.437210132400838,
+      "stakes_euro": 2.6740278720810373,
+      "price": -0.22031889157083964,
+      "derby": 3.8184329560903754,
+      "tv_prime": 0.19113487178576477
+    }
+  },
+  {
+    "respondent_id": "5ecd1916-000a-466a-ae44-7f33c55f2d02",
+    "utilities": {
+      "opponent_mid": 2.2310312610179555,
+      "opponent_big_six": 5.612997946396901,
+      "zone_lower": 1.494495257384604,
+      "zone_upper": 0.45881870935166197,
+      "zone_hospitality": -1.7650160765436598,
+      "stakes_top4": 4.14464247706359,
+      "stakes_relegation": 4.637838609088549,
+      "stakes_euro": 2.671898260314,
+      "price": -0.11551371581766874,
+      "derby": 4.1820426991513235,
+      "tv_prime": 0.1290884106861513
+    }
+  },
+  {
+    "respondent_id": "436c4781-e7b0-4544-936e-e02fc88f0e4d",
+    "utilities": {
+      "opponent_mid": 2.319101581898889,
+      "opponent_big_six": 5.006991768107689,
+      "zone_lower": 1.6503651303638325,
+      "zone_upper": 0.2747991943373293,
+      "zone_hospitality": -1.7678101891964217,
+      "stakes_top4": 4.03846329015587,
+      "stakes_relegation": 5.138280429171862,
+      "stakes_euro": 2.7411220641344483,
+      "price": -0.11968850265837243,
+      "derby": 4.244300568492247,
+      "tv_prime": 0.048862920666822816
+    }
+  },
+  {
+    "respondent_id": "b2cdc5ee-1ab5-4078-939d-e37dd410541e",
+    "utilities": {
+      "opponent_mid": 2.0412559954855456,
+      "opponent_big_six": 5.195518281272858,
+      "zone_lower": 1.4521165821708415,
+      "zone_upper": 0.47088114566601724,
+      "zone_hospitality": -1.8207770254167972,
+      "stakes_top4": 4.13406156127972,
+      "stakes_relegation": 4.621926518272261,
+      "stakes_euro": 2.644132834099505,
+      "price": -0.2326363799953913,
+      "derby": 4.21416366144239,
+      "tv_prime": 0.242508920631794
+    }
+  },
+  {
+    "respondent_id": "11844b92-c2e1-4ba3-9828-d4b761adf543",
+    "utilities": {
+      "opponent_mid": 2.373592041339178,
+      "opponent_big_six": 5.23854762448008,
+      "zone_lower": 1.6503952181758772,
+      "zone_upper": 0.33577622714279937,
+      "zone_hospitality": -1.7785613326532266,
+      "stakes_top4": 4.15948033403905,
+      "stakes_relegation": 4.53567381540719,
+      "stakes_euro": 2.6685125032141688,
+      "price": -0.18777889699742878,
+      "derby": 4.361195170239058,
+      "tv_prime": 0.15928827573357807
+    }
+  },
+  {
+    "respondent_id": "63461083-8e25-464b-805e-22dfa766de83",
+    "utilities": {
+      "opponent_mid": 2.3791950361426255,
+      "opponent_big_six": 5.029801654037793,
+      "zone_lower": 1.713390279970864,
+      "zone_upper": 0.25766236512269325,
+      "zone_hospitality": -1.7939993401022405,
+      "stakes_top4": 4.1520326038517865,
+      "stakes_relegation": 4.591700594039121,
+      "stakes_euro": 2.6795826427744545,
+      "price": -0.2000815306029967,
+      "derby": 4.31168607274595,
+      "tv_prime": 0.16778785973986973
+    }
+  },
+  {
+    "respondent_id": "26d52a05-f601-47d5-a3a0-df22c933c254",
+    "utilities": {
+      "opponent_mid": 2.6927003654731894,
+      "opponent_big_six": 5.103248094902773,
+      "zone_lower": 1.0214146375254538,
+      "zone_upper": 0.9814254336713744,
+      "zone_hospitality": -1.7841490178931312,
+      "stakes_top4": 4.154514040060544,
+      "stakes_relegation": 4.536195340994334,
+      "stakes_euro": 2.5599930656932206,
+      "price": -0.26591019020230927,
+      "derby": 4.169062170453604,
+      "tv_prime": 0.162779789885813
+    }
+  },
+  {
+    "respondent_id": "5864f378-2ffc-429e-bcfe-e48f3ae14e1e",
+    "utilities": {
+      "opponent_mid": 2.3027049353887183,
+      "opponent_big_six": 5.261052936772363,
+      "zone_lower": 1.683363806198749,
+      "zone_upper": 0.27444383707934794,
+      "zone_hospitality": -1.783335624984195,
+      "stakes_top4": 4.144149914856197,
+      "stakes_relegation": 4.644786918259786,
+      "stakes_euro": 2.6416946153476957,
+      "price": -0.1744826404468559,
+      "derby": 4.182938276437554,
+      "tv_prime": 0.1888419715250711
+    }
+  },
+  {
+    "respondent_id": "8e0e7913-fe72-4965-98bd-d437a13e41c2",
+    "utilities": {
+      "opponent_mid": 2.262661213837026,
+      "opponent_big_six": 5.6905958524509135,
+      "zone_lower": 1.0166622660599676,
+      "zone_upper": 0.9443034283591938,
+      "zone_hospitality": -1.7397495531300544,
+      "stakes_top4": 4.146747240264876,
+      "stakes_relegation": 4.6162460167251025,
+      "stakes_euro": 2.5114559883695584,
+      "price": -0.11663246619253795,
+      "derby": 4.215232151240632,
+      "tv_prime": 0.20148773722768348
+    }
+  },
+  {
+    "respondent_id": "a00f635d-5199-4f55-a9a4-765c6d744ac5",
+    "utilities": {
+      "opponent_mid": 2.2695350146659523,
+      "opponent_big_six": 5.243607224573613,
+      "zone_lower": 1.5903154350523974,
+      "zone_upper": 0.34139563617200963,
+      "zone_hospitality": -1.8268186080830011,
+      "stakes_top4": 4.105192843452998,
+      "stakes_relegation": 4.701927272066902,
+      "stakes_euro": 2.685254871143062,
+      "price": -0.19001344899549172,
+      "derby": 4.2085711042766665,
+      "tv_prime": 0.18759623806574705
+    }
+  },
+  {
+    "respondent_id": "22208585-73b3-4894-93ee-72d1ae185ad4",
+    "utilities": {
+      "opponent_mid": 2.5485841903573627,
+      "opponent_big_six": 5.3140278077882,
+      "zone_lower": 1.2845606589506833,
+      "zone_upper": 0.7527837793786205,
+      "zone_hospitality": -1.7661197871759076,
+      "stakes_top4": 4.176660839416012,
+      "stakes_relegation": 4.488365204524768,
+      "stakes_euro": 2.5859449146842506,
+      "price": -0.2019398287050987,
+      "derby": 4.2073410907730215,
+      "tv_prime": -0.00016460220730200672
+    }
+  },
+  {
+    "respondent_id": "aa63da80-b8c2-4279-aa40-5f4bcf362d83",
+    "utilities": {
+      "opponent_mid": 2.0632077843524455,
+      "opponent_big_six": 5.5222147624077405,
+      "zone_lower": 1.6798568499003852,
+      "zone_upper": 0.22246689750440782,
+      "zone_hospitality": -1.7911818001070143,
+      "stakes_top4": 4.14623976089357,
+      "stakes_relegation": 4.462570738009675,
+      "stakes_euro": 2.6724790899039044,
+      "price": -0.22606552178739892,
+      "derby": 4.029647500361028,
+      "tv_prime": 0.21653234609866506
+    }
+  },
+  {
+    "respondent_id": "27853e5d-3f7a-47fd-a3c9-d19e53f26bc1",
+    "utilities": {
+      "opponent_mid": 2.5192380174225475,
+      "opponent_big_six": 5.115799579032999,
+      "zone_lower": 1.723561854991382,
+      "zone_upper": 0.12235116736997628,
+      "zone_hospitality": -1.7373923854397015,
+      "stakes_top4": 4.161151040914013,
+      "stakes_relegation": 4.692934946884963,
+      "stakes_euro": 2.67201849402442,
+      "price": -0.16596587361543189,
+      "derby": 4.303021758083807,
+      "tv_prime": 0.18635858130717387
+    }
+  },
+  {
+    "respondent_id": "d06c849e-9c5c-4db8-81ce-10f096c80029",
+    "utilities": {
+      "opponent_mid": 2.2913229853225476,
+      "opponent_big_six": 5.388926058363434,
+      "zone_lower": 1.4122338102098235,
+      "zone_upper": 0.5356719298633413,
+      "zone_hospitality": -1.745851406893706,
+      "stakes_top4": 4.226278661324514,
+      "stakes_relegation": 4.669226831222276,
+      "stakes_euro": 2.598168609706496,
+      "price": -0.16198944027860687,
+      "derby": 3.9448966380695016,
+      "tv_prime": 0.1677772160706365
+    }
+  },
+  {
+    "respondent_id": "7ab75469-d33f-4b6a-8e7b-426568df37b3",
+    "utilities": {
+      "opponent_mid": 2.3419515601662284,
+      "opponent_big_six": 5.1153626466559885,
+      "zone_lower": 1.7188495648505333,
+      "zone_upper": 0.08966748177925428,
+      "zone_hospitality": -1.7647776960822636,
+      "stakes_top4": 4.138213019018346,
+      "stakes_relegation": 4.721540540255172,
+      "stakes_euro": 2.675581937943541,
+      "price": -0.1486168050221092,
+      "derby": 4.361466176512525,
+      "tv_prime": 0.22557030588982394
+    }
+  },
+  {
+    "respondent_id": "deff2d00-0b1a-495b-a4dc-4d391d64d1ea",
+    "utilities": {
+      "opponent_mid": 2.320959141951972,
+      "opponent_big_six": 5.33614038237515,
+      "zone_lower": 1.3685743909301777,
+      "zone_upper": 0.5778106959467426,
+      "zone_hospitality": -1.8043493467241838,
+      "stakes_top4": 4.163331424559006,
+      "stakes_relegation": 4.790403800158237,
+      "stakes_euro": 2.5192385180635077,
+      "price": -0.14960977437345713,
+      "derby": 4.229134078461487,
+      "tv_prime": 0.23992767584792274
+    }
+  },
+  {
+    "respondent_id": "f772ba8d-e61c-4242-b13e-c6439f296a38",
+    "utilities": {
+      "opponent_mid": 1.9463721664873403,
+      "opponent_big_six": 5.655725754097608,
+      "zone_lower": 1.351728362751202,
+      "zone_upper": 0.6652386753160054,
+      "zone_hospitality": -1.7909966080990907,
+      "stakes_top4": 4.133957563595617,
+      "stakes_relegation": 4.792971376071647,
+      "stakes_euro": 2.5352231114317823,
+      "price": -0.16571965956196716,
+      "derby": 3.9012611648214226,
+      "tv_prime": 0.10175455904621108
+    }
+  },
+  {
+    "respondent_id": "f8d76564-707f-43d8-b841-6c4d6bafd54b",
+    "utilities": {
+      "opponent_mid": 1.888001099119148,
+      "opponent_big_six": 5.531925771868862,
+      "zone_lower": 0.6603111156672287,
+      "zone_upper": 1.3655972719333394,
+      "zone_hospitality": -1.7575790756386866,
+      "stakes_top4": 4.261711476005939,
+      "stakes_relegation": 4.343782580775228,
+      "stakes_euro": 2.655151862839804,
+      "price": -0.1784698797731079,
+      "derby": 3.8796078666611433,
+      "tv_prime": 0.19162405334219437
+    }
+  },
+  {
+    "respondent_id": "c8bc8e20-9217-4b4a-87c1-2125cbb8cae5",
+    "utilities": {
+      "opponent_mid": 2.2752501435716552,
+      "opponent_big_six": 5.323645893347342,
+      "zone_lower": 1.3793672485914872,
+      "zone_upper": 0.5778651600759793,
+      "zone_hospitality": -1.7710094814440502,
+      "stakes_top4": 4.138709870834292,
+      "stakes_relegation": 4.636330315364131,
+      "stakes_euro": 2.669089836153256,
+      "price": -0.22088203179872765,
+      "derby": 4.027789161824894,
+      "tv_prime": 0.14495375215778342
+    }
+  },
+  {
+    "respondent_id": "bc3062f1-947f-41bc-80bc-ba8c6a280a21",
+    "utilities": {
+      "opponent_mid": 2.1284319206980786,
+      "opponent_big_six": 5.440809294508607,
+      "zone_lower": 1.5446048547421762,
+      "zone_upper": 0.3943240380809247,
+      "zone_hospitality": -1.7944288911495718,
+      "stakes_top4": 4.139209610681086,
+      "stakes_relegation": 4.4443479664544245,
+      "stakes_euro": 2.7969576909801686,
+      "price": -0.11702387121000629,
+      "derby": 4.419782286781568,
+      "tv_prime": -0.020384221750675814
+    }
+  },
+  {
+    "respondent_id": "7b67e9bd-e6e2-454b-8089-9da594af5a55",
+    "utilities": {
+      "opponent_mid": 2.2629586598694,
+      "opponent_big_six": 4.96087578638422,
+      "zone_lower": 1.070799866815276,
+      "zone_upper": 0.9853219081016122,
+      "zone_hospitality": -1.7818233177664315,
+      "stakes_top4": 4.127621703404613,
+      "stakes_relegation": 4.642182332800055,
+      "stakes_euro": 2.8082442400731913,
+      "price": -0.1312400989512114,
+      "derby": 4.521450916190593,
+      "tv_prime": 0.18163478751794856
+    }
+  },
+  {
+    "respondent_id": "c229edc9-1e14-4f6b-ac07-7245fbf44320",
+    "utilities": {
+      "opponent_mid": 2.4416054891374737,
+      "opponent_big_six": 5.194239018880805,
+      "zone_lower": 1.4591769390516407,
+      "zone_upper": 0.7435992572663841,
+      "zone_hospitality": -1.8890905146832868,
+      "stakes_top4": 4.181053912017356,
+      "stakes_relegation": 4.426391599399421,
+      "stakes_euro": 2.720281256624861,
+      "price": -0.18104244772080633,
+      "derby": 4.298784052714785,
+      "tv_prime": 0.14183796256810793
+    }
+  },
+  {
+    "respondent_id": "779f332d-03e6-4ec8-bee3-fe91aba417b1",
+    "utilities": {
+      "opponent_mid": 2.1409295527117336,
+      "opponent_big_six": 5.4656221557558275,
+      "zone_lower": 1.3864208184016589,
+      "zone_upper": 0.886629857092441,
+      "zone_hospitality": -1.9142672886224816,
+      "stakes_top4": 4.1303001880676025,
+      "stakes_relegation": 4.630333213973553,
+      "stakes_euro": 2.7085794949240807,
+      "price": -0.14804448173274734,
+      "derby": 4.316435485442078,
+      "tv_prime": 0.30472387884264157
+    }
+  },
+  {
+    "respondent_id": "6549a27b-85a6-466d-8849-24fb58a80e2d",
+    "utilities": {
+      "opponent_mid": 2.310225121288932,
+      "opponent_big_six": 5.286782021822467,
+      "zone_lower": 1.038413603573352,
+      "zone_upper": 1.2314831187822624,
+      "zone_hospitality": -1.9280638618002666,
+      "stakes_top4": 4.226680530654245,
+      "stakes_relegation": 4.40030817201662,
+      "stakes_euro": 2.772003110835887,
+      "price": -0.11758618991122792,
+      "derby": 4.218196369644106,
+      "tv_prime": 0.2506048195816706
+    }
+  },
+  {
+    "respondent_id": "df5bc4f5-64af-4d68-9388-3807732798c4",
+    "utilities": {
+      "opponent_mid": 2.0287915343579677,
+      "opponent_big_six": 5.525504422380223,
+      "zone_lower": 1.260833010274867,
+      "zone_upper": 0.6692661296601647,
+      "zone_hospitality": -1.7350845902809517,
+      "stakes_top4": 4.095956031526005,
+      "stakes_relegation": 4.638839808881172,
+      "stakes_euro": 2.645668289234624,
+      "price": -0.1884101840833673,
+      "derby": 4.173307289280927,
+      "tv_prime": 0.11154085266369679
+    }
+  },
+  {
+    "respondent_id": "53bf7154-1273-442a-850b-484b6473f410",
+    "utilities": {
+      "opponent_mid": 2.0652108832045895,
+      "opponent_big_six": 5.518928493631597,
+      "zone_lower": 1.179734531004085,
+      "zone_upper": 0.5581195625889019,
+      "zone_hospitality": -1.6536769152061939,
+      "stakes_top4": 4.098606669222682,
+      "stakes_relegation": 5.247236209003303,
+      "stakes_euro": 2.361119625186063,
+      "price": -0.1245147363869692,
+      "derby": 3.749265866006695,
+      "tv_prime": 0.057792681428283886
+    }
+  },
+  {
+    "respondent_id": "dfd93f2b-e29b-4d09-a684-99b94029d865",
+    "utilities": {
+      "opponent_mid": 2.618490426425523,
+      "opponent_big_six": 5.149112777443017,
+      "zone_lower": 1.6131749343911106,
+      "zone_upper": 0.3501558081319668,
+      "zone_hospitality": -1.766407885000641,
+      "stakes_top4": 4.101233557461819,
+      "stakes_relegation": 4.857727800526023,
+      "stakes_euro": 2.442634816486566,
+      "price": -0.1541245742693896,
+      "derby": 4.576158295665965,
+      "tv_prime": 0.1852210272100842
+    }
+  },
+  {
+    "respondent_id": "25bd2503-87ee-40c9-ac19-251e6bc5c9e3",
+    "utilities": {
+      "opponent_mid": 2.1751181518051004,
+      "opponent_big_six": 5.335679408665463,
+      "zone_lower": 1.8168097318608292,
+      "zone_upper": 0.24520089913372017,
+      "zone_hospitality": -1.8743312926794073,
+      "stakes_top4": 4.115624142250989,
+      "stakes_relegation": 4.653379731853294,
+      "stakes_euro": 2.6366803358413535,
+      "price": -0.18005869221972515,
+      "derby": 4.159551896463374,
+      "tv_prime": 0.1830551187713988
+    }
+  },
+  {
+    "respondent_id": "7eee6b1a-a271-4e53-b369-4ad57be64622",
+    "utilities": {
+      "opponent_mid": 1.8398830906720538,
+      "opponent_big_six": 5.2996241621487865,
+      "zone_lower": 0.4318123111478783,
+      "zone_upper": 1.7066431577984047,
+      "zone_hospitality": -1.763988736856423,
+      "stakes_top4": 4.127746237029888,
+      "stakes_relegation": 5.0861248863823185,
+      "stakes_euro": 2.5388533960420974,
+      "price": -0.1383155222277294,
+      "derby": 3.565512091102425,
+      "tv_prime": 0.0716835540368984
+    }
+  },
+  {
+    "respondent_id": "6ddb4396-8ab7-4e97-a28c-dcc1a2ae8838",
+    "utilities": {
+      "opponent_mid": 2.3184218700448005,
+      "opponent_big_six": 5.041538887559299,
+      "zone_lower": 0.7526015932165914,
+      "zone_upper": 1.3643242880706754,
+      "zone_hospitality": -1.7535940475217036,
+      "stakes_top4": 4.053997411908816,
+      "stakes_relegation": 4.408987976081161,
+      "stakes_euro": 2.8637548719581707,
+      "price": -0.27554810593492857,
+      "derby": 4.448685740263446,
+      "tv_prime": 0.30144227947030977
+    }
+  },
+  {
+    "respondent_id": "8d2daf4f-ef33-4f56-b062-ed31717c37b1",
+    "utilities": {
+      "opponent_mid": 2.15874672936805,
+      "opponent_big_six": 5.42751545048931,
+      "zone_lower": 1.8244344828617352,
+      "zone_upper": 0.16723826884983475,
+      "zone_hospitality": -1.832042166862126,
+      "stakes_top4": 4.132572623350997,
+      "stakes_relegation": 4.718266291660287,
+      "stakes_euro": 2.67096441237322,
+      "price": -0.1611815668336124,
+      "derby": 4.151853875770301,
+      "tv_prime": 0.17611424873997064
+    }
+  },
+  {
+    "respondent_id": "ad4ff275-b36f-4046-a019-fb4d95fe8766",
+    "utilities": {
+      "opponent_mid": 1.917882080584273,
+      "opponent_big_six": 5.437514037062503,
+      "zone_lower": 1.0352964591324705,
+      "zone_upper": 0.9257009821191138,
+      "zone_hospitality": -1.7743107881791402,
+      "stakes_top4": 4.112850307809169,
+      "stakes_relegation": 4.63359022238611,
+      "stakes_euro": 2.650850502430084,
+      "price": -0.2378421818917018,
+      "derby": 4.177780583195238,
+      "tv_prime": 0.14570518285079495
+    }
+  },
+  {
+    "respondent_id": "328c1b82-192d-415c-8ed0-88297acbf0f5",
+    "utilities": {
+      "opponent_mid": 2.6505815225451412,
+      "opponent_big_six": 4.985289835199244,
+      "zone_lower": 0.680359307117151,
+      "zone_upper": 1.3887864087392319,
+      "zone_hospitality": -1.7485646878100962,
+      "stakes_top4": 4.272120172872254,
+      "stakes_relegation": 4.7167879700108895,
+      "stakes_euro": 2.4390301045792735,
+      "price": -0.12418524954900914,
+      "derby": 3.9750451595616076,
+      "tv_prime": -0.11460040523293838
+    }
+  },
+  {
+    "respondent_id": "560fde6f-2898-407e-9d36-14678970d0cf",
+    "utilities": {
+      "opponent_mid": 2.3676790697303,
+      "opponent_big_six": 5.114077131515125,
+      "zone_lower": 1.5750773370162228,
+      "zone_upper": 0.5592238693406257,
+      "zone_hospitality": -1.881575053236249,
+      "stakes_top4": 4.165886126776408,
+      "stakes_relegation": 4.601564473907917,
+      "stakes_euro": 2.6452652273958566,
+      "price": -0.16670169873796117,
+      "derby": 4.122819660233754,
+      "tv_prime": -0.0029564266374641065
+    }
+  },
+  {
+    "respondent_id": "f65ffdff-39be-40a5-a941-9220d80ad296",
+    "utilities": {
+      "opponent_mid": 2.33225910651302,
+      "opponent_big_six": 5.283577024019552,
+      "zone_lower": 1.663783473045487,
+      "zone_upper": 0.19433705117519517,
+      "zone_hospitality": -1.7592024937419952,
+      "stakes_top4": 4.147111229128339,
+      "stakes_relegation": 4.63068878641108,
+      "stakes_euro": 2.621083590072511,
+      "price": -0.21339936593052014,
+      "derby": 3.9695333256593943,
+      "tv_prime": 0.26586536566970154
+    }
+  },
+  {
+    "respondent_id": "64a8175d-3b19-4a68-aa10-be4c1f677c0d",
+    "utilities": {
+      "opponent_mid": 2.8384961520957344,
+      "opponent_big_six": 5.203129216064111,
+      "zone_lower": 0.5372954704506768,
+      "zone_upper": 0.9773778445936888,
+      "zone_hospitality": -1.4760859094356051,
+      "stakes_top4": 4.143160136684764,
+      "stakes_relegation": 4.956293488482626,
+      "stakes_euro": 2.6702415807874122,
+      "price": -0.12026461396925335,
+      "derby": 3.8006058561899665,
+      "tv_prime": -0.05264360437919549
+    }
+  },
+  {
+    "respondent_id": "4e260118-cca3-4b94-bc14-58e0d0631b08",
+    "utilities": {
+      "opponent_mid": 2.213904721812101,
+      "opponent_big_six": 5.447393619140867,
+      "zone_lower": 1.6563459563310128,
+      "zone_upper": 0.139113973048527,
+      "zone_hospitality": -1.711442956395914,
+      "stakes_top4": 4.116342088821329,
+      "stakes_relegation": 4.733242569863299,
+      "stakes_euro": 2.6488427417527185,
+      "price": -0.14253430143324058,
+      "derby": 4.225587580548761,
+      "tv_prime": 0.18028980078155218
+    }
+  },
+  {
+    "respondent_id": "93ed5eb9-217f-4360-846e-4186b1af07bb",
+    "utilities": {
+      "opponent_mid": 1.8865919501119572,
+      "opponent_big_six": 5.590924584214816,
+      "zone_lower": 1.267675999658318,
+      "zone_upper": 0.7092511792646874,
+      "zone_hospitality": -1.8258243121772009,
+      "stakes_top4": 4.162772642890723,
+      "stakes_relegation": 4.790263159016568,
+      "stakes_euro": 2.589974877416137,
+      "price": -0.15046275247558163,
+      "derby": 4.141867640105946,
+      "tv_prime": 0.26120709972606737
+    }
+  },
+  {
+    "respondent_id": "a3ac583c-90b6-4196-b226-6f321999cc89",
+    "utilities": {
+      "opponent_mid": 2.0592460898125067,
+      "opponent_big_six": 5.278741308936123,
+      "zone_lower": 1.5199069925320956,
+      "zone_upper": 0.4649404169416774,
+      "zone_hospitality": -1.7857836513975764,
+      "stakes_top4": 4.12975050306754,
+      "stakes_relegation": 4.765839815812349,
+      "stakes_euro": 2.5851163120861997,
+      "price": -0.19124225174586273,
+      "derby": 4.230073529103999,
+      "tv_prime": 0.16786610037379213
+    }
+  },
+  {
+    "respondent_id": "3765a534-5ae4-4876-8021-5296b0ad76d7",
+    "utilities": {
+      "opponent_mid": 2.2690158811965,
+      "opponent_big_six": 5.4760805757296875,
+      "zone_lower": 1.620154536753902,
+      "zone_upper": 0.3053639878839565,
+      "zone_hospitality": -1.7615734237282714,
+      "stakes_top4": 4.145559916554446,
+      "stakes_relegation": 4.655788225857926,
+      "stakes_euro": 2.613508572974369,
+      "price": -0.15950488352307818,
+      "derby": 4.194288732917379,
+      "tv_prime": 0.15218759296556295
+    }
+  },
+  {
+    "respondent_id": "1b6b6694-e1c9-4d3a-bf0e-0533d2cd6321",
+    "utilities": {
+      "opponent_mid": 2.158989793535805,
+      "opponent_big_six": 5.324362405477901,
+      "zone_lower": 0.738308263299319,
+      "zone_upper": 1.2995345696132743,
+      "zone_hospitality": -1.7960246270537925,
+      "stakes_top4": 4.176854383061039,
+      "stakes_relegation": 4.64633851833538,
+      "stakes_euro": 2.6588512004468923,
+      "price": -0.1750194577061347,
+      "derby": 4.069288180502834,
+      "tv_prime": 0.17528320754575086
+    }
+  },
+  {
+    "respondent_id": "291ed10c-bd82-406a-aaee-d1200ca7d11f",
+    "utilities": {
+      "opponent_mid": 2.251684739743506,
+      "opponent_big_six": 5.351132987703067,
+      "zone_lower": 0.9504041225701577,
+      "zone_upper": 1.0160423537617351,
+      "zone_hospitality": -1.7700855060340763,
+      "stakes_top4": 4.063318654472704,
+      "stakes_relegation": 4.631416597484109,
+      "stakes_euro": 2.8407204920545586,
+      "price": -0.16812100855373374,
+      "derby": 4.258541313576183,
+      "tv_prime": 0.31213131067592703
+    }
+  },
+  {
+    "respondent_id": "b04dd4b8-fa65-4dd7-bc2b-3e678d136d09",
+    "utilities": {
+      "opponent_mid": 2.391095203530906,
+      "opponent_big_six": 5.509810997848983,
+      "zone_lower": 1.4832627292501321,
+      "zone_upper": 0.463558920655955,
+      "zone_hospitality": -1.77329169945353,
+      "stakes_top4": 4.192180325617106,
+      "stakes_relegation": 4.608741393460269,
+      "stakes_euro": 2.451658748751538,
+      "price": -0.1602830775106493,
+      "derby": 4.2262982800864455,
+      "tv_prime": 0.15286929715345193
+    }
+  },
+  {
+    "respondent_id": "7edbd18c-4aed-408a-a34d-5134d79564aa",
+    "utilities": {
+      "opponent_mid": 2.6472039954254813,
+      "opponent_big_six": 5.572501037638313,
+      "zone_lower": 1.6061053692635314,
+      "zone_upper": 0.45590100608620754,
+      "zone_hospitality": -1.860319089662404,
+      "stakes_top4": 4.230032035577661,
+      "stakes_relegation": 4.659512975916252,
+      "stakes_euro": 2.5409815065987726,
+      "price": -0.10290757311751693,
+      "derby": 3.86914392132721,
+      "tv_prime": 0.04767882826116077
+    }
+  },
+  {
+    "respondent_id": "b53e5d41-ca0e-4077-b55c-faddfea41752",
+    "utilities": {
+      "opponent_mid": 2.393812212500697,
+      "opponent_big_six": 5.296158687966446,
+      "zone_lower": 1.3726547486850247,
+      "zone_upper": 0.46089348611586695,
+      "zone_hospitality": -1.7779100707196918,
+      "stakes_top4": 4.125880939425748,
+      "stakes_relegation": 4.746301948513952,
+      "stakes_euro": 2.6700706489253485,
+      "price": -0.15783922377102735,
+      "derby": 4.277254842299724,
+      "tv_prime": 0.15399612461616505
+    }
+  },
+  {
+    "respondent_id": "851982b4-2297-47bf-86f2-af2072dc58b7",
+    "utilities": {
+      "opponent_mid": 2.217910223801635,
+      "opponent_big_six": 5.407302809166866,
+      "zone_lower": 1.5314702364030957,
+      "zone_upper": 0.38911337081181496,
+      "zone_hospitality": -1.7352301051377206,
+      "stakes_top4": 4.1677380412852125,
+      "stakes_relegation": 4.625383626987106,
+      "stakes_euro": 2.646320937795368,
+      "price": -0.1662285611873044,
+      "derby": 4.278532280515603,
+      "tv_prime": 0.22804642430758004
+    }
+  },
+  {
+    "respondent_id": "de07a5ba-386f-494b-a4a3-a60065a07a4f",
+    "utilities": {
+      "opponent_mid": 2.3111279564436216,
+      "opponent_big_six": 5.091682361888807,
+      "zone_lower": 1.655405186629727,
+      "zone_upper": 0.18389792575481823,
+      "zone_hospitality": -1.7275079726540237,
+      "stakes_top4": 4.084281715287225,
+      "stakes_relegation": 4.618572073027533,
+      "stakes_euro": 2.665753217375104,
+      "price": -0.21499081999412953,
+      "derby": 4.397392181615565,
+      "tv_prime": 0.25382631474429507
+    }
+  },
+  {
+    "respondent_id": "83e84da7-398d-443a-b62e-da83bd920d00",
+    "utilities": {
+      "opponent_mid": 2.2797039001403396,
+      "opponent_big_six": 5.328497751048866,
+      "zone_lower": 1.7020905519199772,
+      "zone_upper": 0.253051519831528,
+      "zone_hospitality": -1.7578045325195868,
+      "stakes_top4": 4.147641224607936,
+      "stakes_relegation": 4.740653235516347,
+      "stakes_euro": 2.666136622700141,
+      "price": -0.14098394629854055,
+      "derby": 4.210674128632308,
+      "tv_prime": 0.18592136500513726
+    }
+  },
+  {
+    "respondent_id": "7f96ede3-0ab2-40e1-aa1e-d1a8dbeb7b7d",
+    "utilities": {
+      "opponent_mid": 2.3210928924264933,
+      "opponent_big_six": 5.5133717732858525,
+      "zone_lower": 1.5561552180046914,
+      "zone_upper": 0.3555164569389516,
+      "zone_hospitality": -1.7488070748938553,
+      "stakes_top4": 4.112712145408074,
+      "stakes_relegation": 4.634807049431083,
+      "stakes_euro": 2.6420387224539725,
+      "price": -0.15587346957661777,
+      "derby": 4.203527553050467,
+      "tv_prime": 0.24441949635637328
+    }
+  },
+  {
+    "respondent_id": "40e4f993-e503-4285-9296-0dc8548f8249",
+    "utilities": {
+      "opponent_mid": 2.3627013936301924,
+      "opponent_big_six": 4.914159812429847,
+      "zone_lower": 1.645838811282602,
+      "zone_upper": 0.20460483320723039,
+      "zone_hospitality": -1.7826511864771306,
+      "stakes_top4": 4.143335366097079,
+      "stakes_relegation": 5.063816761531602,
+      "stakes_euro": 2.637240255048659,
+      "price": -0.16488996129328704,
+      "derby": 3.739264578648624,
+      "tv_prime": 0.33672838455645904
+    }
+  },
+  {
+    "respondent_id": "70a19253-01db-4284-9b9b-f8ff09836a91",
+    "utilities": {
+      "opponent_mid": 2.392331841220724,
+      "opponent_big_six": 5.346204203878214,
+      "zone_lower": 1.5284885142019813,
+      "zone_upper": 0.31591869131001576,
+      "zone_hospitality": -1.7805093276401136,
+      "stakes_top4": 4.122220089523266,
+      "stakes_relegation": 4.618203179077014,
+      "stakes_euro": 2.7130236740230522,
+      "price": -0.16910156162822174,
+      "derby": 4.21144299529074,
+      "tv_prime": 0.20071299501765552
+    }
+  },
+  {
+    "respondent_id": "186d97f8-3dcd-4fdd-a603-e721c4d328c5",
+    "utilities": {
+      "opponent_mid": 2.2804635005502636,
+      "opponent_big_six": 5.50672450835324,
+      "zone_lower": 1.4116732923255255,
+      "zone_upper": 0.6777209406387019,
+      "zone_hospitality": -1.8138818898565396,
+      "stakes_top4": 4.127117532900257,
+      "stakes_relegation": 4.580673402372677,
+      "stakes_euro": 2.6496049672449455,
+      "price": -0.17981770043447015,
+      "derby": 4.202481620972823,
+      "tv_prime": 0.23810905144283107
+    }
+  },
+  {
+    "respondent_id": "4eaf817d-f7e9-441e-84df-2e266cc848be",
+    "utilities": {
+      "opponent_mid": 2.2319787311395767,
+      "opponent_big_six": 5.193451607180728,
+      "zone_lower": 1.9360576745733358,
+      "zone_upper": -0.15594642315956578,
+      "zone_hospitality": -1.7740449328471375,
+      "stakes_top4": 4.117968055768222,
+      "stakes_relegation": 4.682711959746517,
+      "stakes_euro": 2.6604455511554064,
+      "price": -0.2341809138397543,
+      "derby": 4.077381069747836,
+      "tv_prime": 0.20310458900973805
+    }
+  },
+  {
+    "respondent_id": "52ae0ba1-d0fc-453b-8b70-6b0f0658d2a6",
+    "utilities": {
+      "opponent_mid": 1.7688063005922396,
+      "opponent_big_six": 5.4633832953447445,
+      "zone_lower": 0.8437238743851998,
+      "zone_upper": 1.226834871790805,
+      "zone_hospitality": -1.7891478395225808,
+      "stakes_top4": 4.14399642269769,
+      "stakes_relegation": 4.904038402581139,
+      "stakes_euro": 2.3006125969815994,
+      "price": -0.17890521303710583,
+      "derby": 4.139341193110607,
+      "tv_prime": 0.08195690036667673
+    }
+  },
+  {
+    "respondent_id": "b33ce74e-3f37-42f9-b4ac-ad6f3581e4ea",
+    "utilities": {
+      "opponent_mid": 2.5076540889641286,
+      "opponent_big_six": 5.291594217936662,
+      "zone_lower": 1.2034000369964741,
+      "zone_upper": 0.8825563728690639,
+      "zone_hospitality": -1.815995579006492,
+      "stakes_top4": 4.035569527327565,
+      "stakes_relegation": 4.705949088320028,
+      "stakes_euro": 2.820650509665279,
+      "price": -0.13317077922022036,
+      "derby": 4.486963085621857,
+      "tv_prime": 0.17857268282022748
+    }
+  },
+  {
+    "respondent_id": "1ac7775b-e8bb-4069-9be3-21a6e2451698",
+    "utilities": {
+      "opponent_mid": 2.1786207792556143,
+      "opponent_big_six": 5.385830689711948,
+      "zone_lower": 1.5077180338691094,
+      "zone_upper": 0.40180835164176076,
+      "zone_hospitality": -1.7759303209796915,
+      "stakes_top4": 4.149894272474435,
+      "stakes_relegation": 4.6677475776857245,
+      "stakes_euro": 2.6131391904383894,
+      "price": -0.1671268007590108,
+      "derby": 4.194572536634495,
+      "tv_prime": 0.17041566853911697
+    }
+  },
+  {
+    "respondent_id": "22ca667d-6b63-4060-a526-94bf7a4181d8",
+    "utilities": {
+      "opponent_mid": 2.215021470284049,
+      "opponent_big_six": 5.412300292698353,
+      "zone_lower": 0.4170187204001125,
+      "zone_upper": 1.7287823718324036,
+      "zone_hospitality": -1.737334369587292,
+      "stakes_top4": 4.124369100631951,
+      "stakes_relegation": 4.3422221102848235,
+      "stakes_euro": 2.916695007227481,
+      "price": -0.13777535927144685,
+      "derby": 3.6931531956956776,
+      "tv_prime": -0.040350125660570384
+    }
+  },
+  {
+    "respondent_id": "2b832b28-b6bc-4bb4-880b-b3c69da4722a",
+    "utilities": {
+      "opponent_mid": 2.3649297447737863,
+      "opponent_big_six": 5.951649873775906,
+      "zone_lower": 0.2002718862743638,
+      "zone_upper": 1.1189285674543812,
+      "zone_hospitality": -1.340487953923454,
+      "stakes_top4": 4.13050971942212,
+      "stakes_relegation": 4.787908974637633,
+      "stakes_euro": 2.7597304854501212,
+      "price": -0.09638777398362705,
+      "derby": 3.227273488810302,
+      "tv_prime": -0.02857791763754769
+    }
+  },
+  {
+    "respondent_id": "1a878254-4093-401e-becf-74941501becd",
+    "utilities": {
+      "opponent_mid": 2.411839534931172,
+      "opponent_big_six": 5.299570386873584,
+      "zone_lower": 1.3721280522591537,
+      "zone_upper": 0.5958761222461905,
+      "zone_hospitality": -1.7672439631152193,
+      "stakes_top4": 4.16871981598027,
+      "stakes_relegation": 4.6369581520399725,
+      "stakes_euro": 2.608602298766527,
+      "price": -0.18458079803755523,
+      "derby": 4.164215104766093,
+      "tv_prime": 0.1850483049440088
+    }
+  },
+  {
+    "respondent_id": "205b2c8e-08ee-48e0-8a2d-acd5d160e1f8",
+    "utilities": {
+      "opponent_mid": 2.4237915667527,
+      "opponent_big_six": 5.119994426325691,
+      "zone_lower": 1.8989838198466498,
+      "zone_upper": -0.08000356664365872,
+      "zone_hospitality": -1.771715087886361,
+      "stakes_top4": 4.095339333292196,
+      "stakes_relegation": 4.712235549557422,
+      "stakes_euro": 2.7305008400620254,
+      "price": -0.19791071055946488,
+      "derby": 4.179450967208082,
+      "tv_prime": 0.1853623062085172
+    }
+  },
+  {
+    "respondent_id": "512ec35a-4c60-4988-9310-b8a9fd4b7f0a",
+    "utilities": {
+      "opponent_mid": 2.25894495703871,
+      "opponent_big_six": 5.340256485278528,
+      "zone_lower": 1.7062316096163928,
+      "zone_upper": 0.2368245904223807,
+      "zone_hospitality": -1.763414480373218,
+      "stakes_top4": 4.13814571251912,
+      "stakes_relegation": 4.4822817472147936,
+      "stakes_euro": 2.7646921941662566,
+      "price": -0.14135724098370445,
+      "derby": 4.424867925084126,
+      "tv_prime": 0.13826479198975425
+    }
+  },
+  {
+    "respondent_id": "00939d52-30cd-400d-bb94-de9106b64579",
+    "utilities": {
+      "opponent_mid": 2.293955649541785,
+      "opponent_big_six": 5.2965262506730975,
+      "zone_lower": 1.6683110328656485,
+      "zone_upper": 0.2318564527785133,
+      "zone_hospitality": -1.788385169943709,
+      "stakes_top4": 4.133205735371427,
+      "stakes_relegation": 4.628357684123601,
+      "stakes_euro": 2.685736145418396,
+      "price": -0.1673786637539602,
+      "derby": 4.192270645593322,
+      "tv_prime": 0.17679452564142656
+    }
+  },
+  {
+    "respondent_id": "14594d11-0597-4469-9888-6beea0a1358b",
+    "utilities": {
+      "opponent_mid": 2.409646551465771,
+      "opponent_big_six": 5.162659430562782,
+      "zone_lower": 1.2389849466368927,
+      "zone_upper": 0.7350276666237481,
+      "zone_hospitality": -1.7739622941315596,
+      "stakes_top4": 4.092979791659919,
+      "stakes_relegation": 4.721370920931034,
+      "stakes_euro": 2.790147790997576,
+      "price": -0.23485112787909743,
+      "derby": 4.044829656622535,
+      "tv_prime": 0.35454339983680333
+    }
+  },
+  {
+    "respondent_id": "9e5b2340-227c-4961-b3af-90ac11e2ce8c",
+    "utilities": {
+      "opponent_mid": 2.4510312193160493,
+      "opponent_big_six": 5.1471175905179045,
+      "zone_lower": 1.9854776900293618,
+      "zone_upper": 0.24337192325405785,
+      "zone_hospitality": -1.9697769163360797,
+      "stakes_top4": 4.169005913866534,
+      "stakes_relegation": 4.399456781875279,
+      "stakes_euro": 2.6694881682528036,
+      "price": -0.2063828312631316,
+      "derby": 4.192969988900685,
+      "tv_prime": 0.1923189552575651
+    }
+  },
+  {
+    "respondent_id": "5fa4001e-0d8f-4b56-ad2b-6e6fc88f7533",
+    "utilities": {
+      "opponent_mid": 2.1319940511157154,
+      "opponent_big_six": 5.468747484571511,
+      "zone_lower": 1.8927328456747117,
+      "zone_upper": 0.09350672033717432,
+      "zone_hospitality": -1.7870155046887415,
+      "stakes_top4": 4.147962326656966,
+      "stakes_relegation": 4.612359907137277,
+      "stakes_euro": 2.633771456326793,
+      "price": -0.15233948024330665,
+      "derby": 4.118698442637779,
+      "tv_prime": 0.17958317993753364
+    }
+  },
+  {
+    "respondent_id": "67230635-1770-43f0-8a17-e3e91683d822",
+    "utilities": {
+      "opponent_mid": 2.2966489274011614,
+      "opponent_big_six": 5.262299092812161,
+      "zone_lower": 1.622384532812247,
+      "zone_upper": 0.31066078382217377,
+      "zone_hospitality": -1.7335264238220072,
+      "stakes_top4": 4.141116138165754,
+      "stakes_relegation": 4.636189079903702,
+      "stakes_euro": 2.6315366687962993,
+      "price": -0.16315960731446805,
+      "derby": 4.237201727020573,
+      "tv_prime": 0.20910353407454563
+    }
+  },
+  {
+    "respondent_id": "e0debcfd-b743-42b5-bf70-930e57a2c662",
+    "utilities": {
+      "opponent_mid": 2.4568055870688776,
+      "opponent_big_six": 5.310349193030384,
+      "zone_lower": 1.6207604986125987,
+      "zone_upper": 0.2570957753338297,
+      "zone_hospitality": -1.7410723968329214,
+      "stakes_top4": 4.1369276842240374,
+      "stakes_relegation": 4.600561462085426,
+      "stakes_euro": 2.6518775707896136,
+      "price": -0.15168811777364,
+      "derby": 4.2545557585045675,
+      "tv_prime": 0.18360164365383635
+    }
+  },
+  {
+    "respondent_id": "fb7c228e-629e-4836-b7bd-ab28130db659",
+    "utilities": {
+      "opponent_mid": 2.486224179511907,
+      "opponent_big_six": 5.173955864752396,
+      "zone_lower": 1.4445896040348654,
+      "zone_upper": 0.48505700895951076,
+      "zone_hospitality": -1.747084947974517,
+      "stakes_top4": 4.15052711979983,
+      "stakes_relegation": 4.486434897265395,
+      "stakes_euro": 2.7138168066138264,
+      "price": -0.1997584274531243,
+      "derby": 4.270594544100332,
+      "tv_prime": 0.18488806635915572
+    }
+  },
+  {
+    "respondent_id": "1ce30c5a-83e1-4f0f-8cfd-f40ed8b95f06",
+    "utilities": {
+      "opponent_mid": 2.142693931840783,
+      "opponent_big_six": 5.404887783867482,
+      "zone_lower": 1.8116030986920593,
+      "zone_upper": -0.037360031139811206,
+      "zone_hospitality": -1.7684432901730012,
+      "stakes_top4": 4.141967970637695,
+      "stakes_relegation": 4.632633370375878,
+      "stakes_euro": 2.612807445641201,
+      "price": -0.14614955358171888,
+      "derby": 4.32278426129819,
+      "tv_prime": 0.19224463217640853
+    }
+  },
+  {
+    "respondent_id": "3611ec77-462c-4244-aa3c-de144f2930bc",
+    "utilities": {
+      "opponent_mid": 2.4412293016730855,
+      "opponent_big_six": 5.464190389104572,
+      "zone_lower": 1.729579827859626,
+      "zone_upper": 0.3003546955737907,
+      "zone_hospitality": -1.8493877472769373,
+      "stakes_top4": 4.1316530447800455,
+      "stakes_relegation": 4.635842405712719,
+      "stakes_euro": 2.6430526882311693,
+      "price": -0.13966685365391618,
+      "derby": 4.162627214179657,
+      "tv_prime": 0.12976223099692516
+    }
+  },
+  {
+    "respondent_id": "b00ba18b-6bb2-4e83-848a-d1dd7a64f080",
+    "utilities": {
+      "opponent_mid": 2.1957195675071453,
+      "opponent_big_six": 5.33427070715705,
+      "zone_lower": 1.6999950869589255,
+      "zone_upper": 0.16149614737670284,
+      "zone_hospitality": -1.7671447201457642,
+      "stakes_top4": 4.143851571034268,
+      "stakes_relegation": 4.627540793811197,
+      "stakes_euro": 2.6913243126779003,
+      "price": -0.16093931542523657,
+      "derby": 4.217467881979813,
+      "tv_prime": 0.19251067930793378
+    }
+  },
+  {
+    "respondent_id": "f96d5a44-1344-448f-88c5-1c01a546e031",
+    "utilities": {
+      "opponent_mid": 2.0824584898724168,
+      "opponent_big_six": 5.38952000286976,
+      "zone_lower": 1.298000679884247,
+      "zone_upper": 0.645531779064073,
+      "zone_hospitality": -1.7526309646926406,
+      "stakes_top4": 4.105117653914235,
+      "stakes_relegation": 4.6729453642512695,
+      "stakes_euro": 2.6653748307018708,
+      "price": -0.16188667563669246,
+      "derby": 4.406016555531709,
+      "tv_prime": 0.23048732042889247
+    }
+  },
+  {
+    "respondent_id": "80a89bb4-3f51-482c-bf44-e43b7a55d08b",
+    "utilities": {
+      "opponent_mid": 1.9736226908813408,
+      "opponent_big_six": 5.7739633299553565,
+      "zone_lower": 1.9258687229060887,
+      "zone_upper": -0.06827361072674099,
+      "zone_hospitality": -1.7498622860146877,
+      "stakes_top4": 4.167135620953439,
+      "stakes_relegation": 4.626137436051128,
+      "stakes_euro": 2.6130380829611988,
+      "price": -0.13430161185281317,
+      "derby": 3.848245835247612,
+      "tv_prime": 0.25613833771342726
+    }
+  },
+  {
+    "respondent_id": "bdf71d81-142e-4e8e-af31-d41c7a0a48a3",
+    "utilities": {
+      "opponent_mid": 2.264925179606495,
+      "opponent_big_six": 5.2456680664837325,
+      "zone_lower": 2.2898233110704784,
+      "zone_upper": -0.5068189513501595,
+      "zone_hospitality": -1.8178568381668847,
+      "stakes_top4": 4.170539134376383,
+      "stakes_relegation": 4.261293162276183,
+      "stakes_euro": 2.8874940593658494,
+      "price": -0.17037172664872477,
+      "derby": 4.253724465547162,
+      "tv_prime": 0.23763685058150455
+    }
+  },
+  {
+    "respondent_id": "4053ddb9-8b43-4604-991a-c89635af283e",
+    "utilities": {
+      "opponent_mid": 2.2484508915705996,
+      "opponent_big_six": 5.319118326455531,
+      "zone_lower": 1.8918959208041086,
+      "zone_upper": -0.05572895031003639,
+      "zone_hospitality": -1.7325544164841469,
+      "stakes_top4": 4.183839691208005,
+      "stakes_relegation": 4.4930307052365,
+      "stakes_euro": 2.718134025275215,
+      "price": -0.14612727367485795,
+      "derby": 4.299647349777848,
+      "tv_prime": 0.25053069024286956
+    }
+  },
+  {
+    "respondent_id": "2981c612-2e43-41a2-8b10-e62bd0a736ef",
+    "utilities": {
+      "opponent_mid": 1.945734452191251,
+      "opponent_big_six": 5.775724929228984,
+      "zone_lower": 1.318598049761952,
+      "zone_upper": 0.6114973076468667,
+      "zone_hospitality": -1.7333319512615353,
+      "stakes_top4": 4.085076841701387,
+      "stakes_relegation": 4.640332113516618,
+      "stakes_euro": 2.803624686206416,
+      "price": -0.15007540548798384,
+      "derby": 3.7949215191772234,
+      "tv_prime": 0.2613602420182383
+    }
+  },
+  {
+    "respondent_id": "f5fbf2ec-7cd1-4cfb-b9e5-45ad2229cb04",
+    "utilities": {
+      "opponent_mid": 2.2974452276394706,
+      "opponent_big_six": 5.471270868582258,
+      "zone_lower": 1.7189312943268071,
+      "zone_upper": 0.16214129207296427,
+      "zone_hospitality": -1.788230284719067,
+      "stakes_top4": 4.126779965554497,
+      "stakes_relegation": 4.577994800893711,
+      "stakes_euro": 2.7620757365278936,
+      "price": -0.16197883012673522,
+      "derby": 4.0375878482277905,
+      "tv_prime": 0.28431396927076624
+    }
+  },
+  {
+    "respondent_id": "9e34b1b2-6bae-4312-a5b8-95e684c2f987",
+    "utilities": {
+      "opponent_mid": 2.2191826624959066,
+      "opponent_big_six": 5.39249627510898,
+      "zone_lower": 1.5809769183434812,
+      "zone_upper": 0.21885053989706835,
+      "zone_hospitality": -1.7664040751047776,
+      "stakes_top4": 4.057062686123108,
+      "stakes_relegation": 4.5924080972861425,
+      "stakes_euro": 2.6777997413864654,
+      "price": -0.2211024735604373,
+      "derby": 4.203847614186106,
+      "tv_prime": 0.1636638461696128
+    }
+  },
+  {
+    "respondent_id": "5687e0b0-2aaf-4394-994a-16f7fb40e11c",
+    "utilities": {
+      "opponent_mid": 2.2651250604386703,
+      "opponent_big_six": 5.321038346329372,
+      "zone_lower": 1.6984435195491359,
+      "zone_upper": 0.20148030145753143,
+      "zone_hospitality": -1.774522769568374,
+      "stakes_top4": 4.139797464454676,
+      "stakes_relegation": 4.609691104650411,
+      "stakes_euro": 2.6691222942289348,
+      "price": -0.1631093652587574,
+      "derby": 4.183840532736292,
+      "tv_prime": 0.19073356984309248
+    }
+  },
+  {
+    "respondent_id": "e4e8692d-aeb4-4ea7-a262-2d8c64b2334c",
+    "utilities": {
+      "opponent_mid": 1.7644356593985222,
+      "opponent_big_six": 5.511116851841636,
+      "zone_lower": 0.8502110168558152,
+      "zone_upper": 1.1057264702427656,
+      "zone_hospitality": -1.784115422691339,
+      "stakes_top4": 4.136915452930273,
+      "stakes_relegation": 4.539324991017012,
+      "stakes_euro": 2.6040428780846523,
+      "price": -0.18052041609439842,
+      "derby": 4.498763547437879,
+      "tv_prime": 0.14666499532820446
+    }
+  },
+  {
+    "respondent_id": "b8cc7164-2ad2-41fc-8ca7-9ae3a06f636a",
+    "utilities": {
+      "opponent_mid": 2.3374828350988324,
+      "opponent_big_six": 5.259515238364168,
+      "zone_lower": 1.6550968578741179,
+      "zone_upper": 0.31695566929853664,
+      "zone_hospitality": -1.772383927409411,
+      "stakes_top4": 4.136806011852176,
+      "stakes_relegation": 4.624980908402536,
+      "stakes_euro": 2.686760819411217,
+      "price": -0.163171354456431,
+      "derby": 4.256536313365419,
+      "tv_prime": 0.18432580766193452
+    }
+  },
+  {
+    "respondent_id": "4b92f173-d188-4a44-accf-d5763922a103",
+    "utilities": {
+      "opponent_mid": 1.7204623412656477,
+      "opponent_big_six": 5.915242520877351,
+      "zone_lower": 1.5945628872173023,
+      "zone_upper": 0.3210296520885987,
+      "zone_hospitality": -1.7838528790591144,
+      "stakes_top4": 4.254655204571701,
+      "stakes_relegation": 4.639018096792393,
+      "stakes_euro": 2.4203345507665976,
+      "price": -0.1211144320873747,
+      "derby": 3.617259436720728,
+      "tv_prime": 0.14107499033323853
+    }
+  },
+  {
+    "respondent_id": "6fb12449-04d2-4c74-a63d-65585afe610f",
+    "utilities": {
+      "opponent_mid": 2.3775752328530073,
+      "opponent_big_six": 5.534538143354878,
+      "zone_lower": 1.4342480168210314,
+      "zone_upper": 0.523216895715086,
+      "zone_hospitality": -1.730564379610537,
+      "stakes_top4": 4.1124395495150505,
+      "stakes_relegation": 4.578196297170485,
+      "stakes_euro": 2.563621197075225,
+      "price": -0.20280111606165258,
+      "derby": 4.096302321439249,
+      "tv_prime": 0.1991239426051168
+    }
+  },
+  {
+    "respondent_id": "5f88b707-61bf-423d-a061-a174cd7bf5d4",
+    "utilities": {
+      "opponent_mid": 2.2438568589401937,
+      "opponent_big_six": 5.2361887666569285,
+      "zone_lower": 1.6630753622872094,
+      "zone_upper": 0.4816548383586479,
+      "zone_hospitality": -1.841309523634497,
+      "stakes_top4": 4.1285062860392925,
+      "stakes_relegation": 4.64106539859968,
+      "stakes_euro": 2.7093824720472357,
+      "price": -0.18987967907614361,
+      "derby": 4.170307508759911,
+      "tv_prime": 0.20550417678795566
+    }
+  },
+  {
+    "respondent_id": "0f2c72f7-747f-434a-8e7b-1ea6fb970cbd",
+    "utilities": {
+      "opponent_mid": 2.1409333763123857,
+      "opponent_big_six": 5.475844165692492,
+      "zone_lower": 1.6102944932338144,
+      "zone_upper": 0.3783841746667515,
+      "zone_hospitality": -1.7801732854566272,
+      "stakes_top4": 4.197398465874518,
+      "stakes_relegation": 4.591013300305783,
+      "stakes_euro": 2.6941950321770296,
+      "price": -0.12046386434360597,
+      "derby": 4.30059359294495,
+      "tv_prime": 0.2535370952782429
+    }
+  },
+  {
+    "respondent_id": "bda4793e-60be-4870-ab16-8a6c1908e52c",
+    "utilities": {
+      "opponent_mid": 2.2675022607804243,
+      "opponent_big_six": 5.330453258481491,
+      "zone_lower": 1.6351839081360473,
+      "zone_upper": 0.25573847245679265,
+      "zone_hospitality": -1.7868964328305335,
+      "stakes_top4": 4.141111426435407,
+      "stakes_relegation": 4.6451263074511475,
+      "stakes_euro": 2.637171663365491,
+      "price": -0.16188265047105346,
+      "derby": 4.192067729759113,
+      "tv_prime": 0.1785586169957607
+    }
+  },
+  {
+    "respondent_id": "384fe631-6f4f-4760-bd43-6249a3986428",
+    "utilities": {
+      "opponent_mid": 1.7650023127956764,
+      "opponent_big_six": 5.781579022330026,
+      "zone_lower": 1.6710300091267163,
+      "zone_upper": 0.21151148018741928,
+      "zone_hospitality": -1.7845437757490552,
+      "stakes_top4": 4.144135910141623,
+      "stakes_relegation": 4.324149773868642,
+      "stakes_euro": 2.6936358684190136,
+      "price": -0.16266799657088327,
+      "derby": 4.177161750812289,
+      "tv_prime": 0.09440592488110604
+    }
+  },
+  {
+    "respondent_id": "f9857da2-4e6e-4f06-86d9-3021a708a528",
+    "utilities": {
+      "opponent_mid": 2.314892444729841,
+      "opponent_big_six": 5.356874109101002,
+      "zone_lower": 1.988996258033845,
+      "zone_upper": -0.1142221734797139,
+      "zone_hospitality": -1.7535281874415722,
+      "stakes_top4": 4.148245954529464,
+      "stakes_relegation": 4.4226805466277765,
+      "stakes_euro": 2.652243920588408,
+      "price": -0.16114874318453284,
+      "derby": 4.409590677011673,
+      "tv_prime": 0.1931407775133226
+    }
+  },
+  {
+    "respondent_id": "3854659b-ee54-412b-ba20-2d1d142aebe4",
+    "utilities": {
+      "opponent_mid": 2.445473519949962,
+      "opponent_big_six": 5.386555789836992,
+      "zone_lower": 1.6965536434456554,
+      "zone_upper": 0.13411013139437727,
+      "zone_hospitality": -1.7360707868129306,
+      "stakes_top4": 4.140873414789641,
+      "stakes_relegation": 4.512358605029655,
+      "stakes_euro": 2.7837268526010264,
+      "price": -0.14762003116145075,
+      "derby": 4.148001674978071,
+      "tv_prime": 0.08523381017906467
+    }
+  },
+  {
+    "respondent_id": "d37fafe4-1b3f-4714-9459-3766f9ee32f7",
+    "utilities": {
+      "opponent_mid": 1.9018763905389366,
+      "opponent_big_six": 5.474262409319821,
+      "zone_lower": 1.0528197945426714,
+      "zone_upper": 0.9774075769972942,
+      "zone_hospitality": -1.810461696666779,
+      "stakes_top4": 4.1327681494521045,
+      "stakes_relegation": 4.497601966808005,
+      "stakes_euro": 2.6750815970960327,
+      "price": -0.24572989723660596,
+      "derby": 4.263914651311877,
+      "tv_prime": 0.18804182186758972
+    }
+  },
+  {
+    "respondent_id": "0d1104dc-3901-4a21-83d2-2f7d1f0a9255",
+    "utilities": {
+      "opponent_mid": 2.249951941388328,
+      "opponent_big_six": 5.340100768767766,
+      "zone_lower": 1.3881207914965412,
+      "zone_upper": 0.466588168785249,
+      "zone_hospitality": -1.7385326753369024,
+      "stakes_top4": 4.100902751292561,
+      "stakes_relegation": 4.801582861916634,
+      "stakes_euro": 2.6471354832091447,
+      "price": -0.14217371032952247,
+      "derby": 4.425870901448409,
+      "tv_prime": 0.19579369933727514
+    }
+  },
+  {
+    "respondent_id": "10ff8f8c-c1f3-4a79-8f30-0589ebef3055",
+    "utilities": {
+      "opponent_mid": 2.3679570668962784,
+      "opponent_big_six": 5.301535191217714,
+      "zone_lower": 1.7560792642474083,
+      "zone_upper": 0.37312935845789236,
+      "zone_hospitality": -1.8899839878856013,
+      "stakes_top4": 4.138457859950862,
+      "stakes_relegation": 4.278477366103389,
+      "stakes_euro": 2.7045097735036303,
+      "price": -0.192603654940773,
+      "derby": 4.54941618403356,
+      "tv_prime": 0.19395645337705794
+    }
+  },
+  {
+    "respondent_id": "f8c96b83-7368-4cd7-97e9-045f199f9198",
+    "utilities": {
+      "opponent_mid": 2.253262550965594,
+      "opponent_big_six": 5.347634555630702,
+      "zone_lower": 1.616027000218359,
+      "zone_upper": 0.24209946148217873,
+      "zone_hospitality": -1.753257630307671,
+      "stakes_top4": 4.113450295054488,
+      "stakes_relegation": 4.664079661072032,
+      "stakes_euro": 2.6577177768148843,
+      "price": -0.15304780399323842,
+      "derby": 4.252759254932946,
+      "tv_prime": 0.22473434416432325
+    }
+  },
+  {
+    "respondent_id": "598ee8f9-e372-4605-b1e7-896f148e9350",
+    "utilities": {
+      "opponent_mid": 2.197406861676993,
+      "opponent_big_six": 5.369793734612198,
+      "zone_lower": 1.7228970208660004,
+      "zone_upper": 0.3761617555762854,
+      "zone_hospitality": -1.8772991931240397,
+      "stakes_top4": 4.117035763298215,
+      "stakes_relegation": 4.652658306229521,
+      "stakes_euro": 2.6419135652580716,
+      "price": -0.1920707018755599,
+      "derby": 4.055731847998191,
+      "tv_prime": 0.21921983138812046
+    }
+  },
+  {
+    "respondent_id": "2faef10a-7e4f-4d6c-9839-91aa99d811b9",
+    "utilities": {
+      "opponent_mid": 2.0124671911103493,
+      "opponent_big_six": 5.178839989572433,
+      "zone_lower": 1.6576295579102838,
+      "zone_upper": 0.21128496094866597,
+      "zone_hospitality": -1.755001787131111,
+      "stakes_top4": 4.131963856011306,
+      "stakes_relegation": 4.449266704999301,
+      "stakes_euro": 2.674145507273004,
+      "price": -0.19587874642735306,
+      "derby": 4.629437570024113,
+      "tv_prime": 0.2983782099403365
+    }
+  },
+  {
+    "respondent_id": "69db5004-8bba-4e42-a1f1-a6a930b5ed64",
+    "utilities": {
+      "opponent_mid": 2.431233085571368,
+      "opponent_big_six": 5.311997989066578,
+      "zone_lower": 1.4938621039342814,
+      "zone_upper": 0.4323330968800578,
+      "zone_hospitality": -1.794438057641683,
+      "stakes_top4": 4.129618272618197,
+      "stakes_relegation": 4.473831768731532,
+      "stakes_euro": 2.6501429249282356,
+      "price": -0.15807123595916373,
+      "derby": 4.423743982534444,
+      "tv_prime": 0.2212403637711575
+    }
+  },
+  {
+    "respondent_id": "3d695dcf-264b-42c4-a870-973d2708790a",
+    "utilities": {
+      "opponent_mid": 2.3401734269375645,
+      "opponent_big_six": 5.087965761816442,
+      "zone_lower": 1.6483082470908053,
+      "zone_upper": 0.25959449932183265,
+      "zone_hospitality": -1.7937654428706402,
+      "stakes_top4": 4.1522797888741545,
+      "stakes_relegation": 4.481746788402364,
+      "stakes_euro": 2.771780063506583,
+      "price": -0.20301787509001484,
+      "derby": 4.371332700956688,
+      "tv_prime": 0.1813029463326876
+    }
+  },
+  {
+    "respondent_id": "5fb97e76-4450-4a5c-aa10-70fe9ccc4b10",
+    "utilities": {
+      "opponent_mid": 2.4677803836016183,
+      "opponent_big_six": 5.156365457386137,
+      "zone_lower": 1.8195525587549228,
+      "zone_upper": 0.058177484021204685,
+      "zone_hospitality": -1.8099241313221854,
+      "stakes_top4": 4.2474031051033965,
+      "stakes_relegation": 4.619788533527263,
+      "stakes_euro": 2.3311389962339093,
+      "price": -0.15746066314329724,
+      "derby": 4.23434099100791,
+      "tv_prime": 0.24834149741066172
+    }
+  },
+  {
+    "respondent_id": "0140a525-a09e-4e75-a3a4-4349ddeabfd6",
+    "utilities": {
+      "opponent_mid": 1.9361848487223348,
+      "opponent_big_six": 5.443745295161669,
+      "zone_lower": 1.252856733351225,
+      "zone_upper": 0.8189848048468424,
+      "zone_hospitality": -1.7872121587282745,
+      "stakes_top4": 4.181706038488167,
+      "stakes_relegation": 4.671533143341848,
+      "stakes_euro": 2.5773313925009647,
+      "price": -0.19521379078697346,
+      "derby": 4.132457750281761,
+      "tv_prime": 0.1600293127526057
+    }
+  },
+  {
+    "respondent_id": "919828a0-157f-4a1c-ad2e-e27702c82cb5",
+    "utilities": {
+      "opponent_mid": 2.1646739832561765,
+      "opponent_big_six": 5.230443728276365,
+      "zone_lower": 1.6994718607372654,
+      "zone_upper": 0.1632897594734948,
+      "zone_hospitality": -1.7592739769565653,
+      "stakes_top4": 4.121150664142406,
+      "stakes_relegation": 4.626102985204459,
+      "stakes_euro": 2.7231745227960142,
+      "price": -0.17722113232840908,
+      "derby": 4.315013090753205,
+      "tv_prime": 0.2262182019663849
+    }
+  },
+  {
+    "respondent_id": "3845cee4-9500-429c-8d94-587735e823a9",
+    "utilities": {
+      "opponent_mid": 2.0217202802618623,
+      "opponent_big_six": 5.6128466723564046,
+      "zone_lower": 1.054106257330832,
+      "zone_upper": 0.96161312175951,
+      "zone_hospitality": -1.7830937337243222,
+      "stakes_top4": 4.139921538346807,
+      "stakes_relegation": 4.570083517341833,
+      "stakes_euro": 2.7543282471184813,
+      "price": -0.11703685744173814,
+      "derby": 4.321320421516261,
+      "tv_prime": 0.2207664915324926
+    }
+  },
+  {
+    "respondent_id": "54f0691f-0e78-4e55-8e5a-3ac9afd03dd2",
+    "utilities": {
+      "opponent_mid": 1.8002535522222565,
+      "opponent_big_six": 5.77771891104566,
+      "zone_lower": 0.8071653220452653,
+      "zone_upper": 1.2435996292526486,
+      "zone_hospitality": -1.786805873027697,
+      "stakes_top4": 4.130205853803667,
+      "stakes_relegation": 4.694502293924217,
+      "stakes_euro": 2.6414318881794516,
+      "price": -0.1481465970414468,
+      "derby": 3.800507187008247,
+      "tv_prime": 0.16562753300496796
+    }
+  },
+  {
+    "respondent_id": "a7cd316e-6744-46ef-a68d-7d32478515f2",
+    "utilities": {
+      "opponent_mid": 1.9991296736946969,
+      "opponent_big_six": 5.623164191091728,
+      "zone_lower": 1.9231480196803552,
+      "zone_upper": 0.007422022883259811,
+      "zone_hospitality": -1.7821586242966698,
+      "stakes_top4": 4.172195815369388,
+      "stakes_relegation": 4.59568681926527,
+      "stakes_euro": 2.54464032638257,
+      "price": -0.142332553279421,
+      "derby": 4.197503844046125,
+      "tv_prime": 0.21312979449371405
+    }
+  },
+  {
+    "respondent_id": "67accfd7-06a8-468e-ba5e-73127ada3819",
+    "utilities": {
+      "opponent_mid": 2.1796356424411933,
+      "opponent_big_six": 5.3465599209704475,
+      "zone_lower": 1.5199366967504877,
+      "zone_upper": 0.30690409653154443,
+      "zone_hospitality": -1.7801450820358362,
+      "stakes_top4": 4.138133066137981,
+      "stakes_relegation": 4.58895662956856,
+      "stakes_euro": 2.643698183911257,
+      "price": -0.16333478287511474,
+      "derby": 4.236309070187657,
+      "tv_prime": 0.18859027243693144
+    }
+  },
+  {
+    "respondent_id": "bef6aa30-d905-4192-b8fb-3904a2ed73f7",
+    "utilities": {
+      "opponent_mid": 2.1195703489951914,
+      "opponent_big_six": 5.711252822950535,
+      "zone_lower": 2.1603931358272543,
+      "zone_upper": -0.35413915856334527,
+      "zone_hospitality": -1.7638808394723695,
+      "stakes_top4": 4.1527645790031436,
+      "stakes_relegation": 4.642870159010115,
+      "stakes_euro": 2.6055668308275486,
+      "price": -0.14548145494791545,
+      "derby": 3.9398029901206337,
+      "tv_prime": 0.2982900041567847
+    }
+  },
+  {
+    "respondent_id": "083e75a2-4d8c-45e9-b7c9-110e7c88dd40",
+    "utilities": {
+      "opponent_mid": 1.8227881001563442,
+      "opponent_big_six": 5.508253137126888,
+      "zone_lower": 1.5456253068253019,
+      "zone_upper": 0.30946013579817483,
+      "zone_hospitality": -1.7599178521713847,
+      "stakes_top4": 4.255692138557291,
+      "stakes_relegation": 4.320539023647549,
+      "stakes_euro": 2.497540913457655,
+      "price": -0.23505742929359116,
+      "derby": 3.6609191252970126,
+      "tv_prime": 0.43066506442171953
+    }
+  },
+  {
+    "respondent_id": "933be0f7-cb00-4214-b3c9-eed95175119e",
+    "utilities": {
+      "opponent_mid": 2.221201971768293,
+      "opponent_big_six": 5.652607789815964,
+      "zone_lower": 1.6382443990266113,
+      "zone_upper": 0.22034671278535986,
+      "zone_hospitality": -1.745987130344142,
+      "stakes_top4": 4.096413323627632,
+      "stakes_relegation": 4.639186016811145,
+      "stakes_euro": 2.592530958462842,
+      "price": -0.22553311251256003,
+      "derby": 4.021335460042776,
+      "tv_prime": 0.2240908711791246
+    }
+  },
+  {
+    "respondent_id": "a66edad9-0df4-40b1-8c62-7982a2926373",
+    "utilities": {
+      "opponent_mid": 1.3851958521275836,
+      "opponent_big_six": 5.36749324397751,
+      "zone_lower": 1.8585625510431552,
+      "zone_upper": -0.01181914778937557,
+      "zone_hospitality": -1.756778951606283,
+      "stakes_top4": 4.190036685658593,
+      "stakes_relegation": 4.447981458302776,
+      "stakes_euro": 2.481598251172429,
+      "price": -0.26719708612996895,
+      "derby": 4.413884718593365,
+      "tv_prime": 0.053181200084957206
+    }
+  },
+  {
+    "respondent_id": "0d2cf92f-1cd1-4903-8e7d-42cca37f01d0",
+    "utilities": {
+      "opponent_mid": 1.885713239273837,
+      "opponent_big_six": 5.619020195539827,
+      "zone_lower": 1.8504957926886527,
+      "zone_upper": 0.03885009393179171,
+      "zone_hospitality": -1.7826054719629179,
+      "stakes_top4": 4.162894292927569,
+      "stakes_relegation": 4.650921338204438,
+      "stakes_euro": 2.669031485975754,
+      "price": -0.1471131881289739,
+      "derby": 3.9809502348383154,
+      "tv_prime": 0.30849111589190714
+    }
+  },
+  {
+    "respondent_id": "f5c811cf-c29d-4ea6-8cc7-4b8296120b2c",
+    "utilities": {
+      "opponent_mid": 1.305118893415971,
+      "opponent_big_six": 6.238078864051674,
+      "zone_lower": 1.6481203415276393,
+      "zone_upper": 0.10440200511524375,
+      "zone_hospitality": -1.7536966335025115,
+      "stakes_top4": 3.9579143308625775,
+      "stakes_relegation": 4.785418866527995,
+      "stakes_euro": 2.5723871044799527,
+      "price": -0.13807355933767618,
+      "derby": 3.7721992657277474,
+      "tv_prime": 0.26743442380047244
+    }
+  },
+  {
+    "respondent_id": "41bede94-f469-497e-a170-e54149bc1c49",
+    "utilities": {
+      "opponent_mid": 1.932079057259053,
+      "opponent_big_six": 5.711338231457326,
+      "zone_lower": 1.7331666866574982,
+      "zone_upper": 0.21952303131866593,
+      "zone_hospitality": -1.7778706311322237,
+      "stakes_top4": 4.133506848605594,
+      "stakes_relegation": 4.541719730863411,
+      "stakes_euro": 2.6599752512434574,
+      "price": -0.18397336479239296,
+      "derby": 3.8101740186272326,
+      "tv_prime": 0.19958514076876974
+    }
+  },
+  {
+    "respondent_id": "738206fb-7b67-4d05-8729-55831d3a48c8",
+    "utilities": {
+      "opponent_mid": 2.076825512595015,
+      "opponent_big_six": 5.337445852123055,
+      "zone_lower": 1.5306408967157215,
+      "zone_upper": 0.4428811981713652,
+      "zone_hospitality": -1.7614599439012784,
+      "stakes_top4": 4.12824025757229,
+      "stakes_relegation": 4.6402796819083445,
+      "stakes_euro": 2.7355573239058883,
+      "price": -0.18159740501636473,
+      "derby": 4.2304712834033635,
+      "tv_prime": 0.4291809875367684
+    }
+  },
+  {
+    "respondent_id": "e02e8770-e109-47b9-ba35-08402caf8fa4",
+    "utilities": {
+      "opponent_mid": 2.1744774830687836,
+      "opponent_big_six": 5.091420290964512,
+      "zone_lower": 2.165535202609892,
+      "zone_upper": -0.3593416139348706,
+      "zone_hospitality": -1.7457083988417577,
+      "stakes_top4": 4.082066044238829,
+      "stakes_relegation": 4.641345826308711,
+      "stakes_euro": 2.7641912830464026,
+      "price": -0.19217875505787085,
+      "derby": 4.438075162530933,
+      "tv_prime": 0.10895985783422776
+    }
+  },
+  {
+    "respondent_id": "d6b16455-9c08-4365-9187-54c6472261ab",
+    "utilities": {
+      "opponent_mid": 2.6956092587378935,
+      "opponent_big_six": 5.347894827734598,
+      "zone_lower": 2.4624118735703022,
+      "zone_upper": -0.730796237567577,
+      "zone_hospitality": -1.7308238120895911,
+      "stakes_top4": 4.043751188154854,
+      "stakes_relegation": 4.618030355251054,
+      "stakes_euro": 2.6662250938482854,
+      "price": -0.1217340656260322,
+      "derby": 4.2139339137626886,
+      "tv_prime": 0.20078998985230162
+    }
+  },
+  {
+    "respondent_id": "667e97a9-cc4f-452d-b881-2338068711e1",
+    "utilities": {
+      "opponent_mid": 1.960315965868295,
+      "opponent_big_six": 5.243170905171148,
+      "zone_lower": 2.353168116213264,
+      "zone_upper": -0.5476033909082114,
+      "zone_hospitality": -1.7962197732272012,
+      "stakes_top4": 4.110849871160495,
+      "stakes_relegation": 4.648898758582265,
+      "stakes_euro": 2.66357976467103,
+      "price": -0.15704713543181414,
+      "derby": 4.379526120879728,
+      "tv_prime": 0.1777655908825039
+    }
+  },
+  {
+    "respondent_id": "9abbb878-d6e5-45fc-9eb9-7a7856d521bd",
+    "utilities": {
+      "opponent_mid": 2.26153499990261,
+      "opponent_big_six": 5.329009413381338,
+      "zone_lower": 2.840937246647897,
+      "zone_upper": -1.0051780045860534,
+      "zone_hospitality": -1.8328880687918494,
+      "stakes_top4": 3.990073753208642,
+      "stakes_relegation": 4.5946525368723234,
+      "stakes_euro": 2.9427000885615175,
+      "price": -0.1481454084220757,
+      "derby": 3.8816747632563793,
+      "tv_prime": 0.3113207979160492
+    }
+  },
+  {
+    "respondent_id": "3f0a1730-9f48-4816-9416-12fbac20bb81",
+    "utilities": {
+      "opponent_mid": 2.5493253535708105,
+      "opponent_big_six": 5.045464331136224,
+      "zone_lower": 2.1656142733581345,
+      "zone_upper": -0.4209047984362062,
+      "zone_hospitality": -1.7524041964789203,
+      "stakes_top4": 4.143363324371019,
+      "stakes_relegation": 4.2316333540195155,
+      "stakes_euro": 2.970144030989478,
+      "price": -0.18054087330455657,
+      "derby": 4.406170046806002,
+      "tv_prime": 0.21654758300790647
+    }
+  },
+  {
+    "respondent_id": "dcaa44bf-92ed-49a6-a36d-1214b74acdcf",
+    "utilities": {
+      "opponent_mid": 2.5983727363425033,
+      "opponent_big_six": 4.9380270946546325,
+      "zone_lower": 2.005492153415187,
+      "zone_upper": -0.1418130640792103,
+      "zone_hospitality": -1.7874519074872524,
+      "stakes_top4": 4.073326502417591,
+      "stakes_relegation": 4.5824265078962965,
+      "stakes_euro": 2.6973044860818223,
+      "price": -0.2447127408037274,
+      "derby": 4.3711964788731095,
+      "tv_prime": 0.1245957718396216
+    }
+  },
+  {
+    "respondent_id": "b677299e-d70b-4f60-af3a-b83a0b6990a4",
+    "utilities": {
+      "opponent_mid": 2.661171854959699,
+      "opponent_big_six": 4.933645714491985,
+      "zone_lower": 1.7799374685785634,
+      "zone_upper": 0.2854897462256753,
+      "zone_hospitality": -1.8349729034370208,
+      "stakes_top4": 4.1380907962706255,
+      "stakes_relegation": 4.95297706010099,
+      "stakes_euro": 2.7086782217150356,
+      "price": -0.12661909381986025,
+      "derby": 4.138173654604543,
+      "tv_prime": 0.21747200865170696
+    }
+  },
+  {
+    "respondent_id": "daf799ab-ab89-4a0a-adec-f9448cbe806a",
+    "utilities": {
+      "opponent_mid": 2.348109979168223,
+      "opponent_big_six": 5.309207927189737,
+      "zone_lower": 1.8805778110059004,
+      "zone_upper": -0.001510811307286942,
+      "zone_hospitality": -1.7590260960161137,
+      "stakes_top4": 4.145466088351067,
+      "stakes_relegation": 4.648409720597603,
+      "stakes_euro": 2.667122226479267,
+      "price": -0.12823686731153391,
+      "derby": 4.307569634615132,
+      "tv_prime": 0.19661705664288034
+    }
+  },
+  {
+    "respondent_id": "1d3408c1-a1c5-4349-b43e-fe14e37751e0",
+    "utilities": {
+      "opponent_mid": 2.6449832374807403,
+      "opponent_big_six": 5.658042188193488,
+      "zone_lower": 1.5767861392890268,
+      "zone_upper": 0.3237045852986629,
+      "zone_hospitality": -1.8032707736055371,
+      "stakes_top4": 4.071162122955336,
+      "stakes_relegation": 4.662565892582108,
+      "stakes_euro": 2.675010657150366,
+      "price": -0.1547668805225247,
+      "derby": 3.5919182190163084,
+      "tv_prime": 0.2791639188872999
+    }
+  },
+  {
+    "respondent_id": "0e73eb6b-0036-46ba-8881-f710a7f2e622",
+    "utilities": {
+      "opponent_mid": 2.787600354878575,
+      "opponent_big_six": 5.343721102158351,
+      "zone_lower": 1.847298040969243,
+      "zone_upper": 0.2774232917762161,
+      "zone_hospitality": -1.841800508795059,
+      "stakes_top4": 4.135426127638202,
+      "stakes_relegation": 4.297084152308742,
+      "stakes_euro": 2.628554447487391,
+      "price": -0.16731705114367218,
+      "derby": 4.131005811273333,
+      "tv_prime": -0.017086379947049084
+    }
+  },
+  {
+    "respondent_id": "e6c3a98c-aa67-4b5a-ad73-d4d16c1501d5",
+    "utilities": {
+      "opponent_mid": 2.8660547006823918,
+      "opponent_big_six": 4.585115781051447,
+      "zone_lower": 0.9003115562626955,
+      "zone_upper": 1.1237410967824095,
+      "zone_hospitality": -1.776013761855573,
+      "stakes_top4": 4.100406711700193,
+      "stakes_relegation": 4.647024311896934,
+      "stakes_euro": 2.776940823383883,
+      "price": -0.2283494938574,
+      "derby": 4.281659247507883,
+      "tv_prime": 0.2921082905408553
+    }
+  },
+  {
+    "respondent_id": "89b9399b-3692-423d-ae85-827a2005646d",
+    "utilities": {
+      "opponent_mid": 2.7005433260459015,
+      "opponent_big_six": 4.8758435197859775,
+      "zone_lower": 1.6877152733360905,
+      "zone_upper": 0.1661637708518606,
+      "zone_hospitality": -1.7494205724372507,
+      "stakes_top4": 4.0700528933678415,
+      "stakes_relegation": 4.634394176356101,
+      "stakes_euro": 3.036866919995946,
+      "price": -0.14030764157005973,
+      "derby": 4.277843431631597,
+      "tv_prime": 0.11049336506715235
+    }
+  },
+  {
+    "respondent_id": "10fcefe9-7a40-43b4-8862-3f9ee8723962",
+    "utilities": {
+      "opponent_mid": 2.839351475061406,
+      "opponent_big_six": 5.279905540232386,
+      "zone_lower": 2.007652918710662,
+      "zone_upper": -0.1422305898250971,
+      "zone_hospitality": -1.7904579901283904,
+      "stakes_top4": 4.149045118470787,
+      "stakes_relegation": 4.25200956009233,
+      "stakes_euro": 2.9379997308680754,
+      "price": -0.09022947458039689,
+      "derby": 3.5129672773900964,
+      "tv_prime": 0.216685845473912
+    }
+  },
+  {
+    "respondent_id": "8deb81ca-d537-4691-844e-a8073c7187a0",
+    "utilities": {
+      "opponent_mid": 2.77407034946336,
+      "opponent_big_six": 5.521742624334076,
+      "zone_lower": 2.3207888411010584,
+      "zone_upper": -0.25942493615033013,
+      "zone_hospitality": -1.8557849347017172,
+      "stakes_top4": 4.1933151805850395,
+      "stakes_relegation": 4.289437405247494,
+      "stakes_euro": 2.792249877058936,
+      "price": -0.09719461838317003,
+      "derby": 3.6080533473439713,
+      "tv_prime": 0.21889543413795037
+    }
+  },
+  {
+    "respondent_id": "216674b8-4579-48c9-a609-d435c0584af1",
+    "utilities": {
+      "opponent_mid": 2.6276673435800717,
+      "opponent_big_six": 5.328590685341288,
+      "zone_lower": 1.126574225110459,
+      "zone_upper": 0.9052588148330221,
+      "zone_hospitality": -1.8246476924705217,
+      "stakes_top4": 4.032862407261177,
+      "stakes_relegation": 4.412732479258668,
+      "stakes_euro": 3.005641599437381,
+      "price": -0.21841368826140195,
+      "derby": 3.931103510964547,
+      "tv_prime": 0.3460255780016963
+    }
+  },
+  {
+    "respondent_id": "3e4692fa-896a-47ce-878b-cd6fca5043ec",
+    "utilities": {
+      "opponent_mid": 2.9491792425646604,
+      "opponent_big_six": 4.677376290715581,
+      "zone_lower": 2.8850314761515796,
+      "zone_upper": -1.1741678560665247,
+      "zone_hospitality": -1.7639537351793193,
+      "stakes_top4": 4.179419639556929,
+      "stakes_relegation": 4.6037665528167615,
+      "stakes_euro": 2.564783765545066,
+      "price": -0.16228340523090087,
+      "derby": 3.3076140960017795,
+      "tv_prime": 0.21190586289444796
+    }
+  },
+  {
+    "respondent_id": "9c6051f4-8aa9-4435-81d4-6ebe9ce92395",
+    "utilities": {
+      "opponent_mid": 2.300867901756723,
+      "opponent_big_six": 5.070749027611832,
+      "zone_lower": 1.9941039254207091,
+      "zone_upper": -0.16601619954976732,
+      "zone_hospitality": -1.7933174927182562,
+      "stakes_top4": 4.147019380656014,
+      "stakes_relegation": 4.682898755468031,
+      "stakes_euro": 2.6610625705909583,
+      "price": -0.16210430823802457,
+      "derby": 4.452867099110748,
+      "tv_prime": 0.19549744579790587
+    }
+  },
+  {
+    "respondent_id": "86c93350-2602-4e31-8b8b-39adef3ac5f5",
+    "utilities": {
+      "opponent_mid": 2.2440435527933578,
+      "opponent_big_six": 5.387425465812035,
+      "zone_lower": 1.6070603794055929,
+      "zone_upper": 0.3399518526456549,
+      "zone_hospitality": -1.7488083513054038,
+      "stakes_top4": 4.115026891078426,
+      "stakes_relegation": 4.323943954111962,
+      "stakes_euro": 2.932174984695914,
+      "price": -0.16855525547999411,
+      "derby": 4.218981715503461,
+      "tv_prime": 0.37188343683900194
+    }
+  },
+  {
+    "respondent_id": "d270bbfc-7d41-49f6-9d7b-98ec8823b44d",
+    "utilities": {
+      "opponent_mid": 3.021682465060778,
+      "opponent_big_six": 4.146805588917565,
+      "zone_lower": 1.096617734918541,
+      "zone_upper": 0.9641151998626516,
+      "zone_hospitality": -1.7756263103789598,
+      "stakes_top4": 4.138847043174048,
+      "stakes_relegation": 4.517972133096537,
+      "stakes_euro": 2.9795964068061793,
+      "price": -0.24451484298412163,
+      "derby": 4.410351645387746,
+      "tv_prime": 0.1454912655442493
+    }
+  },
+  {
+    "respondent_id": "e85edad2-9482-4acb-a256-50c0c2226f26",
+    "utilities": {
+      "opponent_mid": 2.412597493701393,
+      "opponent_big_six": 5.191619260955536,
+      "zone_lower": 1.4277692550256447,
+      "zone_upper": 0.5403981315794969,
+      "zone_hospitality": -1.7904725324469457,
+      "stakes_top4": 4.155740460090458,
+      "stakes_relegation": 4.510713695472497,
+      "stakes_euro": 2.752406861951065,
+      "price": -0.20918958875817115,
+      "derby": 4.146353220427195,
+      "tv_prime": 0.2052164279202252
+    }
+  },
+  {
+    "respondent_id": "523da989-dcc6-4090-9915-3591670d0ed0",
+    "utilities": {
+      "opponent_mid": 2.9526041903632754,
+      "opponent_big_six": 4.944089119891165,
+      "zone_lower": 1.637195876614436,
+      "zone_upper": 0.22548536192605148,
+      "zone_hospitality": -1.739428537520435,
+      "stakes_top4": 4.141112243711032,
+      "stakes_relegation": 4.488724349556419,
+      "stakes_euro": 2.7551056866055537,
+      "price": -0.12521092393123756,
+      "derby": 4.560862660703129,
+      "tv_prime": 0.14367262727675206
+    }
+  },
+  {
+    "respondent_id": "c77ce2ec-7e23-42d1-b4af-7613fd83f53b",
+    "utilities": {
+      "opponent_mid": 2.426252571107026,
+      "opponent_big_six": 5.394634490402457,
+      "zone_lower": 1.799918727064296,
+      "zone_upper": 0.3335941775577397,
+      "zone_hospitality": -1.948860898937506,
+      "stakes_top4": 4.130160494893338,
+      "stakes_relegation": 4.713762734341008,
+      "stakes_euro": 2.5678956213886495,
+      "price": -0.17118890890527963,
+      "derby": 4.067549312026092,
+      "tv_prime": 0.1598353716577123
+    }
+  },
+  {
+    "respondent_id": "0e236c87-f0cf-420a-8b86-45593334be53",
+    "utilities": {
+      "opponent_mid": 2.283262708063761,
+      "opponent_big_six": 5.622216157124213,
+      "zone_lower": 2.357269625442336,
+      "zone_upper": -0.6134819897806613,
+      "zone_hospitality": -1.800875606565597,
+      "stakes_top4": 4.1386264955032575,
+      "stakes_relegation": 4.47239909138619,
+      "stakes_euro": 2.644134848857932,
+      "price": -0.11715019370331177,
+      "derby": 4.111347847393279,
+      "tv_prime": 0.17167099829475368
+    }
+  }
+]
