@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPL Pricing Intelligence — Deep Technical Operational Playbook</title>
+    <style>
+        :root {
+            --epl-purple: #3d195b;
+            --epl-green: #00ff85;
+            --epl-blue: #04f5ff;
+            --bg-dark: #020617;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --formula-bg: #0f172a;
+        }
+        body { font-family: 'Inter', system-ui; background: var(--bg-dark); color: var(--text-main); margin: 0; display: flex; }
+        nav { width: 300px; height: 100vh; background: #010409; position: fixed; padding: 2rem; border-right: 1px solid #334155; overflow-y: auto; }
+        main { margin-left: 350px; padding: 4rem; max-width: 1100px; }
+        .hero { border-bottom: 1px solid #334155; padding-bottom: 2rem; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; background: linear-gradient(90deg, #fff, var(--epl-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h2 { color: var(--epl-green); border-left: 5px solid var(--epl-green); padding-left: 1rem; margin-top: 5rem; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { color: var(--epl-blue); margin-top: 3rem; font-size: 1.5rem; }
+        .formula-block { background: var(--formula-bg); border-left: 4px solid var(--epl-blue); padding: 1.5rem; border-radius: 8px; font-family: 'Cambria', serif; font-size: 1.3rem; margin: 1.5rem 0; color: #fff; position: relative; }
+        .formula-label { position: absolute; top: -10px; right: 10px; font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; background: var(--bg-dark); padding: 0 5px; }
+        .intuition { background: rgba(0, 255, 133, 0.05); border: 1px solid rgba(0, 255, 133, 0.2); padding: 1.5rem; border-radius: 12px; margin: 1rem 0; }
+        .intuition b { color: var(--epl-green); }
+        .code-snippet { background: #000; padding: 1rem; border-radius: 8px; font-family: 'Fira Code', monospace; font-size: 0.9rem; color: #d1d5db; border: 1px solid #334155; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        th, td { padding: 1rem; border-bottom: 1px solid #334155; text-align: left; }
+        th { color: var(--epl-green); font-size: 0.8rem; text-transform: uppercase; }
+        .script-meta { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        .tag { background: var(--epl-purple); color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2 style="border:none; padding:0; font-size:1rem;">Operational Architecture</h2>
+        <a href="#stakes" style="color:var(--text-dim); text-decoration:none; display:block; margin:1rem 0;">1. Stakes Engine (Math)</a>
+        <a href="#forecast" style="color:var(--text-dim); text-decoration:none; display:block; margin:1rem 0;">2. Forecasting Engine (Math)</a>
+        <a href="#optimizer" style="color:var(--text-dim); text-decoration:none; display:block; margin:1rem 0;">3. LP Optimizer (Math)</a>
+        <a href="#conjoint" style="color:var(--text-dim); text-decoration:none; display:block; margin:1rem 0;">4. Conjoint Engine (Math)</a>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Deep Technical Playbook</h1>
+            <p>Mathematical foundations and algorithmic intuition for the EPL (English Premier League) Pricing Intelligence System.</p>
+        </div>
+
+        <!-- SECTION 0: DOMAIN PRIMER -->
+        <section id="primer">
+            <h2>0. DOMAIN PRIMER: FOOTBALL CONCEPTS</h2>
+            <p>This system operates within the rules of the English Premier League. For the purpose of technical validation, the following sports concepts are defined as follows:</p>
+            <ul>
+                <li><b>The Points System</b>: In every match, a team earns <b>3 points</b> for a win, <b>1 point</b> for a draw (tie), and <b>0 points</b> for a loss. These points determine the team's rank in the League Table.</li>
+                <li><b>Matchweek (MW)</b>: The season is divided into 38 rounds of matches. Each round is one Matchweek. The system uses the Matchweek index to calculate "Season Urgency."</li>
+                <li><b>Home vs. Away</b>: The <b>Home</b> team hosts the match at their stadium. The <b>Away</b> team travels to the opponent's venue. This distinction is critical as Home teams generally have higher demand.</li>
+                <li><b>Goal Difference (GD)</b>: If teams have the same number of points, the one with the higher Goal Difference (Total Goals Scored minus Total Goals Conceded) is ranked higher.</li>
+                <li><b>The League Table</b>: A live ranking of all 20 clubs. The top 4 clubs qualify for the "Champions League" (High Revenue), while the bottom 3 clubs are "Relegated" (moved to a lower division), which is a financial disaster.</li>
+                <li><b>Derby</b>: A match between two clubs located in the same geographic city (e.g., Arsenal vs. Tottenham). These matches have naturally higher emotional demand.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 1: STAKES ENGINE -->
+        <section id="stakes">
+            <h2>1. STAKES ENGINE (Emotional Intelligence)</h2>
+            <div class="script-meta">
+                <span class="tag">LOCATION: EPL/stakes_engine.py</span>
+                <span class="tag">CADENCE: 2-HOURLY</span>
+            </div>
+            <p>The Stakes Engine is a <b>Contextual Normalization Layer</b>. It converts ordinal league table positions and point gaps into a continuous probability-like score [0,1] that scales price elasticity.</p>
+
+            <h3>1.1 The Urgency Decay Function</h3>
+            <div class="formula-block">
+                <span class="formula-label">Equation 1.1</span>
+                U(t) = 0.1 + (MW<sub>t</sub> - 1) &times; (0.9 / 37)
+            </div>
+            <div class="intuition">
+                <b>Intuition:</b> Stakes are not static. A "Title Decider" in <b>Matchweek (MW)</b> 10 is less important than one in Matchweek 38 because the "Points Available" (Sunk Cost) has decreased. This linear ramp ensures that importance grows as the "Finality" of the season increases.
+            </div>
+
+            <h3>1.2 The Narrative Closeness Score</h3>
+            <p>For Title and Relegation races, we use a <b>Symmetric Point-Gap Normalization</b>:</p>
+            <div class="formula-block">
+                <span class="formula-label">Equation 1.2</span>
+                S<sub>closeness</sub> = 1 - [ (Gap<sub>Home</sub> + Gap<sub>Away</sub>) / (2 &times; MaxPoints<sub>Rem</sub> + 1) ]
+            </div>
+            <div class="intuition">
+                <b>Intuition:</b> If both teams are 1 point away from the leader in MW38, the Gap is small, making S<sub>closeness</sub> near 1.0. If they are 15 points away with 2 games left, the score drops to near 0.
+            </div>
+
+            <h3>1.3 Maximum Narrative Selection</h3>
+            <div class="code-snippet">
+raw_score = max(title_score, top4_score, relg_score, euro_score)
+final_score = clip(raw_score * urgency, 0, 1)
+            </div>
+            <p><b>Logic:</b> We take the <code>max()</code> because a match's commercial value is defined by its <b>primary storyline</b>. Adding them would create "Super-Stakes" artifacts (e.g., scores > 1.0) which break the downstream Forecasting regression.</p>
+        </section>
+
+        <!-- SECTION 2: FORECASTING ENGINE -->
+        <section id="forecast">
+            <h2>2. FORECASTING ENGINE (Demand Prediction)</h2>
+            <div class="script-meta">
+                <span class="tag">LOCATION: EPL/forecasting_engine_epl.py</span>
+                <span class="tag">CADENCE: WEEKLY (RE-TRAIN)</span>
+            </div>
+            <p>A <b>Stacked Regressor</b> that decomposes club momentum and fixture-specific shocks using **LightGBM (Light Gradient Boosting Machine)**.</p>
+
+            <h3>2.1 STL Decomposition</h3>
+            <div class="formula-block">
+                <span class="formula-label">Equation 2.1</span>
+                Y<sub>t</sub> = T<sub>t</sub> + S<sub>t</sub> + R<sub>t</sub>
+            </div>
+            <div class="intuition">
+                <b>Intuition:</b> We use **STL (Seasonal-Trend decomposition using Loess)**. 
+                <br><b>T<sub>t</sub> (Trend)</b>: Captures the club's "Season Form" (e.g., Unbeaten run).
+                <br><b>S<sub>t</sub> (Seasonal)</b>: Captures the "Fixture Periodicity" (e.g., High demand in Festive/December fixtures).
+                <br><b>R<sub>t</sub> (Residual)</b>: What the LightGBM model attempts to learn (External shocks like injuries or weather).
+            </div>
+
+            <h3>2.2 The Velocity Integration</h3>
+            <p>Velocity (V) is the derivative of the Booking Curve. The model ingests two live signals:</p>
+            <div class="formula-block">
+                V<sub>T-x</sub> = (Attendance<sub>T-x</sub> - Attendance<sub>T-(x+1)</sub>) / Capacity
+            </div>
+            <p><b>Logic:</b> If V<sub>T-14</sub> deviates from the **Archetype Medoid** (calculated via **DTW (Dynamic Time Warping)** in the engine), the model shifts the forecast toward a "Low Demand" cluster, triggering an automatic price reduction in the Optimizer.</p>
+        </section>
+
+        <!-- SECTION 3: LP OPTIMIZER -->
+        <section id="optimizer">
+            <h2>3. LP OPTIMIZER (Revenue Maximization)</h2>
+            <div class="script-meta">
+                <span class="tag">LOCATION: EPL/lp_optimizer_epl.py</span>
+                <span class="tag">CADENCE: T-45 DAYS</span>
+            </div>
+            <p>Translates probability into price using a <b>MILP (Mixed-Integer Linear Program)</b> solver.</p>
+
+            <h3>3.1 The Linearized Demand Curve</h3>
+            <div class="formula-block">
+                <span class="formula-label">Equation 3.1</span>
+                Q(P) = Q<sub>base</sub> &times; [ 1 + &epsilon; &times; (P - P<sub>median</sub>) / P<sub>median</sub> ]
+            </div>
+            <div class="intuition">
+                <b>Intuition:</b> Since demand is not static, we assume a linear slope around the **WTP (Willingness-to-Pay)** median price derived from conjoint analysis. <b>&epsilon; (Elasticity)</b> determines the "steepness." For **Hospitality (&epsilon; = -0.10)**, the slope is flat—raising prices has almost no effect on quantity. For **General Sale (&epsilon; = -1.10)**, the slope is steep—a 10% price hike kills demand by 11%.
+            </div>
+
+            <h3>3.2 The Revenue Objective</h3>
+            <div class="formula-block">
+                Maximize Z = &Sigma;<sub>z</sub> (P<sub>z</sub> &times; Q<sub>z</sub>)
+            </div>
+            <p>Subject to:</p>
+            <ul>
+                <li><b>P<sub>hosp</sub> &ge; P<sub>lower</sub> &ge; P<sub>upper</sub> &ge; P<sub>gen</sub></b> (Monotonicity Constraint)</li>
+                <li><b>&Sigma; Q<sub>z</sub> &ge; 0.65 &times; &Sigma; Cap<sub>z</sub></b> (Atmosphere Protection/Attendance Floor)</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4: CONJOINT ENGINE -->
+        <section id="conjoint">
+            <h2>4. CONJOINT ENGINE (WTP Discovery)</h2>
+            <div class="script-meta">
+                <span class="tag">LOCATION: EPL/conjoint_engine_epl.py</span>
+                <span class="tag">CADENCE: SEASONALLY</span>
+            </div>
+            <p>The "Source of Truth" for Willingness-to-Pay (WTP). It uses <b>HB-MNL (Hierarchical Bayesian Multinomial Logit)</b>.</p>
+
+            <h3>4.1 The MNL Probability Function</h3>
+            <div class="formula-block">
+                <span class="formula-label">Equation 4.1</span>
+                P(i) = exp(V<sub>i</sub>) / [ exp(V<sub>i</sub>) + exp(V<sub>j</sub>) ]
+            </div>
+            <div class="intuition">
+                <b>Intuition:</b> A fan chooses Option A over Option B if its Utility (V) is higher. 
+                <br><b>V = &beta;<sub>0</sub> + &beta;<sub>price</sub>&times;Price + &beta;<sub>opp</sub>&times;Opponent + ...</b>
+                <br>The **&beta;<sub>price</sub>** is the "Coefficient of Pain." The larger it is, the more sensitive the fan is to cost.
+            </div>
+
+            <h3>4.2 Hierarchical Bayesian (HB) Sampling</h3>
+            <p>Instead of one &beta; for the whole league, we estimate a unique &beta;<sub>i</sub> for every respondent using the **NUTS (No-U-Turn Sampler)**:</p>
+            <div class="formula-block">
+                &beta;<sub>i</sub> ~ Normal(&mu;, &Sigma;)
+            </div>
+            <p><b>Logic:</b> This allows us to capture **Heterogeneity**. We learn that "Tourist" fans have a low &beta;<sub>price</sub> (price insensitive) while "Local" fans have a high &beta;<sub>price</sub> (price sensitive). The Optimizer uses the **P50 (50th Percentile / Median)** of this distribution to set the standard price ceiling.</p>
+        </section>
+    </main>
+
+</body>
+</html>

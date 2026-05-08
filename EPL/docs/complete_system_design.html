@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Pricing Intelligence: Complete System Design & DS Handbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --epl-purple: #3D195B;
+            --epl-green: #00FF85;
+            --epl-pink: #FF2882;
+            --epl-blue: #04F5FF;
+            --bg-body: #FDFDFD;
+            --bg-sidebar: #1C1C1C;
+            --text-main: #2D3748;
+            --text-heading: #1A202C;
+            --border-color: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            line-height: 1.7;
+        }
+
+        /* Sidebar Navigation */
+        #sidebar {
+            width: 320px;
+            height: 100vh;
+            background-color: var(--bg-sidebar);
+            color: white;
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+            border-right: 5px solid var(--epl-green);
+        }
+
+        #sidebar h1 {
+            font-size: 1.2rem;
+            color: var(--epl-green);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 1rem;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sidebar li {
+            margin-bottom: 0.8rem;
+        }
+
+        #sidebar a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: 0.2s;
+            display: block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+        }
+
+        #sidebar a:hover {
+            color: var(--epl-green);
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Main Content */
+        #content {
+            flex: 1;
+            padding: 5rem 6rem;
+            max-width: 1000px;
+        }
+
+        .page-header {
+            border-bottom: 2px solid var(--epl-purple);
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--epl-purple);
+            margin: 0;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-top: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--epl-purple);
+            border-left: 6px solid var(--epl-purple);
+            padding-left: 1.5rem;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #2D3748;
+            margin-top: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            color: var(--epl-purple);
+            margin-top: 2rem;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .math {
+            background: #F7FAFC;
+            border: 1px solid #E2E8F0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            font-size: 1rem;
+            color: #1A202C;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .math::before {
+            content: "ALGORITHMIC CORE";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--epl-purple);
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: var(--epl-purple);
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F9FAFB;
+        }
+
+        .callout {
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            border: 1px solid transparent;
+        }
+
+        .callout-logic {
+            background-color: #F0FDF4;
+            border-left: 8px solid var(--epl-green);
+            border-color: #BBF7D0;
+        }
+
+        .callout-data {
+            background-color: #EFF6FF;
+            border-left: 8px solid var(--epl-blue);
+            border-color: #BFDBFE;
+        }
+
+        .callout-warning {
+            background-color: #FFF7ED;
+            border-left: 8px solid var(--epl-pink);
+            border-color: #FED7AA;
+        }
+
+        .code-block {
+            background: #1A202C;
+            color: #E2E8F0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        /* Responsive Flow */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        @media print {
+            #sidebar { display: none; }
+            #content { padding: 0; max-width: 100%; }
+            h2 { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <h1>DS HANDBOOK</h1>
+        <ul>
+            <li><a href="#summary">1. Executive Summary</a></li>
+            <li><a href="#primer">2. Domain Context (EPL)</a></li>
+            <li><a href="#features">3. Feature Engineering Registry</a></li>
+            <li><a href="#data">4. Data Schema & Lineage</a></li>
+            <li><a href="#stakes">5. Stakes Engine (Calculus)</a></li>
+            <li><a href="#conjoint">6. Conjoint Engine (HB-MNL)</a></li>
+            <li><a href="#inventory">7. Inventory Segmentation</a></li>
+            <li><a href="#forecasting">8. Forecasting Ensemble</a></li>
+            <li><a href="#optimizer">9. LP Optimizer (MILP)</a></li>
+            <li><a href="#live">10. Live Signal Pipeline</a></li>
+            <li><a href="#api">11. Integration & API</a></li>
+            <li><a href="#governance">12. Governance & Metrics</a></li>
+            <li><a href="#limitations">13. Roadmap & Gaps</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <header class="page-header">
+            <h1>EPL Pricing Intelligence</h1>
+            <p>Complete System Design & Data Science Implementation Handbook | Version 1.0.0</p>
+        </header>
+
+        <section id="summary">
+            <h2>1. EXECUTIVE SUMMARY</h2>
+            <p>The EPL Pricing Intelligence System is a full-stack data science solution designed to optimize ticket revenue for English Premier League clubs while maintaining stadium atmosphere and regulatory compliance. It moves beyond static tiering into <b>High-Fidelity Dynamic Pricing</b>.</p>
+            <p>This handbook documents the three core intelligence layers:</p>
+            <ul>
+                <li><b>Emotional Intelligence</b>: The Stakes Engine quantify match importance.</li>
+                <li><b>Empirical Intelligence</b>: The Conjoint Engine derive true Willingness-To-Pay (WTP).</li>
+                <li><b>Optimization Intelligence</b>: The LP Optimizer solves for maximum yield under atmospheric constraints.</li>
+            </ul>
+        </section>
+
+        <section id="primer">
+            <h2>2. DOMAIN CONTEXT (THE EPL PRIMER)</h2>
+            <p>For technical implementation purposes, the environment is governed by these rules:</p>
+            <ul>
+                <li><b>Season Structure</b>: 38 Matchweeks (MW). 20 Clubs. 380 total matches.</li>
+                <li><b>The 3-1-0 Rule</b>: Win = 3pts, Draw = 1pt, Loss = 0pts. This drives the <code>match_stakes_score</code>.</li>
+                <li><b>The Away End Rule</b>: Clubs MUST allocate 10% of capacity or 3,000 seats (whichever is lower) to visiting fans, capped at <b>£30</b>. This is a non-dynamic constant in the solver.</li>
+                <li><b>Club Tiers</b>: Categorized into <b>Big Six</b> (Global brands), <b>Established Mid</b> (Stable demand), and <b>Smaller Clubs</b> (High volatility).</li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h2>3. FEATURE ENGINEERING REGISTRY</h2>
+            <p>This section lists every feature used in the <code>EPLForecastingEngine</code>. Every feature must be provided at inference time.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Type</th>
+                        <th>Definition / Source</th>
+                        <th>DS Transformation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>match_stakes_score</code></td>
+                        <td>Float (0-1)</td>
+                        <td>Dominant narrative intensity from Stakes Engine</td>
+                        <td>Direct injection</td>
+                    </tr>
+                    <tr>
+                        <td><code>star_power_index</code></td>
+                        <td>Int (0-10)</td>
+                        <td>Sum of club star ratings (Squad quality)</td>
+                        <td>Min-Max Scaling</td>
+                    </tr>
+                    <tr>
+                        <td><code>velocity_T14</code></td>
+                        <td>Float</td>
+                        <td>Sales at T-14 days / Historical Median</td>
+                        <td>Ratio Encoding</td>
+                    </tr>
+                    <tr>
+                        <td><code>stl_trend</code></td>
+                        <td>Float</td>
+                        <td>Long-term demand trend per club</td>
+                        <td>STL Decomposition Residual</td>
+                    </tr>
+                    <tr>
+                        <td><code>is_derby</code></td>
+                        <td>Boolean</td>
+                        <td>True if opponent is a geographic rival</td>
+                        <td>Binary One-Hot</td>
+                    </tr>
+                    <tr>
+                        <td><code>weather_severity</code></td>
+                        <td>Int (0-4)</td>
+                        <td>UK MetOffice scale (0=Clear, 4=Severe Storm)</td>
+                        <td>Ordinal Encoding</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="data">
+            <h2>4. DATA SCHEMA & LINEAGE</h2>
+            <p>The system relies on three primary data artifacts generated or consumed during the operational lifecycle.</p>
+            
+            <div class="callout callout-data">
+                <h4>Artifact 1: epl_match_data.json</h4>
+                <p>The master registry of all 760 historical matches used for Layer 2 training. Contains <code>booking_curve</code> (61-day sales vectors) and <code>inventory</code> snapshots.</p>
+            </div>
+
+            <div class="callout callout-data">
+                <h4>Artifact 2: epl_wtp_{tier}.json</h4>
+                <p>Output of the Conjoint Engine. Stores <code>zone_price_bounds</code> (P10/P50/P90) which act as hard constraints for the LP Optimizer.</p>
+            </div>
+        </section>
+
+        <section id="stakes">
+            <h2>5. STAKES ENGINE (EMOTIONAL CALCULUS)</h2>
+            <p>The Stakes Engine (<code>stakes_engine.py</code>) converts the current league table into a commercial multiplier.</p>
+
+            <h3>5.1 The Urgency Multiplier</h3>
+            <p>Matches in May are commercially more sensitive than matches in August. We apply a linear urgency decay:</p>
+            <div class="math">
+                U(MW) = 0.1 + (MW - 1) * (0.9 / 37)
+            </div>
+
+            <h3>5.2 Title Race Intensity</h3>
+            <p>For two clubs in the top positions:</p>
+            <div class="math">
+                Score_{title} = (1 - \frac{Gap_{Home} + Gap_{Away}}{2 \times Points_{Remaining}}) \times U(MW)
+            </div>
+            
+            <div class="callout callout-logic">
+                <h4>Selection Logic: The Dominant Narrative</h4>
+                <p>A match can be both a "Top Four Battle" and a "Derby." The system calculates all possible scores (Title, Top 4, Relegation, Euro) and uses <code>max()</code> to select the highest signal as the <code>match_stakes_score</code>.</p>
+            </div>
+        </section>
+
+        <section id="conjoint">
+            <h2>6. CONJOINT ENGINE (HB-MNL MODELING)</h2>
+            <p>Located in <code>conjoint_engine_epl.py</code>, this engine solves the "Willingness-to-Pay" problem using Bayesian inference.</p>
+
+            <h3>6.1 Hierarchical Bayesian Multinomial Logit</h3>
+            <p>We assume every fan $i$ has a utility $U$ for a ticket option $j$:</p>
+            <div class="math">
+                U_{ij} = \beta_{i, price} \times Price_j + \sum \beta_{i, k} \times Attribute_{jk} + \epsilon_{ij}
+            </div>
+
+            <h3>6.2 Price Sensitivity Prior</h3>
+            <p>Because price is a disutility, we force the price coefficient to be negative using a Log-Normal or Exponential prior in PyMC:</p>
+            <div class="code-block">
+mu_price = pm.Normal("mu_price", -3.0, 1.0)
+beta_price = -pm.math.exp(mu_price + price_offset * sigma)
+            </div>
+
+            <h3>6.3 Output: WTP Boundaries</h3>
+            <p>The engine computes the <b>Equivalent Price Premium</b> for each zone. For example, the premium for "Hospitality" relative to the base "Away End" (£30) is:</p>
+            <div class="math">
+                WTP_{premium} = \frac{U_{hospitality} - U_{away}}{|\beta_{price}|}
+            </div>
+        </section>
+
+        <section id="inventory">
+            <h2>7. INVENTORY SEGMENTATION</h2>
+            <p>The <code>InventoryManager</code> segments the total stadium capacity (e.g., 60,000) into dynamic and static buckets based on club-specific registries.</p>
+
+            <table>
+                <tr><th>Zone</th><th>% of Dynamic Capacity</th><th>Description</th></tr>
+                <tr><td><b>Dynamic Lower</b></td><td>55%</td><td>Near pitch, high baseline demand.</td></tr>
+                <tr><td><b>Dynamic Upper</b></td><td>35%</td><td>Mid-view, balanced elasticity.</td></tr>
+                <tr><td><b>Dynamic General</b></td><td>10%</td><td>High-tier, highly elastic "Value" seats.</td></tr>
+                <tr><td><b>Hospitality</b></td><td>Variable</td><td>Premium lounge seats (Inelastic).</td></tr>
+            </table>
+        </section>
+
+        <section id="forecasting">
+            <h2>8. FORECASTING ENSEMBLE (LAYERED)</h2>
+            <p>The forecasting engine (<code>forecasting_engine_epl.py</code>) uses a 4-layer stack to predict the <code>overall_fill_rate</code>.</p>
+
+            <h3>8.1 Layer 1: Time-Series Decomposition</h3>
+            <ul>
+                <li><b>STL</b>: Period=19 (home games). Identifies if a club is currently "Trending" (e.g., Aston Villa's rise).</li>
+                <li><b>DTW Clustering</b>: Assigns the match to one of 5 <b>Booking Curve Archetypes</b> (e.g., "Late Surge" for relegation battles).</li>
+            </ul>
+
+            <h3>8.2 Layer 2: LightGBM Tabular Learner</h3>
+            <p>A gradient boosting model trained on 25+ features. It is the final arbitrator of demand.</p>
+            
+            <div class="callout callout-warning">
+                <h4>Training Constraint: The Sellout Ceiling</h4>
+                <p>Because most Big Six matches sell out (Fill Rate = 1.0), the model is trained on <b>Excess Demand Ratio</b> (where 1.15 means demand is 15% above capacity) to allow the Optimizer to push prices even when attendance is maxed out.</p>
+            </div>
+        </section>
+
+        <section id="optimizer">
+            <h2>9. LP OPTIMIZER (REVENUE YIELD)</h2>
+            <p>The <code>EPLLPOptimizer</code> uses Mixed-Integer Linear Programming (MILP) to find the optimal price vector $P^*$.</p>
+
+            <h3>9.1 Objective Function</h3>
+            <div class="math">
+                Maximize \sum_{z \in Zones} \sum_{k \in Prices} x_{zk} \times Price_{zk} \times Quantity_{zk}
+            </div>
+
+            <h3>9.2 The Attendance Floor</h3>
+            <p>For non-Big Six clubs, atmosphere is protected via a 65% attendance floor constraint:</p>
+            <div class="math">
+                \sum_{z} Quantity_{z} \ge 0.65 \times Capacity_{total}
+            </div>
+
+            <h3>9.3 Monotonicity Constraint</h3>
+            <p>To prevent "Price Inversion" (where a worse seat is more expensive than a better one):</p>
+            <pre>
+prob += p_hospitality >= p_lower_tier
+prob += p_lower_tier >= p_upper_tier
+prob += p_upper_tier >= p_general_sale
+            </pre>
+        </section>
+
+        <section id="live">
+            <h2>10. LIVE SIGNAL PIPELINE</h2>
+            <p>This is the most critical operational component. It corrects the forecast in real-time.</p>
+
+            <h4>Velocity Deviation ($\delta$)</h4>
+            <p>If tickets sold at T-14 exceed the medoid of the assigned Archetype:</p>
+            <div class="math">
+                \delta = \frac{Sold_{Actual}}{Sold_{Medoid}}
+            </div>
+            <p>If $\delta > 1.2$, a <b>Price Surge</b> is triggered automatically.</p>
+        </section>
+
+        <section id="api">
+            <h2>11. INTEGRATION & API LAYER</h2>
+            <p>The system is exposed via FastAPI on <b>Port 8001</b>.</p>
+            
+            <div class="code-block">
+POST /api/epl/optimize/{match_id}
+{
+  "live_velocity": 1.15,
+  "weather_score": 2,
+  "star_power": 8
+}
+            </div>
+        </section>
+
+        <section id="governance">
+            <h2>12. GOVERNANCE & PERFORMANCE</h2>
+            <p>Model performance is tracked via <b>MAPE (Mean Absolute Percentage Error)</b>. In production, an alert is triggered if MAPE exceeds 15% over a 5-match rolling window.</p>
+        </section>
+
+        <section id="limitations">
+            <h2>13. ROADMAP & KNOWN GAPS</h2>
+            <ul>
+                <li><b>Gap: Secondary Market API</b>. Currently using synthetic resale values. Integration with StubHub/Viagogo API is required for "Resale Parity" pricing.</li>
+                <li><b>Gap: Dynamic Hospitality</b>. Only 20% of hospitality is currently dynamic; the rest is fixed contract.</li>
+                <li><b>Future: Player Transfer Impact</b>. Integration of "Transfer Rumor Sentiment" as a leading demand indicator.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Simple scroll spy for sidebar
+        window.addEventListener('scroll', () => {
+            let fromTop = window.scrollY + 100;
+            document.querySelectorAll('#sidebar a').forEach(link => {
+                let section = document.querySelector(link.hash);
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
