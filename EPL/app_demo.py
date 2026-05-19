@@ -68,6 +68,21 @@ def simulate_season():
                 schedule.append((club_ids[i], club_ids[j]))
     
     np.random.shuffle(schedule)
+    
+    # Force narrative fixtures into late-season matchweeks for the presentation presets
+    idx_mci_ars = schedule.index(("MCI", "ARS"))
+    schedule[idx_mci_ars], schedule[340] = schedule[340], schedule[idx_mci_ars] # MW 35
+    
+    idx_ars_mci = schedule.index(("ARS", "MCI"))
+    if idx_ars_mci > 340: # Ensure the reverse fixture happens earlier
+        schedule[idx_ars_mci], schedule[40] = schedule[40], schedule[idx_ars_mci] # MW 5
+
+    idx_sou_ips = schedule.index(("SOU", "IPS"))
+    schedule[idx_sou_ips], schedule[360] = schedule[360], schedule[idx_sou_ips] # MW 37
+    
+    idx_ips_sou = schedule.index(("IPS", "SOU"))
+    if idx_ips_sou > 360:
+        schedule[idx_ips_sou], schedule[70] = schedule[70], schedule[idx_ips_sou] # MW 8
     matches_per_mw = 10
     
     standings_history = []
@@ -185,13 +200,13 @@ st.markdown("---")
 st.markdown("#### Season Schedule & Selection")
 
 st.markdown("**Matchweek Timeline:**")
-selected_mw = st.radio("Matchweek Timeline", range(1, 39), index=st.session_state.mw-1, horizontal=True, label_visibility="collapsed")
-if selected_mw != st.session_state.mw:
-    st.session_state.mw = selected_mw
+def on_mw_change():
     df_mw = schedule_df[schedule_df["Matchweek"] == st.session_state.mw]
     if not ((df_mw["Home_ID"] == st.session_state.home_club) & (df_mw["Away_ID"] == st.session_state.away_club)).any():
         st.session_state.home_club = df_mw.iloc[0]["Home_ID"]
         st.session_state.away_club = df_mw.iloc[0]["Away_ID"]
+
+st.radio("Matchweek Timeline", range(1, 39), key="mw", horizontal=True, label_visibility="collapsed", on_change=on_mw_change)
 
 df_filtered = schedule_df[schedule_df["Matchweek"] == st.session_state.mw].reset_index(drop=True)
 
@@ -205,7 +220,8 @@ event = st.dataframe(
     on_select="rerun",
     selection_mode="single-row",
     use_container_width=True,
-    hide_index=True
+    hide_index=True,
+    key=f"schedule_df_{st.session_state.mw}"
 )
 
 if hasattr(event, 'selection') and event.selection is not None and len(event.selection.rows) > 0:
